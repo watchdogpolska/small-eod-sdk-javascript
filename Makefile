@@ -6,7 +6,7 @@ config-help:
 	docker run openapitools/openapi-generator-cli config-help -g javascript
 
 build:
-	curl -s $(spec_url) | yq '.' > swagger.json
+	curl -s $(spec_url) | docker run -i dotlou/yq '.' > swagger.json
 	docker run --user $(id -u):$(id -g) --rm \
 	-v $$(pwd)/swagger.json:/openapi.json -v $$(pwd):/out \
 	-e JS_POST_PROCESS_FILE="/usr/local/bin/js-beautify -r -f" \
