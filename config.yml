@@ -1,0 +1,5 @@
+apiPackage: "small_eod_client"
+projectVersion: 1.0.0
+additionalProperties:
+  usePromises: true
+  useES6: false
