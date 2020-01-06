@@ -1,0 +1,14 @@
+name: OpenAPI CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - run: make build
+    - name: Test no changes in API
+      run: test -z "$(git status --porcelain .)"
