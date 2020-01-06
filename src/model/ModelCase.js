@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./CaseAuditedInstitution'), require('./CaseMatrix'), require('./UserRef'));
   } else {
     // Browser globals (root is window)
-    if (!root.SmallEod) {
-      root.SmallEod = {};
+    if (!root.SmallEodClient) {
+      root.SmallEodClient = {};
     }
-    root.SmallEod.ModelCase = factory(root.SmallEod.ApiClient, root.SmallEod.CaseAuditedInstitution, root.SmallEod.CaseMatrix, root.SmallEod.UserRef);
+    root.SmallEodClient.ModelCase = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.CaseAuditedInstitution, root.SmallEodClient.CaseMatrix, root.SmallEodClient.UserRef);
   }
 }(this, function(ApiClient, CaseAuditedInstitution, CaseMatrix, UserRef) {
   'use strict';

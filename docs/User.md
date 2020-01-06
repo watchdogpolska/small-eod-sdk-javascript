@@ -1,4 +1,4 @@
-# SmallEod.User
+# SmallEodClient.User
 
 ## Properties
 

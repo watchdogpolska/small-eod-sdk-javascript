@@ -1,4 +1,4 @@
-# SmallEod.AdministrativeUnitApi
+# SmallEodClient.AdministrativeUnitApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -20,16 +20,16 @@ Create a administrative unit
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.AdministrativeUnitApi();
-var administrativeUnit = new SmallEod.AdministrativeUnit(); // AdministrativeUnit | New administrative unit
+var apiInstance = new SmallEodClient.AdministrativeUnitApi();
+var administrativeUnit = new SmallEodClient.AdministrativeUnit(); // AdministrativeUnit | New administrative unit
 apiInstance.createAdministrativeUnit(administrativeUnit).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -71,15 +71,15 @@ Deletes a single administrative unit based on the ID supplied
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.AdministrativeUnitApi();
+var apiInstance = new SmallEodClient.AdministrativeUnitApi();
 var administrativeUnitId = 789; // Number | The id of the administrativeUnit to delete
 apiInstance.deleteAdministrativeUnit(administrativeUnitId).then(function() {
   console.log('API called successfully.');
@@ -120,15 +120,15 @@ List all administrative units
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.AdministrativeUnitApi();
+var apiInstance = new SmallEodClient.AdministrativeUnitApi();
 var opts = {
   'limit': 56, // Number | How many items to return at one time (max 100)
   'offset': 56 // Number | How many items skip in return
@@ -173,15 +173,15 @@ Info for a specific administrative unit
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.AdministrativeUnitApi();
+var apiInstance = new SmallEodClient.AdministrativeUnitApi();
 var administrativeUnitId = 3.4; // Number | The id of the administrative unit to retrieve
 apiInstance.showAdministrativeUnitById(administrativeUnitId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

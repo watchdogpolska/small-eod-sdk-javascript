@@ -1,4 +1,4 @@
-# SmallEod.FileSigner
+# SmallEodClient.FileSigner
 
 ## Properties
 

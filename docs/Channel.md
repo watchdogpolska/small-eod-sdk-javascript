@@ -1,4 +1,4 @@
-# SmallEod.Channel
+# SmallEodClient.Channel
 
 ## Properties
 

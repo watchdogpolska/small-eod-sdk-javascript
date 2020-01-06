@@ -1,4 +1,4 @@
-# SmallEod.InstitutionExternalIdentifier
+# SmallEodClient.InstitutionExternalIdentifier
 
 ## Properties
 

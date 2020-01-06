@@ -1,4 +1,4 @@
-# SmallEod.CaseMatrix
+# SmallEodClient.CaseMatrix
 
 ## Properties
 

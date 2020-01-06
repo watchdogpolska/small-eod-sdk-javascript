@@ -1,4 +1,4 @@
-# SmallEod.Institution
+# SmallEodClient.Institution
 
 ## Properties
 

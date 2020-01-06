@@ -1,4 +1,4 @@
-# SmallEod.AddressData
+# SmallEodClient.AddressData
 
 ## Properties
 

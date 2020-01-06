@@ -1,4 +1,4 @@
-# SmallEod.InstitutionApi
+# SmallEodClient.InstitutionApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -18,16 +18,16 @@ Create a institution
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.InstitutionApi();
-var institution = new SmallEod.Institution(); // Institution | New institution
+var apiInstance = new SmallEodClient.InstitutionApi();
+var institution = new SmallEodClient.Institution(); // Institution | New institution
 apiInstance.createInstitution(institution).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -67,15 +67,15 @@ List all institutions
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.InstitutionApi();
+var apiInstance = new SmallEodClient.InstitutionApi();
 var opts = {
   'limit': 56, // Number | How many items to return at one time (max 100)
   'offset': 56 // Number | How many items skip in return

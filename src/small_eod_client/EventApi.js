@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Error'), require('../model/Event'));
   } else {
     // Browser globals (root is window)
-    if (!root.SmallEod) {
-      root.SmallEod = {};
+    if (!root.SmallEodClient) {
+      root.SmallEodClient = {};
     }
-    root.SmallEod.EventApi = factory(root.SmallEod.ApiClient, root.SmallEod.Error, root.SmallEod.Event);
+    root.SmallEodClient.EventApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Error, root.SmallEodClient.Event);
   }
 }(this, function(ApiClient, Error, Event) {
   'use strict';

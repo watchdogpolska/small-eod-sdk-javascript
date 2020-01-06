@@ -1,4 +1,4 @@
-# SmallEod.Session
+# SmallEodClient.Session
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# SmallEod.NoteApi
+# SmallEodClient.NoteApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -20,16 +20,16 @@ Create a note
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.NoteApi();
-var note = new SmallEod.Note(); // Note | New note
+var apiInstance = new SmallEodClient.NoteApi();
+var note = new SmallEodClient.Note(); // Note | New note
 apiInstance.createNote(note).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -71,15 +71,15 @@ Deletes a single note based on the ID supplied
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.NoteApi();
+var apiInstance = new SmallEodClient.NoteApi();
 var noteId = 789; // Number | The id of the note to delete
 apiInstance.deleteNote(noteId).then(function() {
   console.log('API called successfully.');
@@ -120,15 +120,15 @@ List all notes of case
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.NoteApi();
+var apiInstance = new SmallEodClient.NoteApi();
 var opts = {
   'limit': 56, // Number | How many items to return at one time (max 100)
   'offset': 56, // Number | How many items skip in return
@@ -175,15 +175,15 @@ Info for a specific note
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.NoteApi();
+var apiInstance = new SmallEodClient.NoteApi();
 var noteId = 3.4; // Number | The id of the note to retrieve
 apiInstance.showNoteById(noteId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

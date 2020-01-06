@@ -1,4 +1,4 @@
-# SmallEod.SessionApi
+# SmallEodClient.SessionApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -20,14 +20,14 @@ Create a session
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
 var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new SmallEod.SessionApi();
+var apiInstance = new SmallEodClient.SessionApi();
 var userId = 56; // Number | The id of the user to modify
 var body = null; // Object | New session
 apiInstance.createSession(userId, body).then(function(data) {
@@ -72,15 +72,15 @@ Deletes a single session based on the ID supplied
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.SessionApi();
+var apiInstance = new SmallEodClient.SessionApi();
 var userId = 789; // Number | The id of the user to modify
 var sessionId = 789; // Number | The id of the session to delete
 apiInstance.deleteSession(userId, sessionId).then(function() {
@@ -123,15 +123,15 @@ List all sessions
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.SessionApi();
+var apiInstance = new SmallEodClient.SessionApi();
 var userId = 56; // Number | The id of the user to modify
 apiInstance.listSessionOfUser(userId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -172,15 +172,15 @@ Info for a specific session of user
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.SessionApi();
+var apiInstance = new SmallEodClient.SessionApi();
 var userId = 3.4; // Number | The id of the user to retrieve
 var sessionId = 3.4; // Number | The id of the user to retrieve
 apiInstance.showSessionById(userId, sessionId).then(function(data) {

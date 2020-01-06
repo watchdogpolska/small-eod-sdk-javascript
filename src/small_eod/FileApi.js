@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Error'), require('../model/FileSigner'), require('../model/Letter'));
   } else {
     // Browser globals (root is window)
-    if (!root.SmallEod) {
-      root.SmallEod = {};
+    if (!root.SmallEodClient) {
+      root.SmallEodClient = {};
     }
-    root.SmallEod.FileApi = factory(root.SmallEod.ApiClient, root.SmallEod.Error, root.SmallEod.FileSigner, root.SmallEod.Letter);
+    root.SmallEodClient.FileApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Error, root.SmallEodClient.FileSigner, root.SmallEodClient.Letter);
   }
 }(this, function(ApiClient, Error, FileSigner, Letter) {
   'use strict';

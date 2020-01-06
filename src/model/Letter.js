@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./AddressData'));
   } else {
     // Browser globals (root is window)
-    if (!root.SmallEod) {
-      root.SmallEod = {};
+    if (!root.SmallEodClient) {
+      root.SmallEodClient = {};
     }
-    root.SmallEod.Letter = factory(root.SmallEod.ApiClient, root.SmallEod.AddressData);
+    root.SmallEodClient.Letter = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.AddressData);
   }
 }(this, function(ApiClient, AddressData) {
   'use strict';

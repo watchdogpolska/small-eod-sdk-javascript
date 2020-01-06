@@ -1,4 +1,4 @@
-# SmallEod.Dictionary
+# SmallEodClient.Dictionary
 
 ## Properties
 

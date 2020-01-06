@@ -1,4 +1,4 @@
-# SmallEod.Error
+# SmallEodClient.Error
 
 ## Properties
 

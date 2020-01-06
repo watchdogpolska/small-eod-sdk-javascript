@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./AddressData'), require('./InstitutionExternalIdentifier'));
   } else {
     // Browser globals (root is window)
-    if (!root.SmallEod) {
-      root.SmallEod = {};
+    if (!root.SmallEodClient) {
+      root.SmallEodClient = {};
     }
-    root.SmallEod.Institution = factory(root.SmallEod.ApiClient, root.SmallEod.AddressData, root.SmallEod.InstitutionExternalIdentifier);
+    root.SmallEodClient.Institution = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.AddressData, root.SmallEodClient.InstitutionExternalIdentifier);
   }
 }(this, function(ApiClient, AddressData, InstitutionExternalIdentifier) {
   'use strict';

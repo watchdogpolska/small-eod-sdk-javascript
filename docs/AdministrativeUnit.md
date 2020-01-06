@@ -1,4 +1,4 @@
-# SmallEod.AdministrativeUnit
+# SmallEodClient.AdministrativeUnit
 
 ## Properties
 

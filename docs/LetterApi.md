@@ -1,4 +1,4 @@
-# SmallEod.LetterApi
+# SmallEodClient.LetterApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -20,16 +20,16 @@ Create a letter
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.LetterApi();
-var letter = new SmallEod.Letter(); // Letter | New letter
+var apiInstance = new SmallEodClient.LetterApi();
+var letter = new SmallEodClient.Letter(); // Letter | New letter
 apiInstance.createLetter(letter).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -71,15 +71,15 @@ Deletes a single letter based on the ID supplied
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.LetterApi();
+var apiInstance = new SmallEodClient.LetterApi();
 var letterId = 789; // Number | The id of the letter to delete
 apiInstance.deleteLetter(letterId).then(function() {
   console.log('API called successfully.');
@@ -120,15 +120,15 @@ List all letters
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.LetterApi();
+var apiInstance = new SmallEodClient.LetterApi();
 var opts = {
   'limit': 56, // Number | How many items to return at one time (max 100)
   'offset': 56, // Number | How many items skip in return
@@ -175,15 +175,15 @@ Info for a specific letter
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.LetterApi();
+var apiInstance = new SmallEodClient.LetterApi();
 var letterId = 3.4; // Number | The id of the letter to retrieve
 apiInstance.showLetterById(letterId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

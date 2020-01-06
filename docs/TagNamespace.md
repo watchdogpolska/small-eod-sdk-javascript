@@ -1,4 +1,4 @@
-# SmallEod.TagNamespace
+# SmallEodClient.TagNamespace
 
 ## Properties
 

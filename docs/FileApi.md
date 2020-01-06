@@ -1,4 +1,4 @@
-# SmallEod.FileApi
+# SmallEodClient.FileApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -19,15 +19,15 @@ Create a file
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.FileApi();
+var apiInstance = new SmallEodClient.FileApi();
 var letterId = 3.4; // Number | The id of the letter to retrieve
 var file = null; // File | New file
 apiInstance.createFile(letterId, file).then(function(data) {
@@ -70,16 +70,16 @@ Create a pre-signed URLs for file
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.FileApi();
-var fileSigner = new SmallEod.FileSigner(); // FileSigner | New file signature request
+var apiInstance = new SmallEodClient.FileApi();
+var fileSigner = new SmallEodClient.FileSigner(); // FileSigner | New file signature request
 apiInstance.createPreSignedUrl(fileSigner).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -119,15 +119,15 @@ Info for a specific file
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.FileApi();
+var apiInstance = new SmallEodClient.FileApi();
 var letterId = 3.4; // Number | The id of the letter of file
 var fileId = 3.4; // Number | The id of the file to retrieve
 apiInstance.showFileByLetterId(letterId, fileId).then(function(data) {

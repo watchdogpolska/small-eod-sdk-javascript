@@ -1,4 +1,4 @@
-# SmallEod.CaseAuditedInstitution
+# SmallEodClient.CaseAuditedInstitution
 
 ## Properties
 

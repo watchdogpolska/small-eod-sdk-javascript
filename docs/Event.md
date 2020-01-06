@@ -1,4 +1,4 @@
-# SmallEod.Event
+# SmallEodClient.Event
 
 ## Properties
 

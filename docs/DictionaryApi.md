@@ -1,4 +1,4 @@
-# SmallEod.DictionaryApi
+# SmallEodClient.DictionaryApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -20,16 +20,16 @@ Create a dictionary
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.DictionaryApi();
-var dictionary = new SmallEod.Dictionary(); // Dictionary | New dictionary
+var apiInstance = new SmallEodClient.DictionaryApi();
+var dictionary = new SmallEodClient.Dictionary(); // Dictionary | New dictionary
 apiInstance.createDictionary(dictionary).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -71,15 +71,15 @@ Deletes a single dictionary based on the ID supplied
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.DictionaryApi();
+var apiInstance = new SmallEodClient.DictionaryApi();
 var dictionaryId = 789; // Number | The id of the dictionary to delete
 apiInstance.deleteDictionary(dictionaryId).then(function() {
   console.log('API called successfully.');
@@ -120,15 +120,15 @@ List all dictionaries
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.DictionaryApi();
+var apiInstance = new SmallEodClient.DictionaryApi();
 var opts = {
   'limit': 56, // Number | How many items to return at one time (max 100)
   'offset': 56 // Number | How many items skip in return
@@ -173,15 +173,15 @@ Info for a specific dictionary
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.DictionaryApi();
+var apiInstance = new SmallEodClient.DictionaryApi();
 var dictionaryId = 3.4; // Number | The id of the dictionary to retrieve
 apiInstance.showDictionaryById(dictionaryId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

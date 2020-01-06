@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/Error'), require('../model/TagNamespace'));
   } else {
     // Browser globals (root is window)
-    if (!root.SmallEod) {
-      root.SmallEod = {};
+    if (!root.SmallEodClient) {
+      root.SmallEodClient = {};
     }
-    root.SmallEod.TagNamespaceApi = factory(root.SmallEod.ApiClient, root.SmallEod.Error, root.SmallEod.TagNamespace);
+    root.SmallEodClient.TagNamespaceApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Error, root.SmallEodClient.TagNamespace);
   }
 }(this, function(ApiClient, Error, TagNamespace) {
   'use strict';

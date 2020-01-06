@@ -1,4 +1,4 @@
-# SmallEod.File
+# SmallEodClient.File
 
 ## Properties
 

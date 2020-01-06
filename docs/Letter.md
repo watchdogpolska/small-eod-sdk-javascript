@@ -1,4 +1,4 @@
-# SmallEod.Letter
+# SmallEodClient.Letter
 
 ## Properties
 

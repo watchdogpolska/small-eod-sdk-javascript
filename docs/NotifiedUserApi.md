@@ -1,4 +1,4 @@
-# SmallEod.NotifiedUserApi
+# SmallEodClient.NotifiedUserApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -19,17 +19,17 @@ Create a notified user reference of case
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.NotifiedUserApi();
+var apiInstance = new SmallEodClient.NotifiedUserApi();
 var caseId = 3.4; // Number | The id of the case to modify
-var userRef = new SmallEod.UserRef(); // UserRef | New notified user
+var userRef = new SmallEodClient.UserRef(); // UserRef | New notified user
 apiInstance.createNotifiedUser(caseId, userRef).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -72,15 +72,15 @@ Deletes a single notified user based on the ID supplied
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.NotifiedUserApi();
+var apiInstance = new SmallEodClient.NotifiedUserApi();
 var caseId = 789; // Number | The id of the case to modify
 var notifiedUserId = 3.4; // Number | The id of the responsible user to delete
 apiInstance.deleteNotifiedUser(caseId, notifiedUserId).then(function() {
@@ -123,15 +123,15 @@ Info for a specific notified user of case
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.NotifiedUserApi();
+var apiInstance = new SmallEodClient.NotifiedUserApi();
 var caseId = 3.4; // Number | The id of the case to modify
 var notifiedUserId = 3.4; // Number | The id of the responsible user to retrieve
 apiInstance.shownotifiedUserById(caseId, notifiedUserId).then(function(data) {

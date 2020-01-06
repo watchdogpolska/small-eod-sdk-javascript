@@ -1,4 +1,4 @@
-# SmallEod.DictionaryValue
+# SmallEodClient.DictionaryValue
 
 ## Properties
 

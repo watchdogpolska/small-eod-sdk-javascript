@@ -1,4 +1,4 @@
-# SmallEod.CaseApi
+# SmallEodClient.CaseApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -21,16 +21,16 @@ Create a case
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.CaseApi();
-var modelCase = new SmallEod.ModelCase(); // ModelCase | New case
+var apiInstance = new SmallEodClient.CaseApi();
+var modelCase = new SmallEodClient.ModelCase(); // ModelCase | New case
 apiInstance.createCase(modelCase).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -72,15 +72,15 @@ Deletes a single case based on the ID supplied
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.CaseApi();
+var apiInstance = new SmallEodClient.CaseApi();
 var caseId = 789; // Number | The id of the case to delete
 apiInstance.deleteCase(caseId).then(function() {
   console.log('API called successfully.');
@@ -121,15 +121,15 @@ List all cases
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.CaseApi();
+var apiInstance = new SmallEodClient.CaseApi();
 var opts = {
   'limit': 56, // Number | How many items to return at one time (max 100)
   'offset': 56, // Number | How many items skip in return
@@ -176,15 +176,15 @@ Info for a specific case
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.CaseApi();
+var apiInstance = new SmallEodClient.CaseApi();
 var caseId = 3.4; // Number | The id of the case to retrieve
 apiInstance.showCaseById(caseId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -225,17 +225,17 @@ Updated case
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.CaseApi();
+var apiInstance = new SmallEodClient.CaseApi();
 var caseId = 3.4; // Number | The id of the case to modify
-var modelCase = new SmallEod.ModelCase(); // ModelCase | Updated case
+var modelCase = new SmallEodClient.ModelCase(); // ModelCase | Updated case
 apiInstance.updateCaseById(caseId, modelCase).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {

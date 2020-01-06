@@ -1,4 +1,4 @@
-# SmallEod.DescriptionApi
+# SmallEodClient.DescriptionApi
 
 All URIs are relative to *https://small-eod.siecobywatelska.pl/v1*
 
@@ -20,16 +20,16 @@ Create a description
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.DescriptionApi();
-var description = new SmallEod.Description(); // Description | New description
+var apiInstance = new SmallEodClient.DescriptionApi();
+var description = new SmallEodClient.Description(); // Description | New description
 apiInstance.createDescription(description).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -71,15 +71,15 @@ Deletes a single description based on the ID supplied
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.DescriptionApi();
+var apiInstance = new SmallEodClient.DescriptionApi();
 var descriptionId = 789; // Number | The id of the description to delete
 apiInstance.deleteDescription(descriptionId).then(function() {
   console.log('API called successfully.');
@@ -120,15 +120,15 @@ List all descriptions
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.DescriptionApi();
+var apiInstance = new SmallEodClient.DescriptionApi();
 var opts = {
   'limit': 56, // Number | How many items to return at one time (max 100)
   'offset': 56 // Number | How many items skip in return
@@ -173,15 +173,15 @@ Info for a specific description
 ### Example
 
 ```javascript
-var SmallEod = require('small_eod');
-var defaultClient = SmallEod.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure API key authorization: sessionAuth
 var sessionAuth = defaultClient.authentications['sessionAuth'];
 sessionAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //sessionAuth.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEod.DescriptionApi();
+var apiInstance = new SmallEodClient.DescriptionApi();
 var descriptionId = 3.4; // Number | The id of the description to retrieve
 apiInstance.showDescriptionById(descriptionId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

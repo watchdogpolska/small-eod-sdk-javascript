@@ -17,10 +17,10 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AddressData', 'model/AdministrativeUnit', 'model/CaseAuditedInstitution', 'model/CaseMatrix', 'model/Channel', 'model/Collection', 'model/Description', 'model/Dictionary', 'model/DictionaryValue', 'model/Error', 'model/Event', 'model/File', 'model/FileSigner', 'model/Institution', 'model/InstitutionExternalIdentifier', 'model/Letter', 'model/ModelCase', 'model/Note', 'model/Session', 'model/TagNamespace', 'model/User', 'model/UserRef', 'small_eod_client/AdministrativeUnitApi', 'small_eod_client/CaseApi', 'small_eod_client/CollectionApi', 'small_eod_client/DescriptionApi', 'small_eod_client/DictionaryApi', 'small_eod_client/EventApi', 'small_eod_client/FileApi', 'small_eod_client/InstitutionApi', 'small_eod_client/LetterApi', 'small_eod_client/NoteApi', 'small_eod_client/NotifiedUserApi', 'small_eod_client/ResponsibleUserApi', 'small_eod_client/SessionApi', 'small_eod_client/TagNamespaceApi', 'small_eod_client/UserApi'], factory);
+    define(['ApiClient', 'model/AddressData', 'model/AdministrativeUnit', 'model/CaseAuditedInstitution', 'model/CaseMatrix', 'model/Channel', 'model/Collection', 'model/Description', 'model/Dictionary', 'model/DictionaryValue', 'model/Error', 'model/Event', 'model/File', 'model/FileSigner', 'model/Institution', 'model/InstitutionExternalIdentifier', 'model/Letter', 'model/ModelCase', 'model/Note', 'model/Session', 'model/TagNamespace', 'model/User', 'model/UserRef', 'small_eod/AdministrativeUnitApi', 'small_eod/CaseApi', 'small_eod/CollectionApi', 'small_eod/DescriptionApi', 'small_eod/DictionaryApi', 'small_eod/EventApi', 'small_eod/FileApi', 'small_eod/InstitutionApi', 'small_eod/LetterApi', 'small_eod/NoteApi', 'small_eod/NotifiedUserApi', 'small_eod/ResponsibleUserApi', 'small_eod/SessionApi', 'small_eod/TagNamespaceApi', 'small_eod/UserApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/AddressData'), require('./model/AdministrativeUnit'), require('./model/CaseAuditedInstitution'), require('./model/CaseMatrix'), require('./model/Channel'), require('./model/Collection'), require('./model/Description'), require('./model/Dictionary'), require('./model/DictionaryValue'), require('./model/Error'), require('./model/Event'), require('./model/File'), require('./model/FileSigner'), require('./model/Institution'), require('./model/InstitutionExternalIdentifier'), require('./model/Letter'), require('./model/ModelCase'), require('./model/Note'), require('./model/Session'), require('./model/TagNamespace'), require('./model/User'), require('./model/UserRef'), require('./small_eod_client/AdministrativeUnitApi'), require('./small_eod_client/CaseApi'), require('./small_eod_client/CollectionApi'), require('./small_eod_client/DescriptionApi'), require('./small_eod_client/DictionaryApi'), require('./small_eod_client/EventApi'), require('./small_eod_client/FileApi'), require('./small_eod_client/InstitutionApi'), require('./small_eod_client/LetterApi'), require('./small_eod_client/NoteApi'), require('./small_eod_client/NotifiedUserApi'), require('./small_eod_client/ResponsibleUserApi'), require('./small_eod_client/SessionApi'), require('./small_eod_client/TagNamespaceApi'), require('./small_eod_client/UserApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/AddressData'), require('./model/AdministrativeUnit'), require('./model/CaseAuditedInstitution'), require('./model/CaseMatrix'), require('./model/Channel'), require('./model/Collection'), require('./model/Description'), require('./model/Dictionary'), require('./model/DictionaryValue'), require('./model/Error'), require('./model/Event'), require('./model/File'), require('./model/FileSigner'), require('./model/Institution'), require('./model/InstitutionExternalIdentifier'), require('./model/Letter'), require('./model/ModelCase'), require('./model/Note'), require('./model/Session'), require('./model/TagNamespace'), require('./model/User'), require('./model/UserRef'), require('./small_eod/AdministrativeUnitApi'), require('./small_eod/CaseApi'), require('./small_eod/CollectionApi'), require('./small_eod/DescriptionApi'), require('./small_eod/DictionaryApi'), require('./small_eod/EventApi'), require('./small_eod/FileApi'), require('./small_eod/InstitutionApi'), require('./small_eod/LetterApi'), require('./small_eod/NoteApi'), require('./small_eod/NotifiedUserApi'), require('./small_eod/ResponsibleUserApi'), require('./small_eod/SessionApi'), require('./small_eod/TagNamespaceApi'), require('./small_eod/UserApi'));
   }
 }(function(ApiClient, AddressData, AdministrativeUnit, CaseAuditedInstitution, CaseMatrix, Channel, Collection, Description, Dictionary, DictionaryValue, Error, Event, File, FileSigner, Institution, InstitutionExternalIdentifier, Letter, ModelCase, Note, Session, TagNamespace, User, UserRef, AdministrativeUnitApi, CaseApi, CollectionApi, DescriptionApi, DictionaryApi, EventApi, FileApi, InstitutionApi, LetterApi, NoteApi, NotifiedUserApi, ResponsibleUserApi, SessionApi, TagNamespaceApi, UserApi) {
   'use strict';
@@ -31,9 +31,9 @@
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var SmallEod = require('index'); // See note below*.
-   * var xxxSvc = new SmallEod.XxxApi(); // Allocate the API class we're going to use.
-   * var yyyModel = new SmallEod.Yyy(); // Construct a model instance.
+   * var SmallEodClient = require('index'); // See note below*.
+   * var xxxSvc = new SmallEodClient.XxxApi(); // Allocate the API class we're going to use.
+   * var yyyModel = new SmallEodClient.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -45,8 +45,8 @@
    * <p>
    * A non-AMD browser application (discouraged) might do something like this:
    * <pre>
-   * var xxxSvc = new SmallEod.XxxApi(); // Allocate the API class we're going to use.
-   * var yyy = new SmallEod.Yyy(); // Construct a model instance.
+   * var xxxSvc = new SmallEodClient.XxxApi(); // Allocate the API class we're going to use.
+   * var yyy = new SmallEodClient.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -174,77 +174,77 @@
     UserRef: UserRef,
     /**
      * The AdministrativeUnitApi service constructor.
-     * @property {module:small_eod_client/AdministrativeUnitApi}
+     * @property {module:small_eod/AdministrativeUnitApi}
      */
     AdministrativeUnitApi: AdministrativeUnitApi,
     /**
      * The CaseApi service constructor.
-     * @property {module:small_eod_client/CaseApi}
+     * @property {module:small_eod/CaseApi}
      */
     CaseApi: CaseApi,
     /**
      * The CollectionApi service constructor.
-     * @property {module:small_eod_client/CollectionApi}
+     * @property {module:small_eod/CollectionApi}
      */
     CollectionApi: CollectionApi,
     /**
      * The DescriptionApi service constructor.
-     * @property {module:small_eod_client/DescriptionApi}
+     * @property {module:small_eod/DescriptionApi}
      */
     DescriptionApi: DescriptionApi,
     /**
      * The DictionaryApi service constructor.
-     * @property {module:small_eod_client/DictionaryApi}
+     * @property {module:small_eod/DictionaryApi}
      */
     DictionaryApi: DictionaryApi,
     /**
      * The EventApi service constructor.
-     * @property {module:small_eod_client/EventApi}
+     * @property {module:small_eod/EventApi}
      */
     EventApi: EventApi,
     /**
      * The FileApi service constructor.
-     * @property {module:small_eod_client/FileApi}
+     * @property {module:small_eod/FileApi}
      */
     FileApi: FileApi,
     /**
      * The InstitutionApi service constructor.
-     * @property {module:small_eod_client/InstitutionApi}
+     * @property {module:small_eod/InstitutionApi}
      */
     InstitutionApi: InstitutionApi,
     /**
      * The LetterApi service constructor.
-     * @property {module:small_eod_client/LetterApi}
+     * @property {module:small_eod/LetterApi}
      */
     LetterApi: LetterApi,
     /**
      * The NoteApi service constructor.
-     * @property {module:small_eod_client/NoteApi}
+     * @property {module:small_eod/NoteApi}
      */
     NoteApi: NoteApi,
     /**
      * The NotifiedUserApi service constructor.
-     * @property {module:small_eod_client/NotifiedUserApi}
+     * @property {module:small_eod/NotifiedUserApi}
      */
     NotifiedUserApi: NotifiedUserApi,
     /**
      * The ResponsibleUserApi service constructor.
-     * @property {module:small_eod_client/ResponsibleUserApi}
+     * @property {module:small_eod/ResponsibleUserApi}
      */
     ResponsibleUserApi: ResponsibleUserApi,
     /**
      * The SessionApi service constructor.
-     * @property {module:small_eod_client/SessionApi}
+     * @property {module:small_eod/SessionApi}
      */
     SessionApi: SessionApi,
     /**
      * The TagNamespaceApi service constructor.
-     * @property {module:small_eod_client/TagNamespaceApi}
+     * @property {module:small_eod/TagNamespaceApi}
      */
     TagNamespaceApi: TagNamespaceApi,
     /**
      * The UserApi service constructor.
-     * @property {module:small_eod_client/UserApi}
+     * @property {module:small_eod/UserApi}
      */
     UserApi: UserApi
   };
