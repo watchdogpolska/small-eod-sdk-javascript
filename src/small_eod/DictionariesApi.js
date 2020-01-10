@@ -34,7 +34,7 @@
   /**
    * Dictionaries service.
    * @module small_eod/DictionariesApi
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**

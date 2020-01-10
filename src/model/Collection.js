@@ -36,7 +36,7 @@
   /**
    * The Collection model module.
    * @module model/Collection
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**

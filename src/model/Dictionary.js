@@ -36,7 +36,7 @@
   /**
    * The Dictionary model module.
    * @module model/Dictionary
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**

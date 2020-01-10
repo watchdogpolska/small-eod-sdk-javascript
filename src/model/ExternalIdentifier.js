@@ -36,7 +36,7 @@
   /**
    * The ExternalIdentifier model module.
    * @module model/ExternalIdentifier
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**

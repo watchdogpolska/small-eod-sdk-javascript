@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:8000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**collectionsCaseEventList**](CollectionsApi.md#collectionsCaseEventList) | **GET** /collections/{collection_pk}/case/{case_pk}/event/ | 
-[**collectionsCaseEventRead**](CollectionsApi.md#collectionsCaseEventRead) | **GET** /collections/{collection_pk}/case/{case_pk}/event/{id}/ | 
-[**collectionsCaseLetterList**](CollectionsApi.md#collectionsCaseLetterList) | **GET** /collections/{collection_pk}/case/{case_pk}/letter/ | 
-[**collectionsCaseLetterRead**](CollectionsApi.md#collectionsCaseLetterRead) | **GET** /collections/{collection_pk}/case/{case_pk}/letter/{id}/ | 
-[**collectionsCaseList**](CollectionsApi.md#collectionsCaseList) | **GET** /collections/{collection_pk}/case/ | 
-[**collectionsCaseNoteList**](CollectionsApi.md#collectionsCaseNoteList) | **GET** /collections/{collection_pk}/case/{case_pk}/note/ | 
-[**collectionsCaseNoteRead**](CollectionsApi.md#collectionsCaseNoteRead) | **GET** /collections/{collection_pk}/case/{case_pk}/note/{id}/ | 
-[**collectionsCaseRead**](CollectionsApi.md#collectionsCaseRead) | **GET** /collections/{collection_pk}/case/{id}/ | 
+[**collectionsCasesEventsList**](CollectionsApi.md#collectionsCasesEventsList) | **GET** /collections/{collection_pk}/cases/{case_pk}/events/ | 
+[**collectionsCasesEventsRead**](CollectionsApi.md#collectionsCasesEventsRead) | **GET** /collections/{collection_pk}/cases/{case_pk}/events/{id}/ | 
+[**collectionsCasesLettersList**](CollectionsApi.md#collectionsCasesLettersList) | **GET** /collections/{collection_pk}/cases/{case_pk}/letters/ | 
+[**collectionsCasesLettersRead**](CollectionsApi.md#collectionsCasesLettersRead) | **GET** /collections/{collection_pk}/cases/{case_pk}/letters/{id}/ | 
+[**collectionsCasesList**](CollectionsApi.md#collectionsCasesList) | **GET** /collections/{collection_pk}/cases/ | 
+[**collectionsCasesNotesList**](CollectionsApi.md#collectionsCasesNotesList) | **GET** /collections/{collection_pk}/cases/{case_pk}/notes/ | 
+[**collectionsCasesNotesRead**](CollectionsApi.md#collectionsCasesNotesRead) | **GET** /collections/{collection_pk}/cases/{case_pk}/notes/{id}/ | 
+[**collectionsCasesRead**](CollectionsApi.md#collectionsCasesRead) | **GET** /collections/{collection_pk}/cases/{id}/ | 
 [**collectionsCreate**](CollectionsApi.md#collectionsCreate) | **POST** /collections/ | 
 [**collectionsDelete**](CollectionsApi.md#collectionsDelete) | **DELETE** /collections/{id}/ | 
 [**collectionsList**](CollectionsApi.md#collectionsList) | **GET** /collections/ | 
@@ -21,9 +21,9 @@ Method | HTTP request | Description
 
 
 
-## collectionsCaseEventList
+## collectionsCasesEventsList
 
-> [Event] collectionsCaseEventList(casePk, collectionPk)
+> [Event] collectionsCasesEventsList(casePk, collectionPk)
 
 
 
@@ -40,7 +40,7 @@ Basic.password = 'YOUR PASSWORD';
 var apiInstance = new SmallEodClient.CollectionsApi();
 var casePk = "casePk_example"; // String | 
 var collectionPk = "collectionPk_example"; // String | 
-apiInstance.collectionsCaseEventList(casePk, collectionPk).then(function(data) {
+apiInstance.collectionsCasesEventsList(casePk, collectionPk).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -71,9 +71,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## collectionsCaseEventRead
+## collectionsCasesEventsRead
 
-> Event collectionsCaseEventRead(casePk, collectionPk, id)
+> Event collectionsCasesEventsRead(casePk, collectionPk, id)
 
 
 
@@ -91,7 +91,7 @@ var apiInstance = new SmallEodClient.CollectionsApi();
 var casePk = "casePk_example"; // String | 
 var collectionPk = "collectionPk_example"; // String | 
 var id = "id_example"; // String | 
-apiInstance.collectionsCaseEventRead(casePk, collectionPk, id).then(function(data) {
+apiInstance.collectionsCasesEventsRead(casePk, collectionPk, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -123,9 +123,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## collectionsCaseLetterList
+## collectionsCasesLettersList
 
-> [Letter] collectionsCaseLetterList(casePk, collectionPk)
+> [Letter] collectionsCasesLettersList(casePk, collectionPk)
 
 
 
@@ -142,7 +142,7 @@ Basic.password = 'YOUR PASSWORD';
 var apiInstance = new SmallEodClient.CollectionsApi();
 var casePk = "casePk_example"; // String | 
 var collectionPk = "collectionPk_example"; // String | 
-apiInstance.collectionsCaseLetterList(casePk, collectionPk).then(function(data) {
+apiInstance.collectionsCasesLettersList(casePk, collectionPk).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -173,9 +173,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## collectionsCaseLetterRead
+## collectionsCasesLettersRead
 
-> Letter collectionsCaseLetterRead(casePk, collectionPk, id)
+> Letter collectionsCasesLettersRead(casePk, collectionPk, id)
 
 
 
@@ -193,7 +193,7 @@ var apiInstance = new SmallEodClient.CollectionsApi();
 var casePk = "casePk_example"; // String | 
 var collectionPk = "collectionPk_example"; // String | 
 var id = "id_example"; // String | 
-apiInstance.collectionsCaseLetterRead(casePk, collectionPk, id).then(function(data) {
+apiInstance.collectionsCasesLettersRead(casePk, collectionPk, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -225,9 +225,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## collectionsCaseList
+## collectionsCasesList
 
-> [ModelCase] collectionsCaseList(collectionPk)
+> [ModelCase] collectionsCasesList(collectionPk)
 
 
 
@@ -243,7 +243,7 @@ Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.CollectionsApi();
 var collectionPk = "collectionPk_example"; // String | 
-apiInstance.collectionsCaseList(collectionPk).then(function(data) {
+apiInstance.collectionsCasesList(collectionPk).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -273,9 +273,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## collectionsCaseNoteList
+## collectionsCasesNotesList
 
-> [Note] collectionsCaseNoteList(casePk, collectionPk)
+> [Note] collectionsCasesNotesList(casePk, collectionPk)
 
 
 
@@ -292,7 +292,7 @@ Basic.password = 'YOUR PASSWORD';
 var apiInstance = new SmallEodClient.CollectionsApi();
 var casePk = "casePk_example"; // String | 
 var collectionPk = "collectionPk_example"; // String | 
-apiInstance.collectionsCaseNoteList(casePk, collectionPk).then(function(data) {
+apiInstance.collectionsCasesNotesList(casePk, collectionPk).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -323,9 +323,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## collectionsCaseNoteRead
+## collectionsCasesNotesRead
 
-> Note collectionsCaseNoteRead(casePk, collectionPk, id)
+> Note collectionsCasesNotesRead(casePk, collectionPk, id)
 
 
 
@@ -343,7 +343,7 @@ var apiInstance = new SmallEodClient.CollectionsApi();
 var casePk = "casePk_example"; // String | 
 var collectionPk = "collectionPk_example"; // String | 
 var id = "id_example"; // String | 
-apiInstance.collectionsCaseNoteRead(casePk, collectionPk, id).then(function(data) {
+apiInstance.collectionsCasesNotesRead(casePk, collectionPk, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -375,9 +375,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## collectionsCaseRead
+## collectionsCasesRead
 
-> ModelCase collectionsCaseRead(collectionPk, id)
+> ModelCase collectionsCasesRead(collectionPk, id)
 
 
 
@@ -394,7 +394,7 @@ Basic.password = 'YOUR PASSWORD';
 var apiInstance = new SmallEodClient.CollectionsApi();
 var collectionPk = "collectionPk_example"; // String | 
 var id = "id_example"; // String | 
-apiInstance.collectionsCaseRead(collectionPk, id).then(function(data) {
+apiInstance.collectionsCasesRead(collectionPk, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);

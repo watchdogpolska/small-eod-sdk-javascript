@@ -34,7 +34,7 @@
   /**
    * Descriptions service.
    * @module small_eod/DescriptionsApi
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**

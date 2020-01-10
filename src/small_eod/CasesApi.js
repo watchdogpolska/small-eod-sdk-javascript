@@ -34,7 +34,7 @@
   /**
    * Cases service.
    * @module small_eod/CasesApi
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**

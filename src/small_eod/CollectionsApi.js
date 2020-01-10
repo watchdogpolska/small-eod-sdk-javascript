@@ -34,7 +34,7 @@
   /**
    * Collections service.
    * @module small_eod/CollectionsApi
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**
@@ -54,15 +54,15 @@
      * @param {String} collectionPk 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Event>} and HTTP response
      */
-    this.collectionsCaseEventListWithHttpInfo = function(casePk, collectionPk) {
+    this.collectionsCasesEventsListWithHttpInfo = function(casePk, collectionPk) {
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling collectionsCaseEventList");
+        throw new Error("Missing the required parameter 'casePk' when calling collectionsCasesEventsList");
       }
       // verify the required parameter 'collectionPk' is set
       if (collectionPk === undefined || collectionPk === null) {
-        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCaseEventList");
+        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCasesEventsList");
       }
 
       var pathParams = {
@@ -83,7 +83,7 @@
       var accepts = ['application/json'];
       var returnType = [Event];
       return this.apiClient.callApi(
-        '/collections/{collection_pk}/case/{case_pk}/event/', 'GET',
+        '/collections/{collection_pk}/cases/{case_pk}/events/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -94,8 +94,8 @@
      * @param {String} collectionPk 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Event>}
      */
-    this.collectionsCaseEventList = function(casePk, collectionPk) {
-      return this.collectionsCaseEventListWithHttpInfo(casePk, collectionPk)
+    this.collectionsCasesEventsList = function(casePk, collectionPk) {
+      return this.collectionsCasesEventsListWithHttpInfo(casePk, collectionPk)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -108,19 +108,19 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Event} and HTTP response
      */
-    this.collectionsCaseEventReadWithHttpInfo = function(casePk, collectionPk, id) {
+    this.collectionsCasesEventsReadWithHttpInfo = function(casePk, collectionPk, id) {
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling collectionsCaseEventRead");
+        throw new Error("Missing the required parameter 'casePk' when calling collectionsCasesEventsRead");
       }
       // verify the required parameter 'collectionPk' is set
       if (collectionPk === undefined || collectionPk === null) {
-        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCaseEventRead");
+        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCasesEventsRead");
       }
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling collectionsCaseEventRead");
+        throw new Error("Missing the required parameter 'id' when calling collectionsCasesEventsRead");
       }
 
       var pathParams = {
@@ -142,7 +142,7 @@
       var accepts = ['application/json'];
       var returnType = Event;
       return this.apiClient.callApi(
-        '/collections/{collection_pk}/case/{case_pk}/event/{id}/', 'GET',
+        '/collections/{collection_pk}/cases/{case_pk}/events/{id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -154,8 +154,8 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Event}
      */
-    this.collectionsCaseEventRead = function(casePk, collectionPk, id) {
-      return this.collectionsCaseEventReadWithHttpInfo(casePk, collectionPk, id)
+    this.collectionsCasesEventsRead = function(casePk, collectionPk, id) {
+      return this.collectionsCasesEventsReadWithHttpInfo(casePk, collectionPk, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -167,15 +167,15 @@
      * @param {String} collectionPk 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Letter>} and HTTP response
      */
-    this.collectionsCaseLetterListWithHttpInfo = function(casePk, collectionPk) {
+    this.collectionsCasesLettersListWithHttpInfo = function(casePk, collectionPk) {
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling collectionsCaseLetterList");
+        throw new Error("Missing the required parameter 'casePk' when calling collectionsCasesLettersList");
       }
       // verify the required parameter 'collectionPk' is set
       if (collectionPk === undefined || collectionPk === null) {
-        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCaseLetterList");
+        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCasesLettersList");
       }
 
       var pathParams = {
@@ -196,7 +196,7 @@
       var accepts = ['application/json'];
       var returnType = [Letter];
       return this.apiClient.callApi(
-        '/collections/{collection_pk}/case/{case_pk}/letter/', 'GET',
+        '/collections/{collection_pk}/cases/{case_pk}/letters/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -207,8 +207,8 @@
      * @param {String} collectionPk 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Letter>}
      */
-    this.collectionsCaseLetterList = function(casePk, collectionPk) {
-      return this.collectionsCaseLetterListWithHttpInfo(casePk, collectionPk)
+    this.collectionsCasesLettersList = function(casePk, collectionPk) {
+      return this.collectionsCasesLettersListWithHttpInfo(casePk, collectionPk)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -221,19 +221,19 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Letter} and HTTP response
      */
-    this.collectionsCaseLetterReadWithHttpInfo = function(casePk, collectionPk, id) {
+    this.collectionsCasesLettersReadWithHttpInfo = function(casePk, collectionPk, id) {
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling collectionsCaseLetterRead");
+        throw new Error("Missing the required parameter 'casePk' when calling collectionsCasesLettersRead");
       }
       // verify the required parameter 'collectionPk' is set
       if (collectionPk === undefined || collectionPk === null) {
-        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCaseLetterRead");
+        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCasesLettersRead");
       }
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling collectionsCaseLetterRead");
+        throw new Error("Missing the required parameter 'id' when calling collectionsCasesLettersRead");
       }
 
       var pathParams = {
@@ -255,7 +255,7 @@
       var accepts = ['application/json'];
       var returnType = Letter;
       return this.apiClient.callApi(
-        '/collections/{collection_pk}/case/{case_pk}/letter/{id}/', 'GET',
+        '/collections/{collection_pk}/cases/{case_pk}/letters/{id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -267,8 +267,8 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Letter}
      */
-    this.collectionsCaseLetterRead = function(casePk, collectionPk, id) {
-      return this.collectionsCaseLetterReadWithHttpInfo(casePk, collectionPk, id)
+    this.collectionsCasesLettersRead = function(casePk, collectionPk, id) {
+      return this.collectionsCasesLettersReadWithHttpInfo(casePk, collectionPk, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -279,11 +279,11 @@
      * @param {String} collectionPk 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/ModelCase>} and HTTP response
      */
-    this.collectionsCaseListWithHttpInfo = function(collectionPk) {
+    this.collectionsCasesListWithHttpInfo = function(collectionPk) {
       var postBody = null;
       // verify the required parameter 'collectionPk' is set
       if (collectionPk === undefined || collectionPk === null) {
-        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCaseList");
+        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCasesList");
       }
 
       var pathParams = {
@@ -303,7 +303,7 @@
       var accepts = ['application/json'];
       var returnType = [ModelCase];
       return this.apiClient.callApi(
-        '/collections/{collection_pk}/case/', 'GET',
+        '/collections/{collection_pk}/cases/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -313,8 +313,8 @@
      * @param {String} collectionPk 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/ModelCase>}
      */
-    this.collectionsCaseList = function(collectionPk) {
-      return this.collectionsCaseListWithHttpInfo(collectionPk)
+    this.collectionsCasesList = function(collectionPk) {
+      return this.collectionsCasesListWithHttpInfo(collectionPk)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -326,15 +326,15 @@
      * @param {String} collectionPk 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Note>} and HTTP response
      */
-    this.collectionsCaseNoteListWithHttpInfo = function(casePk, collectionPk) {
+    this.collectionsCasesNotesListWithHttpInfo = function(casePk, collectionPk) {
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling collectionsCaseNoteList");
+        throw new Error("Missing the required parameter 'casePk' when calling collectionsCasesNotesList");
       }
       // verify the required parameter 'collectionPk' is set
       if (collectionPk === undefined || collectionPk === null) {
-        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCaseNoteList");
+        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCasesNotesList");
       }
 
       var pathParams = {
@@ -355,7 +355,7 @@
       var accepts = ['application/json'];
       var returnType = [Note];
       return this.apiClient.callApi(
-        '/collections/{collection_pk}/case/{case_pk}/note/', 'GET',
+        '/collections/{collection_pk}/cases/{case_pk}/notes/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -366,8 +366,8 @@
      * @param {String} collectionPk 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Note>}
      */
-    this.collectionsCaseNoteList = function(casePk, collectionPk) {
-      return this.collectionsCaseNoteListWithHttpInfo(casePk, collectionPk)
+    this.collectionsCasesNotesList = function(casePk, collectionPk) {
+      return this.collectionsCasesNotesListWithHttpInfo(casePk, collectionPk)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -380,19 +380,19 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Note} and HTTP response
      */
-    this.collectionsCaseNoteReadWithHttpInfo = function(casePk, collectionPk, id) {
+    this.collectionsCasesNotesReadWithHttpInfo = function(casePk, collectionPk, id) {
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling collectionsCaseNoteRead");
+        throw new Error("Missing the required parameter 'casePk' when calling collectionsCasesNotesRead");
       }
       // verify the required parameter 'collectionPk' is set
       if (collectionPk === undefined || collectionPk === null) {
-        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCaseNoteRead");
+        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCasesNotesRead");
       }
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling collectionsCaseNoteRead");
+        throw new Error("Missing the required parameter 'id' when calling collectionsCasesNotesRead");
       }
 
       var pathParams = {
@@ -414,7 +414,7 @@
       var accepts = ['application/json'];
       var returnType = Note;
       return this.apiClient.callApi(
-        '/collections/{collection_pk}/case/{case_pk}/note/{id}/', 'GET',
+        '/collections/{collection_pk}/cases/{case_pk}/notes/{id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -426,8 +426,8 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Note}
      */
-    this.collectionsCaseNoteRead = function(casePk, collectionPk, id) {
-      return this.collectionsCaseNoteReadWithHttpInfo(casePk, collectionPk, id)
+    this.collectionsCasesNotesRead = function(casePk, collectionPk, id) {
+      return this.collectionsCasesNotesReadWithHttpInfo(casePk, collectionPk, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -439,15 +439,15 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ModelCase} and HTTP response
      */
-    this.collectionsCaseReadWithHttpInfo = function(collectionPk, id) {
+    this.collectionsCasesReadWithHttpInfo = function(collectionPk, id) {
       var postBody = null;
       // verify the required parameter 'collectionPk' is set
       if (collectionPk === undefined || collectionPk === null) {
-        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCaseRead");
+        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsCasesRead");
       }
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling collectionsCaseRead");
+        throw new Error("Missing the required parameter 'id' when calling collectionsCasesRead");
       }
 
       var pathParams = {
@@ -468,7 +468,7 @@
       var accepts = ['application/json'];
       var returnType = ModelCase;
       return this.apiClient.callApi(
-        '/collections/{collection_pk}/case/{id}/', 'GET',
+        '/collections/{collection_pk}/cases/{id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -479,8 +479,8 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ModelCase}
      */
-    this.collectionsCaseRead = function(collectionPk, id) {
-      return this.collectionsCaseReadWithHttpInfo(collectionPk, id)
+    this.collectionsCasesRead = function(collectionPk, id) {
+      return this.collectionsCasesReadWithHttpInfo(collectionPk, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

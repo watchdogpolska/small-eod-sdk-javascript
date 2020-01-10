@@ -34,7 +34,7 @@
   /**
    * Letters service.
    * @module small_eod/LettersApi
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**

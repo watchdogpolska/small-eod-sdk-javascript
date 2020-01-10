@@ -36,7 +36,7 @@
   /**
    * The Note model module.
    * @module model/Note
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**

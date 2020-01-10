@@ -34,7 +34,7 @@
   /**
    * Files service.
    * @module small_eod/FilesApi
-   * @version 1.0.1
+   * @version 1.0.2
    */
 
   /**
