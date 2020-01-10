@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [readonly] 
-**name** | **String** | Name of institution | 
-**externalIdentifier** | [**InstitutionExternalIdentifier**](InstitutionExternalIdentifier.md) |  | [optional] 
-**address** | [**AddressData**](AddressData.md) |  | [optional] 
-**administrativeUnit** | **String** |  | [optional] 
-**createdOn** | **String** |  | [readonly] 
-**createdBy** | **String** | User ID responsible for creating the content | [readonly] 
-**modifiedOn** | **String** |  | [readonly] 
-**modifiedBy** | **String** |  | [readonly] 
+**modifiedOn** | **Date** |  | [optional] [readonly] 
+**name** | **String** |  | 
+**externalIdentifier** | [**ExternalIdentifier**](ExternalIdentifier.md) |  | 
+**createdOn** | **Date** |  | [optional] [readonly] 
+**administrativeUnit** | [**AdministrativeUnit**](AdministrativeUnit.md) |  | 
+**address** | [**AddressData**](AddressData.md) |  | 
+**modifiedBy** | **Number** |  | [optional] [readonly] 
+**createdBy** | **Number** |  | [optional] [readonly] 
+**id** | **Number** |  | [optional] [readonly] 
 
 

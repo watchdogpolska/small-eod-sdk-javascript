@@ -4,13 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**email** | **String** |  | [optional] 
-**epuap** | **String** |  | [optional] 
-**street** | **String** |  | [optional] 
-**postalCode** | **String** |  | [optional] 
-**city** | **String** |  | [optional] 
-**voivodeship** | **String** |  | [optional] 
-**houseNo** | **String** |  | [optional] 
+**url** | **String** |  | [optional] [readonly] 
+**city** | **String** |  | 
+**voivodeship** | **String** |  | 
 **flatNo** | **String** |  | [optional] 
+**street** | **String** |  | 
+**postalCode** | **String** |  | 
+**houseNo** | **String** |  | 
+**email** | **String** |  | 
+**epuap** | **String** |  | 
 
 

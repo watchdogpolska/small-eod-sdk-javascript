@@ -1,4 +1,4 @@
-spec_url = https://raw.githubusercontent.com/watchdogpolska/small_eod/master/docs/swagger.yaml
+spec_url = http://localhost:8000/api/docs/?format=openapi
 
 .PHONY: build test
 
@@ -6,8 +6,8 @@ config-help:
 	docker run openapitools/openapi-generator-cli config-help -g javascript
 
 build:
-	curl -s $(spec_url) | docker run -i dotlou/yq '.' > swagger.json
-	docker run --user $(id -u):$(id -g) --rm \
+	curl -s $(spec_url) > swagger.json
+	docker run --user $$(id -u):$$(id -g) --network host --rm \
 	-v $$(pwd)/swagger.json:/openapi.json -v $$(pwd):/out \
 	-e JS_POST_PROCESS_FILE="/usr/local/bin/js-beautify -r -f" \
 	openapitools/openapi-generator-cli \
