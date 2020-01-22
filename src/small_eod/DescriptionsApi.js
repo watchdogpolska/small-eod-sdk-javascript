@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Description'], factory);
+    define(['ApiClient', 'model/Description', 'model/InlineResponse2008'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Description'));
+    module.exports = factory(require('../ApiClient'), require('../model/Description'), require('../model/InlineResponse2008'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.DescriptionsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Description);
+    root.SmallEodClient.DescriptionsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Description, root.SmallEodClient.InlineResponse2008);
   }
-}(this, function(ApiClient, Description) {
+}(this, function(ApiClient, Description, InlineResponse2008) {
   'use strict';
 
   /**
@@ -141,14 +141,20 @@
 
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Description>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
      */
-    this.descriptionsListWithHttpInfo = function() {
+    this.descriptionsListWithHttpInfo = function(opts) {
+      opts = opts || {};
       var postBody = null;
 
       var pathParams = {
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -160,7 +166,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [Description];
+      var returnType = InlineResponse2008;
       return this.apiClient.callApi(
         '/descriptions/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -169,10 +175,13 @@
     }
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Description>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
      */
-    this.descriptionsList = function() {
-      return this.descriptionsListWithHttpInfo()
+    this.descriptionsList = function(opts) {
+      return this.descriptionsListWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

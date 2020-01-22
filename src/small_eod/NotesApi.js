@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Note'], factory);
+    define(['ApiClient', 'model/InlineResponse2007', 'model/Note'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Note'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse2007'), require('../model/Note'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.NotesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Note);
+    root.SmallEodClient.NotesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse2007, root.SmallEodClient.Note);
   }
-}(this, function(ApiClient, Note) {
+}(this, function(ApiClient, InlineResponse2007, Note) {
   'use strict';
 
   /**
@@ -141,14 +141,20 @@
 
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Note>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2007} and HTTP response
      */
-    this.notesListWithHttpInfo = function() {
+    this.notesListWithHttpInfo = function(opts) {
+      opts = opts || {};
       var postBody = null;
 
       var pathParams = {
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -160,7 +166,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [Note];
+      var returnType = InlineResponse2007;
       return this.apiClient.callApi(
         '/notes/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -169,10 +175,13 @@
     }
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Note>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2007}
      */
-    this.notesList = function() {
-      return this.notesListWithHttpInfo()
+    this.notesList = function(opts) {
+      return this.notesListWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

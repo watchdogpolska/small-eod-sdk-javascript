@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Event'], factory);
+    define(['ApiClient', 'model/Event', 'model/InlineResponse2005'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Event'));
+    module.exports = factory(require('../ApiClient'), require('../model/Event'), require('../model/InlineResponse2005'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.EventsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Event);
+    root.SmallEodClient.EventsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Event, root.SmallEodClient.InlineResponse2005);
   }
-}(this, function(ApiClient, Event) {
+}(this, function(ApiClient, Event, InlineResponse2005) {
   'use strict';
 
   /**
@@ -141,14 +141,20 @@
 
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Event>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2005} and HTTP response
      */
-    this.eventsListWithHttpInfo = function() {
+    this.eventsListWithHttpInfo = function(opts) {
+      opts = opts || {};
       var postBody = null;
 
       var pathParams = {
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -160,7 +166,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [Event];
+      var returnType = InlineResponse2005;
       return this.apiClient.callApi(
         '/events/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -169,10 +175,13 @@
     }
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Event>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2005}
      */
-    this.eventsList = function() {
-      return this.eventsListWithHttpInfo()
+    this.eventsList = function(opts) {
+      return this.eventsListWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

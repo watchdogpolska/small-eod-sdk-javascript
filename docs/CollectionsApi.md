@@ -1,6 +1,6 @@
 # SmallEodClient.CollectionsApi
 
-All URIs are relative to *http://localhost:8000*
+All URIs are relative to *http://web*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 ## collectionsCasesEventsList
 
-> [Event] collectionsCasesEventsList(casePk, collectionPk)
+> InlineResponse2005 collectionsCasesEventsList(casePk, collectionPk, opts)
 
 
 
@@ -40,7 +40,11 @@ Basic.password = 'YOUR PASSWORD';
 var apiInstance = new SmallEodClient.CollectionsApi();
 var casePk = "casePk_example"; // String | 
 var collectionPk = "collectionPk_example"; // String | 
-apiInstance.collectionsCasesEventsList(casePk, collectionPk).then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.collectionsCasesEventsList(casePk, collectionPk, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -56,10 +60,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **casePk** | **String**|  | 
  **collectionPk** | **String**|  | 
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[Event]**](Event.md)
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 
@@ -125,7 +131,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesLettersList
 
-> [Letter] collectionsCasesLettersList(casePk, collectionPk)
+> InlineResponse2006 collectionsCasesLettersList(casePk, collectionPk, opts)
 
 
 
@@ -142,7 +148,11 @@ Basic.password = 'YOUR PASSWORD';
 var apiInstance = new SmallEodClient.CollectionsApi();
 var casePk = "casePk_example"; // String | 
 var collectionPk = "collectionPk_example"; // String | 
-apiInstance.collectionsCasesLettersList(casePk, collectionPk).then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.collectionsCasesLettersList(casePk, collectionPk, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -158,10 +168,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **casePk** | **String**|  | 
  **collectionPk** | **String**|  | 
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[Letter]**](Letter.md)
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 
@@ -227,7 +239,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesList
 
-> [ModelCase] collectionsCasesList(collectionPk)
+> InlineResponse2004 collectionsCasesList(collectionPk, opts)
 
 
 
@@ -243,7 +255,11 @@ Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.CollectionsApi();
 var collectionPk = "collectionPk_example"; // String | 
-apiInstance.collectionsCasesList(collectionPk).then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.collectionsCasesList(collectionPk, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -258,10 +274,12 @@ apiInstance.collectionsCasesList(collectionPk).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **collectionPk** | **String**|  | 
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[ModelCase]**](ModelCase.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -275,7 +293,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesNotesList
 
-> [Note] collectionsCasesNotesList(casePk, collectionPk)
+> InlineResponse2007 collectionsCasesNotesList(casePk, collectionPk, opts)
 
 
 
@@ -292,7 +310,11 @@ Basic.password = 'YOUR PASSWORD';
 var apiInstance = new SmallEodClient.CollectionsApi();
 var casePk = "casePk_example"; // String | 
 var collectionPk = "collectionPk_example"; // String | 
-apiInstance.collectionsCasesNotesList(casePk, collectionPk).then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.collectionsCasesNotesList(casePk, collectionPk, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -308,10 +330,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **casePk** | **String**|  | 
  **collectionPk** | **String**|  | 
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[Note]**](Note.md)
+[**InlineResponse2007**](InlineResponse2007.md)
 
 ### Authorization
 
@@ -523,7 +547,7 @@ null (empty response body)
 
 ## collectionsList
 
-> [Collection] collectionsList()
+> InlineResponse2003 collectionsList(opts)
 
 
 
@@ -538,7 +562,11 @@ Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.CollectionsApi();
-apiInstance.collectionsList().then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.collectionsList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -548,11 +576,16 @@ apiInstance.collectionsList().then(function(data) {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[Collection]**](Collection.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

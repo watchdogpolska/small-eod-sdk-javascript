@@ -47,9 +47,9 @@
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default http://localhost:8000
+     * @default http://web
      */
-    this.basePath = 'http://localhost:8000'.replace(/\/+$/, '');
+    this.basePath = 'http://web'.replace(/\/+$/, '');
 
     /**
      * The authentication methods to be included for all API calls.
@@ -590,7 +590,7 @@
     exports.hostSettings = function() {
         return [
             {
-              'url': "http://localhost:8000/",
+              'url': "http://web/",
               'description': "No description provided",
             }
       ];

@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Channel'], factory);
+    define(['ApiClient', 'model/Channel', 'model/InlineResponse2002'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Channel'));
+    module.exports = factory(require('../ApiClient'), require('../model/Channel'), require('../model/InlineResponse2002'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.ChannelsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Channel);
+    root.SmallEodClient.ChannelsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Channel, root.SmallEodClient.InlineResponse2002);
   }
-}(this, function(ApiClient, Channel) {
+}(this, function(ApiClient, Channel, InlineResponse2002) {
   'use strict';
 
   /**
@@ -141,14 +141,20 @@
 
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Channel>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
      */
-    this.channelsListWithHttpInfo = function() {
+    this.channelsListWithHttpInfo = function(opts) {
+      opts = opts || {};
       var postBody = null;
 
       var pathParams = {
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -160,7 +166,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [Channel];
+      var returnType = InlineResponse2002;
       return this.apiClient.callApi(
         '/channels/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -169,10 +175,13 @@
     }
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Channel>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
      */
-    this.channelsList = function() {
-      return this.channelsListWithHttpInfo()
+    this.channelsList = function(opts) {
+      return this.channelsListWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

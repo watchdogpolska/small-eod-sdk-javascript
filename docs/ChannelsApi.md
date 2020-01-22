@@ -1,6 +1,6 @@
 # SmallEodClient.ChannelsApi
 
-All URIs are relative to *http://localhost:8000*
+All URIs are relative to *http://web*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -111,7 +111,7 @@ null (empty response body)
 
 ## channelsList
 
-> [Channel] channelsList()
+> InlineResponse2002 channelsList(opts)
 
 
 
@@ -126,7 +126,11 @@ Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.ChannelsApi();
-apiInstance.channelsList().then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.channelsList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -136,11 +140,16 @@ apiInstance.channelsList().then(function(data) {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[Channel]**](Channel.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

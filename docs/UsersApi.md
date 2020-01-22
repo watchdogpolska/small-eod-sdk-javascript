@@ -1,6 +1,6 @@
 # SmallEodClient.UsersApi
 
-All URIs are relative to *http://localhost:8000*
+All URIs are relative to *http://web*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -115,7 +115,7 @@ null (empty response body)
 
 ## usersList
 
-> [User] usersList()
+> InlineResponse2001 usersList(opts)
 
 
 
@@ -132,7 +132,11 @@ Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.UsersApi();
-apiInstance.usersList().then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.usersList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -142,11 +146,16 @@ apiInstance.usersList().then(function(data) {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[User]**](User.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 

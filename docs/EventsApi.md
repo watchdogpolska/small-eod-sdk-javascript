@@ -1,6 +1,6 @@
 # SmallEodClient.EventsApi
 
-All URIs are relative to *http://localhost:8000*
+All URIs are relative to *http://web*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -111,7 +111,7 @@ null (empty response body)
 
 ## eventsList
 
-> [Event] eventsList()
+> InlineResponse2005 eventsList(opts)
 
 
 
@@ -126,7 +126,11 @@ Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.EventsApi();
-apiInstance.eventsList().then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.eventsList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -136,11 +140,16 @@ apiInstance.eventsList().then(function(data) {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[Event]**](Event.md)
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 

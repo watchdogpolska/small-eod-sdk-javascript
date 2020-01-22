@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Collection', 'model/Event', 'model/Letter', 'model/ModelCase', 'model/Note'], factory);
+    define(['ApiClient', 'model/Collection', 'model/Event', 'model/InlineResponse2003', 'model/InlineResponse2004', 'model/InlineResponse2005', 'model/InlineResponse2006', 'model/InlineResponse2007', 'model/Letter', 'model/ModelCase', 'model/Note'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Collection'), require('../model/Event'), require('../model/Letter'), require('../model/ModelCase'), require('../model/Note'));
+    module.exports = factory(require('../ApiClient'), require('../model/Collection'), require('../model/Event'), require('../model/InlineResponse2003'), require('../model/InlineResponse2004'), require('../model/InlineResponse2005'), require('../model/InlineResponse2006'), require('../model/InlineResponse2007'), require('../model/Letter'), require('../model/ModelCase'), require('../model/Note'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.CollectionsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Collection, root.SmallEodClient.Event, root.SmallEodClient.Letter, root.SmallEodClient.ModelCase, root.SmallEodClient.Note);
+    root.SmallEodClient.CollectionsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Collection, root.SmallEodClient.Event, root.SmallEodClient.InlineResponse2003, root.SmallEodClient.InlineResponse2004, root.SmallEodClient.InlineResponse2005, root.SmallEodClient.InlineResponse2006, root.SmallEodClient.InlineResponse2007, root.SmallEodClient.Letter, root.SmallEodClient.ModelCase, root.SmallEodClient.Note);
   }
-}(this, function(ApiClient, Collection, Event, Letter, ModelCase, Note) {
+}(this, function(ApiClient, Collection, Event, InlineResponse2003, InlineResponse2004, InlineResponse2005, InlineResponse2006, InlineResponse2007, Letter, ModelCase, Note) {
   'use strict';
 
   /**
@@ -52,9 +52,13 @@
     /**
      * @param {String} casePk 
      * @param {String} collectionPk 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Event>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2005} and HTTP response
      */
-    this.collectionsCasesEventsListWithHttpInfo = function(casePk, collectionPk) {
+    this.collectionsCasesEventsListWithHttpInfo = function(casePk, collectionPk, opts) {
+      opts = opts || {};
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
@@ -70,6 +74,8 @@
         'collection_pk': collectionPk
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -81,7 +87,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [Event];
+      var returnType = InlineResponse2005;
       return this.apiClient.callApi(
         '/collections/{collection_pk}/cases/{case_pk}/events/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -92,10 +98,13 @@
     /**
      * @param {String} casePk 
      * @param {String} collectionPk 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Event>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2005}
      */
-    this.collectionsCasesEventsList = function(casePk, collectionPk) {
-      return this.collectionsCasesEventsListWithHttpInfo(casePk, collectionPk)
+    this.collectionsCasesEventsList = function(casePk, collectionPk, opts) {
+      return this.collectionsCasesEventsListWithHttpInfo(casePk, collectionPk, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -165,9 +174,13 @@
     /**
      * @param {String} casePk 
      * @param {String} collectionPk 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Letter>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2006} and HTTP response
      */
-    this.collectionsCasesLettersListWithHttpInfo = function(casePk, collectionPk) {
+    this.collectionsCasesLettersListWithHttpInfo = function(casePk, collectionPk, opts) {
+      opts = opts || {};
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
@@ -183,6 +196,8 @@
         'collection_pk': collectionPk
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -194,7 +209,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [Letter];
+      var returnType = InlineResponse2006;
       return this.apiClient.callApi(
         '/collections/{collection_pk}/cases/{case_pk}/letters/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -205,10 +220,13 @@
     /**
      * @param {String} casePk 
      * @param {String} collectionPk 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Letter>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2006}
      */
-    this.collectionsCasesLettersList = function(casePk, collectionPk) {
-      return this.collectionsCasesLettersListWithHttpInfo(casePk, collectionPk)
+    this.collectionsCasesLettersList = function(casePk, collectionPk, opts) {
+      return this.collectionsCasesLettersListWithHttpInfo(casePk, collectionPk, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -277,9 +295,13 @@
 
     /**
      * @param {String} collectionPk 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/ModelCase>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
-    this.collectionsCasesListWithHttpInfo = function(collectionPk) {
+    this.collectionsCasesListWithHttpInfo = function(collectionPk, opts) {
+      opts = opts || {};
       var postBody = null;
       // verify the required parameter 'collectionPk' is set
       if (collectionPk === undefined || collectionPk === null) {
@@ -290,6 +312,8 @@
         'collection_pk': collectionPk
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -301,7 +325,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [ModelCase];
+      var returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/collections/{collection_pk}/cases/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -311,10 +335,13 @@
 
     /**
      * @param {String} collectionPk 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/ModelCase>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
-    this.collectionsCasesList = function(collectionPk) {
-      return this.collectionsCasesListWithHttpInfo(collectionPk)
+    this.collectionsCasesList = function(collectionPk, opts) {
+      return this.collectionsCasesListWithHttpInfo(collectionPk, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -324,9 +351,13 @@
     /**
      * @param {String} casePk 
      * @param {String} collectionPk 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Note>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2007} and HTTP response
      */
-    this.collectionsCasesNotesListWithHttpInfo = function(casePk, collectionPk) {
+    this.collectionsCasesNotesListWithHttpInfo = function(casePk, collectionPk, opts) {
+      opts = opts || {};
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
@@ -342,6 +373,8 @@
         'collection_pk': collectionPk
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -353,7 +386,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [Note];
+      var returnType = InlineResponse2007;
       return this.apiClient.callApi(
         '/collections/{collection_pk}/cases/{case_pk}/notes/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -364,10 +397,13 @@
     /**
      * @param {String} casePk 
      * @param {String} collectionPk 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Note>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2007}
      */
-    this.collectionsCasesNotesList = function(casePk, collectionPk) {
-      return this.collectionsCasesNotesListWithHttpInfo(casePk, collectionPk)
+    this.collectionsCasesNotesList = function(casePk, collectionPk, opts) {
+      return this.collectionsCasesNotesListWithHttpInfo(casePk, collectionPk, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -579,14 +615,20 @@
 
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Collection>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
      */
-    this.collectionsListWithHttpInfo = function() {
+    this.collectionsListWithHttpInfo = function(opts) {
+      opts = opts || {};
       var postBody = null;
 
       var pathParams = {
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -598,7 +640,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [Collection];
+      var returnType = InlineResponse2003;
       return this.apiClient.callApi(
         '/collections/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -607,10 +649,13 @@
     }
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Collection>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
      */
-    this.collectionsList = function() {
-      return this.collectionsListWithHttpInfo()
+    this.collectionsList = function(opts) {
+      return this.collectionsListWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

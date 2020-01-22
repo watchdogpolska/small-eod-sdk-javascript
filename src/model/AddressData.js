@@ -43,24 +43,24 @@
    * Constructs a new <code>AddressData</code>.
    * @alias module:model/AddressData
    * @class
-   * @param city {String} 
-   * @param voivodeship {String} 
-   * @param street {String} 
-   * @param postalCode {String} 
-   * @param houseNo {String} 
    * @param email {String} 
+   * @param city {String} 
    * @param epuap {String} 
+   * @param street {String} 
+   * @param houseNo {String} 
+   * @param postalCode {String} 
+   * @param voivodeship {String} 
    */
-  var exports = function(city, voivodeship, street, postalCode, houseNo, email, epuap) {
+  var exports = function(email, city, epuap, street, houseNo, postalCode, voivodeship) {
     var _this = this;
 
-    _this['city'] = city;
-    _this['voivodeship'] = voivodeship;
-    _this['street'] = street;
-    _this['postalCode'] = postalCode;
-    _this['houseNo'] = houseNo;
     _this['email'] = email;
+    _this['city'] = city;
     _this['epuap'] = epuap;
+    _this['street'] = street;
+    _this['houseNo'] = houseNo;
+    _this['postalCode'] = postalCode;
+    _this['voivodeship'] = voivodeship;
   };
 
   /**
@@ -76,29 +76,29 @@
       if (data.hasOwnProperty('url')) {
         obj['url'] = ApiClient.convertToType(data['url'], 'String');
       }
+      if (data.hasOwnProperty('email')) {
+        obj['email'] = ApiClient.convertToType(data['email'], 'String');
+      }
       if (data.hasOwnProperty('city')) {
         obj['city'] = ApiClient.convertToType(data['city'], 'String');
+      }
+      if (data.hasOwnProperty('epuap')) {
+        obj['epuap'] = ApiClient.convertToType(data['epuap'], 'String');
+      }
+      if (data.hasOwnProperty('street')) {
+        obj['street'] = ApiClient.convertToType(data['street'], 'String');
+      }
+      if (data.hasOwnProperty('houseNo')) {
+        obj['houseNo'] = ApiClient.convertToType(data['houseNo'], 'String');
+      }
+      if (data.hasOwnProperty('postalCode')) {
+        obj['postalCode'] = ApiClient.convertToType(data['postalCode'], 'String');
       }
       if (data.hasOwnProperty('voivodeship')) {
         obj['voivodeship'] = ApiClient.convertToType(data['voivodeship'], 'String');
       }
       if (data.hasOwnProperty('flatNo')) {
         obj['flatNo'] = ApiClient.convertToType(data['flatNo'], 'String');
-      }
-      if (data.hasOwnProperty('street')) {
-        obj['street'] = ApiClient.convertToType(data['street'], 'String');
-      }
-      if (data.hasOwnProperty('postalCode')) {
-        obj['postalCode'] = ApiClient.convertToType(data['postalCode'], 'String');
-      }
-      if (data.hasOwnProperty('houseNo')) {
-        obj['houseNo'] = ApiClient.convertToType(data['houseNo'], 'String');
-      }
-      if (data.hasOwnProperty('email')) {
-        obj['email'] = ApiClient.convertToType(data['email'], 'String');
-      }
-      if (data.hasOwnProperty('epuap')) {
-        obj['epuap'] = ApiClient.convertToType(data['epuap'], 'String');
       }
     }
     return obj;
@@ -109,9 +109,29 @@
    */
   exports.prototype['url'] = undefined;
   /**
+   * @member {String} email
+   */
+  exports.prototype['email'] = undefined;
+  /**
    * @member {String} city
    */
   exports.prototype['city'] = undefined;
+  /**
+   * @member {String} epuap
+   */
+  exports.prototype['epuap'] = undefined;
+  /**
+   * @member {String} street
+   */
+  exports.prototype['street'] = undefined;
+  /**
+   * @member {String} houseNo
+   */
+  exports.prototype['houseNo'] = undefined;
+  /**
+   * @member {String} postalCode
+   */
+  exports.prototype['postalCode'] = undefined;
   /**
    * @member {String} voivodeship
    */
@@ -120,26 +140,6 @@
    * @member {String} flatNo
    */
   exports.prototype['flatNo'] = undefined;
-  /**
-   * @member {String} street
-   */
-  exports.prototype['street'] = undefined;
-  /**
-   * @member {String} postalCode
-   */
-  exports.prototype['postalCode'] = undefined;
-  /**
-   * @member {String} houseNo
-   */
-  exports.prototype['houseNo'] = undefined;
-  /**
-   * @member {String} email
-   */
-  exports.prototype['email'] = undefined;
-  /**
-   * @member {String} epuap
-   */
-  exports.prototype['epuap'] = undefined;
 
 
 

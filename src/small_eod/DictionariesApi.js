@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Dictionary'], factory);
+    define(['ApiClient', 'model/Dictionary', 'model/InlineResponse2009'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Dictionary'));
+    module.exports = factory(require('../ApiClient'), require('../model/Dictionary'), require('../model/InlineResponse2009'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.DictionariesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Dictionary);
+    root.SmallEodClient.DictionariesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Dictionary, root.SmallEodClient.InlineResponse2009);
   }
-}(this, function(ApiClient, Dictionary) {
+}(this, function(ApiClient, Dictionary, InlineResponse2009) {
   'use strict';
 
   /**
@@ -141,14 +141,20 @@
 
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Dictionary>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
      */
-    this.dictionariesListWithHttpInfo = function() {
+    this.dictionariesListWithHttpInfo = function(opts) {
+      opts = opts || {};
       var postBody = null;
 
       var pathParams = {
       };
       var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
       };
       var collectionQueryParams = {
       };
@@ -160,7 +166,7 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [Dictionary];
+      var returnType = InlineResponse2009;
       return this.apiClient.callApi(
         '/dictionaries/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -169,10 +175,13 @@
     }
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Dictionary>}
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
      */
-    this.dictionariesList = function() {
-      return this.dictionariesListWithHttpInfo()
+    this.dictionariesList = function(opts) {
+      return this.dictionariesListWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

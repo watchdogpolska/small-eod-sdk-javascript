@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | [optional] [readonly] 
 **comment** | **String** |  | 
-**auditedInstitution** | **[Number]** |  | [optional] 
+**auditedInstitution** | **[Number]** | Case audits this Institution | [optional] 
 **name** | **String** |  | 
 **responsibleUser** | **[Number]** |  | [optional] 
 **notifiedUser** | **[Number]** |  | [optional] 

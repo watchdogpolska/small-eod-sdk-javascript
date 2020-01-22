@@ -1,6 +1,6 @@
 # SmallEodClient.NotesApi
 
-All URIs are relative to *http://localhost:8000*
+All URIs are relative to *http://web*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -111,7 +111,7 @@ null (empty response body)
 
 ## notesList
 
-> [Note] notesList()
+> InlineResponse2007 notesList(opts)
 
 
 
@@ -126,7 +126,11 @@ Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.NotesApi();
-apiInstance.notesList().then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.notesList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -136,11 +140,16 @@ apiInstance.notesList().then(function(data) {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[Note]**](Note.md)
+[**InlineResponse2007**](InlineResponse2007.md)
 
 ### Authorization
 

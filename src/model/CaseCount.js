@@ -125,6 +125,7 @@
    */
   exports.prototype['comment'] = undefined;
   /**
+   * Case audits this Institution
    * @member {Array.<Number>} auditedInstitution
    */
   exports.prototype['auditedInstitution'] = undefined;

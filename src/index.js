@@ -17,12 +17,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AddressData', 'model/AdministrativeUnit', 'model/CaseCount', 'model/Channel', 'model/Collection', 'model/Description', 'model/Dictionary', 'model/Event', 'model/ExternalIdentifier', 'model/File', 'model/Institution', 'model/Letter', 'model/ModelCase', 'model/NestedFeature', 'model/Note', 'model/Tag', 'model/User', 'small_eod/CasesApi', 'small_eod/ChannelsApi', 'small_eod/CollectionsApi', 'small_eod/DescriptionsApi', 'small_eod/DictionariesApi', 'small_eod/EventsApi', 'small_eod/FilesApi', 'small_eod/InstitutionsApi', 'small_eod/LettersApi', 'small_eod/NotesApi', 'small_eod/TagsApi', 'small_eod/UsersApi'], factory);
+    define(['ApiClient', 'model/AddressData', 'model/AdministrativeUnit', 'model/CaseCount', 'model/Channel', 'model/Collection', 'model/Description', 'model/Dictionary', 'model/Event', 'model/ExternalIdentifier', 'model/File', 'model/InlineResponse200', 'model/InlineResponse2001', 'model/InlineResponse20010', 'model/InlineResponse20011', 'model/InlineResponse20012', 'model/InlineResponse2002', 'model/InlineResponse2003', 'model/InlineResponse2004', 'model/InlineResponse2005', 'model/InlineResponse2006', 'model/InlineResponse2007', 'model/InlineResponse2008', 'model/InlineResponse2009', 'model/Institution', 'model/Letter', 'model/ModelCase', 'model/NestedFeature', 'model/Note', 'model/Tag', 'model/User', 'small_eod/CasesApi', 'small_eod/ChannelsApi', 'small_eod/CollectionsApi', 'small_eod/DescriptionsApi', 'small_eod/DictionariesApi', 'small_eod/EventsApi', 'small_eod/FilesApi', 'small_eod/InstitutionsApi', 'small_eod/LettersApi', 'small_eod/NotesApi', 'small_eod/TagsApi', 'small_eod/UsersApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/AddressData'), require('./model/AdministrativeUnit'), require('./model/CaseCount'), require('./model/Channel'), require('./model/Collection'), require('./model/Description'), require('./model/Dictionary'), require('./model/Event'), require('./model/ExternalIdentifier'), require('./model/File'), require('./model/Institution'), require('./model/Letter'), require('./model/ModelCase'), require('./model/NestedFeature'), require('./model/Note'), require('./model/Tag'), require('./model/User'), require('./small_eod/CasesApi'), require('./small_eod/ChannelsApi'), require('./small_eod/CollectionsApi'), require('./small_eod/DescriptionsApi'), require('./small_eod/DictionariesApi'), require('./small_eod/EventsApi'), require('./small_eod/FilesApi'), require('./small_eod/InstitutionsApi'), require('./small_eod/LettersApi'), require('./small_eod/NotesApi'), require('./small_eod/TagsApi'), require('./small_eod/UsersApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/AddressData'), require('./model/AdministrativeUnit'), require('./model/CaseCount'), require('./model/Channel'), require('./model/Collection'), require('./model/Description'), require('./model/Dictionary'), require('./model/Event'), require('./model/ExternalIdentifier'), require('./model/File'), require('./model/InlineResponse200'), require('./model/InlineResponse2001'), require('./model/InlineResponse20010'), require('./model/InlineResponse20011'), require('./model/InlineResponse20012'), require('./model/InlineResponse2002'), require('./model/InlineResponse2003'), require('./model/InlineResponse2004'), require('./model/InlineResponse2005'), require('./model/InlineResponse2006'), require('./model/InlineResponse2007'), require('./model/InlineResponse2008'), require('./model/InlineResponse2009'), require('./model/Institution'), require('./model/Letter'), require('./model/ModelCase'), require('./model/NestedFeature'), require('./model/Note'), require('./model/Tag'), require('./model/User'), require('./small_eod/CasesApi'), require('./small_eod/ChannelsApi'), require('./small_eod/CollectionsApi'), require('./small_eod/DescriptionsApi'), require('./small_eod/DictionariesApi'), require('./small_eod/EventsApi'), require('./small_eod/FilesApi'), require('./small_eod/InstitutionsApi'), require('./small_eod/LettersApi'), require('./small_eod/NotesApi'), require('./small_eod/TagsApi'), require('./small_eod/UsersApi'));
   }
-}(function(ApiClient, AddressData, AdministrativeUnit, CaseCount, Channel, Collection, Description, Dictionary, Event, ExternalIdentifier, File, Institution, Letter, ModelCase, NestedFeature, Note, Tag, User, CasesApi, ChannelsApi, CollectionsApi, DescriptionsApi, DictionariesApi, EventsApi, FilesApi, InstitutionsApi, LettersApi, NotesApi, TagsApi, UsersApi) {
+}(function(ApiClient, AddressData, AdministrativeUnit, CaseCount, Channel, Collection, Description, Dictionary, Event, ExternalIdentifier, File, InlineResponse200, InlineResponse2001, InlineResponse20010, InlineResponse20011, InlineResponse20012, InlineResponse2002, InlineResponse2003, InlineResponse2004, InlineResponse2005, InlineResponse2006, InlineResponse2007, InlineResponse2008, InlineResponse2009, Institution, Letter, ModelCase, NestedFeature, Note, Tag, User, CasesApi, ChannelsApi, CollectionsApi, DescriptionsApi, DictionariesApi, EventsApi, FilesApi, InstitutionsApi, LettersApi, NotesApi, TagsApi, UsersApi) {
   'use strict';
 
   /**
@@ -112,6 +112,71 @@
      * @property {module:model/File}
      */
     File: File,
+    /**
+     * The InlineResponse200 model constructor.
+     * @property {module:model/InlineResponse200}
+     */
+    InlineResponse200: InlineResponse200,
+    /**
+     * The InlineResponse2001 model constructor.
+     * @property {module:model/InlineResponse2001}
+     */
+    InlineResponse2001: InlineResponse2001,
+    /**
+     * The InlineResponse20010 model constructor.
+     * @property {module:model/InlineResponse20010}
+     */
+    InlineResponse20010: InlineResponse20010,
+    /**
+     * The InlineResponse20011 model constructor.
+     * @property {module:model/InlineResponse20011}
+     */
+    InlineResponse20011: InlineResponse20011,
+    /**
+     * The InlineResponse20012 model constructor.
+     * @property {module:model/InlineResponse20012}
+     */
+    InlineResponse20012: InlineResponse20012,
+    /**
+     * The InlineResponse2002 model constructor.
+     * @property {module:model/InlineResponse2002}
+     */
+    InlineResponse2002: InlineResponse2002,
+    /**
+     * The InlineResponse2003 model constructor.
+     * @property {module:model/InlineResponse2003}
+     */
+    InlineResponse2003: InlineResponse2003,
+    /**
+     * The InlineResponse2004 model constructor.
+     * @property {module:model/InlineResponse2004}
+     */
+    InlineResponse2004: InlineResponse2004,
+    /**
+     * The InlineResponse2005 model constructor.
+     * @property {module:model/InlineResponse2005}
+     */
+    InlineResponse2005: InlineResponse2005,
+    /**
+     * The InlineResponse2006 model constructor.
+     * @property {module:model/InlineResponse2006}
+     */
+    InlineResponse2006: InlineResponse2006,
+    /**
+     * The InlineResponse2007 model constructor.
+     * @property {module:model/InlineResponse2007}
+     */
+    InlineResponse2007: InlineResponse2007,
+    /**
+     * The InlineResponse2008 model constructor.
+     * @property {module:model/InlineResponse2008}
+     */
+    InlineResponse2008: InlineResponse2008,
+    /**
+     * The InlineResponse2009 model constructor.
+     * @property {module:model/InlineResponse2009}
+     */
+    InlineResponse2009: InlineResponse2009,
     /**
      * The Institution model constructor.
      * @property {module:model/Institution}

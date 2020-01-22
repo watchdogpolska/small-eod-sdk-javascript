@@ -78,6 +78,9 @@
       if (data.hasOwnProperty('lastName')) {
         obj['lastName'] = ApiClient.convertToType(data['lastName'], 'String');
       }
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      }
     }
     return obj;
   }
@@ -103,6 +106,10 @@
    * @member {String} lastName
    */
   exports.prototype['lastName'] = undefined;
+  /**
+   * @member {Number} id
+   */
+  exports.prototype['id'] = undefined;
 
 
 

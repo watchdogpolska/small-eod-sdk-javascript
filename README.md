@@ -107,15 +107,19 @@ api.casesCreate(data).then(function(data) {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:8000*
+All URIs are relative to *http://web*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *SmallEodClient.CasesApi* | [**casesCreate**](docs/CasesApi.md#casesCreate) | **POST** /cases/ | 
 *SmallEodClient.CasesApi* | [**casesDelete**](docs/CasesApi.md#casesDelete) | **DELETE** /cases/{id}/ | 
 *SmallEodClient.CasesApi* | [**casesList**](docs/CasesApi.md#casesList) | **GET** /cases/ | 
+*SmallEodClient.CasesApi* | [**casesNotifiedUserList**](docs/CasesApi.md#casesNotifiedUserList) | **GET** /cases/{case_pk}/notifiedUser/ | 
+*SmallEodClient.CasesApi* | [**casesNotifiedUserRead**](docs/CasesApi.md#casesNotifiedUserRead) | **GET** /cases/{case_pk}/notifiedUser/{id}/ | 
 *SmallEodClient.CasesApi* | [**casesPartialUpdate**](docs/CasesApi.md#casesPartialUpdate) | **PATCH** /cases/{id}/ | 
 *SmallEodClient.CasesApi* | [**casesRead**](docs/CasesApi.md#casesRead) | **GET** /cases/{id}/ | 
+*SmallEodClient.CasesApi* | [**casesResponsibleUserList**](docs/CasesApi.md#casesResponsibleUserList) | **GET** /cases/{case_pk}/responsibleUser/ | 
+*SmallEodClient.CasesApi* | [**casesResponsibleUserRead**](docs/CasesApi.md#casesResponsibleUserRead) | **GET** /cases/{case_pk}/responsibleUser/{id}/ | 
 *SmallEodClient.CasesApi* | [**casesUpdate**](docs/CasesApi.md#casesUpdate) | **PUT** /cases/{id}/ | 
 *SmallEodClient.ChannelsApi* | [**channelsCreate**](docs/ChannelsApi.md#channelsCreate) | **POST** /channels/ | 
 *SmallEodClient.ChannelsApi* | [**channelsDelete**](docs/ChannelsApi.md#channelsDelete) | **DELETE** /channels/{id}/ | 
@@ -205,6 +209,19 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.Event](docs/Event.md)
  - [SmallEodClient.ExternalIdentifier](docs/ExternalIdentifier.md)
  - [SmallEodClient.File](docs/File.md)
+ - [SmallEodClient.InlineResponse200](docs/InlineResponse200.md)
+ - [SmallEodClient.InlineResponse2001](docs/InlineResponse2001.md)
+ - [SmallEodClient.InlineResponse20010](docs/InlineResponse20010.md)
+ - [SmallEodClient.InlineResponse20011](docs/InlineResponse20011.md)
+ - [SmallEodClient.InlineResponse20012](docs/InlineResponse20012.md)
+ - [SmallEodClient.InlineResponse2002](docs/InlineResponse2002.md)
+ - [SmallEodClient.InlineResponse2003](docs/InlineResponse2003.md)
+ - [SmallEodClient.InlineResponse2004](docs/InlineResponse2004.md)
+ - [SmallEodClient.InlineResponse2005](docs/InlineResponse2005.md)
+ - [SmallEodClient.InlineResponse2006](docs/InlineResponse2006.md)
+ - [SmallEodClient.InlineResponse2007](docs/InlineResponse2007.md)
+ - [SmallEodClient.InlineResponse2008](docs/InlineResponse2008.md)
+ - [SmallEodClient.InlineResponse2009](docs/InlineResponse2009.md)
  - [SmallEodClient.Institution](docs/Institution.md)
  - [SmallEodClient.Letter](docs/Letter.md)
  - [SmallEodClient.ModelCase](docs/ModelCase.md)

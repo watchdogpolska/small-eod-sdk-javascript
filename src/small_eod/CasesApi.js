@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CaseCount'], factory);
+    define(['ApiClient', 'model/CaseCount', 'model/InlineResponse200', 'model/InlineResponse2001', 'model/User'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/CaseCount'));
+    module.exports = factory(require('../ApiClient'), require('../model/CaseCount'), require('../model/InlineResponse200'), require('../model/InlineResponse2001'), require('../model/User'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.CasesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.CaseCount);
+    root.SmallEodClient.CasesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.CaseCount, root.SmallEodClient.InlineResponse200, root.SmallEodClient.InlineResponse2001, root.SmallEodClient.User);
   }
-}(this, function(ApiClient, CaseCount) {
+}(this, function(ApiClient, CaseCount, InlineResponse200, InlineResponse2001, User) {
   'use strict';
 
   /**
@@ -141,12 +141,127 @@
 
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/CaseCount>} and HTTP response
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse200} and HTTP response
      */
-    this.casesListWithHttpInfo = function() {
+    this.casesListWithHttpInfo = function(opts) {
+      opts = opts || {};
       var postBody = null;
 
       var pathParams = {
+      };
+      var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Basic'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = InlineResponse200;
+      return this.apiClient.callApi(
+        '/cases/', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse200}
+     */
+    this.casesList = function(opts) {
+      return this.casesListWithHttpInfo(opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * @param {String} casePk 
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2001} and HTTP response
+     */
+    this.casesNotifiedUserListWithHttpInfo = function(casePk, opts) {
+      opts = opts || {};
+      var postBody = null;
+      // verify the required parameter 'casePk' is set
+      if (casePk === undefined || casePk === null) {
+        throw new Error("Missing the required parameter 'casePk' when calling casesNotifiedUserList");
+      }
+
+      var pathParams = {
+        'case_pk': casePk
+      };
+      var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Basic'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = InlineResponse2001;
+      return this.apiClient.callApi(
+        '/cases/{case_pk}/notifiedUser/', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * @param {String} casePk 
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}
+     */
+    this.casesNotifiedUserList = function(casePk, opts) {
+      return this.casesNotifiedUserListWithHttpInfo(casePk, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * @param {String} casePk 
+     * @param {String} id 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
+     */
+    this.casesNotifiedUserReadWithHttpInfo = function(casePk, id) {
+      var postBody = null;
+      // verify the required parameter 'casePk' is set
+      if (casePk === undefined || casePk === null) {
+        throw new Error("Missing the required parameter 'casePk' when calling casesNotifiedUserRead");
+      }
+      // verify the required parameter 'id' is set
+      if (id === undefined || id === null) {
+        throw new Error("Missing the required parameter 'id' when calling casesNotifiedUserRead");
+      }
+
+      var pathParams = {
+        'case_pk': casePk,
+        'id': id
       };
       var queryParams = {
       };
@@ -160,19 +275,21 @@
       var authNames = ['Basic'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = [CaseCount];
+      var returnType = User;
       return this.apiClient.callApi(
-        '/cases/', 'GET',
+        '/cases/{case_pk}/notifiedUser/{id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
     }
 
     /**
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/CaseCount>}
+     * @param {String} casePk 
+     * @param {String} id 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
      */
-    this.casesList = function() {
-      return this.casesListWithHttpInfo()
+    this.casesNotifiedUserRead = function(casePk, id) {
+      return this.casesNotifiedUserReadWithHttpInfo(casePk, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -271,6 +388,114 @@
      */
     this.casesRead = function(id) {
       return this.casesReadWithHttpInfo(id)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * @param {String} casePk 
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2001} and HTTP response
+     */
+    this.casesResponsibleUserListWithHttpInfo = function(casePk, opts) {
+      opts = opts || {};
+      var postBody = null;
+      // verify the required parameter 'casePk' is set
+      if (casePk === undefined || casePk === null) {
+        throw new Error("Missing the required parameter 'casePk' when calling casesResponsibleUserList");
+      }
+
+      var pathParams = {
+        'case_pk': casePk
+      };
+      var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Basic'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = InlineResponse2001;
+      return this.apiClient.callApi(
+        '/cases/{case_pk}/responsibleUser/', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * @param {String} casePk 
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}
+     */
+    this.casesResponsibleUserList = function(casePk, opts) {
+      return this.casesResponsibleUserListWithHttpInfo(casePk, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * @param {String} casePk 
+     * @param {String} id 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
+     */
+    this.casesResponsibleUserReadWithHttpInfo = function(casePk, id) {
+      var postBody = null;
+      // verify the required parameter 'casePk' is set
+      if (casePk === undefined || casePk === null) {
+        throw new Error("Missing the required parameter 'casePk' when calling casesResponsibleUserRead");
+      }
+      // verify the required parameter 'id' is set
+      if (id === undefined || id === null) {
+        throw new Error("Missing the required parameter 'id' when calling casesResponsibleUserRead");
+      }
+
+      var pathParams = {
+        'case_pk': casePk,
+        'id': id
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Basic'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = User;
+      return this.apiClient.callApi(
+        '/cases/{case_pk}/responsibleUser/{id}/', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * @param {String} casePk 
+     * @param {String} id 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
+     */
+    this.casesResponsibleUserRead = function(casePk, id) {
+      return this.casesResponsibleUserReadWithHttpInfo(casePk, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

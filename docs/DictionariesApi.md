@@ -1,6 +1,6 @@
 # SmallEodClient.DictionariesApi
 
-All URIs are relative to *http://localhost:8000*
+All URIs are relative to *http://web*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -111,7 +111,7 @@ null (empty response body)
 
 ## dictionariesList
 
-> [Dictionary] dictionariesList()
+> InlineResponse2009 dictionariesList(opts)
 
 
 
@@ -126,7 +126,11 @@ Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.DictionariesApi();
-apiInstance.dictionariesList().then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.dictionariesList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -136,11 +140,16 @@ apiInstance.dictionariesList().then(function(data) {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[Dictionary]**](Dictionary.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 

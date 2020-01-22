@@ -1,6 +1,6 @@
 # SmallEodClient.LettersApi
 
-All URIs are relative to *http://localhost:8000*
+All URIs are relative to *http://web*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -111,7 +111,7 @@ null (empty response body)
 
 ## lettersList
 
-> [Letter] lettersList()
+> InlineResponse2006 lettersList(opts)
 
 
 
@@ -126,7 +126,11 @@ Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.LettersApi();
-apiInstance.lettersList().then(function(data) {
+var opts = {
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.lettersList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -136,11 +140,16 @@ apiInstance.lettersList().then(function(data) {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**[Letter]**](Letter.md)
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 
