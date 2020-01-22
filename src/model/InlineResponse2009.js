@@ -36,7 +36,7 @@
   /**
    * The InlineResponse2009 model module.
    * @module model/InlineResponse2009
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**

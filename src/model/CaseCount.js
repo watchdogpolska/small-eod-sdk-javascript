@@ -36,7 +36,7 @@
   /**
    * The CaseCount model module.
    * @module model/CaseCount
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**

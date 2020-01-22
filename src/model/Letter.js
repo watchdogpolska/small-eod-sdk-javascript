@@ -36,7 +36,7 @@
   /**
    * The Letter model module.
    * @module model/Letter
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**

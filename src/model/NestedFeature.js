@@ -36,7 +36,7 @@
   /**
    * The NestedFeature model module.
    * @module model/NestedFeature
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**

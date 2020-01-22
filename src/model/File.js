@@ -36,7 +36,7 @@
   /**
    * The File model module.
    * @module model/File
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**

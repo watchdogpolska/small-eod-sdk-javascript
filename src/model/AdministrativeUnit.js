@@ -36,7 +36,7 @@
   /**
    * The AdministrativeUnit model module.
    * @module model/AdministrativeUnit
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**

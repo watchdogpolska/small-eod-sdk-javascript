@@ -36,7 +36,7 @@
   /**
    * The Channel model module.
    * @module model/Channel
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**
