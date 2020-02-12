@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | 
+**results** | [**[Collection]**](Collection.md) |  | 
 **next** | **String** |  | [optional] 
 **previous** | **String** |  | [optional] 
-**results** | [**[Collection]**](Collection.md) |  | 
 
 

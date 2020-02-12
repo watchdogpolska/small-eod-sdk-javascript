@@ -1,6 +1,10 @@
 apiPackage: "small_eod"
 projectName: 'small_eod_client'
-projectVersion: 1.0.3
+projectVersion: 1.0.4
 additionalProperties:
   usePromises: true
   useES6: false
+  npmName: small_eod_client
+  snapshot: true
+  sortModelPropertiesByRequiredFlag: true
+  supportsES6: true

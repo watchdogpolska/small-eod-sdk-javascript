@@ -4,8 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_case** | **Number** |  | 
-**direction** | **String** |  | [optional] 
 **name** | **String** |  | 
 **channel** | **Number** |  | 
 **_final** | **Boolean** |  | 
@@ -13,9 +11,17 @@ Name | Type | Description | Notes
 **identifier** | **String** |  | 
 **institution** | **Number** |  | 
 **address** | **Number** |  | 
-**ordering** | **Number** |  | [optional] 
+**_case** | **Number** |  | 
 **comment** | **String** |  | 
 **excerpt** | **String** |  | 
+**id** | **Number** |  | [optional] [readonly] 
+**direction** | **String** |  | [optional] 
+**attachment** | **[File]** |  | [optional] [readonly] 
+**ordering** | **Number** |  | [optional] 
+**createdOn** | **Date** |  | [optional] [readonly] 
+**createdBy** | **Number** |  | [optional] [readonly] 
+**modifiedOn** | **Date** |  | [optional] [readonly] 
+**modifiedBy** | **Number** |  | [optional] [readonly] 
 
 
 

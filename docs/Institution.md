@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**modifiedOn** | **Date** |  | [optional] [readonly] 
 **name** | **String** |  | 
-**externalIdentifier** | [**ExternalIdentifier**](ExternalIdentifier.md) |  | 
-**createdOn** | **Date** |  | [optional] [readonly] 
-**administrativeUnit** | [**AdministrativeUnit**](AdministrativeUnit.md) |  | 
-**address** | [**AddressData**](AddressData.md) |  | 
+**externalIdentifier** | [**ExternalIdentifierNested**](ExternalIdentifierNested.md) |  | 
+**administrativeUnit** | **String** |  | 
+**address** | [**AddressDataNested**](AddressDataNested.md) |  | 
+**id** | **Number** |  | [optional] [readonly] 
 **modifiedBy** | **Number** |  | [optional] [readonly] 
 **createdBy** | **Number** |  | [optional] [readonly] 
-**id** | **Number** |  | [optional] [readonly] 
+**modifiedOn** | **Date** |  | [optional] [readonly] 
+**createdOn** | **Date** |  | [optional] [readonly] 
 
 

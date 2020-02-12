@@ -34,7 +34,7 @@
   /**
    * Events service.
    * @module small_eod/EventsApi
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**

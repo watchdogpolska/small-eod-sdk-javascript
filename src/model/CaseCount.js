@@ -36,15 +36,15 @@
   /**
    * The CaseCount model module.
    * @module model/CaseCount
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
    * Constructs a new <code>CaseCount</code>.
    * @alias module:model/CaseCount
    * @class
-   * @param comment {String} 
-   * @param name {String} 
+   * @param comment {String} Comment for this case.
+   * @param name {String} Case's name.
    * @param feature {Array.<Number>} 
    * @param tag {Array.<String>} 
    */
@@ -67,29 +67,29 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('id')) {
-        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
-      }
       if (data.hasOwnProperty('comment')) {
         obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
       }
-      if (data.hasOwnProperty('auditedInstitution')) {
-        obj['auditedInstitution'] = ApiClient.convertToType(data['auditedInstitution'], ['Number']);
-      }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
-      }
-      if (data.hasOwnProperty('responsibleUser')) {
-        obj['responsibleUser'] = ApiClient.convertToType(data['responsibleUser'], ['Number']);
-      }
-      if (data.hasOwnProperty('notifiedUser')) {
-        obj['notifiedUser'] = ApiClient.convertToType(data['notifiedUser'], ['Number']);
       }
       if (data.hasOwnProperty('feature')) {
         obj['feature'] = ApiClient.convertToType(data['feature'], ['Number']);
       }
       if (data.hasOwnProperty('tag')) {
         obj['tag'] = ApiClient.convertToType(data['tag'], ['String']);
+      }
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      }
+      if (data.hasOwnProperty('auditedInstitution')) {
+        obj['auditedInstitution'] = ApiClient.convertToType(data['auditedInstitution'], ['Number']);
+      }
+      if (data.hasOwnProperty('responsibleUser')) {
+        obj['responsibleUser'] = ApiClient.convertToType(data['responsibleUser'], ['Number']);
+      }
+      if (data.hasOwnProperty('notifiedUser')) {
+        obj['notifiedUser'] = ApiClient.convertToType(data['notifiedUser'], ['Number']);
       }
       if (data.hasOwnProperty('createdBy')) {
         obj['createdBy'] = ApiClient.convertToType(data['createdBy'], 'Number');
@@ -117,30 +117,15 @@
   }
 
   /**
-   * @member {Number} id
-   */
-  exports.prototype['id'] = undefined;
-  /**
+   * Comment for this case.
    * @member {String} comment
    */
   exports.prototype['comment'] = undefined;
   /**
-   * Case audits this Institution
-   * @member {Array.<Number>} auditedInstitution
-   */
-  exports.prototype['auditedInstitution'] = undefined;
-  /**
+   * Case's name.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
-  /**
-   * @member {Array.<Number>} responsibleUser
-   */
-  exports.prototype['responsibleUser'] = undefined;
-  /**
-   * @member {Array.<Number>} notifiedUser
-   */
-  exports.prototype['notifiedUser'] = undefined;
   /**
    * @member {Array.<Number>} feature
    */
@@ -149,6 +134,23 @@
    * @member {Array.<String>} tag
    */
   exports.prototype['tag'] = undefined;
+  /**
+   * @member {Number} id
+   */
+  exports.prototype['id'] = undefined;
+  /**
+   * Case audits this Institution.
+   * @member {Array.<Number>} auditedInstitution
+   */
+  exports.prototype['auditedInstitution'] = undefined;
+  /**
+   * @member {Array.<Number>} responsibleUser
+   */
+  exports.prototype['responsibleUser'] = undefined;
+  /**
+   * @member {Array.<Number>} notifiedUser
+   */
+  exports.prototype['notifiedUser'] = undefined;
   /**
    * @member {Number} createdBy
    */

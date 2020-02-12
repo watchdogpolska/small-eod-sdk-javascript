@@ -36,14 +36,14 @@
   /**
    * The Dictionary model module.
    * @module model/Dictionary
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
    * Constructs a new <code>Dictionary</code>.
    * @alias module:model/Dictionary
    * @class
-   * @param name {String} 
+   * @param name {String} Name of dictionary.
    * @param values {Array.<module:model/NestedFeature>} 
    */
   var exports = function(name, values) {
@@ -66,6 +66,9 @@
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
+      if (data.hasOwnProperty('values')) {
+        obj['values'] = ApiClient.convertToType(data['values'], [NestedFeature]);
+      }
       if (data.hasOwnProperty('active')) {
         obj['active'] = ApiClient.convertToType(data['active'], 'Boolean');
       }
@@ -75,33 +78,34 @@
       if (data.hasOwnProperty('maxItems')) {
         obj['maxItems'] = ApiClient.convertToType(data['maxItems'], 'Number');
       }
-      if (data.hasOwnProperty('values')) {
-        obj['values'] = ApiClient.convertToType(data['values'], [NestedFeature]);
-      }
     }
     return obj;
   }
 
   /**
+   * Name of dictionary.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
+   * @member {Array.<module:model/NestedFeature>} values
+   */
+  exports.prototype['values'] = undefined;
+  /**
+   * Make active.
    * @member {Boolean} active
    */
   exports.prototype['active'] = undefined;
   /**
+   * Minimum number of items.
    * @member {Number} minItems
    */
   exports.prototype['minItems'] = undefined;
   /**
+   * Maximum number of items.
    * @member {Number} maxItems
    */
   exports.prototype['maxItems'] = undefined;
-  /**
-   * @member {Array.<module:model/NestedFeature>} values
-   */
-  exports.prototype['values'] = undefined;
 
 
 

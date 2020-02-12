@@ -26,7 +26,7 @@
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.ExternalIdentifier = factory(root.SmallEodClient.ApiClient);
+    root.SmallEodClient.ExternalIdentifierNested = factory(root.SmallEodClient.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,31 +34,27 @@
 
 
   /**
-   * The ExternalIdentifier model module.
-   * @module model/ExternalIdentifier
-   * @version 1.0.3
+   * The ExternalIdentifierNested model module.
+   * @module model/ExternalIdentifierNested
+   * @version 1.0.4
    */
 
   /**
-   * Constructs a new <code>ExternalIdentifier</code>.
-   * @alias module:model/ExternalIdentifier
+   * Constructs a new <code>ExternalIdentifierNested</code>.
+   * @alias module:model/ExternalIdentifierNested
    * @class
-   * @param nip {String} 
-   * @param regon {String} 
    */
-  var exports = function(nip, regon) {
+  var exports = function() {
     var _this = this;
 
-    _this['nip'] = nip;
-    _this['regon'] = regon;
   };
 
   /**
-   * Constructs a <code>ExternalIdentifier</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>ExternalIdentifierNested</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/ExternalIdentifier} obj Optional instance to populate.
-   * @return {module:model/ExternalIdentifier} The populated <code>ExternalIdentifier</code> instance.
+   * @param {module:model/ExternalIdentifierNested} obj Optional instance to populate.
+   * @return {module:model/ExternalIdentifierNested} The populated <code>ExternalIdentifierNested</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {

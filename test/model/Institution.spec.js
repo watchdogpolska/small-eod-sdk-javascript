@@ -57,12 +57,6 @@
       //expect(instance).to.be.a(SmallEodClient.Institution);
     });
 
-    it('should have the property modifiedOn (base name: "modifiedOn")', function() {
-      // uncomment below and update the code to test the property modifiedOn
-      //var instance = new SmallEodClient.Institution();
-      //expect(instance).to.be();
-    });
-
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
       //var instance = new SmallEodClient.Institution();
@@ -71,12 +65,6 @@
 
     it('should have the property externalIdentifier (base name: "externalIdentifier")', function() {
       // uncomment below and update the code to test the property externalIdentifier
-      //var instance = new SmallEodClient.Institution();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property createdOn (base name: "createdOn")', function() {
-      // uncomment below and update the code to test the property createdOn
       //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
@@ -93,6 +81,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instance = new SmallEodClient.Institution();
+      //expect(instance).to.be();
+    });
+
     it('should have the property modifiedBy (base name: "modifiedBy")', function() {
       // uncomment below and update the code to test the property modifiedBy
       //var instance = new SmallEodClient.Institution();
@@ -105,8 +99,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
+    it('should have the property modifiedOn (base name: "modifiedOn")', function() {
+      // uncomment below and update the code to test the property modifiedOn
+      //var instance = new SmallEodClient.Institution();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property createdOn (base name: "createdOn")', function() {
+      // uncomment below and update the code to test the property createdOn
       //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });

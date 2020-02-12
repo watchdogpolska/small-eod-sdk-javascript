@@ -34,7 +34,7 @@
   /**
    * Collections service.
    * @module small_eod/CollectionsApi
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**

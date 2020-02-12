@@ -34,7 +34,7 @@
   /**
    * Channels service.
    * @module small_eod/ChannelsApi
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**

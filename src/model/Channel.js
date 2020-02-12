@@ -36,14 +36,14 @@
   /**
    * The Channel model module.
    * @module model/Channel
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
    * Constructs a new <code>Channel</code>.
    * @alias module:model/Channel
    * @class
-   * @param name {String} 
+   * @param name {String} Channel's name.
    */
   var exports = function(name) {
     var _this = this;
@@ -61,11 +61,11 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('id')) {
-        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
-      }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
+      }
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
       if (data.hasOwnProperty('city')) {
         obj['city'] = ApiClient.convertToType(data['city'], 'Boolean');
@@ -96,42 +96,51 @@
   }
 
   /**
-   * @member {Number} id
-   */
-  exports.prototype['id'] = undefined;
-  /**
+   * Channel's name.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
+   * @member {Number} id
+   */
+  exports.prototype['id'] = undefined;
+  /**
+   * Name of city in institution address is mandatory for this channel.
    * @member {Boolean} city
    */
   exports.prototype['city'] = undefined;
   /**
+   * Voivodeship in institution address is mandatory for this channel.
    * @member {Boolean} voivodeship
    */
   exports.prototype['voivodeship'] = undefined;
   /**
+   * Flat number in institution address is mandatory for this channel.
    * @member {Boolean} flatNo
    */
   exports.prototype['flatNo'] = undefined;
   /**
+   * Name of street in institution address is mandatory for this channel.
    * @member {Boolean} street
    */
   exports.prototype['street'] = undefined;
   /**
+   * Postal code in institution address is mandatory for this channel.
    * @member {Boolean} postalCode
    */
   exports.prototype['postalCode'] = undefined;
   /**
+   * House number in institution address is mandatory for this channel.
    * @member {Boolean} houseNo
    */
   exports.prototype['houseNo'] = undefined;
   /**
+   * Institution e-mail address is mandatory for this channel.
    * @member {Boolean} email
    */
   exports.prototype['email'] = undefined;
   /**
+   * Institution ePUAP address is mandatory for this channel.
    * @member {Boolean} epuap
    */
   exports.prototype['epuap'] = undefined;

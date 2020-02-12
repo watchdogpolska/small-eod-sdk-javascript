@@ -63,6 +63,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property results (base name: "results")', function() {
+      // uncomment below and update the code to test the property results
+      //var instance = new SmallEodClient.InlineResponse2006();
+      //expect(instance).to.be();
+    });
+
     it('should have the property next (base name: "next")', function() {
       // uncomment below and update the code to test the property next
       //var instance = new SmallEodClient.InlineResponse2006();
@@ -71,12 +77,6 @@
 
     it('should have the property previous (base name: "previous")', function() {
       // uncomment below and update the code to test the property previous
-      //var instance = new SmallEodClient.InlineResponse2006();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property results (base name: "results")', function() {
-      // uncomment below and update the code to test the property results
       //var instance = new SmallEodClient.InlineResponse2006();
       //expect(instance).to.be();
     });

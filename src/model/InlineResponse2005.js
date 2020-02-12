@@ -36,7 +36,7 @@
   /**
    * The InlineResponse2005 model module.
    * @module model/InlineResponse2005
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
@@ -66,14 +66,14 @@
       if (data.hasOwnProperty('count')) {
         obj['count'] = ApiClient.convertToType(data['count'], 'Number');
       }
+      if (data.hasOwnProperty('results')) {
+        obj['results'] = ApiClient.convertToType(data['results'], [Event]);
+      }
       if (data.hasOwnProperty('next')) {
         obj['next'] = ApiClient.convertToType(data['next'], 'String');
       }
       if (data.hasOwnProperty('previous')) {
         obj['previous'] = ApiClient.convertToType(data['previous'], 'String');
-      }
-      if (data.hasOwnProperty('results')) {
-        obj['results'] = ApiClient.convertToType(data['results'], [Event]);
       }
     }
     return obj;
@@ -84,6 +84,10 @@
    */
   exports.prototype['count'] = undefined;
   /**
+   * @member {Array.<module:model/Event>} results
+   */
+  exports.prototype['results'] = undefined;
+  /**
    * @member {String} next
    */
   exports.prototype['next'] = undefined;
@@ -91,10 +95,6 @@
    * @member {String} previous
    */
   exports.prototype['previous'] = undefined;
-  /**
-   * @member {Array.<module:model/Event>} results
-   */
-  exports.prototype['results'] = undefined;
 
 
 

@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | 
+**results** | [**[ModelCase]**](ModelCase.md) |  | 
 **next** | **String** |  | [optional] 
 **previous** | **String** |  | [optional] 
-**results** | [**[ModelCase]**](ModelCase.md) |  | 
 
 

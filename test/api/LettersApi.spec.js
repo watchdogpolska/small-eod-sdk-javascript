@@ -71,6 +71,76 @@
         done();
       });
     });
+    describe('lettersFileSignCreate', function() {
+      it('should call lettersFileSignCreate successfully', function(done) {
+        //uncomment below and update the code to test lettersFileSignCreate
+        //instance.lettersFileSignCreate(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('lettersFilesCreate', function() {
+      it('should call lettersFilesCreate successfully', function(done) {
+        //uncomment below and update the code to test lettersFilesCreate
+        //instance.lettersFilesCreate(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('lettersFilesDelete', function() {
+      it('should call lettersFilesDelete successfully', function(done) {
+        //uncomment below and update the code to test lettersFilesDelete
+        //instance.lettersFilesDelete(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('lettersFilesList', function() {
+      it('should call lettersFilesList successfully', function(done) {
+        //uncomment below and update the code to test lettersFilesList
+        //instance.lettersFilesList(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('lettersFilesPartialUpdate', function() {
+      it('should call lettersFilesPartialUpdate successfully', function(done) {
+        //uncomment below and update the code to test lettersFilesPartialUpdate
+        //instance.lettersFilesPartialUpdate(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('lettersFilesRead', function() {
+      it('should call lettersFilesRead successfully', function(done) {
+        //uncomment below and update the code to test lettersFilesRead
+        //instance.lettersFilesRead(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('lettersFilesUpdate', function() {
+      it('should call lettersFilesUpdate successfully', function(done) {
+        //uncomment below and update the code to test lettersFilesUpdate
+        //instance.lettersFilesUpdate(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('lettersList', function() {
       it('should call lettersList successfully', function(done) {
         //uncomment below and update the code to test lettersList

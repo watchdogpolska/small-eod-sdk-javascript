@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.AddressData();
+    instance = new SmallEodClient.AddressDataNested();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,64 +50,52 @@
       object[property] = value;
   }
 
-  describe('AddressData', function() {
-    it('should create an instance of AddressData', function() {
-      // uncomment below and update the code to test AddressData
-      //var instance = new SmallEodClient.AddressData();
-      //expect(instance).to.be.a(SmallEodClient.AddressData);
+  describe('AddressDataNested', function() {
+    it('should create an instance of AddressDataNested', function() {
+      // uncomment below and update the code to test AddressDataNested
+      //var instance = new SmallEodClient.AddressDataNested();
+      //expect(instance).to.be.a(SmallEodClient.AddressDataNested);
     });
 
-    it('should have the property url (base name: "url")', function() {
-      // uncomment below and update the code to test the property url
-      //var instance = new SmallEodClient.AddressData();
+    it('should have the property email (base name: "email")', function() {
+      // uncomment below and update the code to test the property email
+      //var instance = new SmallEodClient.AddressDataNested();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instance = new SmallEodClient.AddressData();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property voivodeship (base name: "voivodeship")', function() {
-      // uncomment below and update the code to test the property voivodeship
-      //var instance = new SmallEodClient.AddressData();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property flatNo (base name: "flatNo")', function() {
-      // uncomment below and update the code to test the property flatNo
-      //var instance = new SmallEodClient.AddressData();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property street (base name: "street")', function() {
-      // uncomment below and update the code to test the property street
-      //var instance = new SmallEodClient.AddressData();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property postalCode (base name: "postalCode")', function() {
-      // uncomment below and update the code to test the property postalCode
-      //var instance = new SmallEodClient.AddressData();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property houseNo (base name: "houseNo")', function() {
-      // uncomment below and update the code to test the property houseNo
-      //var instance = new SmallEodClient.AddressData();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property email (base name: "email")', function() {
-      // uncomment below and update the code to test the property email
-      //var instance = new SmallEodClient.AddressData();
+      //var instance = new SmallEodClient.AddressDataNested();
       //expect(instance).to.be();
     });
 
     it('should have the property epuap (base name: "epuap")', function() {
       // uncomment below and update the code to test the property epuap
-      //var instance = new SmallEodClient.AddressData();
+      //var instance = new SmallEodClient.AddressDataNested();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property street (base name: "street")', function() {
+      // uncomment below and update the code to test the property street
+      //var instance = new SmallEodClient.AddressDataNested();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property houseNo (base name: "houseNo")', function() {
+      // uncomment below and update the code to test the property houseNo
+      //var instance = new SmallEodClient.AddressDataNested();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property postalCode (base name: "postalCode")', function() {
+      // uncomment below and update the code to test the property postalCode
+      //var instance = new SmallEodClient.AddressDataNested();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property flatNo (base name: "flatNo")', function() {
+      // uncomment below and update the code to test the property flatNo
+      //var instance = new SmallEodClient.AddressDataNested();
       //expect(instance).to.be();
     });
 

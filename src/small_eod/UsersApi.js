@@ -34,7 +34,7 @@
   /**
    * Users service.
    * @module small_eod/UsersApi
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**

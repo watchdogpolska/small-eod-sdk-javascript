@@ -36,14 +36,13 @@
   /**
    * The Letter model module.
    * @module model/Letter
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
    * Constructs a new <code>Letter</code>.
    * @alias module:model/Letter
    * @class
-   * @param _case {Number} 
    * @param name {String} 
    * @param channel {Number} 
    * @param _final {Boolean} 
@@ -51,13 +50,13 @@
    * @param identifier {String} 
    * @param institution {Number} 
    * @param address {Number} 
+   * @param _case {Number} 
    * @param comment {String} 
    * @param excerpt {String} 
    */
-  var exports = function(_case, name, channel, _final, _date, identifier, institution, address, comment, excerpt) {
+  var exports = function(name, channel, _final, _date, identifier, institution, address, _case, comment, excerpt) {
     var _this = this;
 
-    _this['case'] = _case;
     _this['name'] = name;
     _this['channel'] = channel;
     _this['final'] = _final;
@@ -65,6 +64,7 @@
     _this['identifier'] = identifier;
     _this['institution'] = institution;
     _this['address'] = address;
+    _this['case'] = _case;
     _this['comment'] = comment;
     _this['excerpt'] = excerpt;
   };
@@ -79,12 +79,6 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('case')) {
-        obj['case'] = ApiClient.convertToType(data['case'], 'Number');
-      }
-      if (data.hasOwnProperty('direction')) {
-        obj['direction'] = ApiClient.convertToType(data['direction'], 'String');
-      }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
@@ -106,8 +100,8 @@
       if (data.hasOwnProperty('address')) {
         obj['address'] = ApiClient.convertToType(data['address'], 'Number');
       }
-      if (data.hasOwnProperty('ordering')) {
-        obj['ordering'] = ApiClient.convertToType(data['ordering'], 'Number');
+      if (data.hasOwnProperty('case')) {
+        obj['case'] = ApiClient.convertToType(data['case'], 'Number');
       }
       if (data.hasOwnProperty('comment')) {
         obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
@@ -115,18 +109,34 @@
       if (data.hasOwnProperty('excerpt')) {
         obj['excerpt'] = ApiClient.convertToType(data['excerpt'], 'String');
       }
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      }
+      if (data.hasOwnProperty('direction')) {
+        obj['direction'] = ApiClient.convertToType(data['direction'], 'String');
+      }
+      if (data.hasOwnProperty('attachment')) {
+        obj['attachment'] = ApiClient.convertToType(data['attachment'], [File]);
+      }
+      if (data.hasOwnProperty('ordering')) {
+        obj['ordering'] = ApiClient.convertToType(data['ordering'], 'Number');
+      }
+      if (data.hasOwnProperty('createdOn')) {
+        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Date');
+      }
+      if (data.hasOwnProperty('createdBy')) {
+        obj['createdBy'] = ApiClient.convertToType(data['createdBy'], 'Number');
+      }
+      if (data.hasOwnProperty('modifiedOn')) {
+        obj['modifiedOn'] = ApiClient.convertToType(data['modifiedOn'], 'Date');
+      }
+      if (data.hasOwnProperty('modifiedBy')) {
+        obj['modifiedBy'] = ApiClient.convertToType(data['modifiedBy'], 'Number');
+      }
     }
     return obj;
   }
 
-  /**
-   * @member {Number} case
-   */
-  exports.prototype['case'] = undefined;
-  /**
-   * @member {module:model/Letter.DirectionEnum} direction
-   */
-  exports.prototype['direction'] = undefined;
   /**
    * @member {String} name
    */
@@ -156,9 +166,9 @@
    */
   exports.prototype['address'] = undefined;
   /**
-   * @member {Number} ordering
+   * @member {Number} case
    */
-  exports.prototype['ordering'] = undefined;
+  exports.prototype['case'] = undefined;
   /**
    * @member {String} comment
    */
@@ -167,6 +177,38 @@
    * @member {String} excerpt
    */
   exports.prototype['excerpt'] = undefined;
+  /**
+   * @member {Number} id
+   */
+  exports.prototype['id'] = undefined;
+  /**
+   * @member {module:model/Letter.DirectionEnum} direction
+   */
+  exports.prototype['direction'] = undefined;
+  /**
+   * @member {Array.<File>} attachment
+   */
+  exports.prototype['attachment'] = undefined;
+  /**
+   * @member {Number} ordering
+   */
+  exports.prototype['ordering'] = undefined;
+  /**
+   * @member {Date} createdOn
+   */
+  exports.prototype['createdOn'] = undefined;
+  /**
+   * @member {Number} createdBy
+   */
+  exports.prototype['createdBy'] = undefined;
+  /**
+   * @member {Date} modifiedOn
+   */
+  exports.prototype['modifiedOn'] = undefined;
+  /**
+   * @member {Number} modifiedBy
+   */
+  exports.prototype['modifiedBy'] = undefined;
 
 
   /**

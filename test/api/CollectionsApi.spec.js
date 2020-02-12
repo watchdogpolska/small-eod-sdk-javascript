@@ -51,80 +51,80 @@
   }
 
   describe('CollectionsApi', function() {
-    describe('collectionsCaseEventList', function() {
-      it('should call collectionsCaseEventList successfully', function(done) {
-        //uncomment below and update the code to test collectionsCaseEventList
-        //instance.collectionsCaseEventList(function(error) {
+    describe('collectionsCasesEventsList', function() {
+      it('should call collectionsCasesEventsList successfully', function(done) {
+        //uncomment below and update the code to test collectionsCasesEventsList
+        //instance.collectionsCasesEventsList(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('collectionsCaseEventRead', function() {
-      it('should call collectionsCaseEventRead successfully', function(done) {
-        //uncomment below and update the code to test collectionsCaseEventRead
-        //instance.collectionsCaseEventRead(function(error) {
+    describe('collectionsCasesEventsRead', function() {
+      it('should call collectionsCasesEventsRead successfully', function(done) {
+        //uncomment below and update the code to test collectionsCasesEventsRead
+        //instance.collectionsCasesEventsRead(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('collectionsCaseLetterList', function() {
-      it('should call collectionsCaseLetterList successfully', function(done) {
-        //uncomment below and update the code to test collectionsCaseLetterList
-        //instance.collectionsCaseLetterList(function(error) {
+    describe('collectionsCasesLettersList', function() {
+      it('should call collectionsCasesLettersList successfully', function(done) {
+        //uncomment below and update the code to test collectionsCasesLettersList
+        //instance.collectionsCasesLettersList(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('collectionsCaseLetterRead', function() {
-      it('should call collectionsCaseLetterRead successfully', function(done) {
-        //uncomment below and update the code to test collectionsCaseLetterRead
-        //instance.collectionsCaseLetterRead(function(error) {
+    describe('collectionsCasesLettersRead', function() {
+      it('should call collectionsCasesLettersRead successfully', function(done) {
+        //uncomment below and update the code to test collectionsCasesLettersRead
+        //instance.collectionsCasesLettersRead(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('collectionsCaseList', function() {
-      it('should call collectionsCaseList successfully', function(done) {
-        //uncomment below and update the code to test collectionsCaseList
-        //instance.collectionsCaseList(function(error) {
+    describe('collectionsCasesList', function() {
+      it('should call collectionsCasesList successfully', function(done) {
+        //uncomment below and update the code to test collectionsCasesList
+        //instance.collectionsCasesList(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('collectionsCaseNoteList', function() {
-      it('should call collectionsCaseNoteList successfully', function(done) {
-        //uncomment below and update the code to test collectionsCaseNoteList
-        //instance.collectionsCaseNoteList(function(error) {
+    describe('collectionsCasesNotesList', function() {
+      it('should call collectionsCasesNotesList successfully', function(done) {
+        //uncomment below and update the code to test collectionsCasesNotesList
+        //instance.collectionsCasesNotesList(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('collectionsCaseNoteRead', function() {
-      it('should call collectionsCaseNoteRead successfully', function(done) {
-        //uncomment below and update the code to test collectionsCaseNoteRead
-        //instance.collectionsCaseNoteRead(function(error) {
+    describe('collectionsCasesNotesRead', function() {
+      it('should call collectionsCasesNotesRead successfully', function(done) {
+        //uncomment below and update the code to test collectionsCasesNotesRead
+        //instance.collectionsCasesNotesRead(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('collectionsCaseRead', function() {
-      it('should call collectionsCaseRead successfully', function(done) {
-        //uncomment below and update the code to test collectionsCaseRead
-        //instance.collectionsCaseRead(function(error) {
+    describe('collectionsCasesRead', function() {
+      it('should call collectionsCasesRead successfully', function(done) {
+        //uncomment below and update the code to test collectionsCasesRead
+        //instance.collectionsCasesRead(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

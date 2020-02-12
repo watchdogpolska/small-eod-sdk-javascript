@@ -26,7 +26,7 @@
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.NestedFeature = factory(root.SmallEodClient.ApiClient);
+    root.SmallEodClient.SignRequest = factory(root.SmallEodClient.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,16 +34,16 @@
 
 
   /**
-   * The NestedFeature model module.
-   * @module model/NestedFeature
+   * The SignRequest model module.
+   * @module model/SignRequest
    * @version 1.0.4
    */
 
   /**
-   * Constructs a new <code>NestedFeature</code>.
-   * @alias module:model/NestedFeature
+   * Constructs a new <code>SignRequest</code>.
+   * @alias module:model/SignRequest
    * @class
-   * @param name {String} Name of feature.
+   * @param name {String} 
    */
   var exports = function(name) {
     var _this = this;
@@ -52,11 +52,11 @@
   };
 
   /**
-   * Constructs a <code>NestedFeature</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>SignRequest</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/NestedFeature} obj Optional instance to populate.
-   * @return {module:model/NestedFeature} The populated <code>NestedFeature</code> instance.
+   * @param {module:model/SignRequest} obj Optional instance to populate.
+   * @return {module:model/SignRequest} The populated <code>SignRequest</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -64,22 +64,42 @@
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
-      if (data.hasOwnProperty('id')) {
-        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      if (data.hasOwnProperty('method')) {
+        obj['method'] = ApiClient.convertToType(data['method'], 'String');
+      }
+      if (data.hasOwnProperty('url')) {
+        obj['url'] = ApiClient.convertToType(data['url'], 'String');
+      }
+      if (data.hasOwnProperty('formData')) {
+        obj['formData'] = ApiClient.convertToType(data['formData'], {'String': 'String'});
+      }
+      if (data.hasOwnProperty('path')) {
+        obj['path'] = ApiClient.convertToType(data['path'], 'String');
       }
     }
     return obj;
   }
 
   /**
-   * Name of feature.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
-   * @member {Number} id
+   * @member {String} method
    */
-  exports.prototype['id'] = undefined;
+  exports.prototype['method'] = undefined;
+  /**
+   * @member {String} url
+   */
+  exports.prototype['url'] = undefined;
+  /**
+   * @member {Object.<String, String>} formData
+   */
+  exports.prototype['formData'] = undefined;
+  /**
+   * @member {String} path
+   */
+  exports.prototype['path'] = undefined;
 
 
 

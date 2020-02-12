@@ -34,7 +34,7 @@
   /**
    * Notes service.
    * @module small_eod/NotesApi
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**

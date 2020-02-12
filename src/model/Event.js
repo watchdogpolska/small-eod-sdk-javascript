@@ -36,7 +36,7 @@
   /**
    * The Event model module.
    * @module model/Event
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
@@ -67,9 +67,6 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('id')) {
-        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
-      }
       if (data.hasOwnProperty('case')) {
         obj['case'] = ApiClient.convertToType(data['case'], 'Number');
       }
@@ -82,14 +79,13 @@
       if (data.hasOwnProperty('comment')) {
         obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
       }
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      }
     }
     return obj;
   }
 
-  /**
-   * @member {Number} id
-   */
-  exports.prototype['id'] = undefined;
   /**
    * @member {Number} case
    */
@@ -106,6 +102,10 @@
    * @member {String} comment
    */
   exports.prototype['comment'] = undefined;
+  /**
+   * @member {Number} id
+   */
+  exports.prototype['id'] = undefined;
 
 
 

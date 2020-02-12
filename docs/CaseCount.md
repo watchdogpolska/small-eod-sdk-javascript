@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** |  | [optional] [readonly] 
-**comment** | **String** |  | 
-**auditedInstitution** | **[Number]** | Case audits this Institution | [optional] 
-**name** | **String** |  | 
-**responsibleUser** | **[Number]** |  | [optional] 
-**notifiedUser** | **[Number]** |  | [optional] 
+**comment** | **String** | Comment for this case. | 
+**name** | **String** | Case&#39;s name. | 
 **feature** | **[Number]** |  | 
 **tag** | **[String]** |  | 
+**id** | **Number** |  | [optional] [readonly] 
+**auditedInstitution** | **[Number]** | Case audits this Institution. | [optional] 
+**responsibleUser** | **[Number]** |  | [optional] 
+**notifiedUser** | **[Number]** |  | [optional] 
 **createdBy** | **Number** |  | [optional] [readonly] 
 **modifiedBy** | **Number** |  | [optional] [readonly] 
 **createdOn** | **Date** |  | [optional] [readonly] 

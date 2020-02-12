@@ -36,21 +36,19 @@
   /**
    * The File model module.
    * @module model/File
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
    * Constructs a new <code>File</code>.
    * @alias module:model/File
    * @class
-   * @param letter {Number} 
    * @param path {String} 
    * @param name {String} 
    */
-  var exports = function(letter, path, name) {
+  var exports = function(path, name) {
     var _this = this;
 
-    _this['letter'] = letter;
     _this['path'] = path;
     _this['name'] = name;
   };
@@ -65,23 +63,25 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('letter')) {
-        obj['letter'] = ApiClient.convertToType(data['letter'], 'Number');
-      }
       if (data.hasOwnProperty('path')) {
         obj['path'] = ApiClient.convertToType(data['path'], 'String');
       }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      }
+      if (data.hasOwnProperty('downloadUrl')) {
+        obj['downloadUrl'] = ApiClient.convertToType(data['downloadUrl'], 'String');
+      }
+      if (data.hasOwnProperty('letter')) {
+        obj['letter'] = ApiClient.convertToType(data['letter'], 'Number');
+      }
     }
     return obj;
   }
 
-  /**
-   * @member {Number} letter
-   */
-  exports.prototype['letter'] = undefined;
   /**
    * @member {String} path
    */
@@ -90,6 +90,18 @@
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
+  /**
+   * @member {Number} id
+   */
+  exports.prototype['id'] = undefined;
+  /**
+   * @member {String} downloadUrl
+   */
+  exports.prototype['downloadUrl'] = undefined;
+  /**
+   * @member {Number} letter
+   */
+  exports.prototype['letter'] = undefined;
 
 
 

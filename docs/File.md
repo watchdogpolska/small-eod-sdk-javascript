@@ -4,8 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**letter** | **Number** |  | 
 **path** | **String** |  | 
 **name** | **String** |  | 
+**id** | **Number** |  | [optional] [readonly] 
+**downloadUrl** | **String** |  | [optional] [readonly] 
+**letter** | **Number** |  | [optional] [readonly] 
 
 

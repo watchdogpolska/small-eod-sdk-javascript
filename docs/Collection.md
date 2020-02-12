@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**comment** | **String** | Comment for collection. | 
+**expiredOn** | **Date** | An expiration date of collection. | 
+**query** | **String** | Query for collection. | 
 **id** | **Number** |  | [optional] [readonly] 
-**comment** | **String** |  | 
-**_public** | **Boolean** |  | [optional] 
-**expiredOn** | **Date** |  | 
-**query** | **String** |  | 
+**_public** | **Boolean** | Make public. | [optional] 
 
 

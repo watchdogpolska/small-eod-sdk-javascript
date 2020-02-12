@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.ExternalIdentifier();
+    instance = new SmallEodClient.ExternalIdentifierNested();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,22 +50,22 @@
       object[property] = value;
   }
 
-  describe('ExternalIdentifier', function() {
-    it('should create an instance of ExternalIdentifier', function() {
-      // uncomment below and update the code to test ExternalIdentifier
-      //var instance = new SmallEodClient.ExternalIdentifier();
-      //expect(instance).to.be.a(SmallEodClient.ExternalIdentifier);
+  describe('ExternalIdentifierNested', function() {
+    it('should create an instance of ExternalIdentifierNested', function() {
+      // uncomment below and update the code to test ExternalIdentifierNested
+      //var instance = new SmallEodClient.ExternalIdentifierNested();
+      //expect(instance).to.be.a(SmallEodClient.ExternalIdentifierNested);
     });
 
     it('should have the property nip (base name: "nip")', function() {
       // uncomment below and update the code to test the property nip
-      //var instance = new SmallEodClient.ExternalIdentifier();
+      //var instance = new SmallEodClient.ExternalIdentifierNested();
       //expect(instance).to.be();
     });
 
     it('should have the property regon (base name: "regon")', function() {
       // uncomment below and update the code to test the property regon
-      //var instance = new SmallEodClient.ExternalIdentifier();
+      //var instance = new SmallEodClient.ExternalIdentifierNested();
       //expect(instance).to.be();
     });
 

@@ -36,16 +36,16 @@
   /**
    * The Collection model module.
    * @module model/Collection
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
    * Constructs a new <code>Collection</code>.
    * @alias module:model/Collection
    * @class
-   * @param comment {String} 
-   * @param expiredOn {Date} 
-   * @param query {String} 
+   * @param comment {String} Comment for collection.
+   * @param expiredOn {Date} An expiration date of collection.
+   * @param query {String} Query for collection.
    */
   var exports = function(comment, expiredOn, query) {
     var _this = this;
@@ -65,14 +65,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('id')) {
-        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
-      }
       if (data.hasOwnProperty('comment')) {
         obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
-      }
-      if (data.hasOwnProperty('public')) {
-        obj['public'] = ApiClient.convertToType(data['public'], 'Boolean');
       }
       if (data.hasOwnProperty('expiredOn')) {
         obj['expiredOn'] = ApiClient.convertToType(data['expiredOn'], 'Date');
@@ -80,30 +74,40 @@
       if (data.hasOwnProperty('query')) {
         obj['query'] = ApiClient.convertToType(data['query'], 'String');
       }
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      }
+      if (data.hasOwnProperty('public')) {
+        obj['public'] = ApiClient.convertToType(data['public'], 'Boolean');
+      }
     }
     return obj;
   }
 
   /**
-   * @member {Number} id
-   */
-  exports.prototype['id'] = undefined;
-  /**
+   * Comment for collection.
    * @member {String} comment
    */
   exports.prototype['comment'] = undefined;
   /**
-   * @member {Boolean} public
-   */
-  exports.prototype['public'] = undefined;
-  /**
+   * An expiration date of collection.
    * @member {Date} expiredOn
    */
   exports.prototype['expiredOn'] = undefined;
   /**
+   * Query for collection.
    * @member {String} query
    */
   exports.prototype['query'] = undefined;
+  /**
+   * @member {Number} id
+   */
+  exports.prototype['id'] = undefined;
+  /**
+   * Make public.
+   * @member {Boolean} public
+   */
+  exports.prototype['public'] = undefined;
 
 
 

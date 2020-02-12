@@ -57,12 +57,6 @@
       //expect(instance).to.be.a(SmallEodClient.File);
     });
 
-    it('should have the property letter (base name: "letter")', function() {
-      // uncomment below and update the code to test the property letter
-      //var instance = new SmallEodClient.File();
-      //expect(instance).to.be();
-    });
-
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
       //var instance = new SmallEodClient.File();
@@ -71,6 +65,24 @@
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
+      //var instance = new SmallEodClient.File();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instance = new SmallEodClient.File();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property downloadUrl (base name: "downloadUrl")', function() {
+      // uncomment below and update the code to test the property downloadUrl
+      //var instance = new SmallEodClient.File();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property letter (base name: "letter")', function() {
+      // uncomment below and update the code to test the property letter
       //var instance = new SmallEodClient.File();
       //expect(instance).to.be();
     });

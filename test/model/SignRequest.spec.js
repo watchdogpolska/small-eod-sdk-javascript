@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.Dictionary();
+    instance = new SmallEodClient.SignRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,40 +50,40 @@
       object[property] = value;
   }
 
-  describe('Dictionary', function() {
-    it('should create an instance of Dictionary', function() {
-      // uncomment below and update the code to test Dictionary
-      //var instance = new SmallEodClient.Dictionary();
-      //expect(instance).to.be.a(SmallEodClient.Dictionary);
+  describe('SignRequest', function() {
+    it('should create an instance of SignRequest', function() {
+      // uncomment below and update the code to test SignRequest
+      //var instance = new SmallEodClient.SignRequest();
+      //expect(instance).to.be.a(SmallEodClient.SignRequest);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new SmallEodClient.Dictionary();
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 
-    it('should have the property values (base name: "values")', function() {
-      // uncomment below and update the code to test the property values
-      //var instance = new SmallEodClient.Dictionary();
+    it('should have the property method (base name: "method")', function() {
+      // uncomment below and update the code to test the property method
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 
-    it('should have the property active (base name: "active")', function() {
-      // uncomment below and update the code to test the property active
-      //var instance = new SmallEodClient.Dictionary();
+    it('should have the property url (base name: "url")', function() {
+      // uncomment below and update the code to test the property url
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 
-    it('should have the property minItems (base name: "minItems")', function() {
-      // uncomment below and update the code to test the property minItems
-      //var instance = new SmallEodClient.Dictionary();
+    it('should have the property formData (base name: "formData")', function() {
+      // uncomment below and update the code to test the property formData
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 
-    it('should have the property maxItems (base name: "maxItems")', function() {
-      // uncomment below and update the code to test the property maxItems
-      //var instance = new SmallEodClient.Dictionary();
+    it('should have the property path (base name: "path")', function() {
+      // uncomment below and update the code to test the property path
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 

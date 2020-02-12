@@ -81,6 +81,26 @@
         done();
       });
     });
+    describe('casesNotifiedUserList', function() {
+      it('should call casesNotifiedUserList successfully', function(done) {
+        //uncomment below and update the code to test casesNotifiedUserList
+        //instance.casesNotifiedUserList(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('casesNotifiedUserRead', function() {
+      it('should call casesNotifiedUserRead successfully', function(done) {
+        //uncomment below and update the code to test casesNotifiedUserRead
+        //instance.casesNotifiedUserRead(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('casesPartialUpdate', function() {
       it('should call casesPartialUpdate successfully', function(done) {
         //uncomment below and update the code to test casesPartialUpdate
@@ -95,6 +115,26 @@
       it('should call casesRead successfully', function(done) {
         //uncomment below and update the code to test casesRead
         //instance.casesRead(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('casesResponsibleUserList', function() {
+      it('should call casesResponsibleUserList successfully', function(done) {
+        //uncomment below and update the code to test casesResponsibleUserList
+        //instance.casesResponsibleUserList(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('casesResponsibleUserRead', function() {
+      it('should call casesResponsibleUserRead successfully', function(done) {
+        //uncomment below and update the code to test casesResponsibleUserRead
+        //instance.casesResponsibleUserRead(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

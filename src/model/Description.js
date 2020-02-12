@@ -36,7 +36,7 @@
   /**
    * The Description model module.
    * @module model/Description
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**

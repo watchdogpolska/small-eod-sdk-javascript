@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AddressData', 'model/AdministrativeUnit', 'model/ExternalIdentifier'], factory);
+    define(['ApiClient', 'model/AddressDataNested', 'model/ExternalIdentifierNested'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AddressData'), require('./AdministrativeUnit'), require('./ExternalIdentifier'));
+    module.exports = factory(require('../ApiClient'), require('./AddressDataNested'), require('./ExternalIdentifierNested'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.Institution = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.AddressData, root.SmallEodClient.AdministrativeUnit, root.SmallEodClient.ExternalIdentifier);
+    root.SmallEodClient.Institution = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.AddressDataNested, root.SmallEodClient.ExternalIdentifierNested);
   }
-}(this, function(ApiClient, AddressData, AdministrativeUnit, ExternalIdentifier) {
+}(this, function(ApiClient, AddressDataNested, ExternalIdentifierNested) {
   'use strict';
 
 
@@ -36,7 +36,7 @@
   /**
    * The Institution model module.
    * @module model/Institution
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
@@ -44,9 +44,9 @@
    * @alias module:model/Institution
    * @class
    * @param name {String} 
-   * @param externalIdentifier {module:model/ExternalIdentifier} 
-   * @param administrativeUnit {module:model/AdministrativeUnit} 
-   * @param address {module:model/AddressData} 
+   * @param externalIdentifier {module:model/ExternalIdentifierNested} 
+   * @param administrativeUnit {String} 
+   * @param address {module:model/AddressDataNested} 
    */
   var exports = function(name, externalIdentifier, administrativeUnit, address) {
     var _this = this;
@@ -67,23 +67,20 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('modifiedOn')) {
-        obj['modifiedOn'] = ApiClient.convertToType(data['modifiedOn'], 'Date');
-      }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
       if (data.hasOwnProperty('externalIdentifier')) {
-        obj['externalIdentifier'] = ExternalIdentifier.constructFromObject(data['externalIdentifier']);
-      }
-      if (data.hasOwnProperty('createdOn')) {
-        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Date');
+        obj['externalIdentifier'] = ExternalIdentifierNested.constructFromObject(data['externalIdentifier']);
       }
       if (data.hasOwnProperty('administrativeUnit')) {
-        obj['administrativeUnit'] = AdministrativeUnit.constructFromObject(data['administrativeUnit']);
+        obj['administrativeUnit'] = ApiClient.convertToType(data['administrativeUnit'], 'String');
       }
       if (data.hasOwnProperty('address')) {
-        obj['address'] = AddressData.constructFromObject(data['address']);
+        obj['address'] = AddressDataNested.constructFromObject(data['address']);
+      }
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
       if (data.hasOwnProperty('modifiedBy')) {
         obj['modifiedBy'] = ApiClient.convertToType(data['modifiedBy'], 'Number');
@@ -91,37 +88,36 @@
       if (data.hasOwnProperty('createdBy')) {
         obj['createdBy'] = ApiClient.convertToType(data['createdBy'], 'Number');
       }
-      if (data.hasOwnProperty('id')) {
-        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      if (data.hasOwnProperty('modifiedOn')) {
+        obj['modifiedOn'] = ApiClient.convertToType(data['modifiedOn'], 'Date');
+      }
+      if (data.hasOwnProperty('createdOn')) {
+        obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Date');
       }
     }
     return obj;
   }
 
   /**
-   * @member {Date} modifiedOn
-   */
-  exports.prototype['modifiedOn'] = undefined;
-  /**
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
-   * @member {module:model/ExternalIdentifier} externalIdentifier
+   * @member {module:model/ExternalIdentifierNested} externalIdentifier
    */
   exports.prototype['externalIdentifier'] = undefined;
   /**
-   * @member {Date} createdOn
-   */
-  exports.prototype['createdOn'] = undefined;
-  /**
-   * @member {module:model/AdministrativeUnit} administrativeUnit
+   * @member {String} administrativeUnit
    */
   exports.prototype['administrativeUnit'] = undefined;
   /**
-   * @member {module:model/AddressData} address
+   * @member {module:model/AddressDataNested} address
    */
   exports.prototype['address'] = undefined;
+  /**
+   * @member {Number} id
+   */
+  exports.prototype['id'] = undefined;
   /**
    * @member {Number} modifiedBy
    */
@@ -131,9 +127,13 @@
    */
   exports.prototype['createdBy'] = undefined;
   /**
-   * @member {Number} id
+   * @member {Date} modifiedOn
    */
-  exports.prototype['id'] = undefined;
+  exports.prototype['modifiedOn'] = undefined;
+  /**
+   * @member {Date} createdOn
+   */
+  exports.prototype['createdOn'] = undefined;
 
 
 

@@ -17,12 +17,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AddressData', 'model/AdministrativeUnit', 'model/CaseCount', 'model/Channel', 'model/Collection', 'model/Description', 'model/Dictionary', 'model/Event', 'model/ExternalIdentifier', 'model/File', 'model/InlineResponse200', 'model/InlineResponse2001', 'model/InlineResponse20010', 'model/InlineResponse20011', 'model/InlineResponse20012', 'model/InlineResponse2002', 'model/InlineResponse2003', 'model/InlineResponse2004', 'model/InlineResponse2005', 'model/InlineResponse2006', 'model/InlineResponse2007', 'model/InlineResponse2008', 'model/InlineResponse2009', 'model/Institution', 'model/Letter', 'model/ModelCase', 'model/NestedFeature', 'model/Note', 'model/Tag', 'model/User', 'small_eod/CasesApi', 'small_eod/ChannelsApi', 'small_eod/CollectionsApi', 'small_eod/DescriptionsApi', 'small_eod/DictionariesApi', 'small_eod/EventsApi', 'small_eod/FilesApi', 'small_eod/InstitutionsApi', 'small_eod/LettersApi', 'small_eod/NotesApi', 'small_eod/TagsApi', 'small_eod/UsersApi'], factory);
+    define(['ApiClient', 'model/AddressDataNested', 'model/CaseCount', 'model/Channel', 'model/Collection', 'model/Description', 'model/Dictionary', 'model/Event', 'model/ExternalIdentifierNested', 'model/File', 'model/InlineResponse200', 'model/InlineResponse2001', 'model/InlineResponse20010', 'model/InlineResponse20011', 'model/InlineResponse20012', 'model/InlineResponse2002', 'model/InlineResponse2003', 'model/InlineResponse2004', 'model/InlineResponse2005', 'model/InlineResponse2006', 'model/InlineResponse2007', 'model/InlineResponse2008', 'model/InlineResponse2009', 'model/Institution', 'model/Letter', 'model/ModelCase', 'model/NestedFeature', 'model/Note', 'model/SignRequest', 'model/Tag', 'model/User', 'small_eod/CasesApi', 'small_eod/ChannelsApi', 'small_eod/CollectionsApi', 'small_eod/DescriptionsApi', 'small_eod/DictionariesApi', 'small_eod/EventsApi', 'small_eod/InstitutionsApi', 'small_eod/LettersApi', 'small_eod/NotesApi', 'small_eod/TagsApi', 'small_eod/UsersApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/AddressData'), require('./model/AdministrativeUnit'), require('./model/CaseCount'), require('./model/Channel'), require('./model/Collection'), require('./model/Description'), require('./model/Dictionary'), require('./model/Event'), require('./model/ExternalIdentifier'), require('./model/File'), require('./model/InlineResponse200'), require('./model/InlineResponse2001'), require('./model/InlineResponse20010'), require('./model/InlineResponse20011'), require('./model/InlineResponse20012'), require('./model/InlineResponse2002'), require('./model/InlineResponse2003'), require('./model/InlineResponse2004'), require('./model/InlineResponse2005'), require('./model/InlineResponse2006'), require('./model/InlineResponse2007'), require('./model/InlineResponse2008'), require('./model/InlineResponse2009'), require('./model/Institution'), require('./model/Letter'), require('./model/ModelCase'), require('./model/NestedFeature'), require('./model/Note'), require('./model/Tag'), require('./model/User'), require('./small_eod/CasesApi'), require('./small_eod/ChannelsApi'), require('./small_eod/CollectionsApi'), require('./small_eod/DescriptionsApi'), require('./small_eod/DictionariesApi'), require('./small_eod/EventsApi'), require('./small_eod/FilesApi'), require('./small_eod/InstitutionsApi'), require('./small_eod/LettersApi'), require('./small_eod/NotesApi'), require('./small_eod/TagsApi'), require('./small_eod/UsersApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/AddressDataNested'), require('./model/CaseCount'), require('./model/Channel'), require('./model/Collection'), require('./model/Description'), require('./model/Dictionary'), require('./model/Event'), require('./model/ExternalIdentifierNested'), require('./model/File'), require('./model/InlineResponse200'), require('./model/InlineResponse2001'), require('./model/InlineResponse20010'), require('./model/InlineResponse20011'), require('./model/InlineResponse20012'), require('./model/InlineResponse2002'), require('./model/InlineResponse2003'), require('./model/InlineResponse2004'), require('./model/InlineResponse2005'), require('./model/InlineResponse2006'), require('./model/InlineResponse2007'), require('./model/InlineResponse2008'), require('./model/InlineResponse2009'), require('./model/Institution'), require('./model/Letter'), require('./model/ModelCase'), require('./model/NestedFeature'), require('./model/Note'), require('./model/SignRequest'), require('./model/Tag'), require('./model/User'), require('./small_eod/CasesApi'), require('./small_eod/ChannelsApi'), require('./small_eod/CollectionsApi'), require('./small_eod/DescriptionsApi'), require('./small_eod/DictionariesApi'), require('./small_eod/EventsApi'), require('./small_eod/InstitutionsApi'), require('./small_eod/LettersApi'), require('./small_eod/NotesApi'), require('./small_eod/TagsApi'), require('./small_eod/UsersApi'));
   }
-}(function(ApiClient, AddressData, AdministrativeUnit, CaseCount, Channel, Collection, Description, Dictionary, Event, ExternalIdentifier, File, InlineResponse200, InlineResponse2001, InlineResponse20010, InlineResponse20011, InlineResponse20012, InlineResponse2002, InlineResponse2003, InlineResponse2004, InlineResponse2005, InlineResponse2006, InlineResponse2007, InlineResponse2008, InlineResponse2009, Institution, Letter, ModelCase, NestedFeature, Note, Tag, User, CasesApi, ChannelsApi, CollectionsApi, DescriptionsApi, DictionariesApi, EventsApi, FilesApi, InstitutionsApi, LettersApi, NotesApi, TagsApi, UsersApi) {
+}(function(ApiClient, AddressDataNested, CaseCount, Channel, Collection, Description, Dictionary, Event, ExternalIdentifierNested, File, InlineResponse200, InlineResponse2001, InlineResponse20010, InlineResponse20011, InlineResponse20012, InlineResponse2002, InlineResponse2003, InlineResponse2004, InlineResponse2005, InlineResponse2006, InlineResponse2007, InlineResponse2008, InlineResponse2009, Institution, Letter, ModelCase, NestedFeature, Note, SignRequest, Tag, User, CasesApi, ChannelsApi, CollectionsApi, DescriptionsApi, DictionariesApi, EventsApi, InstitutionsApi, LettersApi, NotesApi, TagsApi, UsersApi) {
   'use strict';
 
   /**
@@ -54,7 +54,7 @@
    * </pre>
    * </p>
    * @module index
-   * @version 1.0.3
+   * @version 1.0.4
    */
   var exports = {
     /**
@@ -63,15 +63,10 @@
      */
     ApiClient: ApiClient,
     /**
-     * The AddressData model constructor.
-     * @property {module:model/AddressData}
+     * The AddressDataNested model constructor.
+     * @property {module:model/AddressDataNested}
      */
-    AddressData: AddressData,
-    /**
-     * The AdministrativeUnit model constructor.
-     * @property {module:model/AdministrativeUnit}
-     */
-    AdministrativeUnit: AdministrativeUnit,
+    AddressDataNested: AddressDataNested,
     /**
      * The CaseCount model constructor.
      * @property {module:model/CaseCount}
@@ -103,10 +98,10 @@
      */
     Event: Event,
     /**
-     * The ExternalIdentifier model constructor.
-     * @property {module:model/ExternalIdentifier}
+     * The ExternalIdentifierNested model constructor.
+     * @property {module:model/ExternalIdentifierNested}
      */
-    ExternalIdentifier: ExternalIdentifier,
+    ExternalIdentifierNested: ExternalIdentifierNested,
     /**
      * The File model constructor.
      * @property {module:model/File}
@@ -203,6 +198,11 @@
      */
     Note: Note,
     /**
+     * The SignRequest model constructor.
+     * @property {module:model/SignRequest}
+     */
+    SignRequest: SignRequest,
+    /**
      * The Tag model constructor.
      * @property {module:model/Tag}
      */
@@ -242,11 +242,6 @@
      * @property {module:small_eod/EventsApi}
      */
     EventsApi: EventsApi,
-    /**
-     * The FilesApi service constructor.
-     * @property {module:small_eod/FilesApi}
-     */
-    FilesApi: FilesApi,
     /**
      * The InstitutionsApi service constructor.
      * @property {module:small_eod/InstitutionsApi}

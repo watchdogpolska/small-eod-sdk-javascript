@@ -57,12 +57,6 @@
       //expect(instance).to.be.a(SmallEodClient.Event);
     });
 
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instance = new SmallEodClient.Event();
-      //expect(instance).to.be();
-    });
-
     it('should have the property _case (base name: "case")', function() {
       // uncomment below and update the code to test the property _case
       //var instance = new SmallEodClient.Event();
@@ -83,6 +77,12 @@
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
+      //var instance = new SmallEodClient.Event();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
       //var instance = new SmallEodClient.Event();
       //expect(instance).to.be();
     });

@@ -26,7 +26,7 @@
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.AddressData = factory(root.SmallEodClient.ApiClient);
+    root.SmallEodClient.AddressDataNested = factory(root.SmallEodClient.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,48 +34,31 @@
 
 
   /**
-   * The AddressData model module.
-   * @module model/AddressData
-   * @version 1.0.3
+   * The AddressDataNested model module.
+   * @module model/AddressDataNested
+   * @version 1.0.4
    */
 
   /**
-   * Constructs a new <code>AddressData</code>.
-   * @alias module:model/AddressData
+   * Constructs a new <code>AddressDataNested</code>.
+   * @alias module:model/AddressDataNested
    * @class
-   * @param email {String} 
-   * @param city {String} 
-   * @param epuap {String} 
-   * @param street {String} 
-   * @param houseNo {String} 
-   * @param postalCode {String} 
-   * @param voivodeship {String} 
    */
-  var exports = function(email, city, epuap, street, houseNo, postalCode, voivodeship) {
+  var exports = function() {
     var _this = this;
 
-    _this['email'] = email;
-    _this['city'] = city;
-    _this['epuap'] = epuap;
-    _this['street'] = street;
-    _this['houseNo'] = houseNo;
-    _this['postalCode'] = postalCode;
-    _this['voivodeship'] = voivodeship;
   };
 
   /**
-   * Constructs a <code>AddressData</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>AddressDataNested</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/AddressData} obj Optional instance to populate.
-   * @return {module:model/AddressData} The populated <code>AddressData</code> instance.
+   * @param {module:model/AddressDataNested} obj Optional instance to populate.
+   * @return {module:model/AddressDataNested} The populated <code>AddressDataNested</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('url')) {
-        obj['url'] = ApiClient.convertToType(data['url'], 'String');
-      }
       if (data.hasOwnProperty('email')) {
         obj['email'] = ApiClient.convertToType(data['email'], 'String');
       }
@@ -94,9 +77,6 @@
       if (data.hasOwnProperty('postalCode')) {
         obj['postalCode'] = ApiClient.convertToType(data['postalCode'], 'String');
       }
-      if (data.hasOwnProperty('voivodeship')) {
-        obj['voivodeship'] = ApiClient.convertToType(data['voivodeship'], 'String');
-      }
       if (data.hasOwnProperty('flatNo')) {
         obj['flatNo'] = ApiClient.convertToType(data['flatNo'], 'String');
       }
@@ -104,10 +84,6 @@
     return obj;
   }
 
-  /**
-   * @member {String} url
-   */
-  exports.prototype['url'] = undefined;
   /**
    * @member {String} email
    */
@@ -132,10 +108,6 @@
    * @member {String} postalCode
    */
   exports.prototype['postalCode'] = undefined;
-  /**
-   * @member {String} voivodeship
-   */
-  exports.prototype['voivodeship'] = undefined;
   /**
    * @member {String} flatNo
    */

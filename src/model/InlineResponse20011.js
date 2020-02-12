@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Institution'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Institution'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.InlineResponse20011 = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Institution);
+    root.SmallEodClient.InlineResponse20011 = factory(root.SmallEodClient.ApiClient);
   }
-}(this, function(ApiClient, Institution) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -36,7 +36,7 @@
   /**
    * The InlineResponse20011 model module.
    * @module model/InlineResponse20011
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
@@ -44,7 +44,7 @@
    * @alias module:model/InlineResponse20011
    * @class
    * @param count {Number} 
-   * @param results {Array.<module:model/Institution>} 
+   * @param results {Array.<File>} 
    */
   var exports = function(count, results) {
     var _this = this;
@@ -66,14 +66,14 @@
       if (data.hasOwnProperty('count')) {
         obj['count'] = ApiClient.convertToType(data['count'], 'Number');
       }
+      if (data.hasOwnProperty('results')) {
+        obj['results'] = ApiClient.convertToType(data['results'], [File]);
+      }
       if (data.hasOwnProperty('next')) {
         obj['next'] = ApiClient.convertToType(data['next'], 'String');
       }
       if (data.hasOwnProperty('previous')) {
         obj['previous'] = ApiClient.convertToType(data['previous'], 'String');
-      }
-      if (data.hasOwnProperty('results')) {
-        obj['results'] = ApiClient.convertToType(data['results'], [Institution]);
       }
     }
     return obj;
@@ -84,6 +84,10 @@
    */
   exports.prototype['count'] = undefined;
   /**
+   * @member {Array.<File>} results
+   */
+  exports.prototype['results'] = undefined;
+  /**
    * @member {String} next
    */
   exports.prototype['next'] = undefined;
@@ -91,10 +95,6 @@
    * @member {String} previous
    */
   exports.prototype['previous'] = undefined;
-  /**
-   * @member {Array.<module:model/Institution>} results
-   */
-  exports.prototype['results'] = undefined;
 
 
 
