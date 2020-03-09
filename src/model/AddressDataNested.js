@@ -85,30 +85,37 @@
   }
 
   /**
+   * E-mail address.
    * @member {String} email
    */
   exports.prototype['email'] = undefined;
   /**
+   * Name of city.
    * @member {String} city
    */
   exports.prototype['city'] = undefined;
   /**
+   * ePUAP address.
    * @member {String} epuap
    */
   exports.prototype['epuap'] = undefined;
   /**
+   * Name of street.
    * @member {String} street
    */
   exports.prototype['street'] = undefined;
   /**
+   * House number.
    * @member {String} houseNo
    */
   exports.prototype['houseNo'] = undefined;
   /**
+   * Postal code.
    * @member {String} postalCode
    */
   exports.prototype['postalCode'] = undefined;
   /**
+   * Flat number.
    * @member {String} flatNo
    */
   exports.prototype['flatNo'] = undefined;

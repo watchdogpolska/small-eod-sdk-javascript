@@ -107,7 +107,7 @@ api.casesCreate(data).then(function(data) {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://web*
+All URIs are relative to *http://backend/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

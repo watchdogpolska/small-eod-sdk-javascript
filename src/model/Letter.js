@@ -43,30 +43,12 @@
    * Constructs a new <code>Letter</code>.
    * @alias module:model/Letter
    * @class
-   * @param name {String} 
-   * @param channel {Number} 
-   * @param _final {Boolean} 
-   * @param _date {Date} 
-   * @param identifier {String} 
-   * @param institution {Number} 
-   * @param address {Number} 
-   * @param _case {Number} 
-   * @param comment {String} 
-   * @param excerpt {String} 
+   * @param name {String} Description of the letter.
    */
-  var exports = function(name, channel, _final, _date, identifier, institution, address, _case, comment, excerpt) {
+  var exports = function(name) {
     var _this = this;
 
     _this['name'] = name;
-    _this['channel'] = channel;
-    _this['final'] = _final;
-    _this['date'] = _date;
-    _this['identifier'] = identifier;
-    _this['institution'] = institution;
-    _this['address'] = address;
-    _this['case'] = _case;
-    _this['comment'] = comment;
-    _this['excerpt'] = excerpt;
   };
 
   /**
@@ -81,6 +63,12 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
+      }
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      }
+      if (data.hasOwnProperty('direction')) {
+        obj['direction'] = ApiClient.convertToType(data['direction'], 'String');
       }
       if (data.hasOwnProperty('channel')) {
         obj['channel'] = ApiClient.convertToType(data['channel'], 'Number');
@@ -97,11 +85,14 @@
       if (data.hasOwnProperty('institution')) {
         obj['institution'] = ApiClient.convertToType(data['institution'], 'Number');
       }
-      if (data.hasOwnProperty('address')) {
-        obj['address'] = ApiClient.convertToType(data['address'], 'Number');
-      }
       if (data.hasOwnProperty('case')) {
         obj['case'] = ApiClient.convertToType(data['case'], 'Number');
+      }
+      if (data.hasOwnProperty('attachment')) {
+        obj['attachment'] = ApiClient.convertToType(data['attachment'], [File]);
+      }
+      if (data.hasOwnProperty('ordering')) {
+        obj['ordering'] = ApiClient.convertToType(data['ordering'], 'Number');
       }
       if (data.hasOwnProperty('comment')) {
         obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
@@ -109,17 +100,8 @@
       if (data.hasOwnProperty('excerpt')) {
         obj['excerpt'] = ApiClient.convertToType(data['excerpt'], 'String');
       }
-      if (data.hasOwnProperty('id')) {
-        obj['id'] = ApiClient.convertToType(data['id'], 'Number');
-      }
-      if (data.hasOwnProperty('direction')) {
-        obj['direction'] = ApiClient.convertToType(data['direction'], 'String');
-      }
-      if (data.hasOwnProperty('attachment')) {
-        obj['attachment'] = ApiClient.convertToType(data['attachment'], [File]);
-      }
-      if (data.hasOwnProperty('ordering')) {
-        obj['ordering'] = ApiClient.convertToType(data['ordering'], 'Number');
+      if (data.hasOwnProperty('description')) {
+        obj['description'] = ApiClient.convertToType(data['description'], 'Number');
       }
       if (data.hasOwnProperty('createdOn')) {
         obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Date');
@@ -138,22 +120,35 @@
   }
 
   /**
+   * Description of the letter.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
+  /**
+   * @member {Number} id
+   */
+  exports.prototype['id'] = undefined;
+  /**
+   * Direction for letter.
+   * @member {module:model/Letter.DirectionEnum} direction
+   */
+  exports.prototype['direction'] = undefined;
   /**
    * @member {Number} channel
    */
   exports.prototype['channel'] = undefined;
   /**
+   * Indicates whether the document has final content or is, for example, a draft
    * @member {Boolean} final
    */
   exports.prototype['final'] = undefined;
   /**
+   * Date of sending or receiving.
    * @member {Date} date
    */
   exports.prototype['date'] = undefined;
   /**
+   * Identifier of letter.
    * @member {String} identifier
    */
   exports.prototype['identifier'] = undefined;
@@ -162,37 +157,32 @@
    */
   exports.prototype['institution'] = undefined;
   /**
-   * @member {Number} address
-   */
-  exports.prototype['address'] = undefined;
-  /**
    * @member {Number} case
    */
   exports.prototype['case'] = undefined;
-  /**
-   * @member {String} comment
-   */
-  exports.prototype['comment'] = undefined;
-  /**
-   * @member {String} excerpt
-   */
-  exports.prototype['excerpt'] = undefined;
-  /**
-   * @member {Number} id
-   */
-  exports.prototype['id'] = undefined;
-  /**
-   * @member {module:model/Letter.DirectionEnum} direction
-   */
-  exports.prototype['direction'] = undefined;
   /**
    * @member {Array.<File>} attachment
    */
   exports.prototype['attachment'] = undefined;
   /**
+   * Order of letter.
    * @member {Number} ordering
    */
   exports.prototype['ordering'] = undefined;
+  /**
+   * Comment for letter.
+   * @member {String} comment
+   */
+  exports.prototype['comment'] = undefined;
+  /**
+   * Excerpt of letter.
+   * @member {String} excerpt
+   */
+  exports.prototype['excerpt'] = undefined;
+  /**
+   * @member {Number} description
+   */
+  exports.prototype['description'] = undefined;
   /**
    * @member {Date} createdOn
    */

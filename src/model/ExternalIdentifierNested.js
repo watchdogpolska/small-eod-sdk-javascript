@@ -70,10 +70,12 @@
   }
 
   /**
+   * Tax Identification Number.
    * @member {String} nip
    */
   exports.prototype['nip'] = undefined;
   /**
+   * Statistical Identification Number.
    * @member {String} regon
    */
   exports.prototype['regon'] = undefined;

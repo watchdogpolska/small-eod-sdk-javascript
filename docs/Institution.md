@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | 
+**name** | **String** | Name of institution | 
 **externalIdentifier** | [**ExternalIdentifierNested**](ExternalIdentifierNested.md) |  | 
 **administrativeUnit** | **String** |  | 
 **address** | [**AddressDataNested**](AddressDataNested.md) |  | 

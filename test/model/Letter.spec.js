@@ -63,6 +63,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instance = new SmallEodClient.Letter();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property direction (base name: "direction")', function() {
+      // uncomment below and update the code to test the property direction
+      //var instance = new SmallEodClient.Letter();
+      //expect(instance).to.be();
+    });
+
     it('should have the property channel (base name: "channel")', function() {
       // uncomment below and update the code to test the property channel
       //var instance = new SmallEodClient.Letter();
@@ -93,14 +105,20 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property address (base name: "address")', function() {
-      // uncomment below and update the code to test the property address
+    it('should have the property _case (base name: "case")', function() {
+      // uncomment below and update the code to test the property _case
       //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
-    it('should have the property _case (base name: "case")', function() {
-      // uncomment below and update the code to test the property _case
+    it('should have the property attachment (base name: "attachment")', function() {
+      // uncomment below and update the code to test the property attachment
+      //var instance = new SmallEodClient.Letter();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property ordering (base name: "ordering")', function() {
+      // uncomment below and update the code to test the property ordering
       //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
@@ -117,26 +135,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instance = new SmallEodClient.Letter();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property direction (base name: "direction")', function() {
-      // uncomment below and update the code to test the property direction
-      //var instance = new SmallEodClient.Letter();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property attachment (base name: "attachment")', function() {
-      // uncomment below and update the code to test the property attachment
-      //var instance = new SmallEodClient.Letter();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property ordering (base name: "ordering")', function() {
-      // uncomment below and update the code to test the property ordering
+    it('should have the property description (base name: "description")', function() {
+      // uncomment below and update the code to test the property description
       //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });

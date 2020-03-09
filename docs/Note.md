@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_case** | **Number** |  | 
+**_case** | **Number** | Related case. | 
 **comment** | **String** |  | 
 
 

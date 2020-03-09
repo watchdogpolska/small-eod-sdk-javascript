@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**nip** | **String** |  | [optional] 
-**regon** | **String** |  | [optional] 
+**nip** | **String** | Tax Identification Number. | [optional] 
+**regon** | **String** | Statistical Identification Number. | [optional] 
 
 

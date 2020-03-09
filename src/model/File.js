@@ -43,8 +43,8 @@
    * Constructs a new <code>File</code>.
    * @alias module:model/File
    * @class
-   * @param path {String} 
-   * @param name {String} 
+   * @param path {String} Path to file.
+   * @param name {String} Name of file.
    */
   var exports = function(path, name) {
     var _this = this;
@@ -83,10 +83,12 @@
   }
 
   /**
+   * Path to file.
    * @member {String} path
    */
   exports.prototype['path'] = undefined;
   /**
+   * Name of file.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;

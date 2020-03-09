@@ -47,9 +47,9 @@
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default http://web
+     * @default http://backend/api
      */
-    this.basePath = 'http://web'.replace(/\/+$/, '');
+    this.basePath = 'http://backend/api'.replace(/\/+$/, '');
 
     /**
      * The authentication methods to be included for all API calls.
@@ -590,7 +590,7 @@
     exports.hostSettings = function() {
         return [
             {
-              'url': "http://web/",
+              'url': "http://backend/api",
               'description': "No description provided",
             }
       ];

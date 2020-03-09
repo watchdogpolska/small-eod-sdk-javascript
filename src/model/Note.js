@@ -43,7 +43,7 @@
    * Constructs a new <code>Note</code>.
    * @alias module:model/Note
    * @class
-   * @param _case {Number} 
+   * @param _case {Number} Related case.
    * @param comment {String} 
    */
   var exports = function(_case, comment) {
@@ -74,6 +74,7 @@
   }
 
   /**
+   * Related case.
    * @member {Number} case
    */
   exports.prototype['case'] = undefined;

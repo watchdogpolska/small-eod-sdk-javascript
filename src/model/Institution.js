@@ -43,7 +43,7 @@
    * Constructs a new <code>Institution</code>.
    * @alias module:model/Institution
    * @class
-   * @param name {String} 
+   * @param name {String} Name of institution
    * @param externalIdentifier {module:model/ExternalIdentifierNested} 
    * @param administrativeUnit {String} 
    * @param address {module:model/AddressDataNested} 
@@ -99,6 +99,7 @@
   }
 
   /**
+   * Name of institution
    * @member {String} name
    */
   exports.prototype['name'] = undefined;

@@ -1,6 +1,6 @@
 # SmallEodClient.TagsApi
 
-All URIs are relative to *http://web*
+All URIs are relative to *http://backend/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

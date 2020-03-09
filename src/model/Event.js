@@ -43,10 +43,10 @@
    * Constructs a new <code>Event</code>.
    * @alias module:model/Event
    * @class
-   * @param _case {Number} 
-   * @param name {String} 
-   * @param data {Date} 
-   * @param comment {String} 
+   * @param _case {Number} Case for this event.
+   * @param name {String} Name of event.
+   * @param data {Date} Date of event.
+   * @param comment {String} Comment text.
    */
   var exports = function(_case, name, data, comment) {
     var _this = this;
@@ -87,18 +87,22 @@
   }
 
   /**
+   * Case for this event.
    * @member {Number} case
    */
   exports.prototype['case'] = undefined;
   /**
+   * Name of event.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
+   * Date of event.
    * @member {Date} data
    */
   exports.prototype['data'] = undefined;
   /**
+   * Comment text.
    * @member {String} comment
    */
   exports.prototype['comment'] = undefined;

@@ -43,7 +43,7 @@
    * Constructs a new <code>Description</code>.
    * @alias module:model/Description
    * @class
-   * @param name {String} 
+   * @param name {String} Description of letter.
    */
   var exports = function(name) {
     var _this = this;
@@ -69,6 +69,7 @@
   }
 
   /**
+   * Description of letter.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
