@@ -761,6 +761,52 @@
 
 
     /**
+     * @param {String} collectionPk 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
+     */
+    this.collectionsTokensCreateWithHttpInfo = function(collectionPk) {
+      var postBody = null;
+      // verify the required parameter 'collectionPk' is set
+      if (collectionPk === undefined || collectionPk === null) {
+        throw new Error("Missing the required parameter 'collectionPk' when calling collectionsTokensCreate");
+      }
+
+      var pathParams = {
+        'collection_pk': collectionPk
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Basic'];
+      var contentTypes = [];
+      var accepts = [];
+      var returnType = null;
+      return this.apiClient.callApi(
+        '/collections/{collection_pk}/tokens/', 'POST',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * @param {String} collectionPk 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
+     */
+    this.collectionsTokensCreate = function(collectionPk) {
+      return this.collectionsTokensCreateWithHttpInfo(collectionPk)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
      * @param {Number} id A unique integer value identifying this collection.
      * @param {module:model/Collection} data 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Collection} and HTTP response

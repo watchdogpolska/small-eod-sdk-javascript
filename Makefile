@@ -5,6 +5,13 @@ spec_url = http://localhost:8000/api/docs/?format=openapi
 config-help:
 	docker run openapitools/openapi-generator-cli config-help -g javascript
 
+startbackend:
+	[ -d "small_eod" ] || git clone git@github.com:watchdogpolska/small_eod.git
+	cd small_eod; make start;
+
+clean:
+	rm -r docs src test
+
 build:
 	curl -s $(spec_url) > swagger.json
 	docker run --user $$(id -u):$$(id -g) --network host --rm \

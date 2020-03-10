@@ -140,6 +140,7 @@ Class | Method | HTTP request | Description
 *SmallEodClient.CollectionsApi* | [**collectionsList**](docs/CollectionsApi.md#collectionsList) | **GET** /collections/ | 
 *SmallEodClient.CollectionsApi* | [**collectionsPartialUpdate**](docs/CollectionsApi.md#collectionsPartialUpdate) | **PATCH** /collections/{id}/ | 
 *SmallEodClient.CollectionsApi* | [**collectionsRead**](docs/CollectionsApi.md#collectionsRead) | **GET** /collections/{id}/ | 
+*SmallEodClient.CollectionsApi* | [**collectionsTokensCreate**](docs/CollectionsApi.md#collectionsTokensCreate) | **POST** /collections/{collection_pk}/tokens/ | 
 *SmallEodClient.CollectionsApi* | [**collectionsUpdate**](docs/CollectionsApi.md#collectionsUpdate) | **PUT** /collections/{id}/ | 
 *SmallEodClient.DescriptionsApi* | [**descriptionsCreate**](docs/DescriptionsApi.md#descriptionsCreate) | **POST** /descriptions/ | 
 *SmallEodClient.DescriptionsApi* | [**descriptionsDelete**](docs/DescriptionsApi.md#descriptionsDelete) | **DELETE** /descriptions/{id}/ | 

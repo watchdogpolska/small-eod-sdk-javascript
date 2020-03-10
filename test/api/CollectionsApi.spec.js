@@ -181,6 +181,16 @@
         done();
       });
     });
+    describe('collectionsTokensCreate', function() {
+      it('should call collectionsTokensCreate successfully', function(done) {
+        //uncomment below and update the code to test collectionsTokensCreate
+        //instance.collectionsTokensCreate(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('collectionsUpdate', function() {
       it('should call collectionsUpdate successfully', function(done) {
         //uncomment below and update the code to test collectionsUpdate

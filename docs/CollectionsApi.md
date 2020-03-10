@@ -17,6 +17,7 @@ Method | HTTP request | Description
 [**collectionsList**](CollectionsApi.md#collectionsList) | **GET** /collections/ | 
 [**collectionsPartialUpdate**](CollectionsApi.md#collectionsPartialUpdate) | **PATCH** /collections/{id}/ | 
 [**collectionsRead**](CollectionsApi.md#collectionsRead) | **GET** /collections/{id}/ | 
+[**collectionsTokensCreate**](CollectionsApi.md#collectionsTokensCreate) | **POST** /collections/{collection_pk}/tokens/ | 
 [**collectionsUpdate**](CollectionsApi.md#collectionsUpdate) | **PUT** /collections/{id}/ | 
 
 
@@ -693,6 +694,54 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
+
+
+## collectionsTokensCreate
+
+> collectionsTokensCreate(collectionPk)
+
+
+
+### Example
+
+```javascript
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+var Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+
+var apiInstance = new SmallEodClient.CollectionsApi();
+var collectionPk = "collectionPk_example"; // String | 
+apiInstance.collectionsTokensCreate(collectionPk).then(function() {
+  console.log('API called successfully.');
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **collectionPk** | **String**|  | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[Basic](../README.md#Basic)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
 
 ## collectionsUpdate
