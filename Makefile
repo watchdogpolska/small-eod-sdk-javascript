@@ -9,6 +9,7 @@ startbackend:
 	[ -d "small_eod" ] || git clone https://github.com/watchdogpolska/small_eod.git
 	cd small_eod; make start;
 	cd small_eod; docker-compose exec -T backend bash -c 'wait-for-it localhost:8000'
+	sudo chown $$(id -u):$$(id -g) . -R
 
 logsbackend:
 	cd small_eod; docker-compose logs
