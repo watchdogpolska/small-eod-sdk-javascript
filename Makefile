@@ -9,6 +9,9 @@ startbackend:
 	[ -d "small_eod" ] || git clone https://github.com/watchdogpolska/small_eod.git
 	cd small_eod; make start;
 
+logsbackend:
+	cd small_eod; docker-compose logs
+
 clean:
 	rm -r docs src test
 
