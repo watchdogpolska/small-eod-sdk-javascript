@@ -111,7 +111,7 @@ null (empty response body)
 
 ## institutionsList
 
-> InlineResponse20010 institutionsList(opts)
+> InlineResponse20011 institutionsList(opts)
 
 
 
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 

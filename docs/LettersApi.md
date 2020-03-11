@@ -268,7 +268,7 @@ null (empty response body)
 
 ## lettersFilesList
 
-> InlineResponse20011 lettersFilesList(letterPk, opts)
+> InlineResponse20012 lettersFilesList(letterPk, opts)
 
 
 
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](InlineResponse20011.md)
+[**InlineResponse20012**](InlineResponse20012.md)
 
 ### Authorization
 

@@ -698,7 +698,7 @@ Name | Type | Description  | Notes
 
 ## collectionsTokensCreate
 
-> collectionsTokensCreate(collectionPk)
+> TokenSet collectionsTokensCreate(collectionPk, data)
 
 
 
@@ -714,8 +714,9 @@ Basic.password = 'YOUR PASSWORD';
 
 var apiInstance = new SmallEodClient.CollectionsApi();
 var collectionPk = "collectionPk_example"; // String | 
-apiInstance.collectionsTokensCreate(collectionPk).then(function() {
-  console.log('API called successfully.');
+var data = new SmallEodClient.TokenSet(); // TokenSet | 
+apiInstance.collectionsTokensCreate(collectionPk, data).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
 });
@@ -729,10 +730,11 @@ apiInstance.collectionsTokensCreate(collectionPk).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **collectionPk** | **String**|  | 
+ **data** | [**TokenSet**](TokenSet.md)|  | 
 
 ### Return type
 
-null (empty response body)
+[**TokenSet**](TokenSet.md)
 
 ### Authorization
 
@@ -740,8 +742,8 @@ null (empty response body)
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 
 ## collectionsUpdate

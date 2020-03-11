@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **auditedInstitution** | **[Number]** | Case audits this Institution. | [optional] 
 **responsibleUser** | **[Number]** |  | [optional] 
 **notifiedUser** | **[Number]** |  | [optional] 
-**feature** | **[Number]** |  | [optional] 
+**featureoptions** | **[Number]** |  | [optional] 
 **tag** | **[String]** |  | [optional] 
 **createdBy** | **Number** |  | [optional] [readonly] 
 **modifiedBy** | **Number** |  | [optional] [readonly] 

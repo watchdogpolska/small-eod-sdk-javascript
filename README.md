@@ -148,18 +148,24 @@ Class | Method | HTTP request | Description
 *SmallEodClient.DescriptionsApi* | [**descriptionsPartialUpdate**](docs/DescriptionsApi.md#descriptionsPartialUpdate) | **PATCH** /descriptions/{id}/ | 
 *SmallEodClient.DescriptionsApi* | [**descriptionsRead**](docs/DescriptionsApi.md#descriptionsRead) | **GET** /descriptions/{id}/ | 
 *SmallEodClient.DescriptionsApi* | [**descriptionsUpdate**](docs/DescriptionsApi.md#descriptionsUpdate) | **PUT** /descriptions/{id}/ | 
-*SmallEodClient.DictionariesApi* | [**dictionariesCreate**](docs/DictionariesApi.md#dictionariesCreate) | **POST** /dictionaries/ | 
-*SmallEodClient.DictionariesApi* | [**dictionariesDelete**](docs/DictionariesApi.md#dictionariesDelete) | **DELETE** /dictionaries/{id}/ | 
-*SmallEodClient.DictionariesApi* | [**dictionariesList**](docs/DictionariesApi.md#dictionariesList) | **GET** /dictionaries/ | 
-*SmallEodClient.DictionariesApi* | [**dictionariesPartialUpdate**](docs/DictionariesApi.md#dictionariesPartialUpdate) | **PATCH** /dictionaries/{id}/ | 
-*SmallEodClient.DictionariesApi* | [**dictionariesRead**](docs/DictionariesApi.md#dictionariesRead) | **GET** /dictionaries/{id}/ | 
-*SmallEodClient.DictionariesApi* | [**dictionariesUpdate**](docs/DictionariesApi.md#dictionariesUpdate) | **PUT** /dictionaries/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsCreate**](docs/EventsApi.md#eventsCreate) | **POST** /events/ | 
 *SmallEodClient.EventsApi* | [**eventsDelete**](docs/EventsApi.md#eventsDelete) | **DELETE** /events/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsList**](docs/EventsApi.md#eventsList) | **GET** /events/ | 
 *SmallEodClient.EventsApi* | [**eventsPartialUpdate**](docs/EventsApi.md#eventsPartialUpdate) | **PATCH** /events/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsRead**](docs/EventsApi.md#eventsRead) | **GET** /events/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsUpdate**](docs/EventsApi.md#eventsUpdate) | **PUT** /events/{id}/ | 
+*SmallEodClient.FeaturesApi* | [**featuresCreate**](docs/FeaturesApi.md#featuresCreate) | **POST** /features/ | 
+*SmallEodClient.FeaturesApi* | [**featuresDelete**](docs/FeaturesApi.md#featuresDelete) | **DELETE** /features/{id}/ | 
+*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionCreate**](docs/FeaturesApi.md#featuresFeatureoptionCreate) | **POST** /features/{feature_pk}/featureoption/ | 
+*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionDelete**](docs/FeaturesApi.md#featuresFeatureoptionDelete) | **DELETE** /features/{feature_pk}/featureoption/{id}/ | 
+*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionList**](docs/FeaturesApi.md#featuresFeatureoptionList) | **GET** /features/{feature_pk}/featureoption/ | 
+*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionPartialUpdate**](docs/FeaturesApi.md#featuresFeatureoptionPartialUpdate) | **PATCH** /features/{feature_pk}/featureoption/{id}/ | 
+*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionRead**](docs/FeaturesApi.md#featuresFeatureoptionRead) | **GET** /features/{feature_pk}/featureoption/{id}/ | 
+*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionUpdate**](docs/FeaturesApi.md#featuresFeatureoptionUpdate) | **PUT** /features/{feature_pk}/featureoption/{id}/ | 
+*SmallEodClient.FeaturesApi* | [**featuresList**](docs/FeaturesApi.md#featuresList) | **GET** /features/ | 
+*SmallEodClient.FeaturesApi* | [**featuresPartialUpdate**](docs/FeaturesApi.md#featuresPartialUpdate) | **PATCH** /features/{id}/ | 
+*SmallEodClient.FeaturesApi* | [**featuresRead**](docs/FeaturesApi.md#featuresRead) | **GET** /features/{id}/ | 
+*SmallEodClient.FeaturesApi* | [**featuresUpdate**](docs/FeaturesApi.md#featuresUpdate) | **PUT** /features/{id}/ | 
 *SmallEodClient.InstitutionsApi* | [**institutionsCreate**](docs/InstitutionsApi.md#institutionsCreate) | **POST** /institutions/ | 
 *SmallEodClient.InstitutionsApi* | [**institutionsDelete**](docs/InstitutionsApi.md#institutionsDelete) | **DELETE** /institutions/{id}/ | 
 *SmallEodClient.InstitutionsApi* | [**institutionsList**](docs/InstitutionsApi.md#institutionsList) | **GET** /institutions/ | 
@@ -206,15 +212,17 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.Channel](docs/Channel.md)
  - [SmallEodClient.Collection](docs/Collection.md)
  - [SmallEodClient.Description](docs/Description.md)
- - [SmallEodClient.Dictionary](docs/Dictionary.md)
  - [SmallEodClient.Event](docs/Event.md)
  - [SmallEodClient.ExternalIdentifierNested](docs/ExternalIdentifierNested.md)
+ - [SmallEodClient.Feature](docs/Feature.md)
+ - [SmallEodClient.FeatureOption](docs/FeatureOption.md)
  - [SmallEodClient.File](docs/File.md)
  - [SmallEodClient.InlineResponse200](docs/InlineResponse200.md)
  - [SmallEodClient.InlineResponse2001](docs/InlineResponse2001.md)
  - [SmallEodClient.InlineResponse20010](docs/InlineResponse20010.md)
  - [SmallEodClient.InlineResponse20011](docs/InlineResponse20011.md)
  - [SmallEodClient.InlineResponse20012](docs/InlineResponse20012.md)
+ - [SmallEodClient.InlineResponse20013](docs/InlineResponse20013.md)
  - [SmallEodClient.InlineResponse2002](docs/InlineResponse2002.md)
  - [SmallEodClient.InlineResponse2003](docs/InlineResponse2003.md)
  - [SmallEodClient.InlineResponse2004](docs/InlineResponse2004.md)
@@ -226,10 +234,11 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.Institution](docs/Institution.md)
  - [SmallEodClient.Letter](docs/Letter.md)
  - [SmallEodClient.ModelCase](docs/ModelCase.md)
- - [SmallEodClient.NestedFeature](docs/NestedFeature.md)
+ - [SmallEodClient.NestedFeatureOption](docs/NestedFeatureOption.md)
  - [SmallEodClient.Note](docs/Note.md)
  - [SmallEodClient.SignRequest](docs/SignRequest.md)
  - [SmallEodClient.Tag](docs/Tag.md)
+ - [SmallEodClient.TokenSet](docs/TokenSet.md)
  - [SmallEodClient.User](docs/User.md)
 
 
