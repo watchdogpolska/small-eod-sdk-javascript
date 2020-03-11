@@ -14,6 +14,8 @@ jobs:
       run: make startbackend
     - name: Update SDK
       run: make build
+    - name: Clean old SDK artifacts
+      run: make clean
     - name: Test SDK
       run: make test
     - name: Commit files
