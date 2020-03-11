@@ -6,7 +6,7 @@ config-help:
 	docker run openapitools/openapi-generator-cli config-help -g javascript
 
 startbackend:
-	[ -d "small_eod" ] || git clone git@github.com:watchdogpolska/small_eod.git
+	[ -d "small_eod" ] || git clone https://github.com/watchdogpolska/small_eod.git
 	cd small_eod; make start;
 
 clean:
