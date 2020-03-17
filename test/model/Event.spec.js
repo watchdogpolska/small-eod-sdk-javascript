@@ -69,8 +69,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
+    it('should have the property _date (base name: "date")', function() {
+      // uncomment below and update the code to test the property _date
       //var instance = new SmallEodClient.Event();
       //expect(instance).to.be();
     });

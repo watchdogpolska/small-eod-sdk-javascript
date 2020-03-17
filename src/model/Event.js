@@ -45,15 +45,15 @@
    * @class
    * @param _case {Number} Case for this event.
    * @param name {String} Name of event.
-   * @param data {Date} Date of event.
+   * @param _date {Date} Date of event.
    * @param comment {String} Comment text.
    */
-  var exports = function(_case, name, data, comment) {
+  var exports = function(_case, name, _date, comment) {
     var _this = this;
 
     _this['case'] = _case;
     _this['name'] = name;
-    _this['data'] = data;
+    _this['date'] = _date;
     _this['comment'] = comment;
   };
 
@@ -73,8 +73,8 @@
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
-      if (data.hasOwnProperty('data')) {
-        obj['data'] = ApiClient.convertToType(data['data'], 'Date');
+      if (data.hasOwnProperty('date')) {
+        obj['date'] = ApiClient.convertToType(data['date'], 'Date');
       }
       if (data.hasOwnProperty('comment')) {
         obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
@@ -98,9 +98,9 @@
   exports.prototype['name'] = undefined;
   /**
    * Date of event.
-   * @member {Date} data
+   * @member {Date} date
    */
-  exports.prototype['data'] = undefined;
+  exports.prototype['date'] = undefined;
   /**
    * Comment text.
    * @member {String} comment
