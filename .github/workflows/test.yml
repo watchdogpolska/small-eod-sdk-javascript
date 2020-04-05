@@ -37,6 +37,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Start backend
+      run: make startbackend
     - run: make build
     - name: Test no changes in API
       run: test -z "$(git status --porcelain .)"

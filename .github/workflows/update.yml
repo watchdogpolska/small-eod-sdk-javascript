@@ -27,6 +27,7 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+      if: github.repository == 'watchdogpolska/small-eod-sdk-javascript'
     - name: Backend logs
       run: make logsbackend
       if: failure()

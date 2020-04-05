@@ -2,4 +2,4 @@ wwwroot/*.js
 node_modules
 typings
 dist
-small_eod
+/small_eod
