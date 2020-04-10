@@ -1,6 +1,6 @@
 # SmallEodClient.DescriptionsApi
 
-All URIs are relative to *http://backend/api*
+All URIs are relative to *http://localhost:8000/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

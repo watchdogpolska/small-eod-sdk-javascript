@@ -47,9 +47,9 @@
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default http://backend/api
+     * @default http://localhost:8000/api
      */
-    this.basePath = 'http://backend/api'.replace(/\/+$/, '');
+    this.basePath = 'http://localhost:8000/api'.replace(/\/+$/, '');
 
     /**
      * The authentication methods to be included for all API calls.
@@ -591,7 +591,7 @@
     exports.hostSettings = function() {
         return [
             {
-              'url': "http://backend/api",
+              'url': "http://localhost:8000/api",
               'description': "No description provided",
             }
       ];
