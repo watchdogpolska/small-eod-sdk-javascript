@@ -69,26 +69,26 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property comment (base name: "comment")', function() {
-      // uncomment below and update the code to test the property comment
+    it('should have the property comments (base name: "comments")', function() {
+      // uncomment below and update the code to test the property comments
       //var instance = new SmallEodClient.ModelCase();
       //expect(instance).to.be();
     });
 
-    it('should have the property auditedInstitution (base name: "auditedInstitution")', function() {
-      // uncomment below and update the code to test the property auditedInstitution
+    it('should have the property auditedInstitutions (base name: "auditedInstitutions")', function() {
+      // uncomment below and update the code to test the property auditedInstitutions
       //var instance = new SmallEodClient.ModelCase();
       //expect(instance).to.be();
     });
 
-    it('should have the property responsibleUser (base name: "responsibleUser")', function() {
-      // uncomment below and update the code to test the property responsibleUser
+    it('should have the property responsibleUsers (base name: "responsibleUsers")', function() {
+      // uncomment below and update the code to test the property responsibleUsers
       //var instance = new SmallEodClient.ModelCase();
       //expect(instance).to.be();
     });
 
-    it('should have the property notifiedUser (base name: "notifiedUser")', function() {
-      // uncomment below and update the code to test the property notifiedUser
+    it('should have the property notifiedUsers (base name: "notifiedUsers")', function() {
+      // uncomment below and update the code to test the property notifiedUsers
       //var instance = new SmallEodClient.ModelCase();
       //expect(instance).to.be();
     });
@@ -99,8 +99,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property tag (base name: "tag")', function() {
-      // uncomment below and update the code to test the property tag
+    it('should have the property tags (base name: "tags")', function() {
+      // uncomment below and update the code to test the property tags
       //var instance = new SmallEodClient.ModelCase();
       //expect(instance).to.be();
     });

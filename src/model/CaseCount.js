@@ -67,23 +67,23 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('comment')) {
-        obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
+      if (data.hasOwnProperty('comments')) {
+        obj['comments'] = ApiClient.convertToType(data['comments'], 'String');
       }
-      if (data.hasOwnProperty('auditedInstitution')) {
-        obj['auditedInstitution'] = ApiClient.convertToType(data['auditedInstitution'], ['Number']);
+      if (data.hasOwnProperty('auditedInstitutions')) {
+        obj['auditedInstitutions'] = ApiClient.convertToType(data['auditedInstitutions'], ['Number']);
       }
-      if (data.hasOwnProperty('responsibleUser')) {
-        obj['responsibleUser'] = ApiClient.convertToType(data['responsibleUser'], ['Number']);
+      if (data.hasOwnProperty('responsibleUsers')) {
+        obj['responsibleUsers'] = ApiClient.convertToType(data['responsibleUsers'], ['Number']);
       }
-      if (data.hasOwnProperty('notifiedUser')) {
-        obj['notifiedUser'] = ApiClient.convertToType(data['notifiedUser'], ['Number']);
+      if (data.hasOwnProperty('notifiedUsers')) {
+        obj['notifiedUsers'] = ApiClient.convertToType(data['notifiedUsers'], ['Number']);
       }
       if (data.hasOwnProperty('featureoptions')) {
         obj['featureoptions'] = ApiClient.convertToType(data['featureoptions'], ['Number']);
       }
-      if (data.hasOwnProperty('tag')) {
-        obj['tag'] = ApiClient.convertToType(data['tag'], ['String']);
+      if (data.hasOwnProperty('tags')) {
+        obj['tags'] = ApiClient.convertToType(data['tags'], ['String']);
       }
       if (data.hasOwnProperty('createdBy')) {
         obj['createdBy'] = ApiClient.convertToType(data['createdBy'], 'Number');
@@ -120,31 +120,31 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * Comment for this case.
-   * @member {String} comment
+   * Comments for this case.
+   * @member {String} comments
    */
-  exports.prototype['comment'] = undefined;
+  exports.prototype['comments'] = undefined;
   /**
-   * Case audits this Institution.
-   * @member {Array.<Number>} auditedInstitution
+   * Case audits this Institutions.
+   * @member {Array.<Number>} auditedInstitutions
    */
-  exports.prototype['auditedInstitution'] = undefined;
+  exports.prototype['auditedInstitutions'] = undefined;
   /**
-   * @member {Array.<Number>} responsibleUser
+   * @member {Array.<Number>} responsibleUsers
    */
-  exports.prototype['responsibleUser'] = undefined;
+  exports.prototype['responsibleUsers'] = undefined;
   /**
-   * @member {Array.<Number>} notifiedUser
+   * @member {Array.<Number>} notifiedUsers
    */
-  exports.prototype['notifiedUser'] = undefined;
+  exports.prototype['notifiedUsers'] = undefined;
   /**
    * @member {Array.<Number>} featureoptions
    */
   exports.prototype['featureoptions'] = undefined;
   /**
-   * @member {Array.<String>} tag
+   * @member {Array.<String>} tags
    */
-  exports.prototype['tag'] = undefined;
+  exports.prototype['tags'] = undefined;
   /**
    * @member {Number} createdBy
    */
