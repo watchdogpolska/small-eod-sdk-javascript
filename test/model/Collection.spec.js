@@ -69,8 +69,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property query (base name: "query")', function() {
-      // uncomment below and update the code to test the property query
+    it('should have the property queries (base name: "queries")', function() {
+      // uncomment below and update the code to test the property queries
       //var instance = new SmallEodClient.Collection();
       //expect(instance).to.be();
     });
@@ -81,8 +81,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property comment (base name: "comment")', function() {
-      // uncomment below and update the code to test the property comment
+    it('should have the property comments (base name: "comments")', function() {
+      // uncomment below and update the code to test the property comments
       //var instance = new SmallEodClient.Collection();
       //expect(instance).to.be();
     });
