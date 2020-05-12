@@ -1,4 +1,5 @@
 spec_url = http://localhost:8000/api/docs/?format=openapi
+SPEC_PATH ?=$$(pwd)/swagger.json:/openapi.json
 
 .PHONY: build test
 
@@ -17,10 +18,12 @@ logsbackend:
 clean:
 	rm -r docs src test
 
-build:
+download:
 	curl -s $(spec_url) > swagger.json
+
+build:
 	docker run --user $$(id -u):$$(id -g) --network host --rm \
-	-v $$(pwd)/swagger.json:/openapi.json -v $$(pwd):/out \
+	-v $(SPEC_PATH):/openapi.json -v $$(pwd):/out \
 	-e JS_POST_PROCESS_FILE="/usr/local/bin/js-beautify -r -f" \
 	openapitools/openapi-generator-cli \
 	generate \
@@ -31,6 +34,8 @@ build:
 	-i /openapi.json \
 	-c /out/config.yml \
 	-o /out
+
+undownload:
 	rm swagger.json
 
 test:

@@ -14,6 +14,8 @@ jobs:
       run: make startbackend
     - name: Clean old SDK artifacts
       run: make clean
+    - name: Update OpenAPI specification
+      run: make download
     - name: Update SDK
       run: make build
     - name: Test SDK
