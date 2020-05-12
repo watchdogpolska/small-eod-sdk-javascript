@@ -1,5 +1,5 @@
 spec_url = http://localhost:8000/api/docs/?format=openapi
-SPEC_PATH ?=$$(pwd)/swagger.json:/openapi.json
+SPEC_PATH ?=$$(pwd)/swagger.json
 
 .PHONY: build test
 
@@ -30,7 +30,7 @@ build:
 	--git-user-id "watchdogpolska" \
 	--git-repo-id "small-eod-sdk-javascript" \
 	--release-note "Github integration demo" \
-	-g javascript \
+	-g typescript-axios \
 	-i /openapi.json \
 	-c /out/config.yml \
 	-o /out

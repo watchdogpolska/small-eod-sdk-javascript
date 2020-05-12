@@ -3,8 +3,8 @@ projectName: 'small_eod_client'
 projectVersion: 1.0.4
 additionalProperties:
   usePromises: true
+  npmVersion: 1.0.4
   useES6: false
   npmName: small_eod_client
-  snapshot: true
-  sortModelPropertiesByRequiredFlag: true
+  snapshot: false
   supportsES6: true
