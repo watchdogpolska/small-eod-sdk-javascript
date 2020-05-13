@@ -34,6 +34,8 @@ build:
 	-i /openapi.json \
 	-c /out/config.yml \
 	-o /out
+	npm install
+	npm run build
 
 undownload:
 	rm swagger.json
