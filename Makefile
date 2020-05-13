@@ -16,7 +16,7 @@ logsbackend:
 	cd small_eod; docker-compose logs
 
 clean:
-	rm -r docs src test
+	rm -r src test dist
 
 download:
 	curl -s $(spec_url) > swagger.json
