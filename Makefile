@@ -1,5 +1,5 @@
 spec_url = http://localhost:8000/api/docs/?format=openapi
-SPEC_PATH ?=$$(pwd)/swagger.json:/openapi.json
+SPEC_PATH ?=$$(pwd)/swagger.json
 
 .PHONY: build test
 
