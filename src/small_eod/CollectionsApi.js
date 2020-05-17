@@ -84,7 +84,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = InlineResponse2005;
@@ -146,7 +146,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = Event;
@@ -206,7 +206,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = InlineResponse2006;
@@ -268,7 +268,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = Letter;
@@ -322,7 +322,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = InlineResponse2004;
@@ -383,7 +383,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = InlineResponse2007;
@@ -445,7 +445,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = Note;
@@ -499,7 +499,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = ModelCase;
@@ -545,7 +545,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Collection;
@@ -591,7 +591,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = [];
       var returnType = null;
@@ -637,7 +637,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = InlineResponse2003;
@@ -690,7 +690,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Collection;
@@ -737,7 +737,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = Collection;
@@ -788,7 +788,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = TokenSet;
@@ -840,7 +840,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Collection;

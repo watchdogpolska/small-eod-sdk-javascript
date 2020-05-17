@@ -51,6 +51,16 @@
   }
 
   describe('UsersApi', function() {
+    describe('usersAuth', function() {
+      it('should call usersAuth successfully', function(done) {
+        //uncomment below and update the code to test usersAuth
+        //instance.usersAuth(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('usersCreate', function() {
       it('should call usersCreate successfully', function(done) {
         //uncomment below and update the code to test usersCreate
@@ -65,6 +75,16 @@
       it('should call usersDelete successfully', function(done) {
         //uncomment below and update the code to test usersDelete
         //instance.usersDelete(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('usersExchange', function() {
+      it('should call usersExchange successfully', function(done) {
+        //uncomment below and update the code to test usersExchange
+        //instance.usersExchange(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -95,6 +115,16 @@
       it('should call usersRead successfully', function(done) {
         //uncomment below and update the code to test usersRead
         //instance.usersRead(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('usersRefresh', function() {
+      it('should call usersRefresh successfully', function(done) {
+        //uncomment below and update the code to test usersRefresh
+        //instance.usersRefresh(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

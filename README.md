@@ -93,6 +93,11 @@ var defaultClient = SmallEodClient.ApiClient.instance;
 var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME'
 Basic.password = 'YOUR PASSWORD'
+// Configure API key authorization: Bearer
+var Bearer = defaultClient.authentications['Bearer'];
+Bearer.apiKey = "YOUR API KEY"
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer.apiKeyPrefix['Authorization'] = "Token"
 
 var api = new SmallEodClient.CasesApi()
 var data = new SmallEodClient.CaseCount(); // {CaseCount} 
@@ -197,11 +202,14 @@ Class | Method | HTTP request | Description
 *SmallEodClient.TagsApi* | [**tagsPartialUpdate**](docs/TagsApi.md#tagsPartialUpdate) | **PATCH** /tags/{id}/ | 
 *SmallEodClient.TagsApi* | [**tagsRead**](docs/TagsApi.md#tagsRead) | **GET** /tags/{id}/ | 
 *SmallEodClient.TagsApi* | [**tagsUpdate**](docs/TagsApi.md#tagsUpdate) | **PUT** /tags/{id}/ | 
+*SmallEodClient.UsersApi* | [**usersAuth**](docs/UsersApi.md#usersAuth) | **GET** /users/auth/ | 
 *SmallEodClient.UsersApi* | [**usersCreate**](docs/UsersApi.md#usersCreate) | **POST** /users/ | 
 *SmallEodClient.UsersApi* | [**usersDelete**](docs/UsersApi.md#usersDelete) | **DELETE** /users/{id}/ | 
+*SmallEodClient.UsersApi* | [**usersExchange**](docs/UsersApi.md#usersExchange) | **GET** /users/exchange/ | 
 *SmallEodClient.UsersApi* | [**usersList**](docs/UsersApi.md#usersList) | **GET** /users/ | 
 *SmallEodClient.UsersApi* | [**usersPartialUpdate**](docs/UsersApi.md#usersPartialUpdate) | **PATCH** /users/{id}/ | 
 *SmallEodClient.UsersApi* | [**usersRead**](docs/UsersApi.md#usersRead) | **GET** /users/{id}/ | 
+*SmallEodClient.UsersApi* | [**usersRefresh**](docs/UsersApi.md#usersRefresh) | **POST** /users/refresh/ | 
 *SmallEodClient.UsersApi* | [**usersUpdate**](docs/UsersApi.md#usersUpdate) | **PUT** /users/{id}/ | 
 
 
@@ -236,8 +244,11 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.ModelCase](docs/ModelCase.md)
  - [SmallEodClient.NestedFeatureOption](docs/NestedFeatureOption.md)
  - [SmallEodClient.Note](docs/Note.md)
+ - [SmallEodClient.RefreshTokenRequest](docs/RefreshTokenRequest.md)
+ - [SmallEodClient.Request](docs/Request.md)
  - [SmallEodClient.SignRequest](docs/SignRequest.md)
  - [SmallEodClient.Tag](docs/Tag.md)
+ - [SmallEodClient.TokenResponse](docs/TokenResponse.md)
  - [SmallEodClient.TokenSet](docs/TokenSet.md)
  - [SmallEodClient.User](docs/User.md)
 
@@ -250,4 +261,22 @@ Class | Method | HTTP request | Description
 
 
 - **Type**: HTTP basic authentication
+
+
+
+### Bearer
+
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
+
+
+
+### CollectionToken
+
+
+- **Type**: API key
+- **API key parameter name**: authorization
+- **Location**: URL query string
 

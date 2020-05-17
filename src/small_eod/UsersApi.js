@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse2001', 'model/User'], factory);
+    define(['ApiClient', 'model/InlineResponse2001', 'model/RefreshTokenRequest', 'model/Request', 'model/TokenResponse', 'model/User'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse2001'), require('../model/User'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse2001'), require('../model/RefreshTokenRequest'), require('../model/Request'), require('../model/TokenResponse'), require('../model/User'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.UsersApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse2001, root.SmallEodClient.User);
+    root.SmallEodClient.UsersApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse2001, root.SmallEodClient.RefreshTokenRequest, root.SmallEodClient.Request, root.SmallEodClient.TokenResponse, root.SmallEodClient.User);
   }
-}(this, function(ApiClient, InlineResponse2001, User) {
+}(this, function(ApiClient, InlineResponse2001, RefreshTokenRequest, Request, TokenResponse, User) {
   'use strict';
 
   /**
@@ -47,6 +47,56 @@
   var exports = function(apiClient) {
     this.apiClient = apiClient || ApiClient.instance;
 
+
+
+    /**
+     * API endpoint to receive URI for OAuth authorization url
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Request} and HTTP response
+     */
+    this.usersAuthWithHttpInfo = function(opts) {
+      opts = opts || {};
+      var postBody = null;
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Basic', 'Bearer'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = Request;
+      return this.apiClient.callApi(
+        '/users/auth/', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * API endpoint to receive URI for OAuth authorization url
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Request}
+     */
+    this.usersAuth = function(opts) {
+      return this.usersAuthWithHttpInfo(opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
 
 
     /**
@@ -72,7 +122,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = User;
@@ -120,7 +170,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = [];
       var returnType = null;
@@ -138,6 +188,56 @@
      */
     this.usersDelete = function(id) {
       return this.usersDeleteWithHttpInfo(id)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * API endpoint to exchange authorization code to access token
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TokenResponse} and HTTP response
+     */
+    this.usersExchangeWithHttpInfo = function(opts) {
+      opts = opts || {};
+      var postBody = null;
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Basic', 'Bearer'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = TokenResponse;
+      return this.apiClient.callApi(
+        '/users/exchange/', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * API endpoint to exchange authorization code to access token
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TokenResponse}
+     */
+    this.usersExchange = function(opts) {
+      return this.usersExchangeWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -168,7 +268,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = InlineResponse2001;
@@ -223,7 +323,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = User;
@@ -272,7 +372,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = User;
@@ -290,6 +390,53 @@
      */
     this.usersRead = function(id) {
       return this.usersReadWithHttpInfo(id)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * API endpoint to exchange refresh token to fresh access token
+     * @param {module:model/RefreshTokenRequest} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TokenResponse} and HTTP response
+     */
+    this.usersRefreshWithHttpInfo = function(data) {
+      var postBody = data;
+      // verify the required parameter 'data' is set
+      if (data === undefined || data === null) {
+        throw new Error("Missing the required parameter 'data' when calling usersRefresh");
+      }
+
+      var pathParams = {
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Basic', 'Bearer'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = TokenResponse;
+      return this.apiClient.callApi(
+        '/users/refresh/', 'POST',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * API endpoint to exchange refresh token to fresh access token
+     * @param {module:model/RefreshTokenRequest} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TokenResponse}
+     */
+    this.usersRefresh = function(data) {
+      return this.usersRefreshWithHttpInfo(data)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -325,7 +472,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = User;

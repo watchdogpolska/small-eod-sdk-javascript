@@ -71,7 +71,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Letter;
@@ -117,7 +117,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = [];
       var returnType = null;
@@ -163,7 +163,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = SignRequest;
@@ -215,7 +215,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = File;
@@ -268,7 +268,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = [];
       var returnType = null;
@@ -321,7 +321,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = InlineResponse20012;
@@ -381,7 +381,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = File;
@@ -435,7 +435,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = File;
@@ -493,7 +493,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = File;
@@ -541,7 +541,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = InlineResponse2006;
@@ -594,7 +594,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Letter;
@@ -641,7 +641,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = Letter;
@@ -692,7 +692,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Letter;

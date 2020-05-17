@@ -56,7 +56,9 @@
      * @type {Array.<String>}
      */
     this.authentications = {
-      'Basic': {type: 'basic'}
+      'Basic': {type: 'basic'},
+      'Bearer': {type: 'apiKey', 'in': 'header', name: 'Authorization'},
+      'CollectionToken': {type: 'apiKey', 'in': 'query', name: 'authorization'}
     };
     /**
      * The default HTTP headers to be included for all API calls.

@@ -71,7 +71,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Institution;
@@ -117,7 +117,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = [];
       var returnType = null;
@@ -163,7 +163,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = InlineResponse20011;
@@ -216,7 +216,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Institution;
@@ -263,7 +263,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = Institution;
@@ -314,7 +314,7 @@
       var formParams = {
       };
 
-      var authNames = ['Basic'];
+      var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = Institution;
