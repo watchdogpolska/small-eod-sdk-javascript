@@ -31,7 +31,8 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.AddressDataNested();
+    // create a new instance
+    //instance = new SmallEodClient.AddressDataNested();
   });
 
   var getProperty = function(object, getter, property) {

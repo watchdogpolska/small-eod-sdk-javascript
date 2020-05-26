@@ -31,7 +31,8 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.ExternalIdentifierNested();
+    // create a new instance
+    //instance = new SmallEodClient.ExternalIdentifierNested();
   });
 
   var getProperty = function(object, getter, property) {

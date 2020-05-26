@@ -31,7 +31,8 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.InlineResponse2003();
+    // create a new instance
+    //instance = new SmallEodClient.InlineResponse2003();
   });
 
   var getProperty = function(object, getter, property) {

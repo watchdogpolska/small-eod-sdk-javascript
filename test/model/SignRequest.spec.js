@@ -31,7 +31,8 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.SignRequest();
+    // create a new instance
+    //instance = new SmallEodClient.SignRequest();
   });
 
   var getProperty = function(object, getter, property) {

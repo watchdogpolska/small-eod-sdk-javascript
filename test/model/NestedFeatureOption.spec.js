@@ -31,7 +31,8 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.NestedFeatureOption();
+    // create a new instance
+    //instance = new SmallEodClient.NestedFeatureOption();
   });
 
   var getProperty = function(object, getter, property) {
