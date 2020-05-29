@@ -43,18 +43,18 @@
    * Constructs a new <code>Event</code>.
    * @alias module:model/Event
    * @class
-   * @param cases {Number} Cases for this event.
+   * @param _case {Number} Case for this event.
    * @param name {String} Name of event.
    * @param _date {Date} Date of event.
-   * @param comments {String} Comments text.
+   * @param comment {String} Comment text.
    */
-  var exports = function(cases, name, _date, comments) {
+  var exports = function(_case, name, _date, comment) {
     var _this = this;
 
-    _this['cases'] = cases;
+    _this['case'] = _case;
     _this['name'] = name;
     _this['date'] = _date;
-    _this['comments'] = comments;
+    _this['comment'] = comment;
   };
 
   /**
@@ -67,8 +67,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('cases')) {
-        obj['cases'] = ApiClient.convertToType(data['cases'], 'Number');
+      if (data.hasOwnProperty('case')) {
+        obj['case'] = ApiClient.convertToType(data['case'], 'Number');
       }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
@@ -76,8 +76,8 @@
       if (data.hasOwnProperty('date')) {
         obj['date'] = ApiClient.convertToType(data['date'], 'Date');
       }
-      if (data.hasOwnProperty('comments')) {
-        obj['comments'] = ApiClient.convertToType(data['comments'], 'String');
+      if (data.hasOwnProperty('comment')) {
+        obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
       }
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
@@ -87,10 +87,10 @@
   }
 
   /**
-   * Cases for this event.
-   * @member {Number} cases
+   * Case for this event.
+   * @member {Number} case
    */
-  exports.prototype['cases'] = undefined;
+  exports.prototype['case'] = undefined;
   /**
    * Name of event.
    * @member {String} name
@@ -102,10 +102,10 @@
    */
   exports.prototype['date'] = undefined;
   /**
-   * Comments text.
-   * @member {String} comments
+   * Comment text.
+   * @member {String} comment
    */
-  exports.prototype['comments'] = undefined;
+  exports.prototype['comment'] = undefined;
   /**
    * @member {Number} id
    */

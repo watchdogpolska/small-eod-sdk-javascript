@@ -215,13 +215,11 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
- - [SmallEodClient.AddressDataNested](docs/AddressDataNested.md)
  - [SmallEodClient.CaseCount](docs/CaseCount.md)
  - [SmallEodClient.Channel](docs/Channel.md)
  - [SmallEodClient.Collection](docs/Collection.md)
  - [SmallEodClient.Description](docs/Description.md)
  - [SmallEodClient.Event](docs/Event.md)
- - [SmallEodClient.ExternalIdentifierNested](docs/ExternalIdentifierNested.md)
  - [SmallEodClient.Feature](docs/Feature.md)
  - [SmallEodClient.FeatureOption](docs/FeatureOption.md)
  - [SmallEodClient.File](docs/File.md)

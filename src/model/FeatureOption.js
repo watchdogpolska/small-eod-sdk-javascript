@@ -67,8 +67,8 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('features')) {
-        obj['features'] = ApiClient.convertToType(data['features'], 'Number');
+      if (data.hasOwnProperty('feature')) {
+        obj['feature'] = ApiClient.convertToType(data['feature'], 'Number');
       }
     }
     return obj;
@@ -84,9 +84,9 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {Number} features
+   * @member {Number} feature
    */
-  exports.prototype['features'] = undefined;
+  exports.prototype['feature'] = undefined;
 
 
 

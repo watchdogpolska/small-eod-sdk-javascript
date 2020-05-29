@@ -45,14 +45,14 @@
    * @class
    * @param name {String} Collection's name.
    * @param expiredOn {Date} An expiration date of collection.
-   * @param queries {String} Queries for collection.
+   * @param query {String} Query for collection.
    */
-  var exports = function(name, expiredOn, queries) {
+  var exports = function(name, expiredOn, query) {
     var _this = this;
 
     _this['name'] = name;
     _this['expiredOn'] = expiredOn;
-    _this['queries'] = queries;
+    _this['query'] = query;
   };
 
   /**
@@ -71,14 +71,14 @@
       if (data.hasOwnProperty('expiredOn')) {
         obj['expiredOn'] = ApiClient.convertToType(data['expiredOn'], 'Date');
       }
-      if (data.hasOwnProperty('queries')) {
-        obj['queries'] = ApiClient.convertToType(data['queries'], 'String');
+      if (data.hasOwnProperty('query')) {
+        obj['query'] = ApiClient.convertToType(data['query'], 'String');
       }
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('comments')) {
-        obj['comments'] = ApiClient.convertToType(data['comments'], 'String');
+      if (data.hasOwnProperty('comment')) {
+        obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
       }
       if (data.hasOwnProperty('public')) {
         obj['public'] = ApiClient.convertToType(data['public'], 'Boolean');
@@ -98,19 +98,19 @@
    */
   exports.prototype['expiredOn'] = undefined;
   /**
-   * Queries for collection.
-   * @member {String} queries
+   * Query for collection.
+   * @member {String} query
    */
-  exports.prototype['queries'] = undefined;
+  exports.prototype['query'] = undefined;
   /**
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
-   * Comments for collection.
-   * @member {String} comments
+   * Comment for collection.
+   * @member {String} comment
    */
-  exports.prototype['comments'] = undefined;
+  exports.prototype['comment'] = undefined;
   /**
    * Make public.
    * @member {Boolean} public

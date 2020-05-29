@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AddressDataNested', 'model/ExternalIdentifierNested'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AddressDataNested'), require('./ExternalIdentifierNested'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.Institution = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.AddressDataNested, root.SmallEodClient.ExternalIdentifierNested);
+    root.SmallEodClient.Institution = factory(root.SmallEodClient.ApiClient);
   }
-}(this, function(ApiClient, AddressDataNested, ExternalIdentifierNested) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -44,17 +44,13 @@
    * @alias module:model/Institution
    * @class
    * @param name {String} Name of institution
-   * @param externalIdentifier {module:model/ExternalIdentifierNested} 
    * @param administrativeUnit {String} 
-   * @param address {module:model/AddressDataNested} 
    */
-  var exports = function(name, externalIdentifier, administrativeUnit, address) {
+  var exports = function(name, administrativeUnit) {
     var _this = this;
 
     _this['name'] = name;
-    _this['externalIdentifier'] = externalIdentifier;
     _this['administrativeUnit'] = administrativeUnit;
-    _this['address'] = address;
   };
 
   /**
@@ -70,14 +66,8 @@
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
-      if (data.hasOwnProperty('externalIdentifier')) {
-        obj['externalIdentifier'] = ExternalIdentifierNested.constructFromObject(data['externalIdentifier']);
-      }
       if (data.hasOwnProperty('administrativeUnit')) {
         obj['administrativeUnit'] = ApiClient.convertToType(data['administrativeUnit'], 'String');
-      }
-      if (data.hasOwnProperty('address')) {
-        obj['address'] = AddressDataNested.constructFromObject(data['address']);
       }
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
@@ -94,6 +84,33 @@
       if (data.hasOwnProperty('createdOn')) {
         obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Date');
       }
+      if (data.hasOwnProperty('email')) {
+        obj['email'] = ApiClient.convertToType(data['email'], 'String');
+      }
+      if (data.hasOwnProperty('city')) {
+        obj['city'] = ApiClient.convertToType(data['city'], 'String');
+      }
+      if (data.hasOwnProperty('epuap')) {
+        obj['epuap'] = ApiClient.convertToType(data['epuap'], 'String');
+      }
+      if (data.hasOwnProperty('street')) {
+        obj['street'] = ApiClient.convertToType(data['street'], 'String');
+      }
+      if (data.hasOwnProperty('houseNo')) {
+        obj['houseNo'] = ApiClient.convertToType(data['houseNo'], 'String');
+      }
+      if (data.hasOwnProperty('postalCode')) {
+        obj['postalCode'] = ApiClient.convertToType(data['postalCode'], 'String');
+      }
+      if (data.hasOwnProperty('flatNo')) {
+        obj['flatNo'] = ApiClient.convertToType(data['flatNo'], 'String');
+      }
+      if (data.hasOwnProperty('nip')) {
+        obj['nip'] = ApiClient.convertToType(data['nip'], 'String');
+      }
+      if (data.hasOwnProperty('regon')) {
+        obj['regon'] = ApiClient.convertToType(data['regon'], 'String');
+      }
     }
     return obj;
   }
@@ -104,17 +121,9 @@
    */
   exports.prototype['name'] = undefined;
   /**
-   * @member {module:model/ExternalIdentifierNested} externalIdentifier
-   */
-  exports.prototype['externalIdentifier'] = undefined;
-  /**
    * @member {String} administrativeUnit
    */
   exports.prototype['administrativeUnit'] = undefined;
-  /**
-   * @member {module:model/AddressDataNested} address
-   */
-  exports.prototype['address'] = undefined;
   /**
    * @member {Number} id
    */
@@ -135,6 +144,51 @@
    * @member {Date} createdOn
    */
   exports.prototype['createdOn'] = undefined;
+  /**
+   * E-mail address.
+   * @member {String} email
+   */
+  exports.prototype['email'] = undefined;
+  /**
+   * Name of city.
+   * @member {String} city
+   */
+  exports.prototype['city'] = undefined;
+  /**
+   * ePUAP address.
+   * @member {String} epuap
+   */
+  exports.prototype['epuap'] = undefined;
+  /**
+   * Name of street.
+   * @member {String} street
+   */
+  exports.prototype['street'] = undefined;
+  /**
+   * House number.
+   * @member {String} houseNo
+   */
+  exports.prototype['houseNo'] = undefined;
+  /**
+   * Postal code.
+   * @member {String} postalCode
+   */
+  exports.prototype['postalCode'] = undefined;
+  /**
+   * Flat number.
+   * @member {String} flatNo
+   */
+  exports.prototype['flatNo'] = undefined;
+  /**
+   * Tax Identification Number.
+   * @member {String} nip
+   */
+  exports.prototype['nip'] = undefined;
+  /**
+   * Statistical Identification Number.
+   * @member {String} regon
+   */
+  exports.prototype['regon'] = undefined;
 
 
 

@@ -67,8 +67,8 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('comments')) {
-        obj['comments'] = ApiClient.convertToType(data['comments'], 'String');
+      if (data.hasOwnProperty('comment')) {
+        obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
       }
       if (data.hasOwnProperty('auditedInstitutions')) {
         obj['auditedInstitutions'] = ApiClient.convertToType(data['auditedInstitutions'], ['Number']);
@@ -120,10 +120,10 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * Comments for this case.
-   * @member {String} comments
+   * Comment for this case.
+   * @member {String} comment
    */
-  exports.prototype['comments'] = undefined;
+  exports.prototype['comment'] = undefined;
   /**
    * Case audits this Institutions.
    * @member {Array.<Number>} auditedInstitutions

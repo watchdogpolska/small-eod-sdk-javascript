@@ -70,8 +70,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property features (base name: "features")', function() {
-      // uncomment below and update the code to test the property features
+    it('should have the property feature (base name: "feature")', function() {
+      // uncomment below and update the code to test the property feature
       //var instance = new SmallEodClient.FeatureOption();
       //expect(instance).to.be();
     });

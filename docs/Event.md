@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cases** | **Number** | Cases for this event. | 
+**_case** | **Number** | Case for this event. | 
 **name** | **String** | Name of event. | 
 **_date** | **Date** | Date of event. | 
-**comments** | **String** | Comments text. | 
+**comment** | **String** | Comment text. | 
 **id** | **Number** |  | [optional] [readonly] 
 
 
