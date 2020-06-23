@@ -143,7 +143,8 @@ Bearer.apiKey = 'YOUR API KEY';
 var apiInstance = new SmallEodClient.InstitutionsApi();
 var opts = {
   'limit': 56, // Number | Number of results to return per page.
-  'offset': 56 // Number | The initial index from which to return the results.
+  'offset': 56, // Number | The initial index from which to return the results.
+  'query': "query_example" // String | Query filter. Currently filtering by name.
 };
 apiInstance.institutionsList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -161,6 +162,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 
+ **query** | **String**| Query filter. Currently filtering by name. | [optional] 
 
 ### Return type
 

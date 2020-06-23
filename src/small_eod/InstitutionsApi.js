@@ -144,6 +144,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
+     * @param {String} opts.query Query filter. Currently filtering by name.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20011} and HTTP response
      */
     this.institutionsListWithHttpInfo = function(opts) {
@@ -155,6 +156,7 @@
       var queryParams = {
         'limit': opts['limit'],
         'offset': opts['offset'],
+        'query': opts['query'],
       };
       var collectionQueryParams = {
       };
@@ -178,6 +180,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
+     * @param {String} opts.query Query filter. Currently filtering by name.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
      */
     this.institutionsList = function(opts) {
