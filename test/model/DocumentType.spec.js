@@ -32,7 +32,7 @@
 
   beforeEach(function() {
     // create a new instance
-    //instance = new SmallEodClient.Description();
+    //instance = new SmallEodClient.DocumentType();
   });
 
   var getProperty = function(object, getter, property) {
@@ -51,16 +51,16 @@
       object[property] = value;
   }
 
-  describe('Description', function() {
-    it('should create an instance of Description', function() {
-      // uncomment below and update the code to test Description
-      //var instance = new SmallEodClient.Description();
-      //expect(instance).to.be.a(SmallEodClient.Description);
+  describe('DocumentType', function() {
+    it('should create an instance of DocumentType', function() {
+      // uncomment below and update the code to test DocumentType
+      //var instance = new SmallEodClient.DocumentType();
+      //expect(instance).to.be.a(SmallEodClient.DocumentType);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new SmallEodClient.Description();
+      //var instance = new SmallEodClient.DocumentType();
       //expect(instance).to.be();
     });
 

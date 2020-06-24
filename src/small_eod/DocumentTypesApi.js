@@ -17,29 +17,29 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Description', 'model/InlineResponse2008'], factory);
+    define(['ApiClient', 'model/DocumentType', 'model/InlineResponse2008'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Description'), require('../model/InlineResponse2008'));
+    module.exports = factory(require('../ApiClient'), require('../model/DocumentType'), require('../model/InlineResponse2008'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.DescriptionsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Description, root.SmallEodClient.InlineResponse2008);
+    root.SmallEodClient.DocumentTypesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.DocumentType, root.SmallEodClient.InlineResponse2008);
   }
-}(this, function(ApiClient, Description, InlineResponse2008) {
+}(this, function(ApiClient, DocumentType, InlineResponse2008) {
   'use strict';
 
   /**
-   * Descriptions service.
-   * @module small_eod/DescriptionsApi
+   * DocumentTypes service.
+   * @module small_eod/DocumentTypesApi
    * @version 1.0.4
    */
 
   /**
-   * Constructs a new DescriptionsApi. 
-   * @alias module:small_eod/DescriptionsApi
+   * Constructs a new DocumentTypesApi. 
+   * @alias module:small_eod/DocumentTypesApi
    * @class
    * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
    * default to {@link module:ApiClient#instance} if unspecified.
@@ -50,14 +50,14 @@
 
 
     /**
-     * @param {module:model/Description} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Description} and HTTP response
+     * @param {module:model/DocumentType} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DocumentType} and HTTP response
      */
-    this.descriptionsCreateWithHttpInfo = function(data) {
+    this.documentTypesCreateWithHttpInfo = function(data) {
       var postBody = data;
       // verify the required parameter 'data' is set
       if (data === undefined || data === null) {
-        throw new Error("Missing the required parameter 'data' when calling descriptionsCreate");
+        throw new Error("Missing the required parameter 'data' when calling documentTypesCreate");
       }
 
       var pathParams = {
@@ -74,20 +74,20 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = Description;
+      var returnType = DocumentType;
       return this.apiClient.callApi(
-        '/descriptions/', 'POST',
+        '/document_types/', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
     }
 
     /**
-     * @param {module:model/Description} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Description}
+     * @param {module:model/DocumentType} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DocumentType}
      */
-    this.descriptionsCreate = function(data) {
-      return this.descriptionsCreateWithHttpInfo(data)
+    this.documentTypesCreate = function(data) {
+      return this.documentTypesCreateWithHttpInfo(data)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -95,14 +95,14 @@
 
 
     /**
-     * @param {Number} id A unique integer value identifying this description.
+     * @param {Number} id A unique integer value identifying this document type.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.descriptionsDeleteWithHttpInfo = function(id) {
+    this.documentTypesDeleteWithHttpInfo = function(id) {
       var postBody = null;
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling descriptionsDelete");
+        throw new Error("Missing the required parameter 'id' when calling documentTypesDelete");
       }
 
       var pathParams = {
@@ -122,18 +122,18 @@
       var accepts = [];
       var returnType = null;
       return this.apiClient.callApi(
-        '/descriptions/{id}/', 'DELETE',
+        '/document_types/{id}/', 'DELETE',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
     }
 
     /**
-     * @param {Number} id A unique integer value identifying this description.
+     * @param {Number} id A unique integer value identifying this document type.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.descriptionsDelete = function(id) {
-      return this.descriptionsDeleteWithHttpInfo(id)
+    this.documentTypesDelete = function(id) {
+      return this.documentTypesDeleteWithHttpInfo(id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -146,7 +146,7 @@
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
      */
-    this.descriptionsListWithHttpInfo = function(opts) {
+    this.documentTypesListWithHttpInfo = function(opts) {
       opts = opts || {};
       var postBody = null;
 
@@ -168,7 +168,7 @@
       var accepts = ['application/json'];
       var returnType = InlineResponse2008;
       return this.apiClient.callApi(
-        '/descriptions/', 'GET',
+        '/document_types/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -180,8 +180,8 @@
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
      */
-    this.descriptionsList = function(opts) {
-      return this.descriptionsListWithHttpInfo(opts)
+    this.documentTypesList = function(opts) {
+      return this.documentTypesListWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -189,19 +189,19 @@
 
 
     /**
-     * @param {Number} id A unique integer value identifying this description.
-     * @param {module:model/Description} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Description} and HTTP response
+     * @param {Number} id A unique integer value identifying this document type.
+     * @param {module:model/DocumentType} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DocumentType} and HTTP response
      */
-    this.descriptionsPartialUpdateWithHttpInfo = function(id, data) {
+    this.documentTypesPartialUpdateWithHttpInfo = function(id, data) {
       var postBody = data;
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling descriptionsPartialUpdate");
+        throw new Error("Missing the required parameter 'id' when calling documentTypesPartialUpdate");
       }
       // verify the required parameter 'data' is set
       if (data === undefined || data === null) {
-        throw new Error("Missing the required parameter 'data' when calling descriptionsPartialUpdate");
+        throw new Error("Missing the required parameter 'data' when calling documentTypesPartialUpdate");
       }
 
       var pathParams = {
@@ -219,21 +219,21 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = Description;
+      var returnType = DocumentType;
       return this.apiClient.callApi(
-        '/descriptions/{id}/', 'PATCH',
+        '/document_types/{id}/', 'PATCH',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
     }
 
     /**
-     * @param {Number} id A unique integer value identifying this description.
-     * @param {module:model/Description} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Description}
+     * @param {Number} id A unique integer value identifying this document type.
+     * @param {module:model/DocumentType} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DocumentType}
      */
-    this.descriptionsPartialUpdate = function(id, data) {
-      return this.descriptionsPartialUpdateWithHttpInfo(id, data)
+    this.documentTypesPartialUpdate = function(id, data) {
+      return this.documentTypesPartialUpdateWithHttpInfo(id, data)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -241,14 +241,14 @@
 
 
     /**
-     * @param {Number} id A unique integer value identifying this description.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Description} and HTTP response
+     * @param {Number} id A unique integer value identifying this document type.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DocumentType} and HTTP response
      */
-    this.descriptionsReadWithHttpInfo = function(id) {
+    this.documentTypesReadWithHttpInfo = function(id) {
       var postBody = null;
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling descriptionsRead");
+        throw new Error("Missing the required parameter 'id' when calling documentTypesRead");
       }
 
       var pathParams = {
@@ -266,20 +266,20 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = Description;
+      var returnType = DocumentType;
       return this.apiClient.callApi(
-        '/descriptions/{id}/', 'GET',
+        '/document_types/{id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
     }
 
     /**
-     * @param {Number} id A unique integer value identifying this description.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Description}
+     * @param {Number} id A unique integer value identifying this document type.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DocumentType}
      */
-    this.descriptionsRead = function(id) {
-      return this.descriptionsReadWithHttpInfo(id)
+    this.documentTypesRead = function(id) {
+      return this.documentTypesReadWithHttpInfo(id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -287,19 +287,19 @@
 
 
     /**
-     * @param {Number} id A unique integer value identifying this description.
-     * @param {module:model/Description} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Description} and HTTP response
+     * @param {Number} id A unique integer value identifying this document type.
+     * @param {module:model/DocumentType} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DocumentType} and HTTP response
      */
-    this.descriptionsUpdateWithHttpInfo = function(id, data) {
+    this.documentTypesUpdateWithHttpInfo = function(id, data) {
       var postBody = data;
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling descriptionsUpdate");
+        throw new Error("Missing the required parameter 'id' when calling documentTypesUpdate");
       }
       // verify the required parameter 'data' is set
       if (data === undefined || data === null) {
-        throw new Error("Missing the required parameter 'data' when calling descriptionsUpdate");
+        throw new Error("Missing the required parameter 'data' when calling documentTypesUpdate");
       }
 
       var pathParams = {
@@ -317,21 +317,21 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = Description;
+      var returnType = DocumentType;
       return this.apiClient.callApi(
-        '/descriptions/{id}/', 'PUT',
+        '/document_types/{id}/', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
     }
 
     /**
-     * @param {Number} id A unique integer value identifying this description.
-     * @param {module:model/Description} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Description}
+     * @param {Number} id A unique integer value identifying this document type.
+     * @param {module:model/DocumentType} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DocumentType}
      */
-    this.descriptionsUpdate = function(id, data) {
-      return this.descriptionsUpdateWithHttpInfo(id, data)
+    this.documentTypesUpdate = function(id, data) {
+      return this.documentTypesUpdateWithHttpInfo(id, data)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

@@ -1,21 +1,21 @@
-# SmallEodClient.DescriptionsApi
+# SmallEodClient.DocumentTypesApi
 
 All URIs are relative to *http://localhost:8000/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**descriptionsCreate**](DescriptionsApi.md#descriptionsCreate) | **POST** /descriptions/ | 
-[**descriptionsDelete**](DescriptionsApi.md#descriptionsDelete) | **DELETE** /descriptions/{id}/ | 
-[**descriptionsList**](DescriptionsApi.md#descriptionsList) | **GET** /descriptions/ | 
-[**descriptionsPartialUpdate**](DescriptionsApi.md#descriptionsPartialUpdate) | **PATCH** /descriptions/{id}/ | 
-[**descriptionsRead**](DescriptionsApi.md#descriptionsRead) | **GET** /descriptions/{id}/ | 
-[**descriptionsUpdate**](DescriptionsApi.md#descriptionsUpdate) | **PUT** /descriptions/{id}/ | 
+[**documentTypesCreate**](DocumentTypesApi.md#documentTypesCreate) | **POST** /document_types/ | 
+[**documentTypesDelete**](DocumentTypesApi.md#documentTypesDelete) | **DELETE** /document_types/{id}/ | 
+[**documentTypesList**](DocumentTypesApi.md#documentTypesList) | **GET** /document_types/ | 
+[**documentTypesPartialUpdate**](DocumentTypesApi.md#documentTypesPartialUpdate) | **PATCH** /document_types/{id}/ | 
+[**documentTypesRead**](DocumentTypesApi.md#documentTypesRead) | **GET** /document_types/{id}/ | 
+[**documentTypesUpdate**](DocumentTypesApi.md#documentTypesUpdate) | **PUT** /document_types/{id}/ | 
 
 
 
-## descriptionsCreate
+## documentTypesCreate
 
-> Description descriptionsCreate(data)
+> DocumentType documentTypesCreate(data)
 
 
 
@@ -34,9 +34,9 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.DescriptionsApi();
-var data = new SmallEodClient.Description(); // Description | 
-apiInstance.descriptionsCreate(data).then(function(data) {
+var apiInstance = new SmallEodClient.DocumentTypesApi();
+var data = new SmallEodClient.DocumentType(); // DocumentType | 
+apiInstance.documentTypesCreate(data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -50,11 +50,11 @@ apiInstance.descriptionsCreate(data).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Description**](Description.md)|  | 
+ **data** | [**DocumentType**](DocumentType.md)|  | 
 
 ### Return type
 
-[**Description**](Description.md)
+[**DocumentType**](DocumentType.md)
 
 ### Authorization
 
@@ -66,9 +66,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## descriptionsDelete
+## documentTypesDelete
 
-> descriptionsDelete(id)
+> documentTypesDelete(id)
 
 
 
@@ -87,9 +87,9 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.DescriptionsApi();
-var id = 56; // Number | A unique integer value identifying this description.
-apiInstance.descriptionsDelete(id).then(function() {
+var apiInstance = new SmallEodClient.DocumentTypesApi();
+var id = 56; // Number | A unique integer value identifying this document type.
+apiInstance.documentTypesDelete(id).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -103,7 +103,7 @@ apiInstance.descriptionsDelete(id).then(function() {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| A unique integer value identifying this description. | 
+ **id** | **Number**| A unique integer value identifying this document type. | 
 
 ### Return type
 
@@ -119,9 +119,9 @@ null (empty response body)
 - **Accept**: Not defined
 
 
-## descriptionsList
+## documentTypesList
 
-> InlineResponse2008 descriptionsList(opts)
+> InlineResponse2008 documentTypesList(opts)
 
 
 
@@ -140,12 +140,12 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.DescriptionsApi();
+var apiInstance = new SmallEodClient.DocumentTypesApi();
 var opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.descriptionsList(opts).then(function(data) {
+apiInstance.documentTypesList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -176,9 +176,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## descriptionsPartialUpdate
+## documentTypesPartialUpdate
 
-> Description descriptionsPartialUpdate(id, data)
+> DocumentType documentTypesPartialUpdate(id, data)
 
 
 
@@ -197,10 +197,10 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.DescriptionsApi();
-var id = 56; // Number | A unique integer value identifying this description.
-var data = new SmallEodClient.Description(); // Description | 
-apiInstance.descriptionsPartialUpdate(id, data).then(function(data) {
+var apiInstance = new SmallEodClient.DocumentTypesApi();
+var id = 56; // Number | A unique integer value identifying this document type.
+var data = new SmallEodClient.DocumentType(); // DocumentType | 
+apiInstance.documentTypesPartialUpdate(id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -214,12 +214,12 @@ apiInstance.descriptionsPartialUpdate(id, data).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| A unique integer value identifying this description. | 
- **data** | [**Description**](Description.md)|  | 
+ **id** | **Number**| A unique integer value identifying this document type. | 
+ **data** | [**DocumentType**](DocumentType.md)|  | 
 
 ### Return type
 
-[**Description**](Description.md)
+[**DocumentType**](DocumentType.md)
 
 ### Authorization
 
@@ -231,9 +231,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## descriptionsRead
+## documentTypesRead
 
-> Description descriptionsRead(id)
+> DocumentType documentTypesRead(id)
 
 
 
@@ -252,9 +252,9 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.DescriptionsApi();
-var id = 56; // Number | A unique integer value identifying this description.
-apiInstance.descriptionsRead(id).then(function(data) {
+var apiInstance = new SmallEodClient.DocumentTypesApi();
+var id = 56; // Number | A unique integer value identifying this document type.
+apiInstance.documentTypesRead(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -268,11 +268,11 @@ apiInstance.descriptionsRead(id).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| A unique integer value identifying this description. | 
+ **id** | **Number**| A unique integer value identifying this document type. | 
 
 ### Return type
 
-[**Description**](Description.md)
+[**DocumentType**](DocumentType.md)
 
 ### Authorization
 
@@ -284,9 +284,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## descriptionsUpdate
+## documentTypesUpdate
 
-> Description descriptionsUpdate(id, data)
+> DocumentType documentTypesUpdate(id, data)
 
 
 
@@ -305,10 +305,10 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.DescriptionsApi();
-var id = 56; // Number | A unique integer value identifying this description.
-var data = new SmallEodClient.Description(); // Description | 
-apiInstance.descriptionsUpdate(id, data).then(function(data) {
+var apiInstance = new SmallEodClient.DocumentTypesApi();
+var id = 56; // Number | A unique integer value identifying this document type.
+var data = new SmallEodClient.DocumentType(); // DocumentType | 
+apiInstance.documentTypesUpdate(id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -322,12 +322,12 @@ apiInstance.descriptionsUpdate(id, data).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| A unique integer value identifying this description. | 
- **data** | [**Description**](Description.md)|  | 
+ **id** | **Number**| A unique integer value identifying this document type. | 
+ **data** | [**DocumentType**](DocumentType.md)|  | 
 
 ### Return type
 
-[**Description**](Description.md)
+[**DocumentType**](DocumentType.md)
 
 ### Authorization
 

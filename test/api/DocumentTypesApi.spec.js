@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.DescriptionsApi();
+    instance = new SmallEodClient.DocumentTypesApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
       object[property] = value;
   }
 
-  describe('DescriptionsApi', function() {
-    describe('descriptionsCreate', function() {
-      it('should call descriptionsCreate successfully', function(done) {
-        //uncomment below and update the code to test descriptionsCreate
-        //instance.descriptionsCreate(function(error) {
+  describe('DocumentTypesApi', function() {
+    describe('documentTypesCreate', function() {
+      it('should call documentTypesCreate successfully', function(done) {
+        //uncomment below and update the code to test documentTypesCreate
+        //instance.documentTypesCreate(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('descriptionsDelete', function() {
-      it('should call descriptionsDelete successfully', function(done) {
-        //uncomment below and update the code to test descriptionsDelete
-        //instance.descriptionsDelete(function(error) {
+    describe('documentTypesDelete', function() {
+      it('should call documentTypesDelete successfully', function(done) {
+        //uncomment below and update the code to test documentTypesDelete
+        //instance.documentTypesDelete(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('descriptionsList', function() {
-      it('should call descriptionsList successfully', function(done) {
-        //uncomment below and update the code to test descriptionsList
-        //instance.descriptionsList(function(error) {
+    describe('documentTypesList', function() {
+      it('should call documentTypesList successfully', function(done) {
+        //uncomment below and update the code to test documentTypesList
+        //instance.documentTypesList(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('descriptionsPartialUpdate', function() {
-      it('should call descriptionsPartialUpdate successfully', function(done) {
-        //uncomment below and update the code to test descriptionsPartialUpdate
-        //instance.descriptionsPartialUpdate(function(error) {
+    describe('documentTypesPartialUpdate', function() {
+      it('should call documentTypesPartialUpdate successfully', function(done) {
+        //uncomment below and update the code to test documentTypesPartialUpdate
+        //instance.documentTypesPartialUpdate(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('descriptionsRead', function() {
-      it('should call descriptionsRead successfully', function(done) {
-        //uncomment below and update the code to test descriptionsRead
-        //instance.descriptionsRead(function(error) {
+    describe('documentTypesRead', function() {
+      it('should call documentTypesRead successfully', function(done) {
+        //uncomment below and update the code to test documentTypesRead
+        //instance.documentTypesRead(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('descriptionsUpdate', function() {
-      it('should call descriptionsUpdate successfully', function(done) {
-        //uncomment below and update the code to test descriptionsUpdate
-        //instance.descriptionsUpdate(function(error) {
+    describe('documentTypesUpdate', function() {
+      it('should call documentTypesUpdate successfully', function(done) {
+        //uncomment below and update the code to test documentTypesUpdate
+        //instance.documentTypesUpdate(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

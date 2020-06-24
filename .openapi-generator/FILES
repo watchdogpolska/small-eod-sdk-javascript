@@ -5,8 +5,8 @@ docs/Channel.md
 docs/ChannelsApi.md
 docs/Collection.md
 docs/CollectionsApi.md
-docs/Description.md
-docs/DescriptionsApi.md
+docs/DocumentType.md
+docs/DocumentTypesApi.md
 docs/Event.md
 docs/EventsApi.md
 docs/Feature.md
@@ -52,7 +52,7 @@ src/index.js
 src/model/CaseCount.js
 src/model/Channel.js
 src/model/Collection.js
-src/model/Description.js
+src/model/DocumentType.js
 src/model/Event.js
 src/model/Feature.js
 src/model/FeatureOption.js
@@ -86,7 +86,7 @@ src/model/User.js
 src/small_eod/CasesApi.js
 src/small_eod/ChannelsApi.js
 src/small_eod/CollectionsApi.js
-src/small_eod/DescriptionsApi.js
+src/small_eod/DocumentTypesApi.js
 src/small_eod/EventsApi.js
 src/small_eod/FeaturesApi.js
 src/small_eod/InstitutionsApi.js
@@ -97,7 +97,7 @@ src/small_eod/UsersApi.js
 test/api/CasesApi.spec.js
 test/api/ChannelsApi.spec.js
 test/api/CollectionsApi.spec.js
-test/api/DescriptionsApi.spec.js
+test/api/DocumentTypesApi.spec.js
 test/api/EventsApi.spec.js
 test/api/FeaturesApi.spec.js
 test/api/InstitutionsApi.spec.js
@@ -108,7 +108,7 @@ test/api/UsersApi.spec.js
 test/model/CaseCount.spec.js
 test/model/Channel.spec.js
 test/model/Collection.spec.js
-test/model/Description.spec.js
+test/model/DocumentType.spec.js
 test/model/Event.spec.js
 test/model/Feature.spec.js
 test/model/FeatureOption.spec.js

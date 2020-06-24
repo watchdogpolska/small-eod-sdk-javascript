@@ -147,12 +147,12 @@ Class | Method | HTTP request | Description
 *SmallEodClient.CollectionsApi* | [**collectionsRead**](docs/CollectionsApi.md#collectionsRead) | **GET** /collections/{id}/ | 
 *SmallEodClient.CollectionsApi* | [**collectionsTokensCreate**](docs/CollectionsApi.md#collectionsTokensCreate) | **POST** /collections/{collection_pk}/tokens/ | 
 *SmallEodClient.CollectionsApi* | [**collectionsUpdate**](docs/CollectionsApi.md#collectionsUpdate) | **PUT** /collections/{id}/ | 
-*SmallEodClient.DescriptionsApi* | [**descriptionsCreate**](docs/DescriptionsApi.md#descriptionsCreate) | **POST** /descriptions/ | 
-*SmallEodClient.DescriptionsApi* | [**descriptionsDelete**](docs/DescriptionsApi.md#descriptionsDelete) | **DELETE** /descriptions/{id}/ | 
-*SmallEodClient.DescriptionsApi* | [**descriptionsList**](docs/DescriptionsApi.md#descriptionsList) | **GET** /descriptions/ | 
-*SmallEodClient.DescriptionsApi* | [**descriptionsPartialUpdate**](docs/DescriptionsApi.md#descriptionsPartialUpdate) | **PATCH** /descriptions/{id}/ | 
-*SmallEodClient.DescriptionsApi* | [**descriptionsRead**](docs/DescriptionsApi.md#descriptionsRead) | **GET** /descriptions/{id}/ | 
-*SmallEodClient.DescriptionsApi* | [**descriptionsUpdate**](docs/DescriptionsApi.md#descriptionsUpdate) | **PUT** /descriptions/{id}/ | 
+*SmallEodClient.DocumentTypesApi* | [**documentTypesCreate**](docs/DocumentTypesApi.md#documentTypesCreate) | **POST** /document_types/ | 
+*SmallEodClient.DocumentTypesApi* | [**documentTypesDelete**](docs/DocumentTypesApi.md#documentTypesDelete) | **DELETE** /document_types/{id}/ | 
+*SmallEodClient.DocumentTypesApi* | [**documentTypesList**](docs/DocumentTypesApi.md#documentTypesList) | **GET** /document_types/ | 
+*SmallEodClient.DocumentTypesApi* | [**documentTypesPartialUpdate**](docs/DocumentTypesApi.md#documentTypesPartialUpdate) | **PATCH** /document_types/{id}/ | 
+*SmallEodClient.DocumentTypesApi* | [**documentTypesRead**](docs/DocumentTypesApi.md#documentTypesRead) | **GET** /document_types/{id}/ | 
+*SmallEodClient.DocumentTypesApi* | [**documentTypesUpdate**](docs/DocumentTypesApi.md#documentTypesUpdate) | **PUT** /document_types/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsCreate**](docs/EventsApi.md#eventsCreate) | **POST** /events/ | 
 *SmallEodClient.EventsApi* | [**eventsDelete**](docs/EventsApi.md#eventsDelete) | **DELETE** /events/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsList**](docs/EventsApi.md#eventsList) | **GET** /events/ | 
@@ -218,7 +218,7 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.CaseCount](docs/CaseCount.md)
  - [SmallEodClient.Channel](docs/Channel.md)
  - [SmallEodClient.Collection](docs/Collection.md)
- - [SmallEodClient.Description](docs/Description.md)
+ - [SmallEodClient.DocumentType](docs/DocumentType.md)
  - [SmallEodClient.Event](docs/Event.md)
  - [SmallEodClient.Feature](docs/Feature.md)
  - [SmallEodClient.FeatureOption](docs/FeatureOption.md)

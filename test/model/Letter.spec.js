@@ -58,12 +58,6 @@
       //expect(instance).to.be.a(SmallEodClient.Letter);
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instance = new SmallEodClient.Letter();
-      //expect(instance).to.be();
-    });
-
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
       //var instance = new SmallEodClient.Letter();
@@ -136,8 +130,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property description (base name: "description")', function() {
-      // uncomment below and update the code to test the property description
+    it('should have the property documentType (base name: "documentType")', function() {
+      // uncomment below and update the code to test the property documentType
       //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });

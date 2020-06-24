@@ -1,9 +1,9 @@
-# SmallEodClient.Description
+# SmallEodClient.DocumentType
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | Description of letter. | 
+**name** | **String** | Type of letter | 
 
 

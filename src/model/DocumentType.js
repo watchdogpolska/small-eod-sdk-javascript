@@ -26,7 +26,7 @@
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.Description = factory(root.SmallEodClient.ApiClient);
+    root.SmallEodClient.DocumentType = factory(root.SmallEodClient.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,16 +34,16 @@
 
 
   /**
-   * The Description model module.
-   * @module model/Description
+   * The DocumentType model module.
+   * @module model/DocumentType
    * @version 1.0.4
    */
 
   /**
-   * Constructs a new <code>Description</code>.
-   * @alias module:model/Description
+   * Constructs a new <code>DocumentType</code>.
+   * @alias module:model/DocumentType
    * @class
-   * @param name {String} Description of letter.
+   * @param name {String} Type of letter
    */
   var exports = function(name) {
     var _this = this;
@@ -52,11 +52,11 @@
   };
 
   /**
-   * Constructs a <code>Description</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>DocumentType</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/Description} obj Optional instance to populate.
-   * @return {module:model/Description} The populated <code>Description</code> instance.
+   * @param {module:model/DocumentType} obj Optional instance to populate.
+   * @return {module:model/DocumentType} The populated <code>DocumentType</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -69,7 +69,7 @@
   }
 
   /**
-   * Description of letter.
+   * Type of letter
    * @member {String} name
    */
   exports.prototype['name'] = undefined;

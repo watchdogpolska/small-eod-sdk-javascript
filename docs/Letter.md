@@ -4,7 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | Description of the letter. | 
 **id** | **Number** |  | [optional] [readonly] 
 **direction** | **String** | Direction for letter. | [optional] 
 **channel** | **Number** |  | [optional] 
@@ -17,7 +16,7 @@ Name | Type | Description | Notes
 **ordering** | **Number** | Order of letter. | [optional] 
 **comment** | **String** | Comment for letter. | [optional] 
 **excerpt** | **String** | Excerpt of letter. | [optional] 
-**description** | **Number** |  | [optional] 
+**documentType** | **Number** |  | [optional] 
 **createdOn** | **Date** |  | [optional] [readonly] 
 **createdBy** | **Number** |  | [optional] [readonly] 
 **modifiedOn** | **Date** |  | [optional] [readonly] 
