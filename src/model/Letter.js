@@ -43,12 +43,10 @@
    * Constructs a new <code>Letter</code>.
    * @alias module:model/Letter
    * @class
-   * @param name {String} Description of the letter.
    */
-  var exports = function(name) {
+  var exports = function() {
     var _this = this;
 
-    _this['name'] = name;
   };
 
   /**
@@ -61,9 +59,6 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('name')) {
-        obj['name'] = ApiClient.convertToType(data['name'], 'String');
-      }
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
@@ -100,8 +95,8 @@
       if (data.hasOwnProperty('excerpt')) {
         obj['excerpt'] = ApiClient.convertToType(data['excerpt'], 'String');
       }
-      if (data.hasOwnProperty('description')) {
-        obj['description'] = ApiClient.convertToType(data['description'], 'Number');
+      if (data.hasOwnProperty('documentType')) {
+        obj['documentType'] = ApiClient.convertToType(data['documentType'], 'Number');
       }
       if (data.hasOwnProperty('createdOn')) {
         obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Date');
@@ -119,11 +114,6 @@
     return obj;
   }
 
-  /**
-   * Description of the letter.
-   * @member {String} name
-   */
-  exports.prototype['name'] = undefined;
   /**
    * @member {Number} id
    */
@@ -180,9 +170,9 @@
    */
   exports.prototype['excerpt'] = undefined;
   /**
-   * @member {Number} description
+   * @member {Number} documentType
    */
-  exports.prototype['description'] = undefined;
+  exports.prototype['documentType'] = undefined;
   /**
    * @member {Date} createdOn
    */

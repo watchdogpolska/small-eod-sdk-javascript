@@ -17,12 +17,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CaseCount', 'model/Channel', 'model/Collection', 'model/Description', 'model/Event', 'model/Feature', 'model/FeatureOption', 'model/File', 'model/InlineResponse200', 'model/InlineResponse2001', 'model/InlineResponse20010', 'model/InlineResponse20011', 'model/InlineResponse20012', 'model/InlineResponse20013', 'model/InlineResponse2002', 'model/InlineResponse2003', 'model/InlineResponse2004', 'model/InlineResponse2005', 'model/InlineResponse2006', 'model/InlineResponse2007', 'model/InlineResponse2008', 'model/InlineResponse2009', 'model/Institution', 'model/Letter', 'model/ModelCase', 'model/NestedFeatureOption', 'model/Note', 'model/RefreshTokenRequest', 'model/Request', 'model/SignRequest', 'model/Tag', 'model/TokenResponse', 'model/TokenSet', 'model/User', 'small_eod/CasesApi', 'small_eod/ChannelsApi', 'small_eod/CollectionsApi', 'small_eod/DescriptionsApi', 'small_eod/EventsApi', 'small_eod/FeaturesApi', 'small_eod/InstitutionsApi', 'small_eod/LettersApi', 'small_eod/NotesApi', 'small_eod/TagsApi', 'small_eod/UsersApi'], factory);
+    define(['ApiClient', 'model/CaseCount', 'model/Channel', 'model/Collection', 'model/DocumentType', 'model/Event', 'model/Feature', 'model/FeatureOption', 'model/File', 'model/InlineResponse200', 'model/InlineResponse2001', 'model/InlineResponse20010', 'model/InlineResponse20011', 'model/InlineResponse20012', 'model/InlineResponse20013', 'model/InlineResponse2002', 'model/InlineResponse2003', 'model/InlineResponse2004', 'model/InlineResponse2005', 'model/InlineResponse2006', 'model/InlineResponse2007', 'model/InlineResponse2008', 'model/InlineResponse2009', 'model/Institution', 'model/Letter', 'model/ModelCase', 'model/NestedFeatureOption', 'model/Note', 'model/RefreshTokenRequest', 'model/Request', 'model/SignRequest', 'model/Tag', 'model/TokenResponse', 'model/TokenSet', 'model/User', 'small_eod/CasesApi', 'small_eod/ChannelsApi', 'small_eod/CollectionsApi', 'small_eod/DocumentTypesApi', 'small_eod/EventsApi', 'small_eod/FeaturesApi', 'small_eod/InstitutionsApi', 'small_eod/LettersApi', 'small_eod/NotesApi', 'small_eod/TagsApi', 'small_eod/UsersApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/CaseCount'), require('./model/Channel'), require('./model/Collection'), require('./model/Description'), require('./model/Event'), require('./model/Feature'), require('./model/FeatureOption'), require('./model/File'), require('./model/InlineResponse200'), require('./model/InlineResponse2001'), require('./model/InlineResponse20010'), require('./model/InlineResponse20011'), require('./model/InlineResponse20012'), require('./model/InlineResponse20013'), require('./model/InlineResponse2002'), require('./model/InlineResponse2003'), require('./model/InlineResponse2004'), require('./model/InlineResponse2005'), require('./model/InlineResponse2006'), require('./model/InlineResponse2007'), require('./model/InlineResponse2008'), require('./model/InlineResponse2009'), require('./model/Institution'), require('./model/Letter'), require('./model/ModelCase'), require('./model/NestedFeatureOption'), require('./model/Note'), require('./model/RefreshTokenRequest'), require('./model/Request'), require('./model/SignRequest'), require('./model/Tag'), require('./model/TokenResponse'), require('./model/TokenSet'), require('./model/User'), require('./small_eod/CasesApi'), require('./small_eod/ChannelsApi'), require('./small_eod/CollectionsApi'), require('./small_eod/DescriptionsApi'), require('./small_eod/EventsApi'), require('./small_eod/FeaturesApi'), require('./small_eod/InstitutionsApi'), require('./small_eod/LettersApi'), require('./small_eod/NotesApi'), require('./small_eod/TagsApi'), require('./small_eod/UsersApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/CaseCount'), require('./model/Channel'), require('./model/Collection'), require('./model/DocumentType'), require('./model/Event'), require('./model/Feature'), require('./model/FeatureOption'), require('./model/File'), require('./model/InlineResponse200'), require('./model/InlineResponse2001'), require('./model/InlineResponse20010'), require('./model/InlineResponse20011'), require('./model/InlineResponse20012'), require('./model/InlineResponse20013'), require('./model/InlineResponse2002'), require('./model/InlineResponse2003'), require('./model/InlineResponse2004'), require('./model/InlineResponse2005'), require('./model/InlineResponse2006'), require('./model/InlineResponse2007'), require('./model/InlineResponse2008'), require('./model/InlineResponse2009'), require('./model/Institution'), require('./model/Letter'), require('./model/ModelCase'), require('./model/NestedFeatureOption'), require('./model/Note'), require('./model/RefreshTokenRequest'), require('./model/Request'), require('./model/SignRequest'), require('./model/Tag'), require('./model/TokenResponse'), require('./model/TokenSet'), require('./model/User'), require('./small_eod/CasesApi'), require('./small_eod/ChannelsApi'), require('./small_eod/CollectionsApi'), require('./small_eod/DocumentTypesApi'), require('./small_eod/EventsApi'), require('./small_eod/FeaturesApi'), require('./small_eod/InstitutionsApi'), require('./small_eod/LettersApi'), require('./small_eod/NotesApi'), require('./small_eod/TagsApi'), require('./small_eod/UsersApi'));
   }
-}(function(ApiClient, CaseCount, Channel, Collection, Description, Event, Feature, FeatureOption, File, InlineResponse200, InlineResponse2001, InlineResponse20010, InlineResponse20011, InlineResponse20012, InlineResponse20013, InlineResponse2002, InlineResponse2003, InlineResponse2004, InlineResponse2005, InlineResponse2006, InlineResponse2007, InlineResponse2008, InlineResponse2009, Institution, Letter, ModelCase, NestedFeatureOption, Note, RefreshTokenRequest, Request, SignRequest, Tag, TokenResponse, TokenSet, User, CasesApi, ChannelsApi, CollectionsApi, DescriptionsApi, EventsApi, FeaturesApi, InstitutionsApi, LettersApi, NotesApi, TagsApi, UsersApi) {
+}(function(ApiClient, CaseCount, Channel, Collection, DocumentType, Event, Feature, FeatureOption, File, InlineResponse200, InlineResponse2001, InlineResponse20010, InlineResponse20011, InlineResponse20012, InlineResponse20013, InlineResponse2002, InlineResponse2003, InlineResponse2004, InlineResponse2005, InlineResponse2006, InlineResponse2007, InlineResponse2008, InlineResponse2009, Institution, Letter, ModelCase, NestedFeatureOption, Note, RefreshTokenRequest, Request, SignRequest, Tag, TokenResponse, TokenSet, User, CasesApi, ChannelsApi, CollectionsApi, DocumentTypesApi, EventsApi, FeaturesApi, InstitutionsApi, LettersApi, NotesApi, TagsApi, UsersApi) {
   'use strict';
 
   /**
@@ -78,10 +78,10 @@
      */
     Collection: Collection,
     /**
-     * The Description model constructor.
-     * @property {module:model/Description}
+     * The DocumentType model constructor.
+     * @property {module:model/DocumentType}
      */
-    Description: Description,
+    DocumentType: DocumentType,
     /**
      * The Event model constructor.
      * @property {module:model/Event}
@@ -248,10 +248,10 @@
      */
     CollectionsApi: CollectionsApi,
     /**
-     * The DescriptionsApi service constructor.
-     * @property {module:small_eod/DescriptionsApi}
+     * The DocumentTypesApi service constructor.
+     * @property {module:small_eod/DocumentTypesApi}
      */
-    DescriptionsApi: DescriptionsApi,
+    DocumentTypesApi: DocumentTypesApi,
     /**
      * The EventsApi service constructor.
      * @property {module:small_eod/EventsApi}
