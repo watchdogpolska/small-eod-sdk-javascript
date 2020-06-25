@@ -83,8 +83,8 @@
       if (data.hasOwnProperty('case')) {
         obj['case'] = ApiClient.convertToType(data['case'], 'Number');
       }
-      if (data.hasOwnProperty('attachment')) {
-        obj['attachment'] = ApiClient.convertToType(data['attachment'], [File]);
+      if (data.hasOwnProperty('attachments')) {
+        obj['attachments'] = ApiClient.convertToType(data['attachments'], [File]);
       }
       if (data.hasOwnProperty('ordering')) {
         obj['ordering'] = ApiClient.convertToType(data['ordering'], 'Number');
@@ -151,9 +151,9 @@
    */
   exports.prototype['case'] = undefined;
   /**
-   * @member {Array.<File>} attachment
+   * @member {Array.<File>} attachments
    */
-  exports.prototype['attachment'] = undefined;
+  exports.prototype['attachments'] = undefined;
   /**
    * Order of letter.
    * @member {Number} ordering
