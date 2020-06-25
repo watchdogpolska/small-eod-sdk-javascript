@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **identifier** | **String** | Identifier of letter. | [optional] 
 **institution** | **Number** |  | [optional] 
 **_case** | **Number** |  | [optional] 
-**attachment** | **[File]** |  | [optional] [readonly] 
+**attachments** | **[File]** |  | [optional] [readonly] 
 **ordering** | **Number** | Order of letter. | [optional] 
 **comment** | **String** | Comment for letter. | [optional] 
 **excerpt** | **String** | Excerpt of letter. | [optional] 
