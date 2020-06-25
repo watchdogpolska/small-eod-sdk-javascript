@@ -2,6 +2,9 @@ name: Update SDK
 
 on:
   push:
+  repository_dispatch:
+    types:
+      - pushed
   schedule:
   - cron: 0 12 * * *
 
