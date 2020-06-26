@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **channel** | **Number** |  | [optional] 
 **_final** | **Boolean** | Indicates whether the document has final content or is, for example, a draft | [optional] 
 **_date** | **Date** | Date of sending or receiving. | [optional] 
-**identifier** | **String** | Identifier of letter. | [optional] 
+**referenceNumber** | **String** | Reference number of letter. | [optional] 
 **institution** | **Number** |  | [optional] 
 **_case** | **Number** |  | [optional] 
 **attachments** | **[File]** |  | [optional] [readonly] 

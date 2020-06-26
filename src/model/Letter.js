@@ -74,8 +74,8 @@
       if (data.hasOwnProperty('date')) {
         obj['date'] = ApiClient.convertToType(data['date'], 'Date');
       }
-      if (data.hasOwnProperty('identifier')) {
-        obj['identifier'] = ApiClient.convertToType(data['identifier'], 'String');
+      if (data.hasOwnProperty('referenceNumber')) {
+        obj['referenceNumber'] = ApiClient.convertToType(data['referenceNumber'], 'String');
       }
       if (data.hasOwnProperty('institution')) {
         obj['institution'] = ApiClient.convertToType(data['institution'], 'Number');
@@ -138,10 +138,10 @@
    */
   exports.prototype['date'] = undefined;
   /**
-   * Identifier of letter.
-   * @member {String} identifier
+   * Reference number of letter.
+   * @member {String} referenceNumber
    */
-  exports.prototype['identifier'] = undefined;
+  exports.prototype['referenceNumber'] = undefined;
   /**
    * @member {Number} institution
    */

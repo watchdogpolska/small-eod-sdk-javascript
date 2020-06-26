@@ -88,8 +88,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property identifier (base name: "identifier")', function() {
-      // uncomment below and update the code to test the property identifier
+    it('should have the property referenceNumber (base name: "referenceNumber")', function() {
+      // uncomment below and update the code to test the property referenceNumber
       //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
