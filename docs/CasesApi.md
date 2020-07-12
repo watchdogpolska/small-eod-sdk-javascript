@@ -7,12 +7,12 @@ Method | HTTP request | Description
 [**casesCreate**](CasesApi.md#casesCreate) | **POST** /cases/ | 
 [**casesDelete**](CasesApi.md#casesDelete) | **DELETE** /cases/{id}/ | 
 [**casesList**](CasesApi.md#casesList) | **GET** /cases/ | 
-[**casesNotifiedUserList**](CasesApi.md#casesNotifiedUserList) | **GET** /cases/{case_pk}/notifiedUser/ | 
-[**casesNotifiedUserRead**](CasesApi.md#casesNotifiedUserRead) | **GET** /cases/{case_pk}/notifiedUser/{id}/ | 
+[**casesNotifiedUsersList**](CasesApi.md#casesNotifiedUsersList) | **GET** /cases/{case_pk}/notifiedUsers/ | 
+[**casesNotifiedUsersRead**](CasesApi.md#casesNotifiedUsersRead) | **GET** /cases/{case_pk}/notifiedUsers/{id}/ | 
 [**casesPartialUpdate**](CasesApi.md#casesPartialUpdate) | **PATCH** /cases/{id}/ | 
 [**casesRead**](CasesApi.md#casesRead) | **GET** /cases/{id}/ | 
-[**casesResponsibleUserList**](CasesApi.md#casesResponsibleUserList) | **GET** /cases/{case_pk}/responsibleUser/ | 
-[**casesResponsibleUserRead**](CasesApi.md#casesResponsibleUserRead) | **GET** /cases/{case_pk}/responsibleUser/{id}/ | 
+[**casesResponsibleUsersList**](CasesApi.md#casesResponsibleUsersList) | **GET** /cases/{case_pk}/responsibleUsers/ | 
+[**casesResponsibleUsersRead**](CasesApi.md#casesResponsibleUsersRead) | **GET** /cases/{case_pk}/responsibleUsers/{id}/ | 
 [**casesUpdate**](CasesApi.md#casesUpdate) | **PUT** /cases/{id}/ | 
 
 
@@ -180,9 +180,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## casesNotifiedUserList
+## casesNotifiedUsersList
 
-> InlineResponse2001 casesNotifiedUserList(casePk, opts)
+> InlineResponse2001 casesNotifiedUsersList(casePk, opts)
 
 
 
@@ -207,7 +207,7 @@ var opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.casesNotifiedUserList(casePk, opts).then(function(data) {
+apiInstance.casesNotifiedUsersList(casePk, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -239,9 +239,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## casesNotifiedUserRead
+## casesNotifiedUsersRead
 
-> User casesNotifiedUserRead(casePk, id)
+> User casesNotifiedUsersRead(casePk, id)
 
 
 
@@ -263,7 +263,7 @@ Bearer.apiKey = 'YOUR API KEY';
 var apiInstance = new SmallEodClient.CasesApi();
 var casePk = "casePk_example"; // String | 
 var id = "id_example"; // String | 
-apiInstance.casesNotifiedUserRead(casePk, id).then(function(data) {
+apiInstance.casesNotifiedUsersRead(casePk, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -402,9 +402,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## casesResponsibleUserList
+## casesResponsibleUsersList
 
-> InlineResponse2001 casesResponsibleUserList(casePk, opts)
+> InlineResponse2001 casesResponsibleUsersList(casePk, opts)
 
 
 
@@ -429,7 +429,7 @@ var opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.casesResponsibleUserList(casePk, opts).then(function(data) {
+apiInstance.casesResponsibleUsersList(casePk, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -461,9 +461,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## casesResponsibleUserRead
+## casesResponsibleUsersRead
 
-> User casesResponsibleUserRead(casePk, id)
+> User casesResponsibleUsersRead(casePk, id)
 
 
 
@@ -485,7 +485,7 @@ Bearer.apiKey = 'YOUR API KEY';
 var apiInstance = new SmallEodClient.CasesApi();
 var casePk = "casePk_example"; // String | 
 var id = "id_example"; // String | 
-apiInstance.casesResponsibleUserRead(casePk, id).then(function(data) {
+apiInstance.casesResponsibleUsersRead(casePk, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);

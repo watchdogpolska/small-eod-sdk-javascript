@@ -141,53 +141,6 @@
 
 
     /**
-     * Generates pre-signed form data for uploading files to object storage.
-     * @param {module:model/SignRequest} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SignRequest} and HTTP response
-     */
-    this.lettersFileSignCreateWithHttpInfo = function(data) {
-      var postBody = data;
-      // verify the required parameter 'data' is set
-      if (data === undefined || data === null) {
-        throw new Error("Missing the required parameter 'data' when calling lettersFileSignCreate");
-      }
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['Basic', 'Bearer'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = SignRequest;
-      return this.apiClient.callApi(
-        '/letters/file/sign', 'POST',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * Generates pre-signed form data for uploading files to object storage.
-     * @param {module:model/SignRequest} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SignRequest}
-     */
-    this.lettersFileSignCreate = function(data) {
-      return this.lettersFileSignCreateWithHttpInfo(data)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
      * @param {String} letterPk 
      * @param {File} data 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link File} and HTTP response
@@ -453,6 +406,53 @@
      */
     this.lettersFilesRead = function(id, letterPk) {
       return this.lettersFilesReadWithHttpInfo(id, letterPk)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Generates pre-signed form data for uploading files to object storage.
+     * @param {module:model/SignRequest} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SignRequest} and HTTP response
+     */
+    this.lettersFilesSignCreateWithHttpInfo = function(data) {
+      var postBody = data;
+      // verify the required parameter 'data' is set
+      if (data === undefined || data === null) {
+        throw new Error("Missing the required parameter 'data' when calling lettersFilesSignCreate");
+      }
+
+      var pathParams = {
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Basic', 'Bearer'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = SignRequest;
+      return this.apiClient.callApi(
+        '/letters/files/sign', 'POST',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Generates pre-signed form data for uploading files to object storage.
+     * @param {module:model/SignRequest} data 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SignRequest}
+     */
+    this.lettersFilesSignCreate = function(data) {
+      return this.lettersFilesSignCreateWithHttpInfo(data)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

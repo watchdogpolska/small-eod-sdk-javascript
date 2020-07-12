@@ -81,20 +81,20 @@
         done();
       });
     });
-    describe('casesNotifiedUserList', function() {
-      it('should call casesNotifiedUserList successfully', function(done) {
-        //uncomment below and update the code to test casesNotifiedUserList
-        //instance.casesNotifiedUserList(function(error) {
+    describe('casesNotifiedUsersList', function() {
+      it('should call casesNotifiedUsersList successfully', function(done) {
+        //uncomment below and update the code to test casesNotifiedUsersList
+        //instance.casesNotifiedUsersList(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('casesNotifiedUserRead', function() {
-      it('should call casesNotifiedUserRead successfully', function(done) {
-        //uncomment below and update the code to test casesNotifiedUserRead
-        //instance.casesNotifiedUserRead(function(error) {
+    describe('casesNotifiedUsersRead', function() {
+      it('should call casesNotifiedUsersRead successfully', function(done) {
+        //uncomment below and update the code to test casesNotifiedUsersRead
+        //instance.casesNotifiedUsersRead(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -121,20 +121,20 @@
         done();
       });
     });
-    describe('casesResponsibleUserList', function() {
-      it('should call casesResponsibleUserList successfully', function(done) {
-        //uncomment below and update the code to test casesResponsibleUserList
-        //instance.casesResponsibleUserList(function(error) {
+    describe('casesResponsibleUsersList', function() {
+      it('should call casesResponsibleUsersList successfully', function(done) {
+        //uncomment below and update the code to test casesResponsibleUsersList
+        //instance.casesResponsibleUsersList(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('casesResponsibleUserRead', function() {
-      it('should call casesResponsibleUserRead successfully', function(done) {
-        //uncomment below and update the code to test casesResponsibleUserRead
-        //instance.casesResponsibleUserRead(function(error) {
+    describe('casesResponsibleUsersRead', function() {
+      it('should call casesResponsibleUsersRead successfully', function(done) {
+        //uncomment below and update the code to test casesResponsibleUsersRead
+        //instance.casesResponsibleUsersRead(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

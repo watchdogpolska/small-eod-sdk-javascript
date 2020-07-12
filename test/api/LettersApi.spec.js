@@ -71,16 +71,6 @@
         done();
       });
     });
-    describe('lettersFileSignCreate', function() {
-      it('should call lettersFileSignCreate successfully', function(done) {
-        //uncomment below and update the code to test lettersFileSignCreate
-        //instance.lettersFileSignCreate(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('lettersFilesCreate', function() {
       it('should call lettersFilesCreate successfully', function(done) {
         //uncomment below and update the code to test lettersFilesCreate
@@ -125,6 +115,16 @@
       it('should call lettersFilesRead successfully', function(done) {
         //uncomment below and update the code to test lettersFilesRead
         //instance.lettersFilesRead(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('lettersFilesSignCreate', function() {
+      it('should call lettersFilesSignCreate successfully', function(done) {
+        //uncomment below and update the code to test lettersFilesSignCreate
+        //instance.lettersFilesSignCreate(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

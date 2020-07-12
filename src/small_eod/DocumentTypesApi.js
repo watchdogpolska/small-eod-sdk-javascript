@@ -76,7 +76,7 @@
       var accepts = ['application/json'];
       var returnType = DocumentType;
       return this.apiClient.callApi(
-        '/document_types/', 'POST',
+        '/documentTypes/', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -122,7 +122,7 @@
       var accepts = [];
       var returnType = null;
       return this.apiClient.callApi(
-        '/document_types/{id}/', 'DELETE',
+        '/documentTypes/{id}/', 'DELETE',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -168,7 +168,7 @@
       var accepts = ['application/json'];
       var returnType = InlineResponse2008;
       return this.apiClient.callApi(
-        '/document_types/', 'GET',
+        '/documentTypes/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -221,7 +221,7 @@
       var accepts = ['application/json'];
       var returnType = DocumentType;
       return this.apiClient.callApi(
-        '/document_types/{id}/', 'PATCH',
+        '/documentTypes/{id}/', 'PATCH',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -268,7 +268,7 @@
       var accepts = ['application/json'];
       var returnType = DocumentType;
       return this.apiClient.callApi(
-        '/document_types/{id}/', 'GET',
+        '/documentTypes/{id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -319,7 +319,7 @@
       var accepts = ['application/json'];
       var returnType = DocumentType;
       return this.apiClient.callApi(
-        '/document_types/{id}/', 'PUT',
+        '/documentTypes/{id}/', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );

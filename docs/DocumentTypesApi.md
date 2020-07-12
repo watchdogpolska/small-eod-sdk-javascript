@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:8000/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**documentTypesCreate**](DocumentTypesApi.md#documentTypesCreate) | **POST** /document_types/ | 
-[**documentTypesDelete**](DocumentTypesApi.md#documentTypesDelete) | **DELETE** /document_types/{id}/ | 
-[**documentTypesList**](DocumentTypesApi.md#documentTypesList) | **GET** /document_types/ | 
-[**documentTypesPartialUpdate**](DocumentTypesApi.md#documentTypesPartialUpdate) | **PATCH** /document_types/{id}/ | 
-[**documentTypesRead**](DocumentTypesApi.md#documentTypesRead) | **GET** /document_types/{id}/ | 
-[**documentTypesUpdate**](DocumentTypesApi.md#documentTypesUpdate) | **PUT** /document_types/{id}/ | 
+[**documentTypesCreate**](DocumentTypesApi.md#documentTypesCreate) | **POST** /documentTypes/ | 
+[**documentTypesDelete**](DocumentTypesApi.md#documentTypesDelete) | **DELETE** /documentTypes/{id}/ | 
+[**documentTypesList**](DocumentTypesApi.md#documentTypesList) | **GET** /documentTypes/ | 
+[**documentTypesPartialUpdate**](DocumentTypesApi.md#documentTypesPartialUpdate) | **PATCH** /documentTypes/{id}/ | 
+[**documentTypesRead**](DocumentTypesApi.md#documentTypesRead) | **GET** /documentTypes/{id}/ | 
+[**documentTypesUpdate**](DocumentTypesApi.md#documentTypesUpdate) | **PUT** /documentTypes/{id}/ | 
 
 
 

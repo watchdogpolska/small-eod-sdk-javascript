@@ -6,12 +6,12 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**lettersCreate**](LettersApi.md#lettersCreate) | **POST** /letters/ | 
 [**lettersDelete**](LettersApi.md#lettersDelete) | **DELETE** /letters/{id}/ | 
-[**lettersFileSignCreate**](LettersApi.md#lettersFileSignCreate) | **POST** /letters/file/sign | 
 [**lettersFilesCreate**](LettersApi.md#lettersFilesCreate) | **POST** /letters/{letter_pk}/files/ | 
 [**lettersFilesDelete**](LettersApi.md#lettersFilesDelete) | **DELETE** /letters/{letter_pk}/files/{id}/ | 
 [**lettersFilesList**](LettersApi.md#lettersFilesList) | **GET** /letters/{letter_pk}/files/ | 
 [**lettersFilesPartialUpdate**](LettersApi.md#lettersFilesPartialUpdate) | **PATCH** /letters/{letter_pk}/files/{id}/ | 
 [**lettersFilesRead**](LettersApi.md#lettersFilesRead) | **GET** /letters/{letter_pk}/files/{id}/ | 
+[**lettersFilesSignCreate**](LettersApi.md#lettersFilesSignCreate) | **POST** /letters/files/sign | 
 [**lettersFilesUpdate**](LettersApi.md#lettersFilesUpdate) | **PUT** /letters/{letter_pk}/files/{id}/ | 
 [**lettersList**](LettersApi.md#lettersList) | **GET** /letters/ | 
 [**lettersPartialUpdate**](LettersApi.md#lettersPartialUpdate) | **PATCH** /letters/{id}/ | 
@@ -124,61 +124,6 @@ null (empty response body)
 
 - **Content-Type**: Not defined
 - **Accept**: Not defined
-
-
-## lettersFileSignCreate
-
-> SignRequest lettersFileSignCreate(data)
-
-
-
-Generates pre-signed form data for uploading files to object storage.
-
-### Example
-
-```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
-Bearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//Bearer.apiKeyPrefix = 'Token';
-
-var apiInstance = new SmallEodClient.LettersApi();
-var data = new SmallEodClient.SignRequest(); // SignRequest | 
-apiInstance.lettersFileSignCreate(data).then(function(data) {
-  console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
-  console.error(error);
-});
-
-```
-
-### Parameters
-
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | [**SignRequest**](SignRequest.md)|  | 
-
-### Return type
-
-[**SignRequest**](SignRequest.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
 
 
 ## lettersFilesCreate
@@ -459,6 +404,61 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## lettersFilesSignCreate
+
+> SignRequest lettersFilesSignCreate(data)
+
+
+
+Generates pre-signed form data for uploading files to object storage.
+
+### Example
+
+```javascript
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+var Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure API key authorization: Bearer
+var Bearer = defaultClient.authentications['Bearer'];
+Bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer.apiKeyPrefix = 'Token';
+
+var apiInstance = new SmallEodClient.LettersApi();
+var data = new SmallEodClient.SignRequest(); // SignRequest | 
+apiInstance.lettersFilesSignCreate(data).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **data** | [**SignRequest**](SignRequest.md)|  | 
+
+### Return type
+
+[**SignRequest**](SignRequest.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 

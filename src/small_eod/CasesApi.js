@@ -195,12 +195,12 @@
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2001} and HTTP response
      */
-    this.casesNotifiedUserListWithHttpInfo = function(casePk, opts) {
+    this.casesNotifiedUsersListWithHttpInfo = function(casePk, opts) {
       opts = opts || {};
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling casesNotifiedUserList");
+        throw new Error("Missing the required parameter 'casePk' when calling casesNotifiedUsersList");
       }
 
       var pathParams = {
@@ -222,7 +222,7 @@
       var accepts = ['application/json'];
       var returnType = InlineResponse2001;
       return this.apiClient.callApi(
-        '/cases/{case_pk}/notifiedUser/', 'GET',
+        '/cases/{case_pk}/notifiedUsers/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -235,8 +235,8 @@
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}
      */
-    this.casesNotifiedUserList = function(casePk, opts) {
-      return this.casesNotifiedUserListWithHttpInfo(casePk, opts)
+    this.casesNotifiedUsersList = function(casePk, opts) {
+      return this.casesNotifiedUsersListWithHttpInfo(casePk, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -248,15 +248,15 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
      */
-    this.casesNotifiedUserReadWithHttpInfo = function(casePk, id) {
+    this.casesNotifiedUsersReadWithHttpInfo = function(casePk, id) {
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling casesNotifiedUserRead");
+        throw new Error("Missing the required parameter 'casePk' when calling casesNotifiedUsersRead");
       }
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling casesNotifiedUserRead");
+        throw new Error("Missing the required parameter 'id' when calling casesNotifiedUsersRead");
       }
 
       var pathParams = {
@@ -277,7 +277,7 @@
       var accepts = ['application/json'];
       var returnType = User;
       return this.apiClient.callApi(
-        '/cases/{case_pk}/notifiedUser/{id}/', 'GET',
+        '/cases/{case_pk}/notifiedUsers/{id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -288,8 +288,8 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
      */
-    this.casesNotifiedUserRead = function(casePk, id) {
-      return this.casesNotifiedUserReadWithHttpInfo(casePk, id)
+    this.casesNotifiedUsersRead = function(casePk, id) {
+      return this.casesNotifiedUsersReadWithHttpInfo(casePk, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -401,12 +401,12 @@
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2001} and HTTP response
      */
-    this.casesResponsibleUserListWithHttpInfo = function(casePk, opts) {
+    this.casesResponsibleUsersListWithHttpInfo = function(casePk, opts) {
       opts = opts || {};
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling casesResponsibleUserList");
+        throw new Error("Missing the required parameter 'casePk' when calling casesResponsibleUsersList");
       }
 
       var pathParams = {
@@ -428,7 +428,7 @@
       var accepts = ['application/json'];
       var returnType = InlineResponse2001;
       return this.apiClient.callApi(
-        '/cases/{case_pk}/responsibleUser/', 'GET',
+        '/cases/{case_pk}/responsibleUsers/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -441,8 +441,8 @@
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}
      */
-    this.casesResponsibleUserList = function(casePk, opts) {
-      return this.casesResponsibleUserListWithHttpInfo(casePk, opts)
+    this.casesResponsibleUsersList = function(casePk, opts) {
+      return this.casesResponsibleUsersListWithHttpInfo(casePk, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -454,15 +454,15 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
      */
-    this.casesResponsibleUserReadWithHttpInfo = function(casePk, id) {
+    this.casesResponsibleUsersReadWithHttpInfo = function(casePk, id) {
       var postBody = null;
       // verify the required parameter 'casePk' is set
       if (casePk === undefined || casePk === null) {
-        throw new Error("Missing the required parameter 'casePk' when calling casesResponsibleUserRead");
+        throw new Error("Missing the required parameter 'casePk' when calling casesResponsibleUsersRead");
       }
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling casesResponsibleUserRead");
+        throw new Error("Missing the required parameter 'id' when calling casesResponsibleUsersRead");
       }
 
       var pathParams = {
@@ -483,7 +483,7 @@
       var accepts = ['application/json'];
       var returnType = User;
       return this.apiClient.callApi(
-        '/cases/{case_pk}/responsibleUser/{id}/', 'GET',
+        '/cases/{case_pk}/responsibleUsers/{id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -494,8 +494,8 @@
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
      */
-    this.casesResponsibleUserRead = function(casePk, id) {
-      return this.casesResponsibleUserReadWithHttpInfo(casePk, id)
+    this.casesResponsibleUsersRead = function(casePk, id) {
+      return this.casesResponsibleUsersReadWithHttpInfo(casePk, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
