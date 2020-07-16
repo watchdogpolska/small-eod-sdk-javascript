@@ -20,5 +20,7 @@ Name | Type | Description | Notes
 **flatNo** | **String** | Flat number. | [optional] 
 **nip** | **String** | Tax Identification Number. | [optional] 
 **regon** | **String** | Statistical Identification Number. | [optional] 
+**comment** | **String** | Comment for this case. | [optional] 
+**tags** | **[String]** |  | [optional] 
 
 

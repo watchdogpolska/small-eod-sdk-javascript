@@ -154,6 +154,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property comment (base name: "comment")', function() {
+      // uncomment below and update the code to test the property comment
+      //var instance = new SmallEodClient.Institution();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property tags (base name: "tags")', function() {
+      // uncomment below and update the code to test the property tags
+      //var instance = new SmallEodClient.Institution();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

@@ -111,6 +111,12 @@
       if (data.hasOwnProperty('regon')) {
         obj['regon'] = ApiClient.convertToType(data['regon'], 'String');
       }
+      if (data.hasOwnProperty('comment')) {
+        obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
+      }
+      if (data.hasOwnProperty('tags')) {
+        obj['tags'] = ApiClient.convertToType(data['tags'], ['String']);
+      }
     }
     return obj;
   }
@@ -189,6 +195,15 @@
    * @member {String} regon
    */
   exports.prototype['regon'] = undefined;
+  /**
+   * Comment for this case.
+   * @member {String} comment
+   */
+  exports.prototype['comment'] = undefined;
+  /**
+   * @member {Array.<String>} tags
+   */
+  exports.prototype['tags'] = undefined;
 
 
 
