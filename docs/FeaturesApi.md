@@ -237,7 +237,7 @@ null (empty response body)
 
 ## featuresFeatureoptionList
 
-> InlineResponse20010 featuresFeatureoptionList(featurePk, opts)
+> InlineResponse20011 featuresFeatureoptionList(featurePk, opts)
 
 
 
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 
@@ -465,7 +465,7 @@ Name | Type | Description  | Notes
 
 ## featuresList
 
-> InlineResponse2009 featuresList(opts)
+> InlineResponse20010 featuresList(opts)
 
 
 
@@ -508,7 +508,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 

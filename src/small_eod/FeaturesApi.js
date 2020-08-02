@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Feature', 'model/FeatureOption', 'model/InlineResponse20010', 'model/InlineResponse2009'], factory);
+    define(['ApiClient', 'model/Feature', 'model/FeatureOption', 'model/InlineResponse20010', 'model/InlineResponse20011'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Feature'), require('../model/FeatureOption'), require('../model/InlineResponse20010'), require('../model/InlineResponse2009'));
+    module.exports = factory(require('../ApiClient'), require('../model/Feature'), require('../model/FeatureOption'), require('../model/InlineResponse20010'), require('../model/InlineResponse20011'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.FeaturesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Feature, root.SmallEodClient.FeatureOption, root.SmallEodClient.InlineResponse20010, root.SmallEodClient.InlineResponse2009);
+    root.SmallEodClient.FeaturesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Feature, root.SmallEodClient.FeatureOption, root.SmallEodClient.InlineResponse20010, root.SmallEodClient.InlineResponse20011);
   }
-}(this, function(ApiClient, Feature, FeatureOption, InlineResponse20010, InlineResponse2009) {
+}(this, function(ApiClient, Feature, FeatureOption, InlineResponse20010, InlineResponse20011) {
   'use strict';
 
   /**
@@ -250,7 +250,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20011} and HTTP response
      */
     this.featuresFeatureoptionListWithHttpInfo = function(featurePk, opts) {
       opts = opts || {};
@@ -277,7 +277,7 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = InlineResponse20010;
+      var returnType = InlineResponse20011;
       return this.apiClient.callApi(
         '/features/{feature_pk}/featureoption/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -290,7 +290,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
      */
     this.featuresFeatureoptionList = function(featurePk, opts) {
       return this.featuresFeatureoptionListWithHttpInfo(featurePk, opts)
@@ -475,7 +475,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
      */
     this.featuresListWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -497,7 +497,7 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = InlineResponse2009;
+      var returnType = InlineResponse20010;
       return this.apiClient.callApi(
         '/features/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -509,7 +509,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
      */
     this.featuresList = function(opts) {
       return this.featuresListWithHttpInfo(opts)

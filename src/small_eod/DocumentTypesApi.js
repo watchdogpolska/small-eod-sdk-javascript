@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DocumentType', 'model/InlineResponse2008'], factory);
+    define(['ApiClient', 'model/DocumentType', 'model/InlineResponse2009'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/DocumentType'), require('../model/InlineResponse2008'));
+    module.exports = factory(require('../ApiClient'), require('../model/DocumentType'), require('../model/InlineResponse2009'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.DocumentTypesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.DocumentType, root.SmallEodClient.InlineResponse2008);
+    root.SmallEodClient.DocumentTypesApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.DocumentType, root.SmallEodClient.InlineResponse2009);
   }
-}(this, function(ApiClient, DocumentType, InlineResponse2008) {
+}(this, function(ApiClient, DocumentType, InlineResponse2009) {
   'use strict';
 
   /**
@@ -144,7 +144,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
      */
     this.documentTypesListWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -166,7 +166,7 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = InlineResponse2008;
+      var returnType = InlineResponse2009;
       return this.apiClient.callApi(
         '/documentTypes/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -178,7 +178,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
      */
     this.documentTypesList = function(opts) {
       return this.documentTypesListWithHttpInfo(opts)

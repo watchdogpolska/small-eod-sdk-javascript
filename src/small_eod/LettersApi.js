@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse20012', 'model/InlineResponse2006', 'model/Letter', 'model/SignRequest'], factory);
+    define(['ApiClient', 'model/InlineResponse20013', 'model/InlineResponse2007', 'model/Letter', 'model/SignRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20012'), require('../model/InlineResponse2006'), require('../model/Letter'), require('../model/SignRequest'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20013'), require('../model/InlineResponse2007'), require('../model/Letter'), require('../model/SignRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.LettersApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse20012, root.SmallEodClient.InlineResponse2006, root.SmallEodClient.Letter, root.SmallEodClient.SignRequest);
+    root.SmallEodClient.LettersApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse20013, root.SmallEodClient.InlineResponse2007, root.SmallEodClient.Letter, root.SmallEodClient.SignRequest);
   }
-}(this, function(ApiClient, InlineResponse20012, InlineResponse2006, Letter, SignRequest) {
+}(this, function(ApiClient, InlineResponse20013, InlineResponse2007, Letter, SignRequest) {
   'use strict';
 
   /**
@@ -250,7 +250,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20012} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20013} and HTTP response
      */
     this.lettersFilesListWithHttpInfo = function(letterPk, opts) {
       opts = opts || {};
@@ -277,7 +277,7 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = InlineResponse20012;
+      var returnType = InlineResponse20013;
       return this.apiClient.callApi(
         '/letters/{letter_pk}/files/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -290,7 +290,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20013}
      */
     this.lettersFilesList = function(letterPk, opts) {
       return this.lettersFilesListWithHttpInfo(letterPk, opts)
@@ -522,7 +522,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2006} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2007} and HTTP response
      */
     this.lettersListWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -544,7 +544,7 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = InlineResponse2006;
+      var returnType = InlineResponse2007;
       return this.apiClient.callApi(
         '/letters/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -556,7 +556,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2006}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2007}
      */
     this.lettersList = function(opts) {
       return this.lettersListWithHttpInfo(opts)

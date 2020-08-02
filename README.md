@@ -99,9 +99,12 @@ Bearer.apiKey = "YOUR API KEY"
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix['Authorization'] = "Token"
 
-var api = new SmallEodClient.CasesApi()
-var data = new SmallEodClient.CaseCount(); // {CaseCount} 
-api.casesCreate(data).then(function(data) {
+var api = new SmallEodClient.AdministrativeUnitsApi()
+var opts = {
+  'limit': 56, // {Number} Number of results to return per page.
+  'offset': 56 // {Number} The initial index from which to return the results.
+};
+api.administrativeUnitsList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -116,6 +119,8 @@ All URIs are relative to *http://localhost:8000/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*SmallEodClient.AdministrativeUnitsApi* | [**administrativeUnitsList**](docs/AdministrativeUnitsApi.md#administrativeUnitsList) | **GET** /administrative_units/ | 
+*SmallEodClient.AdministrativeUnitsApi* | [**administrativeUnitsRead**](docs/AdministrativeUnitsApi.md#administrativeUnitsRead) | **GET** /administrative_units/{id}/ | 
 *SmallEodClient.CasesApi* | [**casesCreate**](docs/CasesApi.md#casesCreate) | **POST** /cases/ | 
 *SmallEodClient.CasesApi* | [**casesDelete**](docs/CasesApi.md#casesDelete) | **DELETE** /cases/{id}/ | 
 *SmallEodClient.CasesApi* | [**casesList**](docs/CasesApi.md#casesList) | **GET** /cases/ | 
@@ -215,6 +220,7 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [SmallEodClient.AdministrativeUnit](docs/AdministrativeUnit.md)
  - [SmallEodClient.CaseCount](docs/CaseCount.md)
  - [SmallEodClient.Channel](docs/Channel.md)
  - [SmallEodClient.Collection](docs/Collection.md)
@@ -229,6 +235,7 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.InlineResponse20011](docs/InlineResponse20011.md)
  - [SmallEodClient.InlineResponse20012](docs/InlineResponse20012.md)
  - [SmallEodClient.InlineResponse20013](docs/InlineResponse20013.md)
+ - [SmallEodClient.InlineResponse20014](docs/InlineResponse20014.md)
  - [SmallEodClient.InlineResponse2002](docs/InlineResponse2002.md)
  - [SmallEodClient.InlineResponse2003](docs/InlineResponse2003.md)
  - [SmallEodClient.InlineResponse2004](docs/InlineResponse2004.md)

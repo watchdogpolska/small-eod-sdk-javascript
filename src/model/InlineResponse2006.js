@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Letter'], factory);
+    define(['ApiClient', 'model/Event'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Letter'));
+    module.exports = factory(require('../ApiClient'), require('./Event'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.InlineResponse2006 = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Letter);
+    root.SmallEodClient.InlineResponse2006 = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Event);
   }
-}(this, function(ApiClient, Letter) {
+}(this, function(ApiClient, Event) {
   'use strict';
 
 
@@ -44,7 +44,7 @@
    * @alias module:model/InlineResponse2006
    * @class
    * @param count {Number} 
-   * @param results {Array.<module:model/Letter>} 
+   * @param results {Array.<module:model/Event>} 
    */
   var exports = function(count, results) {
     var _this = this;
@@ -67,7 +67,7 @@
         obj['count'] = ApiClient.convertToType(data['count'], 'Number');
       }
       if (data.hasOwnProperty('results')) {
-        obj['results'] = ApiClient.convertToType(data['results'], [Letter]);
+        obj['results'] = ApiClient.convertToType(data['results'], [Event]);
       }
       if (data.hasOwnProperty('next')) {
         obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -84,7 +84,7 @@
    */
   exports.prototype['count'] = undefined;
   /**
-   * @member {Array.<module:model/Letter>} results
+   * @member {Array.<module:model/Event>} results
    */
   exports.prototype['results'] = undefined;
   /**

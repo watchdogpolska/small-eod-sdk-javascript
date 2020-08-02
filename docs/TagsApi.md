@@ -121,7 +121,7 @@ null (empty response body)
 
 ## tagsList
 
-> InlineResponse20013 tagsList(opts)
+> InlineResponse20014 tagsList(opts)
 
 
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**InlineResponse20014**](InlineResponse20014.md)
 
 ### Authorization
 

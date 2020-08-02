@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | 
-**results** | [**[Tag]**](Tag.md) |  | 
+**results** | **[File]** |  | 
 **next** | **String** |  | [optional] 
 **previous** | **String** |  | [optional] 
 

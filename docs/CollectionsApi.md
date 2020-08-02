@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 ## collectionsCasesEventsList
 
-> InlineResponse2005 collectionsCasesEventsList(casePk, collectionPk, opts)
+> InlineResponse2006 collectionsCasesEventsList(casePk, collectionPk, opts)
 
 
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesLettersList
 
-> InlineResponse2006 collectionsCasesLettersList(casePk, collectionPk, opts)
+> InlineResponse2007 collectionsCasesLettersList(casePk, collectionPk, opts)
 
 
 
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](InlineResponse2006.md)
+[**InlineResponse2007**](InlineResponse2007.md)
 
 ### Authorization
 
@@ -280,7 +280,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesList
 
-> InlineResponse2004 collectionsCasesList(collectionPk, opts)
+> InlineResponse2005 collectionsCasesList(collectionPk, opts)
 
 
 
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 
@@ -344,7 +344,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesNotesList
 
-> InlineResponse2007 collectionsCasesNotesList(casePk, collectionPk, opts)
+> InlineResponse2008 collectionsCasesNotesList(casePk, collectionPk, opts)
 
 
 
@@ -396,7 +396,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse2008**](InlineResponse2008.md)
 
 ### Authorization
 
@@ -638,7 +638,7 @@ null (empty response body)
 
 ## collectionsList
 
-> InlineResponse2003 collectionsList(opts)
+> InlineResponse2004 collectionsList(opts)
 
 
 
@@ -681,7 +681,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 

@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse2001', 'model/RefreshTokenRequest', 'model/Request', 'model/TokenResponse', 'model/User'], factory);
+    define(['ApiClient', 'model/InlineResponse2002', 'model/RefreshTokenRequest', 'model/Request', 'model/TokenResponse', 'model/User'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse2001'), require('../model/RefreshTokenRequest'), require('../model/Request'), require('../model/TokenResponse'), require('../model/User'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse2002'), require('../model/RefreshTokenRequest'), require('../model/Request'), require('../model/TokenResponse'), require('../model/User'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.UsersApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse2001, root.SmallEodClient.RefreshTokenRequest, root.SmallEodClient.Request, root.SmallEodClient.TokenResponse, root.SmallEodClient.User);
+    root.SmallEodClient.UsersApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse2002, root.SmallEodClient.RefreshTokenRequest, root.SmallEodClient.Request, root.SmallEodClient.TokenResponse, root.SmallEodClient.User);
   }
-}(this, function(ApiClient, InlineResponse2001, RefreshTokenRequest, Request, TokenResponse, User) {
+}(this, function(ApiClient, InlineResponse2002, RefreshTokenRequest, Request, TokenResponse, User) {
   'use strict';
 
   /**
@@ -249,7 +249,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2001} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
      */
     this.usersListWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -271,7 +271,7 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = InlineResponse2001;
+      var returnType = InlineResponse2002;
       return this.apiClient.callApi(
         '/users/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -284,7 +284,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
      */
     this.usersList = function(opts) {
       return this.usersListWithHttpInfo(opts)

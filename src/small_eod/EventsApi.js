@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Event', 'model/InlineResponse2005'], factory);
+    define(['ApiClient', 'model/Event', 'model/InlineResponse2006'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Event'), require('../model/InlineResponse2005'));
+    module.exports = factory(require('../ApiClient'), require('../model/Event'), require('../model/InlineResponse2006'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.EventsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Event, root.SmallEodClient.InlineResponse2005);
+    root.SmallEodClient.EventsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.Event, root.SmallEodClient.InlineResponse2006);
   }
-}(this, function(ApiClient, Event, InlineResponse2005) {
+}(this, function(ApiClient, Event, InlineResponse2006) {
   'use strict';
 
   /**
@@ -144,7 +144,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2005} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2006} and HTTP response
      */
     this.eventsListWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -166,7 +166,7 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = InlineResponse2005;
+      var returnType = InlineResponse2006;
       return this.apiClient.callApi(
         '/events/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -178,7 +178,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2005}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2006}
      */
     this.eventsList = function(opts) {
       return this.eventsListWithHttpInfo(opts)

@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse20011', 'model/Institution'], factory);
+    define(['ApiClient', 'model/InlineResponse20012', 'model/Institution'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20011'), require('../model/Institution'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20012'), require('../model/Institution'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.InstitutionsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse20011, root.SmallEodClient.Institution);
+    root.SmallEodClient.InstitutionsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse20012, root.SmallEodClient.Institution);
   }
-}(this, function(ApiClient, InlineResponse20011, Institution) {
+}(this, function(ApiClient, InlineResponse20012, Institution) {
   'use strict';
 
   /**
@@ -145,7 +145,7 @@
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @param {String} opts.query Query filter. Currently filtering by name.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20011} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20012} and HTTP response
      */
     this.institutionsListWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -168,7 +168,7 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = InlineResponse20011;
+      var returnType = InlineResponse20012;
       return this.apiClient.callApi(
         '/institutions/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -181,7 +181,7 @@
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @param {String} opts.query Query filter. Currently filtering by name.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
      */
     this.institutionsList = function(opts) {
       return this.institutionsListWithHttpInfo(opts)

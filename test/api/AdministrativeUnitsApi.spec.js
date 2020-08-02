@@ -31,8 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    // create a new instance
-    //instance = new SmallEodClient.Tag();
+    instance = new SmallEodClient.AdministrativeUnitsApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -51,25 +50,27 @@
       object[property] = value;
   }
 
-  describe('Tag', function() {
-    it('should create an instance of Tag', function() {
-      // uncomment below and update the code to test Tag
-      //var instance = new SmallEodClient.Tag();
-      //expect(instance).to.be.a(SmallEodClient.Tag);
+  describe('AdministrativeUnitsApi', function() {
+    describe('administrativeUnitsList', function() {
+      it('should call administrativeUnitsList successfully', function(done) {
+        //uncomment below and update the code to test administrativeUnitsList
+        //instance.administrativeUnitsList(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instance = new SmallEodClient.Tag();
-      //expect(instance).to.be();
+    describe('administrativeUnitsRead', function() {
+      it('should call administrativeUnitsRead successfully', function(done) {
+        //uncomment below and update the code to test administrativeUnitsRead
+        //instance.administrativeUnitsRead(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instance = new SmallEodClient.Tag();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

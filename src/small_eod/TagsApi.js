@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse20013', 'model/Tag'], factory);
+    define(['ApiClient', 'model/InlineResponse20014', 'model/Tag'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20013'), require('../model/Tag'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20014'), require('../model/Tag'));
   } else {
     // Browser globals (root is window)
     if (!root.SmallEodClient) {
       root.SmallEodClient = {};
     }
-    root.SmallEodClient.TagsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse20013, root.SmallEodClient.Tag);
+    root.SmallEodClient.TagsApi = factory(root.SmallEodClient.ApiClient, root.SmallEodClient.InlineResponse20014, root.SmallEodClient.Tag);
   }
-}(this, function(ApiClient, InlineResponse20013, Tag) {
+}(this, function(ApiClient, InlineResponse20014, Tag) {
   'use strict';
 
   /**
@@ -144,7 +144,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20013} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20014} and HTTP response
      */
     this.tagsListWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -166,7 +166,7 @@
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = InlineResponse20013;
+      var returnType = InlineResponse20014;
       return this.apiClient.callApi(
         '/tags/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
@@ -178,7 +178,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20013}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20014}
      */
     this.tagsList = function(opts) {
       return this.tagsListWithHttpInfo(opts)

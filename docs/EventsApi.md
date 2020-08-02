@@ -121,7 +121,7 @@ null (empty response body)
 
 ## eventsList
 
-> InlineResponse2005 eventsList(opts)
+> InlineResponse2006 eventsList(opts)
 
 
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 

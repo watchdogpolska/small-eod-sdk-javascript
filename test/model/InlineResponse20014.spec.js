@@ -32,7 +32,7 @@
 
   beforeEach(function() {
     // create a new instance
-    //instance = new SmallEodClient.Tag();
+    //instance = new SmallEodClient.InlineResponse20014();
   });
 
   var getProperty = function(object, getter, property) {
@@ -51,22 +51,34 @@
       object[property] = value;
   }
 
-  describe('Tag', function() {
-    it('should create an instance of Tag', function() {
-      // uncomment below and update the code to test Tag
-      //var instance = new SmallEodClient.Tag();
-      //expect(instance).to.be.a(SmallEodClient.Tag);
+  describe('InlineResponse20014', function() {
+    it('should create an instance of InlineResponse20014', function() {
+      // uncomment below and update the code to test InlineResponse20014
+      //var instance = new SmallEodClient.InlineResponse20014();
+      //expect(instance).to.be.a(SmallEodClient.InlineResponse20014);
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instance = new SmallEodClient.Tag();
+    it('should have the property count (base name: "count")', function() {
+      // uncomment below and update the code to test the property count
+      //var instance = new SmallEodClient.InlineResponse20014();
       //expect(instance).to.be();
     });
 
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instance = new SmallEodClient.Tag();
+    it('should have the property results (base name: "results")', function() {
+      // uncomment below and update the code to test the property results
+      //var instance = new SmallEodClient.InlineResponse20014();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property next (base name: "next")', function() {
+      // uncomment below and update the code to test the property next
+      //var instance = new SmallEodClient.InlineResponse20014();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property previous (base name: "previous")', function() {
+      // uncomment below and update the code to test the property previous
+      //var instance = new SmallEodClient.InlineResponse20014();
       //expect(instance).to.be();
     });
 

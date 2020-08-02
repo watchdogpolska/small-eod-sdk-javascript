@@ -121,7 +121,7 @@ null (empty response body)
 
 ## documentTypesList
 
-> InlineResponse2008 documentTypesList(opts)
+> InlineResponse2009 documentTypesList(opts)
 
 
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 

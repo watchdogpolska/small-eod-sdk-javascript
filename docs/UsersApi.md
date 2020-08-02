@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 
 ## usersList
 
-> InlineResponse2001 usersList(opts)
+> InlineResponse2002 usersList(opts)
 
 
 
@@ -291,7 +291,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
