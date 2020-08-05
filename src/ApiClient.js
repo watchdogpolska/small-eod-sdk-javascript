@@ -513,12 +513,15 @@
   };
 
   /**
-   * Parses an ISO-8601 string representation of a date value.
+   * Parses an ISO-8601 string representation or epoch representation of a date value.
    * @param {String} str The date value as a string.
    * @returns {Date} The parsed date object.
    */
   exports.parseDate = function(str) {
-    return new Date(str.replace(/T/i, ' '));
+    if (isNaN(str)) {
+      return new Date(str.replace(/T/i, ' '));
+    }
+    return new Date(+str);
   };
 
   /**
