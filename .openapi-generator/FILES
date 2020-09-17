@@ -1,3 +1,4 @@
+.gitignore
 README.md
 docs/AdministrativeUnit.md
 docs/AdministrativeUnitsApi.md
