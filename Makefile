@@ -21,7 +21,7 @@ clean:
 download:
 	curl -s $(spec_url) > swagger.json
 
-build:
+generate:
 	docker run --user $$(id -u):$$(id -g) --network host --rm \
 	-v $(SPEC_PATH):/openapi.json -v $$(pwd):/out \
 	-e JS_POST_PROCESS_FILE="/usr/local/bin/js-beautify -r -f" \
