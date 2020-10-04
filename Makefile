@@ -1,7 +1,7 @@
 spec_url = http://localhost:8000/api/docs/?format=openapi
 SPEC_PATH ?=$$(pwd)/swagger.json
 
-.PHONY: build test
+.PHONY: generate build test
 
 config-help:
 	docker run openapitools/openapi-generator-cli config-help -g javascript
@@ -35,9 +35,13 @@ generate:
 	-c /out/config.yml \
 	-o /out
 
+build:
+    npm i typescript@4.0.3 --save-dev
+	npm run build
+	npm run tsc
+
 undownload:
 	rm swagger.json
 
 test:
-	docker build -t sdk-javascript .
-	docker run sdk-javascript
+	npm run test
