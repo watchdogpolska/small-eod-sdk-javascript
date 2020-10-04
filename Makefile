@@ -39,7 +39,7 @@ build:
 	npm install
 	npm i typescript@4.0.3 --save-dev
 	npm run build
-	npm run tsc
+	npx run tsc
 
 undownload:
 	rm swagger.json
