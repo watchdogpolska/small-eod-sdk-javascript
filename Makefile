@@ -36,6 +36,7 @@ generate:
 	-o /out
 
 build:
+    npm install
     npm i typescript@4.0.3 --save-dev
 	npm run build
 	npm run tsc
