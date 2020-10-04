@@ -19,7 +19,7 @@ clean:
 	rm -r docs src test
 
 download:
-	curl -s $(spec_url) > swagger.json
+	curl $(spec_url) > swagger.json
 
 generate:
 	docker run --user $$(id -u):$$(id -g) --network host --rm \
