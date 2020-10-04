@@ -8,7 +8,7 @@ config-help:
 
 startbackend:
 	[ -d "small_eod" ] || git clone https://github.com/watchdogpolska/small_eod.git
-	cd small_eod; make start;
+	make -C small_eod start;
 	cd small_eod; docker-compose exec -T backend bash -c 'wait-for-it localhost:8000'
 	sudo chown $$(id -u):$$(id -g) . -R
 
