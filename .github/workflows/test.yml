@@ -44,3 +44,5 @@ jobs:
       - run: make generate
       - name: Test no changes in API
         run: test -z "$(git status --porcelain .)"
+      - run: make logsbackend
+        if: failure()
