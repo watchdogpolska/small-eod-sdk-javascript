@@ -22,30 +22,29 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.EventsApi();
-var data = new SmallEodClient.Event(); // Event | 
-apiInstance.eventsCreate(data).then(function(data) {
+let apiInstance = new SmallEodClient.EventsApi();
+let data = new SmallEodClient.Event(); // Event | 
+apiInstance.eventsCreate(data).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -75,30 +74,29 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.EventsApi();
-var id = 56; // Number | A unique integer value identifying this event.
-apiInstance.eventsDelete(id).then(function() {
+let apiInstance = new SmallEodClient.EventsApi();
+let id = 56; // Number | A unique integer value identifying this event.
+apiInstance.eventsDelete(id).then(() => {
   console.log('API called successfully.');
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -128,33 +126,32 @@ null (empty response body)
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.EventsApi();
-var opts = {
+let apiInstance = new SmallEodClient.EventsApi();
+let opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.eventsList(opts).then(function(data) {
+apiInstance.eventsList(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -185,31 +182,30 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.EventsApi();
-var id = 56; // Number | A unique integer value identifying this event.
-var data = new SmallEodClient.Event(); // Event | 
-apiInstance.eventsPartialUpdate(id, data).then(function(data) {
+let apiInstance = new SmallEodClient.EventsApi();
+let id = 56; // Number | A unique integer value identifying this event.
+let data = new SmallEodClient.Event(); // Event | 
+apiInstance.eventsPartialUpdate(id, data).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -240,30 +236,29 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.EventsApi();
-var id = 56; // Number | A unique integer value identifying this event.
-apiInstance.eventsRead(id).then(function(data) {
+let apiInstance = new SmallEodClient.EventsApi();
+let id = 56; // Number | A unique integer value identifying this event.
+apiInstance.eventsRead(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -293,31 +288,30 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.EventsApi();
-var id = 56; // Number | A unique integer value identifying this event.
-var data = new SmallEodClient.Event(); // Event | 
-apiInstance.eventsUpdate(id, data).then(function(data) {
+let apiInstance = new SmallEodClient.EventsApi();
+let id = 56; // Number | A unique integer value identifying this event.
+let data = new SmallEodClient.Event(); // Event | 
+apiInstance.eventsUpdate(id, data).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
