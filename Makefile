@@ -1,4 +1,3 @@
-spec_url = http://localhost:8000/api/docs/?format=openapi
 SPEC_PATH ?=$$(pwd)/swagger.json
 
 .PHONY: generate build test
@@ -8,9 +7,7 @@ config-help:
 
 startbackend:
 	[ -d "small_eod" ] || git clone https://github.com/watchdogpolska/small_eod.git
-	make -C small_eod start;
-	cd small_eod; docker-compose exec -T backend bash -c 'wait-for-it localhost:8000'
-	sudo chown $$(id -u):$$(id -g) . -R
+	make -C small_eod wait_minio
 
 logsbackend:
 	cd small_eod; docker-compose logs
@@ -19,7 +16,7 @@ clean:
 	rm -r docs src test
 
 download:
-	curl $(spec_url) > swagger.json
+	cd small_eod; docker-compose run -T --rm backend python manage.py generate_swagger --format json | jq '.' > $(SPEC_PATH)
 
 generate:
 	docker run --user $$(id -u):$$(id -g) --network host --rm \
