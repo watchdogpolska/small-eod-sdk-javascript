@@ -42,6 +42,7 @@ jobs:
       - run: make clean
       - run: make download
       - run: make generate
+      - run: make build
       - name: Test no changes in API
         run: test -z "$(git status --porcelain .)"
       - run: make logsbackend
