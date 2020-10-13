@@ -56,7 +56,7 @@
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new SmallEodClient.DocumentType();
+      //var instance = new SmallEodClient.DocumentType();
       //expect(instance).to.be();
     });
 

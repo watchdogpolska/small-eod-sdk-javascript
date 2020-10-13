@@ -56,43 +56,43 @@
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new SmallEodClient.AdministrativeUnit();
+      //var instance = new SmallEodClient.AdministrativeUnit();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new SmallEodClient.AdministrativeUnit();
+      //var instance = new SmallEodClient.AdministrativeUnit();
       //expect(instance).to.be();
     });
 
     it('should have the property category (base name: "category")', function() {
       // uncomment below and update the code to test the property category
-      //var instane = new SmallEodClient.AdministrativeUnit();
+      //var instance = new SmallEodClient.AdministrativeUnit();
       //expect(instance).to.be();
     });
 
     it('should have the property updatedOn (base name: "updatedOn")', function() {
       // uncomment below and update the code to test the property updatedOn
-      //var instane = new SmallEodClient.AdministrativeUnit();
+      //var instance = new SmallEodClient.AdministrativeUnit();
       //expect(instance).to.be();
     });
 
     it('should have the property parent (base name: "parent")', function() {
       // uncomment below and update the code to test the property parent
-      //var instane = new SmallEodClient.AdministrativeUnit();
+      //var instance = new SmallEodClient.AdministrativeUnit();
       //expect(instance).to.be();
     });
 
     it('should have the property slug (base name: "slug")', function() {
       // uncomment below and update the code to test the property slug
-      //var instane = new SmallEodClient.AdministrativeUnit();
+      //var instance = new SmallEodClient.AdministrativeUnit();
       //expect(instance).to.be();
     });
 
     it('should have the property active (base name: "active")', function() {
       // uncomment below and update the code to test the property active
-      //var instane = new SmallEodClient.AdministrativeUnit();
+      //var instance = new SmallEodClient.AdministrativeUnit();
       //expect(instance).to.be();
     });
 

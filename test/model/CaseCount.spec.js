@@ -56,91 +56,91 @@
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property auditedInstitutions (base name: "auditedInstitutions")', function() {
       // uncomment below and update the code to test the property auditedInstitutions
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property responsibleUsers (base name: "responsibleUsers")', function() {
       // uncomment below and update the code to test the property responsibleUsers
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property notifiedUsers (base name: "notifiedUsers")', function() {
       // uncomment below and update the code to test the property notifiedUsers
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property featureoptions (base name: "featureoptions")', function() {
       // uncomment below and update the code to test the property featureoptions
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property tags (base name: "tags")', function() {
       // uncomment below and update the code to test the property tags
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property createdBy (base name: "createdBy")', function() {
       // uncomment below and update the code to test the property createdBy
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedBy (base name: "modifiedBy")', function() {
       // uncomment below and update the code to test the property modifiedBy
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property createdOn (base name: "createdOn")', function() {
       // uncomment below and update the code to test the property createdOn
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedOn (base name: "modifiedOn")', function() {
       // uncomment below and update the code to test the property modifiedOn
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property letterCount (base name: "letterCount")', function() {
       // uncomment below and update the code to test the property letterCount
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property noteCount (base name: "noteCount")', function() {
       // uncomment below and update the code to test the property noteCount
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 
     it('should have the property eventCount (base name: "eventCount")', function() {
       // uncomment below and update the code to test the property eventCount
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be();
     });
 

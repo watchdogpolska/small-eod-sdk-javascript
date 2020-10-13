@@ -56,37 +56,37 @@
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new SmallEodClient.Collection();
+      //var instance = new SmallEodClient.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property expiredOn (base name: "expiredOn")', function() {
       // uncomment below and update the code to test the property expiredOn
-      //var instane = new SmallEodClient.Collection();
+      //var instance = new SmallEodClient.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property query (base name: "query")', function() {
       // uncomment below and update the code to test the property query
-      //var instane = new SmallEodClient.Collection();
+      //var instance = new SmallEodClient.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new SmallEodClient.Collection();
+      //var instance = new SmallEodClient.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instane = new SmallEodClient.Collection();
+      //var instance = new SmallEodClient.Collection();
       //expect(instance).to.be();
     });
 
     it('should have the property _public (base name: "public")', function() {
       // uncomment below and update the code to test the property _public
-      //var instane = new SmallEodClient.Collection();
+      //var instance = new SmallEodClient.Collection();
       //expect(instance).to.be();
     });
 

@@ -56,19 +56,19 @@
 
     it('should have the property _case (base name: "case")', function() {
       // uncomment below and update the code to test the property _case
-      //var instane = new SmallEodClient.Note();
+      //var instance = new SmallEodClient.Note();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instane = new SmallEodClient.Note();
+      //var instance = new SmallEodClient.Note();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new SmallEodClient.Note();
+      //var instance = new SmallEodClient.Note();
       //expect(instance).to.be();
     });
 

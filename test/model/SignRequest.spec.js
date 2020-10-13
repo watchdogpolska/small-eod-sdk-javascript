@@ -56,31 +56,31 @@
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new SmallEodClient.SignRequest();
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property method (base name: "method")', function() {
       // uncomment below and update the code to test the property method
-      //var instane = new SmallEodClient.SignRequest();
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instane = new SmallEodClient.SignRequest();
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property formData (base name: "formData")', function() {
       // uncomment below and update the code to test the property formData
-      //var instane = new SmallEodClient.SignRequest();
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
-      //var instane = new SmallEodClient.SignRequest();
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be();
     });
 

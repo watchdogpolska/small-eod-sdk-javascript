@@ -56,13 +56,13 @@
 
     it('should have the property lifetime (base name: "lifetime")', function() {
       // uncomment below and update the code to test the property lifetime
-      //var instane = new SmallEodClient.TokenSet();
+      //var instance = new SmallEodClient.TokenSet();
       //expect(instance).to.be();
     });
 
     it('should have the property accessToken (base name: "accessToken")', function() {
       // uncomment below and update the code to test the property accessToken
-      //var instane = new SmallEodClient.TokenSet();
+      //var instance = new SmallEodClient.TokenSet();
       //expect(instance).to.be();
     });
 

@@ -56,109 +56,109 @@
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property administrativeUnit (base name: "administrativeUnit")', function() {
       // uncomment below and update the code to test the property administrativeUnit
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedBy (base name: "modifiedBy")', function() {
       // uncomment below and update the code to test the property modifiedBy
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property createdBy (base name: "createdBy")', function() {
       // uncomment below and update the code to test the property createdBy
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedOn (base name: "modifiedOn")', function() {
       // uncomment below and update the code to test the property modifiedOn
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property createdOn (base name: "createdOn")', function() {
       // uncomment below and update the code to test the property createdOn
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property epuap (base name: "epuap")', function() {
       // uncomment below and update the code to test the property epuap
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property street (base name: "street")', function() {
       // uncomment below and update the code to test the property street
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property houseNo (base name: "houseNo")', function() {
       // uncomment below and update the code to test the property houseNo
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property postalCode (base name: "postalCode")', function() {
       // uncomment below and update the code to test the property postalCode
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property flatNo (base name: "flatNo")', function() {
       // uncomment below and update the code to test the property flatNo
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property nip (base name: "nip")', function() {
       // uncomment below and update the code to test the property nip
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property regon (base name: "regon")', function() {
       // uncomment below and update the code to test the property regon
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 
     it('should have the property tags (base name: "tags")', function() {
       // uncomment below and update the code to test the property tags
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be();
     });
 

@@ -56,25 +56,25 @@
 
     it('should have the property count (base name: "count")', function() {
       // uncomment below and update the code to test the property count
-      //var instane = new SmallEodClient.InlineResponse2005();
+      //var instance = new SmallEodClient.InlineResponse2005();
       //expect(instance).to.be();
     });
 
     it('should have the property results (base name: "results")', function() {
       // uncomment below and update the code to test the property results
-      //var instane = new SmallEodClient.InlineResponse2005();
+      //var instance = new SmallEodClient.InlineResponse2005();
       //expect(instance).to.be();
     });
 
     it('should have the property next (base name: "next")', function() {
       // uncomment below and update the code to test the property next
-      //var instane = new SmallEodClient.InlineResponse2005();
+      //var instance = new SmallEodClient.InlineResponse2005();
       //expect(instance).to.be();
     });
 
     it('should have the property previous (base name: "previous")', function() {
       // uncomment below and update the code to test the property previous
-      //var instane = new SmallEodClient.InlineResponse2005();
+      //var instance = new SmallEodClient.InlineResponse2005();
       //expect(instance).to.be();
     });
 

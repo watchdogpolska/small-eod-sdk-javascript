@@ -56,7 +56,7 @@
 
     it('should have the property refreshToken (base name: "refreshToken")', function() {
       // uncomment below and update the code to test the property refreshToken
-      //var instane = new SmallEodClient.RefreshTokenRequest();
+      //var instance = new SmallEodClient.RefreshTokenRequest();
       //expect(instance).to.be();
     });
 

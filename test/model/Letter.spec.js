@@ -56,103 +56,103 @@
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property direction (base name: "direction")', function() {
       // uncomment below and update the code to test the property direction
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property channel (base name: "channel")', function() {
       // uncomment below and update the code to test the property channel
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property _final (base name: "final")', function() {
       // uncomment below and update the code to test the property _final
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property _date (base name: "date")', function() {
       // uncomment below and update the code to test the property _date
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property referenceNumber (base name: "referenceNumber")', function() {
       // uncomment below and update the code to test the property referenceNumber
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property institution (base name: "institution")', function() {
       // uncomment below and update the code to test the property institution
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property _case (base name: "case")', function() {
       // uncomment below and update the code to test the property _case
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property attachments (base name: "attachments")', function() {
       // uncomment below and update the code to test the property attachments
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property ordering (base name: "ordering")', function() {
       // uncomment below and update the code to test the property ordering
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property excerpt (base name: "excerpt")', function() {
       // uncomment below and update the code to test the property excerpt
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property documentType (base name: "documentType")', function() {
       // uncomment below and update the code to test the property documentType
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property createdOn (base name: "createdOn")', function() {
       // uncomment below and update the code to test the property createdOn
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property createdBy (base name: "createdBy")', function() {
       // uncomment below and update the code to test the property createdBy
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedOn (base name: "modifiedOn")', function() {
       // uncomment below and update the code to test the property modifiedOn
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedBy (base name: "modifiedBy")', function() {
       // uncomment below and update the code to test the property modifiedBy
-      //var instane = new SmallEodClient.Letter();
+      //var instance = new SmallEodClient.Letter();
       //expect(instance).to.be();
     });
 

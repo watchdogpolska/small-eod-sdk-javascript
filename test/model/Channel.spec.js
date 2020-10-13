@@ -56,61 +56,61 @@
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 
     it('should have the property voivodeship (base name: "voivodeship")', function() {
       // uncomment below and update the code to test the property voivodeship
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 
     it('should have the property flatNo (base name: "flatNo")', function() {
       // uncomment below and update the code to test the property flatNo
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 
     it('should have the property street (base name: "street")', function() {
       // uncomment below and update the code to test the property street
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 
     it('should have the property postalCode (base name: "postalCode")', function() {
       // uncomment below and update the code to test the property postalCode
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 
     it('should have the property houseNo (base name: "houseNo")', function() {
       // uncomment below and update the code to test the property houseNo
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 
     it('should have the property epuap (base name: "epuap")', function() {
       // uncomment below and update the code to test the property epuap
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be();
     });
 

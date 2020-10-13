@@ -56,37 +56,37 @@
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instane = new SmallEodClient.User();
+      //var instance = new SmallEodClient.User();
       //expect(instance).to.be();
     });
 
     it('should have the property username (base name: "username")', function() {
       // uncomment below and update the code to test the property username
-      //var instane = new SmallEodClient.User();
+      //var instance = new SmallEodClient.User();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instane = new SmallEodClient.User();
+      //var instance = new SmallEodClient.User();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new SmallEodClient.User();
+      //var instance = new SmallEodClient.User();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new SmallEodClient.User();
+      //var instance = new SmallEodClient.User();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new SmallEodClient.User();
+      //var instance = new SmallEodClient.User();
       //expect(instance).to.be();
     });
 

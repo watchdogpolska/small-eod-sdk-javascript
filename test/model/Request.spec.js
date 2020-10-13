@@ -56,7 +56,7 @@
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instane = new SmallEodClient.Request();
+      //var instance = new SmallEodClient.Request();
       //expect(instance).to.be();
     });
 

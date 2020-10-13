@@ -56,31 +56,31 @@
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new SmallEodClient.Feature();
+      //var instance = new SmallEodClient.Feature();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new SmallEodClient.Feature();
+      //var instance = new SmallEodClient.Feature();
       //expect(instance).to.be();
     });
 
     it('should have the property minOptions (base name: "minOptions")', function() {
       // uncomment below and update the code to test the property minOptions
-      //var instane = new SmallEodClient.Feature();
+      //var instance = new SmallEodClient.Feature();
       //expect(instance).to.be();
     });
 
     it('should have the property maxOptions (base name: "maxOptions")', function() {
       // uncomment below and update the code to test the property maxOptions
-      //var instane = new SmallEodClient.Feature();
+      //var instance = new SmallEodClient.Feature();
       //expect(instance).to.be();
     });
 
     it('should have the property featureoptions (base name: "featureoptions")', function() {
       // uncomment below and update the code to test the property featureoptions
-      //var instane = new SmallEodClient.Feature();
+      //var instance = new SmallEodClient.Feature();
       //expect(instance).to.be();
     });
 
