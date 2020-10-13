@@ -6,17 +6,17 @@ config-help:
 	docker run openapitools/openapi-generator-cli config-help -g javascript
 
 startbackend:
-	[ -d "small_eod" ] || git clone https://github.com/watchdogpolska/small_eod.git
-	make -C small_eod wait_minio
+	[ -d "small_eod" ] || git clone https://github.com/watchdogpolska/small_eod.git /tmp/small_eod_for_sdk
+	make -C /tmp/small_eod_for_sdk wait_minio
 
 logsbackend:
-	cd small_eod; docker-compose logs
+	cd /tmp/small_eod_for_sdk; docker-compose logs
 
 clean:
 	rm -r docs src test
 
 download:
-	cd small_eod; docker-compose run -T --rm backend python manage.py generate_swagger --format json | jq '.' > $(SPEC_PATH)
+	cd /tmp/small_eod_for_sdk; docker-compose run -T --rm backend python manage.py generate_swagger --format json | jq '.' > $(SPEC_PATH)
 
 generate:
 	docker run --user $$(id -u):$$(id -g) --network host --rm \
