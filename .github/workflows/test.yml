@@ -28,6 +28,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+      - run: npm install
       - run: npm publish --dry-run
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
