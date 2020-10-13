@@ -31,40 +31,39 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 // Configure API key authorization: CollectionToken
-var CollectionToken = defaultClient.authentications['CollectionToken'];
+let CollectionToken = defaultClient.authentications['CollectionToken'];
 CollectionToken.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //CollectionToken.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var casePk = "casePk_example"; // String | 
-var collectionPk = "collectionPk_example"; // String | 
-var opts = {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let casePk = "casePk_example"; // String | 
+let collectionPk = "collectionPk_example"; // String | 
+let opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.collectionsCasesEventsList(casePk, collectionPk, opts).then(function(data) {
+apiInstance.collectionsCasesEventsList(casePk, collectionPk, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -97,37 +96,36 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 // Configure API key authorization: CollectionToken
-var CollectionToken = defaultClient.authentications['CollectionToken'];
+let CollectionToken = defaultClient.authentications['CollectionToken'];
 CollectionToken.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //CollectionToken.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var casePk = "casePk_example"; // String | 
-var collectionPk = "collectionPk_example"; // String | 
-var id = "id_example"; // String | 
-apiInstance.collectionsCasesEventsRead(casePk, collectionPk, id).then(function(data) {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let casePk = "casePk_example"; // String | 
+let collectionPk = "collectionPk_example"; // String | 
+let id = "id_example"; // String | 
+apiInstance.collectionsCasesEventsRead(casePk, collectionPk, id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -159,40 +157,39 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 // Configure API key authorization: CollectionToken
-var CollectionToken = defaultClient.authentications['CollectionToken'];
+let CollectionToken = defaultClient.authentications['CollectionToken'];
 CollectionToken.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //CollectionToken.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var casePk = "casePk_example"; // String | 
-var collectionPk = "collectionPk_example"; // String | 
-var opts = {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let casePk = "casePk_example"; // String | 
+let collectionPk = "collectionPk_example"; // String | 
+let opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.collectionsCasesLettersList(casePk, collectionPk, opts).then(function(data) {
+apiInstance.collectionsCasesLettersList(casePk, collectionPk, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -225,37 +222,36 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 // Configure API key authorization: CollectionToken
-var CollectionToken = defaultClient.authentications['CollectionToken'];
+let CollectionToken = defaultClient.authentications['CollectionToken'];
 CollectionToken.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //CollectionToken.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var casePk = "casePk_example"; // String | 
-var collectionPk = "collectionPk_example"; // String | 
-var id = "id_example"; // String | 
-apiInstance.collectionsCasesLettersRead(casePk, collectionPk, id).then(function(data) {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let casePk = "casePk_example"; // String | 
+let collectionPk = "collectionPk_example"; // String | 
+let id = "id_example"; // String | 
+apiInstance.collectionsCasesLettersRead(casePk, collectionPk, id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -287,39 +283,38 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 // Configure API key authorization: CollectionToken
-var CollectionToken = defaultClient.authentications['CollectionToken'];
+let CollectionToken = defaultClient.authentications['CollectionToken'];
 CollectionToken.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //CollectionToken.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var collectionPk = "collectionPk_example"; // String | 
-var opts = {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let collectionPk = "collectionPk_example"; // String | 
+let opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.collectionsCasesList(collectionPk, opts).then(function(data) {
+apiInstance.collectionsCasesList(collectionPk, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -351,40 +346,39 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 // Configure API key authorization: CollectionToken
-var CollectionToken = defaultClient.authentications['CollectionToken'];
+let CollectionToken = defaultClient.authentications['CollectionToken'];
 CollectionToken.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //CollectionToken.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var casePk = "casePk_example"; // String | 
-var collectionPk = "collectionPk_example"; // String | 
-var opts = {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let casePk = "casePk_example"; // String | 
+let collectionPk = "collectionPk_example"; // String | 
+let opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.collectionsCasesNotesList(casePk, collectionPk, opts).then(function(data) {
+apiInstance.collectionsCasesNotesList(casePk, collectionPk, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -417,37 +411,36 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 // Configure API key authorization: CollectionToken
-var CollectionToken = defaultClient.authentications['CollectionToken'];
+let CollectionToken = defaultClient.authentications['CollectionToken'];
 CollectionToken.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //CollectionToken.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var casePk = "casePk_example"; // String | 
-var collectionPk = "collectionPk_example"; // String | 
-var id = "id_example"; // String | 
-apiInstance.collectionsCasesNotesRead(casePk, collectionPk, id).then(function(data) {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let casePk = "casePk_example"; // String | 
+let collectionPk = "collectionPk_example"; // String | 
+let id = "id_example"; // String | 
+apiInstance.collectionsCasesNotesRead(casePk, collectionPk, id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -479,36 +472,35 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 // Configure API key authorization: CollectionToken
-var CollectionToken = defaultClient.authentications['CollectionToken'];
+let CollectionToken = defaultClient.authentications['CollectionToken'];
 CollectionToken.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //CollectionToken.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var collectionPk = "collectionPk_example"; // String | 
-var id = "id_example"; // String | 
-apiInstance.collectionsCasesRead(collectionPk, id).then(function(data) {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let collectionPk = "collectionPk_example"; // String | 
+let id = "id_example"; // String | 
+apiInstance.collectionsCasesRead(collectionPk, id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -539,30 +531,29 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var data = new SmallEodClient.Collection(); // Collection | 
-apiInstance.collectionsCreate(data).then(function(data) {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let data = new SmallEodClient.Collection(); // Collection | 
+apiInstance.collectionsCreate(data).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -592,30 +583,29 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var id = 56; // Number | A unique integer value identifying this collection.
-apiInstance.collectionsDelete(id).then(function() {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let id = 56; // Number | A unique integer value identifying this collection.
+apiInstance.collectionsDelete(id).then(() => {
   console.log('API called successfully.');
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -645,33 +635,32 @@ null (empty response body)
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var opts = {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.collectionsList(opts).then(function(data) {
+apiInstance.collectionsList(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -702,31 +691,30 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var id = 56; // Number | A unique integer value identifying this collection.
-var data = new SmallEodClient.Collection(); // Collection | 
-apiInstance.collectionsPartialUpdate(id, data).then(function(data) {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let id = 56; // Number | A unique integer value identifying this collection.
+let data = new SmallEodClient.Collection(); // Collection | 
+apiInstance.collectionsPartialUpdate(id, data).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -757,35 +745,34 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 // Configure API key authorization: CollectionToken
-var CollectionToken = defaultClient.authentications['CollectionToken'];
+let CollectionToken = defaultClient.authentications['CollectionToken'];
 CollectionToken.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //CollectionToken.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var id = 56; // Number | A unique integer value identifying this collection.
-apiInstance.collectionsRead(id).then(function(data) {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let id = 56; // Number | A unique integer value identifying this collection.
+apiInstance.collectionsRead(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -815,31 +802,30 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var collectionPk = "collectionPk_example"; // String | 
-var data = new SmallEodClient.TokenSet(); // TokenSet | 
-apiInstance.collectionsTokensCreate(collectionPk, data).then(function(data) {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let collectionPk = "collectionPk_example"; // String | 
+let data = new SmallEodClient.TokenSet(); // TokenSet | 
+apiInstance.collectionsTokensCreate(collectionPk, data).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
@@ -870,31 +856,30 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-var SmallEodClient = require('small_eod_client');
-var defaultClient = SmallEodClient.ApiClient.instance;
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-var Basic = defaultClient.authentications['Basic'];
+let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-var Bearer = defaultClient.authentications['Bearer'];
+let Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new SmallEodClient.CollectionsApi();
-var id = 56; // Number | A unique integer value identifying this collection.
-var data = new SmallEodClient.Collection(); // Collection | 
-apiInstance.collectionsUpdate(id, data).then(function(data) {
+let apiInstance = new SmallEodClient.CollectionsApi();
+let id = 56; // Number | A unique integer value identifying this collection.
+let data = new SmallEodClient.Collection(); // Collection | 
+apiInstance.collectionsUpdate(id, data).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
+}, (error) => {
   console.error(error);
 });
 
 ```
 
 ### Parameters
-
 
 
 Name | Type | Description  | Notes
