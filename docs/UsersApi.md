@@ -27,32 +27,33 @@ API endpoint to receive URI for OAuth authorization url
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.UsersApi();
-let opts = {
+var apiInstance = new SmallEodClient.UsersApi();
+var opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.usersAuth(opts).then((data) => {
+apiInstance.usersAuth(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -85,29 +86,30 @@ API endpoint that allows users to be viewed or edited.
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.UsersApi();
-let data = new SmallEodClient.User(); // User | 
-apiInstance.usersCreate(data).then((data) => {
+var apiInstance = new SmallEodClient.UsersApi();
+var data = new SmallEodClient.User(); // User | 
+apiInstance.usersCreate(data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -139,29 +141,30 @@ API endpoint that allows users to be viewed or edited.
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.UsersApi();
-let id = 56; // Number | A unique integer value identifying this user.
-apiInstance.usersDelete(id).then(() => {
+var apiInstance = new SmallEodClient.UsersApi();
+var id = 56; // Number | A unique integer value identifying this user.
+apiInstance.usersDelete(id).then(function() {
   console.log('API called successfully.');
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -193,32 +196,33 @@ API endpoint to exchange authorization code to access token
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.UsersApi();
-let opts = {
+var apiInstance = new SmallEodClient.UsersApi();
+var opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.usersExchange(opts).then((data) => {
+apiInstance.usersExchange(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -251,32 +255,33 @@ API endpoint that allows users to be viewed or edited.
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.UsersApi();
-let opts = {
+var apiInstance = new SmallEodClient.UsersApi();
+var opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.usersList(opts).then((data) => {
+apiInstance.usersList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -309,30 +314,31 @@ API endpoint that allows users to be viewed or edited.
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.UsersApi();
-let id = 56; // Number | A unique integer value identifying this user.
-let data = new SmallEodClient.User(); // User | 
-apiInstance.usersPartialUpdate(id, data).then((data) => {
+var apiInstance = new SmallEodClient.UsersApi();
+var id = 56; // Number | A unique integer value identifying this user.
+var data = new SmallEodClient.User(); // User | 
+apiInstance.usersPartialUpdate(id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -365,29 +371,30 @@ API endpoint that allows users to be viewed or edited.
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.UsersApi();
-let id = 56; // Number | A unique integer value identifying this user.
-apiInstance.usersRead(id).then((data) => {
+var apiInstance = new SmallEodClient.UsersApi();
+var id = 56; // Number | A unique integer value identifying this user.
+apiInstance.usersRead(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -419,29 +426,30 @@ API endpoint to exchange refresh token to fresh access token
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.UsersApi();
-let data = new SmallEodClient.RefreshTokenRequest(); // RefreshTokenRequest | 
-apiInstance.usersRefresh(data).then((data) => {
+var apiInstance = new SmallEodClient.UsersApi();
+var data = new SmallEodClient.RefreshTokenRequest(); // RefreshTokenRequest | 
+apiInstance.usersRefresh(data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -473,30 +481,31 @@ API endpoint that allows users to be viewed or edited.
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.UsersApi();
-let id = 56; // Number | A unique integer value identifying this user.
-let data = new SmallEodClient.User(); // User | 
-apiInstance.usersUpdate(id, data).then((data) => {
+var apiInstance = new SmallEodClient.UsersApi();
+var id = 56; // Number | A unique integer value identifying this user.
+var data = new SmallEodClient.User(); // User | 
+apiInstance.usersUpdate(id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes

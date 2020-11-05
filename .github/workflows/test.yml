@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: make generate
-      - run: make build
+      - run: make install
       - run: make test
         env:
           CI: true
@@ -43,7 +43,7 @@ jobs:
       - run: make clean
       - run: make download
       - run: make generate
-      - run: make build
+      - run: make install
       - name: Test no changes in API
         run: test -z "$(git status --porcelain .)"
       - run: make logsbackend
