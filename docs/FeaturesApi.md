@@ -28,29 +28,30 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let data = new SmallEodClient.Feature(); // Feature | 
-apiInstance.featuresCreate(data).then((data) => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var data = new SmallEodClient.Feature(); // Feature | 
+apiInstance.featuresCreate(data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -80,29 +81,30 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let id = 56; // Number | A unique integer value identifying this feature.
-apiInstance.featuresDelete(id).then(() => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var id = 56; // Number | A unique integer value identifying this feature.
+apiInstance.featuresDelete(id).then(function() {
   console.log('API called successfully.');
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -132,30 +134,31 @@ null (empty response body)
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let featurePk = "featurePk_example"; // String | 
-let data = new SmallEodClient.FeatureOption(); // FeatureOption | 
-apiInstance.featuresFeatureoptionCreate(featurePk, data).then((data) => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var featurePk = "featurePk_example"; // String | 
+var data = new SmallEodClient.FeatureOption(); // FeatureOption | 
+apiInstance.featuresFeatureoptionCreate(featurePk, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -186,30 +189,31 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let featurePk = "featurePk_example"; // String | 
-let id = "id_example"; // String | 
-apiInstance.featuresFeatureoptionDelete(featurePk, id).then(() => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var featurePk = "featurePk_example"; // String | 
+var id = "id_example"; // String | 
+apiInstance.featuresFeatureoptionDelete(featurePk, id).then(function() {
   console.log('API called successfully.');
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -240,33 +244,34 @@ null (empty response body)
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let featurePk = "featurePk_example"; // String | 
-let opts = {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var featurePk = "featurePk_example"; // String | 
+var opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.featuresFeatureoptionList(featurePk, opts).then((data) => {
+apiInstance.featuresFeatureoptionList(featurePk, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -298,31 +303,32 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let featurePk = "featurePk_example"; // String | 
-let id = "id_example"; // String | 
-let data = new SmallEodClient.FeatureOption(); // FeatureOption | 
-apiInstance.featuresFeatureoptionPartialUpdate(featurePk, id, data).then((data) => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var featurePk = "featurePk_example"; // String | 
+var id = "id_example"; // String | 
+var data = new SmallEodClient.FeatureOption(); // FeatureOption | 
+apiInstance.featuresFeatureoptionPartialUpdate(featurePk, id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -354,30 +360,31 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let featurePk = "featurePk_example"; // String | 
-let id = "id_example"; // String | 
-apiInstance.featuresFeatureoptionRead(featurePk, id).then((data) => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var featurePk = "featurePk_example"; // String | 
+var id = "id_example"; // String | 
+apiInstance.featuresFeatureoptionRead(featurePk, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -408,31 +415,32 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let featurePk = "featurePk_example"; // String | 
-let id = "id_example"; // String | 
-let data = new SmallEodClient.FeatureOption(); // FeatureOption | 
-apiInstance.featuresFeatureoptionUpdate(featurePk, id, data).then((data) => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var featurePk = "featurePk_example"; // String | 
+var id = "id_example"; // String | 
+var data = new SmallEodClient.FeatureOption(); // FeatureOption | 
+apiInstance.featuresFeatureoptionUpdate(featurePk, id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -464,32 +472,33 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let opts = {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
-apiInstance.featuresList(opts).then((data) => {
+apiInstance.featuresList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -520,30 +529,31 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let id = 56; // Number | A unique integer value identifying this feature.
-let data = new SmallEodClient.Feature(); // Feature | 
-apiInstance.featuresPartialUpdate(id, data).then((data) => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var id = 56; // Number | A unique integer value identifying this feature.
+var data = new SmallEodClient.Feature(); // Feature | 
+apiInstance.featuresPartialUpdate(id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -574,29 +584,30 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let id = 56; // Number | A unique integer value identifying this feature.
-apiInstance.featuresRead(id).then((data) => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var id = 56; // Number | A unique integer value identifying this feature.
+apiInstance.featuresRead(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -626,30 +637,31 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.FeaturesApi();
-let id = 56; // Number | A unique integer value identifying this feature.
-let data = new SmallEodClient.Feature(); // Feature | 
-apiInstance.featuresUpdate(id, data).then((data) => {
+var apiInstance = new SmallEodClient.FeaturesApi();
+var id = 56; // Number | A unique integer value identifying this feature.
+var data = new SmallEodClient.Feature(); // Feature | 
+apiInstance.featuresUpdate(id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes

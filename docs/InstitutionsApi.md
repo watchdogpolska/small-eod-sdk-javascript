@@ -22,29 +22,30 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.InstitutionsApi();
-let data = new SmallEodClient.Institution(); // Institution | 
-apiInstance.institutionsCreate(data).then((data) => {
+var apiInstance = new SmallEodClient.InstitutionsApi();
+var data = new SmallEodClient.Institution(); // Institution | 
+apiInstance.institutionsCreate(data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -74,29 +75,30 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.InstitutionsApi();
-let id = 56; // Number | A unique integer value identifying this institution.
-apiInstance.institutionsDelete(id).then(() => {
+var apiInstance = new SmallEodClient.InstitutionsApi();
+var id = 56; // Number | A unique integer value identifying this institution.
+apiInstance.institutionsDelete(id).then(function() {
   console.log('API called successfully.');
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -126,33 +128,34 @@ null (empty response body)
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.InstitutionsApi();
-let opts = {
+var apiInstance = new SmallEodClient.InstitutionsApi();
+var opts = {
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56, // Number | The initial index from which to return the results.
   'query': "query_example" // String | Query filter. Currently filtering by name.
 };
-apiInstance.institutionsList(opts).then((data) => {
+apiInstance.institutionsList(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -184,30 +187,31 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.InstitutionsApi();
-let id = 56; // Number | A unique integer value identifying this institution.
-let data = new SmallEodClient.Institution(); // Institution | 
-apiInstance.institutionsPartialUpdate(id, data).then((data) => {
+var apiInstance = new SmallEodClient.InstitutionsApi();
+var id = 56; // Number | A unique integer value identifying this institution.
+var data = new SmallEodClient.Institution(); // Institution | 
+apiInstance.institutionsPartialUpdate(id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -238,29 +242,30 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.InstitutionsApi();
-let id = 56; // Number | A unique integer value identifying this institution.
-apiInstance.institutionsRead(id).then((data) => {
+var apiInstance = new SmallEodClient.InstitutionsApi();
+var id = 56; // Number | A unique integer value identifying this institution.
+apiInstance.institutionsRead(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -290,30 +295,31 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import SmallEodClient from 'small_eod_client';
-let defaultClient = SmallEodClient.ApiClient.instance;
+var SmallEodClient = require('small_eod_client');
+var defaultClient = SmallEodClient.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
+var Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
 Basic.password = 'YOUR PASSWORD';
 // Configure API key authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
+var Bearer = defaultClient.authentications['Bearer'];
 Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-let apiInstance = new SmallEodClient.InstitutionsApi();
-let id = 56; // Number | A unique integer value identifying this institution.
-let data = new SmallEodClient.Institution(); // Institution | 
-apiInstance.institutionsUpdate(id, data).then((data) => {
+var apiInstance = new SmallEodClient.InstitutionsApi();
+var id = 56; // Number | A unique integer value identifying this institution.
+var data = new SmallEodClient.Institution(); // Institution | 
+apiInstance.institutionsUpdate(id, data).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
+}, function(error) {
   console.error(error);
 });
 
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
