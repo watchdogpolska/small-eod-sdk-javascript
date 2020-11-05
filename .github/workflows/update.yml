@@ -21,6 +21,8 @@ jobs:
         run: make download
       - name: Update SDK
         run: make generate
+      - name: Install dependencies
+        run: make install
       - name: Test SDK
         run: make test
       - name: Commit files

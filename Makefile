@@ -32,6 +32,9 @@ generate:
 	-c /out/config.yml \
 	-o /out
 
+install:
+	npm install
+
 undownload:
 	rm swagger.json
 
