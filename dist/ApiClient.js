@@ -312,6 +312,9 @@ var ApiClient = /*#__PURE__*/function () {
           //return the array directly as SuperAgent will handle it as expected
           return param.map(this.paramToString, this);
 
+        case 'passthrough':
+          return param;
+
         default:
           throw new Error('Unknown collection format: ' + collectionFormat);
       }
@@ -476,11 +479,18 @@ var ApiClient = /*#__PURE__*/function () {
 
         for (var key in _formParams) {
           if (_formParams.hasOwnProperty(key)) {
-            if (this.isFileParam(_formParams[key])) {
+            var _formParamsValue = _formParams[key];
+
+            if (this.isFileParam(_formParamsValue)) {
               // file field
-              request.attach(key, _formParams[key]);
+              request.attach(key, _formParamsValue);
+            } else if (Array.isArray(_formParamsValue) && _formParamsValue.length && this.isFileParam(_formParamsValue[0])) {
+              // multiple files
+              _formParamsValue.forEach(function (file) {
+                return request.attach(key, file);
+              });
             } else {
-              request.field(key, _formParams[key]);
+              request.field(key, _formParamsValue);
             }
           }
         }
