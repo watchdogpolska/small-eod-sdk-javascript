@@ -164,7 +164,7 @@ var ApiClient = /*#__PURE__*/function () {
         url = apiBasePath + path;
       }
 
-      url = url.replace(/\{([\w-]+)\}/g, function (fullMatch, key) {
+      url = url.replace(/\{([\w-\.]+)\}/g, function (fullMatch, key) {
         var value;
 
         if (pathParams.hasOwnProperty(key)) {
