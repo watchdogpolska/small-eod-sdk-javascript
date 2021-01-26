@@ -67,7 +67,9 @@ var ApiClient = /*#__PURE__*/function () {
      * @default {}
      */
 
-    this.defaultHeaders = {};
+    this.defaultHeaders = {
+      'User-Agent': 'OpenAPI-Generator/1.0.4/Javascript'
+    };
     /**
      * The default HTTP timeout for all API calls.
      * @type {Number}
