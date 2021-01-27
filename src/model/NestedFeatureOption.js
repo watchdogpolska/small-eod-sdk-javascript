@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class NestedFeatureOption {
     /**
      * Constructs a new <code>NestedFeatureOption</code>.
+     * FeatureOption(id, name, feature)
      * @alias module:model/NestedFeatureOption
      * @param name {String} Name of option.
      */

@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Collection = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>Collection</code>.
+   * Collection(id, modified_on, created_on, created_by, modified_by, name, expired_on, query, comment, public)
    * @alias module:model/Collection
    * @param name {String} Collection's name.
    * @param expiredOn {Date} An expiration date of collection.

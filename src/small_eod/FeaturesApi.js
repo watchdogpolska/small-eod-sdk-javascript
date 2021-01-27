@@ -446,6 +446,7 @@ export default class FeaturesApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
@@ -457,6 +458,7 @@ export default class FeaturesApi {
       let pathParams = {
       };
       let queryParams = {
+        'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset']
       };
@@ -478,6 +480,7 @@ export default class FeaturesApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}

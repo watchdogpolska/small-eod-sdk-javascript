@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Tag = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>Tag</code>.
+   * Tag(id, name)
    * @alias module:model/Tag
    * @param name {String} 
    */

@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class CaseCount {
     /**
      * Constructs a new <code>CaseCount</code>.
+     * Case(id, modified_on, created_on, created_by, modified_by, name, comment)
      * @alias module:model/CaseCount
      * @param name {String} Case's name.
      */
@@ -140,6 +141,7 @@ CaseCount.prototype['notifiedUsers'] = undefined;
 CaseCount.prototype['featureoptions'] = undefined;
 
 /**
+ * 
  * @member {Array.<String>} tags
  */
 CaseCount.prototype['tags'] = undefined;

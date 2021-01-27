@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var User = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>User</code>.
+   * User(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined)
    * @alias module:model/User
    * @param password {String} 
    * @param username {String} Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.

@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Request = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>Request</code>.
+   * 
    * @alias module:model/Request
    * @param url {String} 
    */

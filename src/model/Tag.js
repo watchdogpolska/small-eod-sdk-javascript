@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class Tag {
     /**
      * Constructs a new <code>Tag</code>.
+     * Tag(id, name)
      * @alias module:model/Tag
      * @param name {String} 
      */

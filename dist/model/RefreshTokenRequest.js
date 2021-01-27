@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var RefreshTokenRequest = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>RefreshTokenRequest</code>.
+   * 
    * @alias module:model/RefreshTokenRequest
    * @param refreshToken {String} 
    */

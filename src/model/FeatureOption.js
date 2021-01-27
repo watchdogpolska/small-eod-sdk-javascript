@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class FeatureOption {
     /**
      * Constructs a new <code>FeatureOption</code>.
+     * FeatureOption(id, name, feature)
      * @alias module:model/FeatureOption
      * @param name {String} Name of option.
      */

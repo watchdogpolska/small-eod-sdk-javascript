@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class TokenSet {
     /**
      * Constructs a new <code>TokenSet</code>.
+     * 
      * @alias module:model/TokenSet
      */
     constructor() { 

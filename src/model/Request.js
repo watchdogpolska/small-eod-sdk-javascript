@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class Request {
     /**
      * Constructs a new <code>Request</code>.
+     * 
      * @alias module:model/Request
      * @param url {String} 
      */

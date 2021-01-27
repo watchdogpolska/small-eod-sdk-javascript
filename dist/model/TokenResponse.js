@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var TokenResponse = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokenResponse</code>.
+   * 
    * @alias module:model/TokenResponse
    * @param accessToken {String} 
    * @param refreshToken {String} 

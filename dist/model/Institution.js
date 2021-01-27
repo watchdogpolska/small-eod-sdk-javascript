@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Institution = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>Institution</code>.
+   * Institution(id, modified_on, created_on, created_by, modified_by, name, administrative_unit, email, city, epuap, street, house_no, postal_code, flat_no, nip, regon, comment)
    * @alias module:model/Institution
    * @param name {String} Name of institution
    * @param administrativeUnit {String} 
@@ -236,6 +237,7 @@ Institution.prototype['regon'] = undefined;
 
 Institution.prototype['comment'] = undefined;
 /**
+ * 
  * @member {Array.<String>} tags
  */
 

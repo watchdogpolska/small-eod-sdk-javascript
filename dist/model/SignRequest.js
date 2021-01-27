@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var SignRequest = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>SignRequest</code>.
+   * 
    * @alias module:model/SignRequest
    * @param name {String} 
    */

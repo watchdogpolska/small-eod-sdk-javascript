@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var DocumentType = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DocumentType</code>.
+   * DocumentType(id, name)
    * @alias module:model/DocumentType
    * @param name {String} Type of letter
    */
@@ -60,6 +61,10 @@ var DocumentType = /*#__PURE__*/function () {
         if (data.hasOwnProperty('name')) {
           obj['name'] = _ApiClient["default"].convertToType(data['name'], 'String');
         }
+
+        if (data.hasOwnProperty('id')) {
+          obj['id'] = _ApiClient["default"].convertToType(data['id'], 'Number');
+        }
       }
 
       return obj;
@@ -75,5 +80,10 @@ var DocumentType = /*#__PURE__*/function () {
 
 
 DocumentType.prototype['name'] = undefined;
+/**
+ * @member {Number} id
+ */
+
+DocumentType.prototype['id'] = undefined;
 var _default = DocumentType;
 exports["default"] = _default;

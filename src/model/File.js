@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class File {
     /**
      * Constructs a new <code>File</code>.
+     * File(id, path, name, letter)
      * @alias module:model/File
      * @param path {String} Path to file.
      * @param name {String} Name of file.

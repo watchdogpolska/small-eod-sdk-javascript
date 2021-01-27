@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class RefreshTokenRequest {
     /**
      * Constructs a new <code>RefreshTokenRequest</code>.
+     * 
      * @alias module:model/RefreshTokenRequest
      * @param refreshToken {String} 
      */

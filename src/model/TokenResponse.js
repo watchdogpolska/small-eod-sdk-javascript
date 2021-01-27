@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class TokenResponse {
     /**
      * Constructs a new <code>TokenResponse</code>.
+     * 
      * @alias module:model/TokenResponse
      * @param accessToken {String} 
      * @param refreshToken {String} 

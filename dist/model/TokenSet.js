@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var TokenSet = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokenSet</code>.
+   * 
    * @alias module:model/TokenSet
    */
   function TokenSet() {

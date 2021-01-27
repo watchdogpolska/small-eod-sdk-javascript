@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var ModelCase = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ModelCase</code>.
+   * Case(id, modified_on, created_on, created_by, modified_by, name, comment)
    * @alias module:model/ModelCase
    * @param name {String} Case's name.
    */
@@ -152,6 +153,7 @@ ModelCase.prototype['notifiedUsers'] = undefined;
 
 ModelCase.prototype['featureoptions'] = undefined;
 /**
+ * 
  * @member {Array.<String>} tags
  */
 

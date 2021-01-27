@@ -114,6 +114,7 @@ var InstitutionsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @param {String} opts.query Query filter. Currently filtering by name.
@@ -127,6 +128,7 @@ var InstitutionsApi = /*#__PURE__*/function () {
       var postBody = null;
       var pathParams = {};
       var queryParams = {
+        'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset'],
         'query': opts['query']
@@ -141,6 +143,7 @@ var InstitutionsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @param {String} opts.query Query filter. Currently filtering by name.

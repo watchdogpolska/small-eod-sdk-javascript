@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class Letter {
     /**
      * Constructs a new <code>Letter</code>.
+     * Letter(id, modified_on, created_on, created_by, modified_by, direction, date, final, comment, excerpt, reference_number, case, channel, institution, document_type)
      * @alias module:model/Letter
      */
     constructor() { 
@@ -73,9 +74,6 @@ class Letter {
             }
             if (data.hasOwnProperty('attachments')) {
                 obj['attachments'] = ApiClient.convertToType(data['attachments'], [File]);
-            }
-            if (data.hasOwnProperty('ordering')) {
-                obj['ordering'] = ApiClient.convertToType(data['ordering'], 'Number');
             }
             if (data.hasOwnProperty('comment')) {
                 obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
@@ -150,15 +148,10 @@ Letter.prototype['institution'] = undefined;
 Letter.prototype['case'] = undefined;
 
 /**
+ * 
  * @member {Array.<File>} attachments
  */
 Letter.prototype['attachments'] = undefined;
-
-/**
- * Order of letter.
- * @member {Number} ordering
- */
-Letter.prototype['ordering'] = undefined;
 
 /**
  * Comment for letter.

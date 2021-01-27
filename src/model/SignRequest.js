@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class SignRequest {
     /**
      * Constructs a new <code>SignRequest</code>.
+     * 
      * @alias module:model/SignRequest
      * @param name {String} 
      */

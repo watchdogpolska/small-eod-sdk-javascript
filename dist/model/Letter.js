@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Letter = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>Letter</code>.
+   * Letter(id, modified_on, created_on, created_by, modified_by, direction, date, final, comment, excerpt, reference_number, case, channel, institution, document_type)
    * @alias module:model/Letter
    */
   function Letter() {
@@ -88,10 +89,6 @@ var Letter = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('attachments')) {
           obj['attachments'] = _ApiClient["default"].convertToType(data['attachments'], [File]);
-        }
-
-        if (data.hasOwnProperty('ordering')) {
-          obj['ordering'] = _ApiClient["default"].convertToType(data['ordering'], 'Number');
         }
 
         if (data.hasOwnProperty('comment')) {
@@ -175,16 +172,11 @@ Letter.prototype['institution'] = undefined;
 
 Letter.prototype['case'] = undefined;
 /**
+ * 
  * @member {Array.<File>} attachments
  */
 
 Letter.prototype['attachments'] = undefined;
-/**
- * Order of letter.
- * @member {Number} ordering
- */
-
-Letter.prototype['ordering'] = undefined;
 /**
  * Comment for letter.
  * @member {String} comment

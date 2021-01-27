@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class Note {
     /**
      * Constructs a new <code>Note</code>.
+     * Note(id, modified_on, created_on, created_by, modified_by, comment, case)
      * @alias module:model/Note
      * @param _case {Number} Related case.
      * @param comment {String} 

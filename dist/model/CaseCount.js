@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var CaseCount = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CaseCount</code>.
+   * Case(id, modified_on, created_on, created_by, modified_by, name, comment)
    * @alias module:model/CaseCount
    * @param name {String} Case's name.
    */
@@ -164,6 +165,7 @@ CaseCount.prototype['notifiedUsers'] = undefined;
 
 CaseCount.prototype['featureoptions'] = undefined;
 /**
+ * 
  * @member {Array.<String>} tags
  */
 

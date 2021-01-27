@@ -38,9 +38,9 @@ var ApiClient = /*#__PURE__*/function () {
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default http://localhost:8000/api
+     * @default http://localhost/api
      */
-    this.basePath = 'http://localhost:8000/api'.replace(/\/+$/, '');
+    this.basePath = 'http://localhost/api'.replace(/\/+$/, '');
     /**
      * The authentication methods to be included for all API calls.
      * @type {Array.<String>}
@@ -573,7 +573,7 @@ var ApiClient = /*#__PURE__*/function () {
       */
     value: function hostSettings() {
       return [{
-        'url': "http://localhost:8000/api",
+        'url': "/api",
         'description': "No description provided"
       }];
     }

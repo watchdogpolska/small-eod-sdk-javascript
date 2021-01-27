@@ -113,6 +113,7 @@ Bearer.apiKey = "YOUR API KEY"
 
 var api = new SmallEodClient.AdministrativeUnitsApi()
 var opts = {
+  'ordering': "ordering_example", // {String} Which field to use when ordering the results.
   'limit': 56, // {Number} Number of results to return per page.
   'offset': 56 // {Number} The initial index from which to return the results.
 };
@@ -127,7 +128,7 @@ api.administrativeUnitsList(opts).then(function(data) {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:8000/api*
+All URIs are relative to *http://localhost/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -172,6 +173,7 @@ Class | Method | HTTP request | Description
 *SmallEodClient.DocumentTypesApi* | [**documentTypesUpdate**](docs/DocumentTypesApi.md#documentTypesUpdate) | **PUT** /documentTypes/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsCreate**](docs/EventsApi.md#eventsCreate) | **POST** /events/ | 
 *SmallEodClient.EventsApi* | [**eventsDelete**](docs/EventsApi.md#eventsDelete) | **DELETE** /events/{id}/ | 
+*SmallEodClient.EventsApi* | [**eventsIcal**](docs/EventsApi.md#eventsIcal) | **GET** /events/ical/ | 
 *SmallEodClient.EventsApi* | [**eventsList**](docs/EventsApi.md#eventsList) | **GET** /events/ | 
 *SmallEodClient.EventsApi* | [**eventsPartialUpdate**](docs/EventsApi.md#eventsPartialUpdate) | **PATCH** /events/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsRead**](docs/EventsApi.md#eventsRead) | **GET** /events/{id}/ | 

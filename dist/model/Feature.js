@@ -25,6 +25,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Feature = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>Feature</code>.
+   * Feature(id, modified_on, created_on, created_by, modified_by, name, min_options, max_options)
    * @alias module:model/Feature
    * @param name {String} Name of feature.
    */
@@ -111,6 +112,7 @@ Feature.prototype['minOptions'] = undefined;
 
 Feature.prototype['maxOptions'] = undefined;
 /**
+ * 
  * @member {Array.<module:model/NestedFeatureOption>} featureoptions
  */
 

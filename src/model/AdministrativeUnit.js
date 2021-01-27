@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class AdministrativeUnit {
     /**
      * Constructs a new <code>AdministrativeUnit</code>.
+     * AdministrativeUnit(id, parent, name, category, slug, updated_on, active, lft, rght, tree_id, level)
      * @alias module:model/AdministrativeUnit
      * @param id {String} 
      * @param name {String} 

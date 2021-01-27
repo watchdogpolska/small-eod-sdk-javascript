@@ -1,11 +1,12 @@
 # SmallEodClient.EventsApi
 
-All URIs are relative to *http://localhost:8000/api*
+All URIs are relative to *http://localhost/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**eventsCreate**](EventsApi.md#eventsCreate) | **POST** /events/ | 
 [**eventsDelete**](EventsApi.md#eventsDelete) | **DELETE** /events/{id}/ | 
+[**eventsIcal**](EventsApi.md#eventsIcal) | **GET** /events/ical/ | 
 [**eventsList**](EventsApi.md#eventsList) | **GET** /events/ | 
 [**eventsPartialUpdate**](EventsApi.md#eventsPartialUpdate) | **PATCH** /events/{id}/ | 
 [**eventsRead**](EventsApi.md#eventsRead) | **GET** /events/{id}/ | 
@@ -117,6 +118,64 @@ null (empty response body)
 - **Accept**: Not defined
 
 
+## eventsIcal
+
+> eventsIcal(opts)
+
+
+
+### Example
+
+```javascript
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure API key authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer.apiKeyPrefix = 'Token';
+
+let apiInstance = new SmallEodClient.EventsApi();
+let opts = {
+  'ordering': "ordering_example", // String | Which field to use when ordering the results.
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.eventsIcal(opts).then(() => {
+  console.log('API called successfully.');
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ordering** | **String**| Which field to use when ordering the results. | [optional] 
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[Basic](../README.md#Basic), [Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
 ## eventsList
 
 > InlineResponse2006 eventsList(opts)
@@ -140,6 +199,7 @@ Bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new SmallEodClient.EventsApi();
 let opts = {
+  'ordering': "ordering_example", // String | Which field to use when ordering the results.
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
@@ -156,6 +216,7 @@ apiInstance.eventsList(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **ordering** | **String**| Which field to use when ordering the results. | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 
 

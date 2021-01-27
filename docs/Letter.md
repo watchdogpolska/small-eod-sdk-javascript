@@ -13,7 +13,6 @@ Name | Type | Description | Notes
 **institution** | **Number** |  | [optional] 
 **_case** | **Number** |  | [optional] 
 **attachments** | **[File]** |  | [optional] [readonly] 
-**ordering** | **Number** | Order of letter. | [optional] 
 **comment** | **String** | Comment for letter. | [optional] 
 **excerpt** | **String** | Excerpt of letter. | [optional] 
 **documentType** | **Number** |  | [optional] 

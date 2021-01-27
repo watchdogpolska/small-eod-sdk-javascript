@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Event = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>Event</code>.
+   * Event(id, modified_on, created_on, created_by, modified_by, date, name, comment, case)
    * @alias module:model/Event
    * @param _case {Number} Case for this event.
    * @param name {String} Name of event.

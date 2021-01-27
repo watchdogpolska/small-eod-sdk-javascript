@@ -125,6 +125,7 @@ export default class InstitutionsApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @param {String} opts.query Query filter. Currently filtering by name.
@@ -137,6 +138,7 @@ export default class InstitutionsApi {
       let pathParams = {
       };
       let queryParams = {
+        'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset'],
         'query': opts['query']
@@ -159,6 +161,7 @@ export default class InstitutionsApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @param {String} opts.query Query filter. Currently filtering by name.

@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class Channel {
     /**
      * Constructs a new <code>Channel</code>.
+     * Channel(id, modified_on, created_on, created_by, modified_by, name, city, email, epuap, street, flat_no, house_no, postal_code, voivodeship)
      * @alias module:model/Channel
      * @param name {String} Channel's name.
      */

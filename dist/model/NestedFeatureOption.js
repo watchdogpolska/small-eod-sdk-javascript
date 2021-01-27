@@ -23,6 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var NestedFeatureOption = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NestedFeatureOption</code>.
+   * FeatureOption(id, name, feature)
    * @alias module:model/NestedFeatureOption
    * @param name {String} Name of option.
    */

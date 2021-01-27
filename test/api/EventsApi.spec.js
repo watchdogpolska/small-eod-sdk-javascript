@@ -68,6 +68,16 @@
         done();
       });
     });
+    describe('eventsIcal', function() {
+      it('should call eventsIcal successfully', function(done) {
+        //uncomment below and update the code to test eventsIcal
+        //instance.eventsIcal(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('eventsList', function() {
       it('should call eventsList successfully', function(done) {
         //uncomment below and update the code to test eventsList

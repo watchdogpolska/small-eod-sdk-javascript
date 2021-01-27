@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class DocumentType {
     /**
      * Constructs a new <code>DocumentType</code>.
+     * DocumentType(id, name)
      * @alias module:model/DocumentType
      * @param name {String} Type of letter
      */
@@ -52,6 +53,9 @@ class DocumentType {
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
+            if (data.hasOwnProperty('id')) {
+                obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+            }
         }
         return obj;
     }
@@ -64,6 +68,11 @@ class DocumentType {
  * @member {String} name
  */
 DocumentType.prototype['name'] = undefined;
+
+/**
+ * @member {Number} id
+ */
+DocumentType.prototype['id'] = undefined;
 
 
 
