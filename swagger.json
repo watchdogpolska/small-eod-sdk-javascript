@@ -141,6 +141,20 @@
         "description": "",
         "parameters": [
           {
+            "name": "tags",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
             "name": "ordering",
             "in": "query",
             "description": "Which field to use when ordering the results.",
