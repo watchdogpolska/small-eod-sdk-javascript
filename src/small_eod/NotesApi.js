@@ -125,6 +125,8 @@ export default class NotesApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
@@ -136,6 +138,8 @@ export default class NotesApi {
       let pathParams = {
       };
       let queryParams = {
+        'query': opts['query'],
+        'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset']
       };
@@ -157,6 +161,8 @@ export default class NotesApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}

@@ -141,13 +141,6 @@
         "description": "",
         "parameters": [
           {
-            "name": "tags",
-            "in": "query",
-            "description": "",
-            "required": false,
-            "type": "string"
-          },
-          {
             "name": "query",
             "in": "query",
             "description": "",
@@ -1644,6 +1637,13 @@
         "description": "",
         "parameters": [
           {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
             "name": "ordering",
             "in": "query",
             "description": "Which field to use when ordering the results.",
@@ -1734,6 +1734,13 @@
         "operationId": "events_ical",
         "description": "",
         "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
           {
             "name": "ordering",
             "in": "query",
@@ -2230,6 +2237,12 @@
         "description": "",
         "parameters": [
           {
+            "name": "query",
+            "in": "query",
+            "description": "Query filter. Currently filtering by name.",
+            "type": "string"
+          },
+          {
             "name": "ordering",
             "in": "query",
             "description": "Which field to use when ordering the results.",
@@ -2249,12 +2262,6 @@
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
-          },
-          {
-            "name": "query",
-            "in": "query",
-            "description": "Query filter. Currently filtering by name.",
-            "type": "string"
           }
         ],
         "responses": {
@@ -2416,6 +2423,13 @@
         "operationId": "letters_list",
         "description": "",
         "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
           {
             "name": "ordering",
             "in": "query",
@@ -2811,6 +2825,20 @@
         "operationId": "notes_list",
         "description": "",
         "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ordering",
+            "in": "query",
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
+          },
           {
             "name": "limit",
             "in": "query",

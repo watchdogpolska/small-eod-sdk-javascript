@@ -125,6 +125,7 @@ export default class EventsApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
@@ -137,6 +138,7 @@ export default class EventsApi {
       let pathParams = {
       };
       let queryParams = {
+        'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset']
@@ -159,6 +161,7 @@ export default class EventsApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
@@ -174,6 +177,7 @@ export default class EventsApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
@@ -186,6 +190,7 @@ export default class EventsApi {
       let pathParams = {
       };
       let queryParams = {
+        'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset']
@@ -208,6 +213,7 @@ export default class EventsApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.

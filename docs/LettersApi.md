@@ -533,6 +533,7 @@ Bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new SmallEodClient.LettersApi();
 let opts = {
+  'query': "query_example", // String | 
   'ordering': "ordering_example", // String | Which field to use when ordering the results.
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
@@ -550,6 +551,7 @@ apiInstance.lettersList(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **query** | **String**|  | [optional] 
  **ordering** | **String**| Which field to use when ordering the results. | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 

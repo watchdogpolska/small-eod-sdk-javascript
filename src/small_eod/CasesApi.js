@@ -127,7 +127,6 @@ export default class CasesApi {
 
     /**
      * @param {Object} opts Optional parameters
-     * @param {String} opts.tags 
      * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
@@ -141,7 +140,6 @@ export default class CasesApi {
       let pathParams = {
       };
       let queryParams = {
-        'tags': opts['tags'],
         'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
@@ -165,7 +163,6 @@ export default class CasesApi {
 
     /**
      * @param {Object} opts Optional parameters
-     * @param {String} opts.tags 
      * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.

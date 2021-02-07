@@ -114,6 +114,7 @@ var EventsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
@@ -127,6 +128,7 @@ var EventsApi = /*#__PURE__*/function () {
       var postBody = null;
       var pathParams = {};
       var queryParams = {
+        'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset']
@@ -141,6 +143,7 @@ var EventsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
@@ -156,6 +159,7 @@ var EventsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
@@ -169,6 +173,7 @@ var EventsApi = /*#__PURE__*/function () {
       var postBody = null;
       var pathParams = {};
       var queryParams = {
+        'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset']
@@ -183,6 +188,7 @@ var EventsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.

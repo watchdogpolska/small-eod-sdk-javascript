@@ -144,7 +144,6 @@ Bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new SmallEodClient.CasesApi();
 let opts = {
-  'tags': "tags_example", // String | 
   'query': "query_example", // String | 
   'ordering': "ordering_example", // String | Which field to use when ordering the results.
   'limit': 56, // Number | Number of results to return per page.
@@ -163,7 +162,6 @@ apiInstance.casesList(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tags** | **String**|  | [optional] 
  **query** | **String**|  | [optional] 
  **ordering** | **String**| Which field to use when ordering the results. | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 

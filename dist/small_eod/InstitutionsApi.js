@@ -114,10 +114,10 @@ var InstitutionsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query Query filter. Currently filtering by name.
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @param {String} opts.query Query filter. Currently filtering by name.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20012} and HTTP response
      */
 
@@ -128,10 +128,10 @@ var InstitutionsApi = /*#__PURE__*/function () {
       var postBody = null;
       var pathParams = {};
       var queryParams = {
+        'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
-        'offset': opts['offset'],
-        'query': opts['query']
+        'offset': opts['offset']
       };
       var headerParams = {};
       var formParams = {};
@@ -143,10 +143,10 @@ var InstitutionsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query Query filter. Currently filtering by name.
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @param {String} opts.query Query filter. Currently filtering by name.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
      */
 

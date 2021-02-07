@@ -118,7 +118,6 @@ var CasesApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
-     * @param {String} opts.tags 
      * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
@@ -133,7 +132,6 @@ var CasesApi = /*#__PURE__*/function () {
       var postBody = null;
       var pathParams = {};
       var queryParams = {
-        'tags': opts['tags'],
         'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
@@ -149,7 +147,6 @@ var CasesApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
-     * @param {String} opts.tags 
      * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
