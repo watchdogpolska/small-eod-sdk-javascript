@@ -629,7 +629,7 @@ var ApiClient = /*#__PURE__*/function () {
     key: "parseDate",
     value: function parseDate(str) {
       if (isNaN(str)) {
-        return new Date(str);
+        return new Date(str.replace(/(\d)(T)(\d)/i, '$1 $3'));
       }
 
       return new Date(+str);
