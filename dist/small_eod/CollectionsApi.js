@@ -7,6 +7,8 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _Case = _interopRequireDefault(require("../model/Case"));
+
 var _Collection = _interopRequireDefault(require("../model/Collection"));
 
 var _Event = _interopRequireDefault(require("../model/Event"));
@@ -22,8 +24,6 @@ var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse20
 var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse2008"));
 
 var _Letter = _interopRequireDefault(require("../model/Letter"));
-
-var _ModelCase = _interopRequireDefault(require("../model/ModelCase"));
 
 var _Note = _interopRequireDefault(require("../model/Note"));
 
@@ -437,7 +437,7 @@ var CollectionsApi = /*#__PURE__*/function () {
     /**
      * @param {String} collectionPk 
      * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ModelCase} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Case} and HTTP response
      */
 
   }, {
@@ -464,13 +464,13 @@ var CollectionsApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer', 'CollectionToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ModelCase["default"];
+      var returnType = _Case["default"];
       return this.apiClient.callApi('/collections/{collection_pk}/cases/{id}/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * @param {String} collectionPk 
      * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ModelCase}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Case}
      */
 
   }, {

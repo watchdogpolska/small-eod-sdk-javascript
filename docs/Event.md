@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_case** | **Number** | Case for this event. | 
 **name** | **String** | Name of event. | 
-**_date** | **Date** | Date of event. | 
+**date** | **Date** | Date of event. | 
 **comment** | **String** | Comment text. | 
 **id** | **Number** |  | [optional] [readonly] 
 

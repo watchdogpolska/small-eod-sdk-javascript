@@ -235,6 +235,7 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [SmallEodClient.AdministrativeUnit](docs/AdministrativeUnit.md)
+ - [SmallEodClient.Case](docs/Case.md)
  - [SmallEodClient.CaseCount](docs/CaseCount.md)
  - [SmallEodClient.Channel](docs/Channel.md)
  - [SmallEodClient.Collection](docs/Collection.md)
@@ -260,7 +261,6 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.InlineResponse2009](docs/InlineResponse2009.md)
  - [SmallEodClient.Institution](docs/Institution.md)
  - [SmallEodClient.Letter](docs/Letter.md)
- - [SmallEodClient.ModelCase](docs/ModelCase.md)
  - [SmallEodClient.NestedFeatureOption](docs/NestedFeatureOption.md)
  - [SmallEodClient.Note](docs/Note.md)
  - [SmallEodClient.RefreshTokenRequest](docs/RefreshTokenRequest.md)

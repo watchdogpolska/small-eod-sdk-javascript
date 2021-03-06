@@ -3,6 +3,7 @@
 README.md
 docs/AdministrativeUnit.md
 docs/AdministrativeUnitsApi.md
+docs/Case.md
 docs/CaseCount.md
 docs/CasesApi.md
 docs/Channel.md
@@ -36,7 +37,6 @@ docs/Institution.md
 docs/InstitutionsApi.md
 docs/Letter.md
 docs/LettersApi.md
-docs/ModelCase.md
 docs/NestedFeatureOption.md
 docs/Note.md
 docs/NotesApi.md
@@ -55,6 +55,7 @@ package.json
 src/ApiClient.js
 src/index.js
 src/model/AdministrativeUnit.js
+src/model/Case.js
 src/model/CaseCount.js
 src/model/Channel.js
 src/model/Collection.js
@@ -80,7 +81,6 @@ src/model/InlineResponse2008.js
 src/model/InlineResponse2009.js
 src/model/Institution.js
 src/model/Letter.js
-src/model/ModelCase.js
 src/model/NestedFeatureOption.js
 src/model/Note.js
 src/model/RefreshTokenRequest.js
@@ -115,6 +115,7 @@ test/api/NotesApi.spec.js
 test/api/TagsApi.spec.js
 test/api/UsersApi.spec.js
 test/model/AdministrativeUnit.spec.js
+test/model/Case.spec.js
 test/model/CaseCount.spec.js
 test/model/Channel.spec.js
 test/model/Collection.spec.js
@@ -140,7 +141,6 @@ test/model/InlineResponse2008.spec.js
 test/model/InlineResponse2009.spec.js
 test/model/Institution.spec.js
 test/model/Letter.spec.js
-test/model/ModelCase.spec.js
 test/model/NestedFeatureOption.spec.js
 test/model/Note.spec.js
 test/model/RefreshTokenRequest.spec.js

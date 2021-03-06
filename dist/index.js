@@ -15,6 +15,12 @@ Object.defineProperty(exports, "AdministrativeUnit", {
     return _AdministrativeUnit["default"];
   }
 });
+Object.defineProperty(exports, "Case", {
+  enumerable: true,
+  get: function get() {
+    return _Case["default"];
+  }
+});
 Object.defineProperty(exports, "CaseCount", {
   enumerable: true,
   get: function get() {
@@ -165,12 +171,6 @@ Object.defineProperty(exports, "Letter", {
     return _Letter["default"];
   }
 });
-Object.defineProperty(exports, "ModelCase", {
-  enumerable: true,
-  get: function get() {
-    return _ModelCase["default"];
-  }
-});
 Object.defineProperty(exports, "NestedFeatureOption", {
   enumerable: true,
   get: function get() {
@@ -302,6 +302,8 @@ var _ApiClient = _interopRequireDefault(require("./ApiClient"));
 
 var _AdministrativeUnit = _interopRequireDefault(require("./model/AdministrativeUnit"));
 
+var _Case = _interopRequireDefault(require("./model/Case"));
+
 var _CaseCount = _interopRequireDefault(require("./model/CaseCount"));
 
 var _Channel = _interopRequireDefault(require("./model/Channel"));
@@ -351,8 +353,6 @@ var _InlineResponse15 = _interopRequireDefault(require("./model/InlineResponse20
 var _Institution = _interopRequireDefault(require("./model/Institution"));
 
 var _Letter = _interopRequireDefault(require("./model/Letter"));
-
-var _ModelCase = _interopRequireDefault(require("./model/ModelCase"));
 
 var _NestedFeatureOption = _interopRequireDefault(require("./model/NestedFeatureOption"));
 

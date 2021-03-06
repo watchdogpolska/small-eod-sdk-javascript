@@ -465,7 +465,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesRead
 
-> ModelCase collectionsCasesRead(collectionPk, id)
+> Case collectionsCasesRead(collectionPk, id)
 
 
 
@@ -510,7 +510,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ModelCase**](ModelCase.md)
+[**Case**](Case.md)
 
 ### Authorization
 

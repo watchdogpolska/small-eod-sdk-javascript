@@ -13,6 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
+import Case from '../model/Case';
 import Collection from '../model/Collection';
 import Event from '../model/Event';
 import InlineResponse2004 from '../model/InlineResponse2004';
@@ -21,7 +22,6 @@ import InlineResponse2006 from '../model/InlineResponse2006';
 import InlineResponse2007 from '../model/InlineResponse2007';
 import InlineResponse2008 from '../model/InlineResponse2008';
 import Letter from '../model/Letter';
-import ModelCase from '../model/ModelCase';
 import Note from '../model/Note';
 import TokenSet from '../model/TokenSet';
 
@@ -455,7 +455,7 @@ export default class CollectionsApi {
     /**
      * @param {String} collectionPk 
      * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ModelCase} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Case} and HTTP response
      */
     collectionsCasesReadWithHttpInfo(collectionPk, id) {
       let postBody = null;
@@ -482,7 +482,7 @@ export default class CollectionsApi {
       let authNames = ['Basic', 'Bearer', 'CollectionToken'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = ModelCase;
+      let returnType = Case;
       return this.apiClient.callApi(
         '/collections/{collection_pk}/cases/{id}/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -493,7 +493,7 @@ export default class CollectionsApi {
     /**
      * @param {String} collectionPk 
      * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ModelCase}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Case}
      */
     collectionsCasesRead(collectionPk, id) {
       return this.collectionsCasesReadWithHttpInfo(collectionPk, id)

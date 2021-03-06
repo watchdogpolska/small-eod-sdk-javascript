@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **direction** | **String** | Direction for letter. | [optional] 
 **channel** | **Number** |  | [optional] 
 **_final** | **Boolean** | Indicates whether the document has final content or is, for example, a draft | [optional] 
-**_date** | **Date** | Date of sending or receiving. | [optional] 
+**date** | **Date** | Date of sending or receiving. | [optional] 
 **referenceNumber** | **String** | Reference number of letter. | [optional] 
 **institution** | **Number** |  | [optional] 
 **_case** | **Number** |  | [optional] 

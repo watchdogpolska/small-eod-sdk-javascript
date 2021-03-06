@@ -14,20 +14,20 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The ModelCase model module.
- * @module model/ModelCase
+ * The Case model module.
+ * @module model/Case
  * @version 1.0.4
  */
-class ModelCase {
+class Case {
     /**
-     * Constructs a new <code>ModelCase</code>.
+     * Constructs a new <code>Case</code>.
      * Case(id, modified_on, created_on, created_by, modified_by, name, comment)
-     * @alias module:model/ModelCase
+     * @alias module:model/Case
      * @param name {String} Case's name.
      */
     constructor(name) { 
         
-        ModelCase.initialize(this, name);
+        Case.initialize(this, name);
     }
 
     /**
@@ -40,15 +40,15 @@ class ModelCase {
     }
 
     /**
-     * Constructs a <code>ModelCase</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>Case</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/ModelCase} obj Optional instance to populate.
-     * @return {module:model/ModelCase} The populated <code>ModelCase</code> instance.
+     * @param {module:model/Case} obj Optional instance to populate.
+     * @return {module:model/Case} The populated <code>Case</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new ModelCase();
+            obj = obj || new Case();
 
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
@@ -97,70 +97,70 @@ class ModelCase {
  * Case's name.
  * @member {String} name
  */
-ModelCase.prototype['name'] = undefined;
+Case.prototype['name'] = undefined;
 
 /**
  * @member {Number} id
  */
-ModelCase.prototype['id'] = undefined;
+Case.prototype['id'] = undefined;
 
 /**
  * Comment for this case.
  * @member {String} comment
  */
-ModelCase.prototype['comment'] = undefined;
+Case.prototype['comment'] = undefined;
 
 /**
  * Case audits this Institutions.
  * @member {Array.<Number>} auditedInstitutions
  */
-ModelCase.prototype['auditedInstitutions'] = undefined;
+Case.prototype['auditedInstitutions'] = undefined;
 
 /**
  * @member {Array.<Number>} responsibleUsers
  */
-ModelCase.prototype['responsibleUsers'] = undefined;
+Case.prototype['responsibleUsers'] = undefined;
 
 /**
  * @member {Array.<Number>} notifiedUsers
  */
-ModelCase.prototype['notifiedUsers'] = undefined;
+Case.prototype['notifiedUsers'] = undefined;
 
 /**
  * @member {Array.<Number>} featureoptions
  */
-ModelCase.prototype['featureoptions'] = undefined;
+Case.prototype['featureoptions'] = undefined;
 
 /**
  * 
  * @member {Array.<String>} tags
  */
-ModelCase.prototype['tags'] = undefined;
+Case.prototype['tags'] = undefined;
 
 /**
  * @member {Number} createdBy
  */
-ModelCase.prototype['createdBy'] = undefined;
+Case.prototype['createdBy'] = undefined;
 
 /**
  * @member {Number} modifiedBy
  */
-ModelCase.prototype['modifiedBy'] = undefined;
+Case.prototype['modifiedBy'] = undefined;
 
 /**
  * @member {Date} createdOn
  */
-ModelCase.prototype['createdOn'] = undefined;
+Case.prototype['createdOn'] = undefined;
 
 /**
  * @member {Date} modifiedOn
  */
-ModelCase.prototype['modifiedOn'] = undefined;
+Case.prototype['modifiedOn'] = undefined;
 
 
 
 
 
 
-export default ModelCase;
+export default Case;
 

@@ -1,4 +1,4 @@
-# SmallEodClient.ModelCase
+# SmallEodClient.Case
 
 ## Properties
 

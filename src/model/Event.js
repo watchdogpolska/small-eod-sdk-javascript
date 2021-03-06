@@ -25,12 +25,12 @@ class Event {
      * @alias module:model/Event
      * @param _case {Number} Case for this event.
      * @param name {String} Name of event.
-     * @param _date {Date} Date of event.
+     * @param date {Date} Date of event.
      * @param comment {String} Comment text.
      */
-    constructor(_case, name, _date, comment) { 
+    constructor(_case, name, date, comment) { 
         
-        Event.initialize(this, _case, name, _date, comment);
+        Event.initialize(this, _case, name, date, comment);
     }
 
     /**
@@ -38,10 +38,10 @@ class Event {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, _case, name, _date, comment) { 
+    static initialize(obj, _case, name, date, comment) { 
         obj['case'] = _case;
         obj['name'] = name;
-        obj['date'] = _date;
+        obj['date'] = date;
         obj['comment'] = comment;
     }
 

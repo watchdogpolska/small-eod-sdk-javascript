@@ -14,6 +14,7 @@
 
 import ApiClient from './ApiClient';
 import AdministrativeUnit from './model/AdministrativeUnit';
+import Case from './model/Case';
 import CaseCount from './model/CaseCount';
 import Channel from './model/Channel';
 import Collection from './model/Collection';
@@ -39,7 +40,6 @@ import InlineResponse2008 from './model/InlineResponse2008';
 import InlineResponse2009 from './model/InlineResponse2009';
 import Institution from './model/Institution';
 import Letter from './model/Letter';
-import ModelCase from './model/ModelCase';
 import NestedFeatureOption from './model/NestedFeatureOption';
 import Note from './model/Note';
 import RefreshTokenRequest from './model/RefreshTokenRequest';
@@ -106,6 +106,12 @@ export {
      * @property {module:model/AdministrativeUnit}
      */
     AdministrativeUnit,
+
+    /**
+     * The Case model constructor.
+     * @property {module:model/Case}
+     */
+    Case,
 
     /**
      * The CaseCount model constructor.
@@ -256,12 +262,6 @@ export {
      * @property {module:model/Letter}
      */
     Letter,
-
-    /**
-     * The ModelCase model constructor.
-     * @property {module:model/ModelCase}
-     */
-    ModelCase,
 
     /**
      * The NestedFeatureOption model constructor.

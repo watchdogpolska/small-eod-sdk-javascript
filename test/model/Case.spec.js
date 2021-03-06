@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.ModelCase();
+    instance = new SmallEodClient.Case();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,82 +47,82 @@
       object[property] = value;
   }
 
-  describe('ModelCase', function() {
-    it('should create an instance of ModelCase', function() {
-      // uncomment below and update the code to test ModelCase
-      //var instane = new SmallEodClient.ModelCase();
-      //expect(instance).to.be.a(SmallEodClient.ModelCase);
+  describe('Case', function() {
+    it('should create an instance of Case', function() {
+      // uncomment below and update the code to test Case
+      //var instane = new SmallEodClient.Case();
+      //expect(instance).to.be.a(SmallEodClient.Case);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property auditedInstitutions (base name: "auditedInstitutions")', function() {
       // uncomment below and update the code to test the property auditedInstitutions
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property responsibleUsers (base name: "responsibleUsers")', function() {
       // uncomment below and update the code to test the property responsibleUsers
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property notifiedUsers (base name: "notifiedUsers")', function() {
       // uncomment below and update the code to test the property notifiedUsers
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property featureoptions (base name: "featureoptions")', function() {
       // uncomment below and update the code to test the property featureoptions
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property tags (base name: "tags")', function() {
       // uncomment below and update the code to test the property tags
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property createdBy (base name: "createdBy")', function() {
       // uncomment below and update the code to test the property createdBy
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedBy (base name: "modifiedBy")', function() {
       // uncomment below and update the code to test the property modifiedBy
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property createdOn (base name: "createdOn")', function() {
       // uncomment below and update the code to test the property createdOn
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedOn (base name: "modifiedOn")', function() {
       // uncomment below and update the code to test the property modifiedOn
-      //var instance = new SmallEodClient.ModelCase();
+      //var instance = new SmallEodClient.Case();
       //expect(instance).to.be();
     });
 
