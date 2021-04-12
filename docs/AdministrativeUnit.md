@@ -6,9 +6,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | 
 **name** | **String** |  | 
-**category** | **Number** |  | 
 **updatedOn** | **Date** |  | 
 **parent** | **String** |  | [optional] 
+**category** | **String** |  | [optional] [readonly] 
 **slug** | **String** |  | [optional] [readonly] 
 **active** | **Boolean** |  | [optional] 
 

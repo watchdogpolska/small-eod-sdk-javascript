@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Letter from './Letter';
+import FeatureAutocomplete from './FeatureAutocomplete';
 
 /**
  * The InlineResponse2007 model module.
@@ -24,7 +24,7 @@ class InlineResponse2007 {
      * Constructs a new <code>InlineResponse2007</code>.
      * @alias module:model/InlineResponse2007
      * @param count {Number} 
-     * @param results {Array.<module:model/Letter>} 
+     * @param results {Array.<module:model/FeatureAutocomplete>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse2007 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Letter]);
+                obj['results'] = ApiClient.convertToType(data['results'], [FeatureAutocomplete]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse2007 {
 InlineResponse2007.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/Letter>} results
+ * @member {Array.<module:model/FeatureAutocomplete>} results
  */
 InlineResponse2007.prototype['results'] = undefined;
 

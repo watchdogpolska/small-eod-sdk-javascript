@@ -1,10 +1,10 @@
-# SmallEodClient.NestedFeatureOption
+# SmallEodClient.DocumentTypeAutocomplete
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | Name of option. | 
+**name** | **String** | Type of letter | 
 **id** | **Number** |  | [optional] [readonly] 
 
 

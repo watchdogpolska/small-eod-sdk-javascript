@@ -14,7 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import DocumentType from '../model/DocumentType';
-import InlineResponse2009 from '../model/InlineResponse2009';
+import InlineResponse20019 from '../model/InlineResponse20019';
 
 /**
 * DocumentTypes service.
@@ -125,9 +125,10 @@ export default class DocumentTypesApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20019} and HTTP response
      */
     documentTypesListWithHttpInfo(opts) {
       opts = opts || {};
@@ -136,6 +137,7 @@ export default class DocumentTypesApi {
       let pathParams = {
       };
       let queryParams = {
+        'query': opts['query'],
         'limit': opts['limit'],
         'offset': opts['offset']
       };
@@ -147,7 +149,7 @@ export default class DocumentTypesApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2009;
+      let returnType = InlineResponse20019;
       return this.apiClient.callApi(
         '/documentTypes/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -157,9 +159,10 @@ export default class DocumentTypesApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20019}
      */
     documentTypesList(opts) {
       return this.documentTypesListWithHttpInfo(opts)

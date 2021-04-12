@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Collection from './Collection';
+import DocumentTypeAutocomplete from './DocumentTypeAutocomplete';
 
 /**
  * The InlineResponse2004 model module.
@@ -24,7 +24,7 @@ class InlineResponse2004 {
      * Constructs a new <code>InlineResponse2004</code>.
      * @alias module:model/InlineResponse2004
      * @param count {Number} 
-     * @param results {Array.<module:model/Collection>} 
+     * @param results {Array.<module:model/DocumentTypeAutocomplete>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse2004 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Collection]);
+                obj['results'] = ApiClient.convertToType(data['results'], [DocumentTypeAutocomplete]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse2004 {
 InlineResponse2004.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/Collection>} results
+ * @member {Array.<module:model/DocumentTypeAutocomplete>} results
  */
 InlineResponse2004.prototype['results'] = undefined;
 

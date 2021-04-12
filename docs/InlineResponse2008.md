@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | 
-**results** | [**[Note]**](Note.md) |  | 
+**results** | [**[InstitutionAutocomplete]**](InstitutionAutocomplete.md) |  | 
 **next** | **String** |  | [optional] 
 **previous** | **String** |  | [optional] 
 

@@ -114,12 +114,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property excerpt (base name: "excerpt")', function() {
-      // uncomment below and update the code to test the property excerpt
-      //var instance = new SmallEodClient.Letter();
-      //expect(instance).to.be();
-    });
-
     it('should have the property documentType (base name: "documentType")', function() {
       // uncomment below and update the code to test the property documentType
       //var instance = new SmallEodClient.Letter();

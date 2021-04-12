@@ -13,7 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
-import InlineResponse20014 from '../model/InlineResponse20014';
+import InlineResponse20024 from '../model/InlineResponse20024';
 import Tag from '../model/Tag';
 
 /**
@@ -125,9 +125,11 @@ export default class TagsApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20014} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20024} and HTTP response
      */
     tagsListWithHttpInfo(opts) {
       opts = opts || {};
@@ -136,6 +138,8 @@ export default class TagsApi {
       let pathParams = {
       };
       let queryParams = {
+        'query': opts['query'],
+        'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset']
       };
@@ -147,7 +151,7 @@ export default class TagsApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20014;
+      let returnType = InlineResponse20024;
       return this.apiClient.callApi(
         '/tags/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -157,9 +161,11 @@ export default class TagsApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
+     * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20014}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20024}
      */
     tagsList(opts) {
       return this.tagsListWithHttpInfo(opts)

@@ -48,6 +48,13 @@
         "description": "",
         "parameters": [
           {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
             "name": "ordering",
             "in": "query",
             "description": "Which field to use when ordering the results.",
@@ -132,6 +139,936 @@
           "description": "A unique value identifying this administrative unit.",
           "required": true,
           "type": "string"
+        }
+      ]
+    },
+    "/autocomplete/administrative_units/": {
+      "get": {
+        "operationId": "autocomplete_administrative_units_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/AdministrativeUnitAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/administrative_units/{id}/": {
+      "get": {
+        "operationId": "autocomplete_administrative_units_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/AdministrativeUnitAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique value identifying this administrative unit.",
+          "required": true,
+          "type": "string"
+        }
+      ]
+    },
+    "/autocomplete/cases/": {
+      "get": {
+        "operationId": "autocomplete_cases_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/CaseAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/cases/{id}/": {
+      "get": {
+        "operationId": "autocomplete_cases_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CaseAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this case.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/autocomplete/channels/": {
+      "get": {
+        "operationId": "autocomplete_channels_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/ChannelAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/channels/{id}/": {
+      "get": {
+        "operationId": "autocomplete_channels_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ChannelAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this channel.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/autocomplete/document_types/": {
+      "get": {
+        "operationId": "autocomplete_document_types_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/DocumentTypeAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/document_types/{id}/": {
+      "get": {
+        "operationId": "autocomplete_document_types_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/DocumentTypeAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this document type.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/autocomplete/events/": {
+      "get": {
+        "operationId": "autocomplete_events_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/EventAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/events/{id}/": {
+      "get": {
+        "operationId": "autocomplete_events_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EventAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this event.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/autocomplete/feature_options/": {
+      "get": {
+        "operationId": "autocomplete_feature_options_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/FeatureOptionAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/feature_options/{id}/": {
+      "get": {
+        "operationId": "autocomplete_feature_options_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/FeatureOptionAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this feature option.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/autocomplete/features/": {
+      "get": {
+        "operationId": "autocomplete_features_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/FeatureAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/features/{id}/": {
+      "get": {
+        "operationId": "autocomplete_features_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/FeatureAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this feature.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/autocomplete/institutions/": {
+      "get": {
+        "operationId": "autocomplete_institutions_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/InstitutionAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/institutions/{id}/": {
+      "get": {
+        "operationId": "autocomplete_institutions_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/InstitutionAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this institution.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/autocomplete/tags/": {
+      "get": {
+        "operationId": "autocomplete_tags_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/TagAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/tags/{id}/": {
+      "get": {
+        "operationId": "autocomplete_tags_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/TagAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this tag.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
+    "/autocomplete/users/": {
+      "get": {
+        "operationId": "autocomplete_users_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/UserAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/users/{id}/": {
+      "get": {
+        "operationId": "autocomplete_users_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UserAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this user.",
+          "required": true,
+          "type": "integer"
         }
       ]
     },
@@ -538,6 +1475,13 @@
         "operationId": "channels_list",
         "description": "",
         "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
           {
             "name": "ordering",
             "in": "query",
@@ -1463,6 +2407,13 @@
         "description": "",
         "parameters": [
           {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
             "name": "limit",
             "in": "query",
             "description": "Number of results to return per page.",
@@ -1864,11 +2815,206 @@
         }
       ]
     },
+    "/feature_options/": {
+      "get": {
+        "operationId": "feature_options_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ordering",
+            "in": "query",
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/FeatureOption"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "feature_options"
+        ]
+      },
+      "post": {
+        "operationId": "feature_options_create",
+        "description": "",
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/FeatureOption"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/FeatureOption"
+            }
+          }
+        },
+        "tags": [
+          "feature_options"
+        ]
+      },
+      "parameters": []
+    },
+    "/feature_options/{id}/": {
+      "get": {
+        "operationId": "feature_options_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/FeatureOption"
+            }
+          }
+        },
+        "tags": [
+          "feature_options"
+        ]
+      },
+      "put": {
+        "operationId": "feature_options_update",
+        "description": "",
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/FeatureOption"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/FeatureOption"
+            }
+          }
+        },
+        "tags": [
+          "feature_options"
+        ]
+      },
+      "patch": {
+        "operationId": "feature_options_partial_update",
+        "description": "",
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/FeatureOption"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/FeatureOption"
+            }
+          }
+        },
+        "tags": [
+          "feature_options"
+        ]
+      },
+      "delete": {
+        "operationId": "feature_options_delete",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "feature_options"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this feature option.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
     "/features/": {
       "get": {
         "operationId": "features_list",
         "description": "",
         "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
           {
             "name": "ordering",
             "in": "query",
@@ -1954,192 +3100,6 @@
         ]
       },
       "parameters": []
-    },
-    "/features/{feature_pk}/featureoption/": {
-      "get": {
-        "operationId": "features_featureoption_list",
-        "description": "",
-        "parameters": [
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of results to return per page.",
-            "required": false,
-            "type": "integer"
-          },
-          {
-            "name": "offset",
-            "in": "query",
-            "description": "The initial index from which to return the results.",
-            "required": false,
-            "type": "integer"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "required": [
-                "count",
-                "results"
-              ],
-              "type": "object",
-              "properties": {
-                "count": {
-                  "type": "integer"
-                },
-                "next": {
-                  "type": "string",
-                  "format": "uri",
-                  "x-nullable": true
-                },
-                "previous": {
-                  "type": "string",
-                  "format": "uri",
-                  "x-nullable": true
-                },
-                "results": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/definitions/FeatureOption"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "tags": [
-          "features"
-        ]
-      },
-      "post": {
-        "operationId": "features_featureoption_create",
-        "description": "",
-        "parameters": [
-          {
-            "name": "data",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/FeatureOption"
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/FeatureOption"
-            }
-          }
-        },
-        "tags": [
-          "features"
-        ]
-      },
-      "parameters": [
-        {
-          "name": "feature_pk",
-          "in": "path",
-          "required": true,
-          "type": "string"
-        }
-      ]
-    },
-    "/features/{feature_pk}/featureoption/{id}/": {
-      "get": {
-        "operationId": "features_featureoption_read",
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/FeatureOption"
-            }
-          }
-        },
-        "tags": [
-          "features"
-        ]
-      },
-      "put": {
-        "operationId": "features_featureoption_update",
-        "description": "",
-        "parameters": [
-          {
-            "name": "data",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/FeatureOption"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/FeatureOption"
-            }
-          }
-        },
-        "tags": [
-          "features"
-        ]
-      },
-      "patch": {
-        "operationId": "features_featureoption_partial_update",
-        "description": "",
-        "parameters": [
-          {
-            "name": "data",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/FeatureOption"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/FeatureOption"
-            }
-          }
-        },
-        "tags": [
-          "features"
-        ]
-      },
-      "delete": {
-        "operationId": "features_featureoption_delete",
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "204": {
-            "description": ""
-          }
-        },
-        "tags": [
-          "features"
-        ]
-      },
-      "parameters": [
-        {
-          "name": "feature_pk",
-          "in": "path",
-          "required": true,
-          "type": "string"
-        },
-        {
-          "name": "id",
-          "in": "path",
-          "required": true,
-          "type": "string"
-        }
-      ]
     },
     "/features/{id}/": {
       "get": {
@@ -3014,6 +3974,20 @@
         "description": "",
         "parameters": [
           {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ordering",
+            "in": "query",
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
+          },
+          {
             "name": "limit",
             "in": "query",
             "description": "Number of results to return per page.",
@@ -3188,6 +4162,13 @@
         "description": "API endpoint that allows users to be viewed or edited.",
         "parameters": [
           {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
             "name": "ordering",
             "in": "query",
             "description": "Which field to use when ordering the results.",
@@ -3279,6 +4260,13 @@
         "description": "API endpoint to receive URI for OAuth authorization url",
         "parameters": [
           {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
             "name": "ordering",
             "in": "query",
             "description": "Which field to use when ordering the results.",
@@ -3320,6 +4308,13 @@
         "operationId": "users_exchange",
         "description": "API endpoint to exchange authorization code to access token",
         "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
           {
             "name": "ordering",
             "in": "query",
@@ -3483,7 +4478,6 @@
       "required": [
         "id",
         "name",
-        "category",
         "updatedOn"
       ],
       "type": "object",
@@ -3507,7 +4501,8 @@
         },
         "category": {
           "title": "Category",
-          "type": "integer"
+          "type": "string",
+          "readOnly": true
         },
         "slug": {
           "title": "Slug",
@@ -3525,6 +4520,217 @@
         "active": {
           "title": "Active",
           "type": "boolean"
+        }
+      }
+    },
+    "AdministrativeUnitAutocomplete": {
+      "description": "AdministrativeUnit(id, parent, name, category, slug, updated_on, active, lft, rght, tree_id, level)",
+      "required": [
+        "id",
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string",
+          "maxLength": 7,
+          "minLength": 1
+        },
+        "name": {
+          "title": "Name",
+          "type": "string",
+          "maxLength": 36,
+          "minLength": 1
+        }
+      }
+    },
+    "CaseAutocomplete": {
+      "description": "Case(id, modified_on, created_on, created_by, modified_by, name, comment)",
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Name",
+          "description": "Case's name.",
+          "type": "string",
+          "maxLength": 256,
+          "minLength": 1
+        }
+      }
+    },
+    "ChannelAutocomplete": {
+      "description": "Channel(id, modified_on, created_on, created_by, modified_by, name, city, email, epuap, street, flat_no, house_no, postal_code, voivodeship)",
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Name",
+          "description": "Channel's name.",
+          "type": "string",
+          "maxLength": 25,
+          "minLength": 1
+        }
+      }
+    },
+    "DocumentTypeAutocomplete": {
+      "description": "DocumentType(id, name)",
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Document type",
+          "description": "Type of letter",
+          "type": "string",
+          "maxLength": 256,
+          "minLength": 1
+        }
+      }
+    },
+    "EventAutocomplete": {
+      "description": "Event(id, modified_on, created_on, created_by, modified_by, date, name, comment, case)",
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Name",
+          "description": "Name of event.",
+          "type": "string",
+          "maxLength": 256,
+          "minLength": 1
+        }
+      }
+    },
+    "FeatureOptionAutocomplete": {
+      "description": "FeatureOption(id, name, feature)",
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Name",
+          "description": "Name of option.",
+          "type": "string",
+          "maxLength": 100,
+          "minLength": 1
+        }
+      }
+    },
+    "FeatureAutocomplete": {
+      "description": "Feature(id, modified_on, created_on, created_by, modified_by, name, min_options, max_options)",
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Name",
+          "description": "Name of feature.",
+          "type": "string",
+          "maxLength": 100,
+          "minLength": 1
+        }
+      }
+    },
+    "InstitutionAutocomplete": {
+      "description": "Institution(id, modified_on, created_on, created_by, modified_by, name, administrative_unit, email, city, epuap, street, house_no, postal_code, flat_no, nip, regon, comment)",
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Name",
+          "description": "Name of institution",
+          "type": "string",
+          "maxLength": 256,
+          "minLength": 1
+        }
+      }
+    },
+    "TagAutocomplete": {
+      "description": "Tag(id, name)",
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Tag",
+          "type": "string",
+          "maxLength": 256,
+          "minLength": 1
+        }
+      }
+    },
+    "UserAutocomplete": {
+      "description": "User(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined)",
+      "required": [
+        "username"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "username": {
+          "title": "Username",
+          "description": "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.",
+          "type": "string",
+          "pattern": "^[\\w.@+-]+$",
+          "maxLength": 150,
+          "minLength": 1
         }
       }
     },
@@ -4015,12 +5221,6 @@
           "description": "Comment for letter.",
           "type": "string"
         },
-        "excerpt": {
-          "title": "Excerpt",
-          "description": "Excerpt of letter.",
-          "type": "string",
-          "maxLength": 256
-        },
         "documentType": {
           "title": "Document type",
           "type": "integer"
@@ -4113,7 +5313,7 @@
         }
       }
     },
-    "NestedFeatureOption": {
+    "FeatureOption": {
       "description": "FeatureOption(id, name, feature)",
       "required": [
         "name"
@@ -4131,6 +5331,10 @@
           "type": "string",
           "maxLength": 100,
           "minLength": 1
+        },
+        "feature": {
+          "title": "Feature",
+          "type": "integer"
         }
       }
     },
@@ -4168,37 +5372,12 @@
           "minimum": -2147483648
         },
         "featureoptions": {
-          "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/NestedFeatureOption"
+            "type": "integer"
           },
-          "default": []
-        }
-      }
-    },
-    "FeatureOption": {
-      "description": "FeatureOption(id, name, feature)",
-      "required": [
-        "name"
-      ],
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "type": "integer",
-          "readOnly": true
-        },
-        "name": {
-          "title": "Name",
-          "description": "Name of option.",
-          "type": "string",
-          "maxLength": 100,
-          "minLength": 1
-        },
-        "feature": {
-          "title": "Feature",
-          "type": "integer"
+          "default": [],
+          "uniqueItems": true
         }
       }
     },

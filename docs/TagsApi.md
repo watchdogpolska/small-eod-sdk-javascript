@@ -119,7 +119,7 @@ null (empty response body)
 
 ## tagsList
 
-> InlineResponse20014 tagsList(opts)
+> InlineResponse20024 tagsList(opts)
 
 
 
@@ -140,6 +140,8 @@ Bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new SmallEodClient.TagsApi();
 let opts = {
+  'query': "query_example", // String | 
+  'ordering': "ordering_example", // String | Which field to use when ordering the results.
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
@@ -156,12 +158,14 @@ apiInstance.tagsList(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **query** | **String**|  | [optional] 
+ **ordering** | **String**| Which field to use when ordering the results. | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**InlineResponse20014**](InlineResponse20014.md)
+[**InlineResponse20024**](InlineResponse20024.md)
 
 ### Authorization
 

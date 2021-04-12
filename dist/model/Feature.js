@@ -7,8 +7,6 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _NestedFeatureOption = _interopRequireDefault(require("./NestedFeatureOption"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -77,7 +75,7 @@ var Feature = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('featureoptions')) {
-          obj['featureoptions'] = _ApiClient["default"].convertToType(data['featureoptions'], [_NestedFeatureOption["default"]]);
+          obj['featureoptions'] = _ApiClient["default"].convertToType(data['featureoptions'], ['Number']);
         }
       }
 
@@ -112,8 +110,7 @@ Feature.prototype['minOptions'] = undefined;
 
 Feature.prototype['maxOptions'] = undefined;
 /**
- * 
- * @member {Array.<module:model/NestedFeatureOption>} featureoptions
+ * @member {Array.<Number>} featureoptions
  */
 
 Feature.prototype['featureoptions'] = undefined;

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | 
-**results** | [**[User]**](User.md) |  | 
+**results** | [**[CaseAutocomplete]**](CaseAutocomplete.md) |  | 
 **next** | **String** |  | [optional] 
 **previous** | **String** |  | [optional] 
 

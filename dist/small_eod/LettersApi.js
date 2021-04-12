@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse20013"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse20017"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse2007"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse20023"));
 
 var _Letter = _interopRequireDefault(require("../model/Letter"));
 
@@ -212,7 +212,7 @@ var LettersApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20013} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20023} and HTTP response
      */
 
   }, {
@@ -237,7 +237,7 @@ var LettersApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse["default"];
+      var returnType = _InlineResponse2["default"];
       return this.apiClient.callApi('/letters/{letter_pk}/files/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -245,7 +245,7 @@ var LettersApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20013}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20023}
      */
 
   }, {
@@ -451,7 +451,7 @@ var LettersApi = /*#__PURE__*/function () {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2007} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20017} and HTTP response
      */
 
   }, {
@@ -471,7 +471,7 @@ var LettersApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse2["default"];
+      var returnType = _InlineResponse["default"];
       return this.apiClient.callApi('/letters/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -480,7 +480,7 @@ var LettersApi = /*#__PURE__*/function () {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2007}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20017}
      */
 
   }, {

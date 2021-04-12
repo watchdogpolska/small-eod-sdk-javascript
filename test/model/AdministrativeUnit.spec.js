@@ -66,12 +66,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property category (base name: "category")', function() {
-      // uncomment below and update the code to test the property category
-      //var instance = new SmallEodClient.AdministrativeUnit();
-      //expect(instance).to.be();
-    });
-
     it('should have the property updatedOn (base name: "updatedOn")', function() {
       // uncomment below and update the code to test the property updatedOn
       //var instance = new SmallEodClient.AdministrativeUnit();
@@ -80,6 +74,12 @@
 
     it('should have the property parent (base name: "parent")', function() {
       // uncomment below and update the code to test the property parent
+      //var instance = new SmallEodClient.AdministrativeUnit();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property category (base name: "category")', function() {
+      // uncomment below and update the code to test the property category
       //var instance = new SmallEodClient.AdministrativeUnit();
       //expect(instance).to.be();
     });

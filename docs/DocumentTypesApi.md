@@ -119,7 +119,7 @@ null (empty response body)
 
 ## documentTypesList
 
-> InlineResponse2009 documentTypesList(opts)
+> InlineResponse20019 documentTypesList(opts)
 
 
 
@@ -140,6 +140,7 @@ Bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new SmallEodClient.DocumentTypesApi();
 let opts = {
+  'query': "query_example", // String | 
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
 };
@@ -156,12 +157,13 @@ apiInstance.documentTypesList(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **query** | **String**|  | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse20019**](InlineResponse20019.md)
 
 ### Authorization
 

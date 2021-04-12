@@ -13,7 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
-import InlineResponse2008 from '../model/InlineResponse2008';
+import InlineResponse20018 from '../model/InlineResponse20018';
 import Note from '../model/Note';
 
 /**
@@ -129,7 +129,7 @@ export default class NotesApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20018} and HTTP response
      */
     notesListWithHttpInfo(opts) {
       opts = opts || {};
@@ -151,7 +151,7 @@ export default class NotesApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2008;
+      let returnType = InlineResponse20018;
       return this.apiClient.callApi(
         '/notes/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -165,7 +165,7 @@ export default class NotesApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20018}
      */
     notesList(opts) {
       return this.notesListWithHttpInfo(opts)

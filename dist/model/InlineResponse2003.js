@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _Channel = _interopRequireDefault(require("./Channel"));
+var _ChannelAutocomplete = _interopRequireDefault(require("./ChannelAutocomplete"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -27,7 +27,7 @@ var InlineResponse2003 = /*#__PURE__*/function () {
    * Constructs a new <code>InlineResponse2003</code>.
    * @alias module:model/InlineResponse2003
    * @param count {Number} 
-   * @param results {Array.<module:model/Channel>} 
+   * @param results {Array.<module:model/ChannelAutocomplete>} 
    */
   function InlineResponse2003(count, results) {
     _classCallCheck(this, InlineResponse2003);
@@ -66,7 +66,7 @@ var InlineResponse2003 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('results')) {
-          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Channel["default"]]);
+          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_ChannelAutocomplete["default"]]);
         }
 
         if (data.hasOwnProperty('next')) {
@@ -91,7 +91,7 @@ var InlineResponse2003 = /*#__PURE__*/function () {
 
 InlineResponse2003.prototype['count'] = undefined;
 /**
- * @member {Array.<module:model/Channel>} results
+ * @member {Array.<module:model/ChannelAutocomplete>} results
  */
 
 InlineResponse2003.prototype['results'] = undefined;

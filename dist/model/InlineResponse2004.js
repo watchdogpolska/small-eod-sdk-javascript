@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _Collection = _interopRequireDefault(require("./Collection"));
+var _DocumentTypeAutocomplete = _interopRequireDefault(require("./DocumentTypeAutocomplete"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -27,7 +27,7 @@ var InlineResponse2004 = /*#__PURE__*/function () {
    * Constructs a new <code>InlineResponse2004</code>.
    * @alias module:model/InlineResponse2004
    * @param count {Number} 
-   * @param results {Array.<module:model/Collection>} 
+   * @param results {Array.<module:model/DocumentTypeAutocomplete>} 
    */
   function InlineResponse2004(count, results) {
     _classCallCheck(this, InlineResponse2004);
@@ -66,7 +66,7 @@ var InlineResponse2004 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('results')) {
-          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Collection["default"]]);
+          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_DocumentTypeAutocomplete["default"]]);
         }
 
         if (data.hasOwnProperty('next')) {
@@ -91,7 +91,7 @@ var InlineResponse2004 = /*#__PURE__*/function () {
 
 InlineResponse2004.prototype['count'] = undefined;
 /**
- * @member {Array.<module:model/Collection>} results
+ * @member {Array.<module:model/DocumentTypeAutocomplete>} results
  */
 
 InlineResponse2004.prototype['results'] = undefined;

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | 
-**results** | [**[Tag]**](Tag.md) |  | 
+**results** | [**[Collection]**](Collection.md) |  | 
 **next** | **String** |  | [optional] 
 **previous** | **String** |  | [optional] 
 

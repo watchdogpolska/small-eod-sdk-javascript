@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _Tag = _interopRequireDefault(require("./Tag"));
+var _Collection = _interopRequireDefault(require("./Collection"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -27,7 +27,7 @@ var InlineResponse20014 = /*#__PURE__*/function () {
    * Constructs a new <code>InlineResponse20014</code>.
    * @alias module:model/InlineResponse20014
    * @param count {Number} 
-   * @param results {Array.<module:model/Tag>} 
+   * @param results {Array.<module:model/Collection>} 
    */
   function InlineResponse20014(count, results) {
     _classCallCheck(this, InlineResponse20014);
@@ -66,7 +66,7 @@ var InlineResponse20014 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('results')) {
-          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Tag["default"]]);
+          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Collection["default"]]);
         }
 
         if (data.hasOwnProperty('next')) {
@@ -91,7 +91,7 @@ var InlineResponse20014 = /*#__PURE__*/function () {
 
 InlineResponse20014.prototype['count'] = undefined;
 /**
- * @member {Array.<module:model/Tag>} results
+ * @member {Array.<module:model/Collection>} results
  */
 
 InlineResponse20014.prototype['results'] = undefined;

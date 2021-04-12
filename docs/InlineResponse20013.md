@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | 
-**results** | **[File]** |  | 
+**results** | [**[Channel]**](Channel.md) |  | 
 **next** | **String** |  | [optional] 
 **previous** | **String** |  | [optional] 
 

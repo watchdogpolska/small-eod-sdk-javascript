@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _DocumentType = _interopRequireDefault(require("./DocumentType"));
+var _TagAutocomplete = _interopRequireDefault(require("./TagAutocomplete"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -27,7 +27,7 @@ var InlineResponse2009 = /*#__PURE__*/function () {
    * Constructs a new <code>InlineResponse2009</code>.
    * @alias module:model/InlineResponse2009
    * @param count {Number} 
-   * @param results {Array.<module:model/DocumentType>} 
+   * @param results {Array.<module:model/TagAutocomplete>} 
    */
   function InlineResponse2009(count, results) {
     _classCallCheck(this, InlineResponse2009);
@@ -66,7 +66,7 @@ var InlineResponse2009 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('results')) {
-          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_DocumentType["default"]]);
+          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_TagAutocomplete["default"]]);
         }
 
         if (data.hasOwnProperty('next')) {
@@ -91,7 +91,7 @@ var InlineResponse2009 = /*#__PURE__*/function () {
 
 InlineResponse2009.prototype['count'] = undefined;
 /**
- * @member {Array.<module:model/DocumentType>} results
+ * @member {Array.<module:model/TagAutocomplete>} results
  */
 
 InlineResponse2009.prototype['results'] = undefined;

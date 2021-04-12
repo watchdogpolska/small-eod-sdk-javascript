@@ -113,6 +113,7 @@ Bearer.apiKey = "YOUR API KEY"
 
 var api = new SmallEodClient.AdministrativeUnitsApi()
 var opts = {
+  'query': "query_example", // {String} 
   'ordering': "ordering_example", // {String} Which field to use when ordering the results.
   'limit': 56, // {Number} Number of results to return per page.
   'offset': 56 // {Number} The initial index from which to return the results.
@@ -134,6 +135,26 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *SmallEodClient.AdministrativeUnitsApi* | [**administrativeUnitsList**](docs/AdministrativeUnitsApi.md#administrativeUnitsList) | **GET** /administrative_units/ | 
 *SmallEodClient.AdministrativeUnitsApi* | [**administrativeUnitsRead**](docs/AdministrativeUnitsApi.md#administrativeUnitsRead) | **GET** /administrative_units/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteAdministrativeUnitsList**](docs/AutocompleteApi.md#autocompleteAdministrativeUnitsList) | **GET** /autocomplete/administrative_units/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteAdministrativeUnitsRead**](docs/AutocompleteApi.md#autocompleteAdministrativeUnitsRead) | **GET** /autocomplete/administrative_units/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteCasesList**](docs/AutocompleteApi.md#autocompleteCasesList) | **GET** /autocomplete/cases/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteCasesRead**](docs/AutocompleteApi.md#autocompleteCasesRead) | **GET** /autocomplete/cases/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteChannelsList**](docs/AutocompleteApi.md#autocompleteChannelsList) | **GET** /autocomplete/channels/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteChannelsRead**](docs/AutocompleteApi.md#autocompleteChannelsRead) | **GET** /autocomplete/channels/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteDocumentTypesList**](docs/AutocompleteApi.md#autocompleteDocumentTypesList) | **GET** /autocomplete/document_types/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteDocumentTypesRead**](docs/AutocompleteApi.md#autocompleteDocumentTypesRead) | **GET** /autocomplete/document_types/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteEventsList**](docs/AutocompleteApi.md#autocompleteEventsList) | **GET** /autocomplete/events/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteEventsRead**](docs/AutocompleteApi.md#autocompleteEventsRead) | **GET** /autocomplete/events/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteFeatureOptionsList**](docs/AutocompleteApi.md#autocompleteFeatureOptionsList) | **GET** /autocomplete/feature_options/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteFeatureOptionsRead**](docs/AutocompleteApi.md#autocompleteFeatureOptionsRead) | **GET** /autocomplete/feature_options/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteFeaturesList**](docs/AutocompleteApi.md#autocompleteFeaturesList) | **GET** /autocomplete/features/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteFeaturesRead**](docs/AutocompleteApi.md#autocompleteFeaturesRead) | **GET** /autocomplete/features/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteInstitutionsList**](docs/AutocompleteApi.md#autocompleteInstitutionsList) | **GET** /autocomplete/institutions/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteInstitutionsRead**](docs/AutocompleteApi.md#autocompleteInstitutionsRead) | **GET** /autocomplete/institutions/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteTagsList**](docs/AutocompleteApi.md#autocompleteTagsList) | **GET** /autocomplete/tags/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteTagsRead**](docs/AutocompleteApi.md#autocompleteTagsRead) | **GET** /autocomplete/tags/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteUsersList**](docs/AutocompleteApi.md#autocompleteUsersList) | **GET** /autocomplete/users/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteUsersRead**](docs/AutocompleteApi.md#autocompleteUsersRead) | **GET** /autocomplete/users/{id}/ | 
 *SmallEodClient.CasesApi* | [**casesCreate**](docs/CasesApi.md#casesCreate) | **POST** /cases/ | 
 *SmallEodClient.CasesApi* | [**casesDelete**](docs/CasesApi.md#casesDelete) | **DELETE** /cases/{id}/ | 
 *SmallEodClient.CasesApi* | [**casesList**](docs/CasesApi.md#casesList) | **GET** /cases/ | 
@@ -178,14 +199,14 @@ Class | Method | HTTP request | Description
 *SmallEodClient.EventsApi* | [**eventsPartialUpdate**](docs/EventsApi.md#eventsPartialUpdate) | **PATCH** /events/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsRead**](docs/EventsApi.md#eventsRead) | **GET** /events/{id}/ | 
 *SmallEodClient.EventsApi* | [**eventsUpdate**](docs/EventsApi.md#eventsUpdate) | **PUT** /events/{id}/ | 
+*SmallEodClient.FeatureOptionsApi* | [**featureOptionsCreate**](docs/FeatureOptionsApi.md#featureOptionsCreate) | **POST** /feature_options/ | 
+*SmallEodClient.FeatureOptionsApi* | [**featureOptionsDelete**](docs/FeatureOptionsApi.md#featureOptionsDelete) | **DELETE** /feature_options/{id}/ | 
+*SmallEodClient.FeatureOptionsApi* | [**featureOptionsList**](docs/FeatureOptionsApi.md#featureOptionsList) | **GET** /feature_options/ | 
+*SmallEodClient.FeatureOptionsApi* | [**featureOptionsPartialUpdate**](docs/FeatureOptionsApi.md#featureOptionsPartialUpdate) | **PATCH** /feature_options/{id}/ | 
+*SmallEodClient.FeatureOptionsApi* | [**featureOptionsRead**](docs/FeatureOptionsApi.md#featureOptionsRead) | **GET** /feature_options/{id}/ | 
+*SmallEodClient.FeatureOptionsApi* | [**featureOptionsUpdate**](docs/FeatureOptionsApi.md#featureOptionsUpdate) | **PUT** /feature_options/{id}/ | 
 *SmallEodClient.FeaturesApi* | [**featuresCreate**](docs/FeaturesApi.md#featuresCreate) | **POST** /features/ | 
 *SmallEodClient.FeaturesApi* | [**featuresDelete**](docs/FeaturesApi.md#featuresDelete) | **DELETE** /features/{id}/ | 
-*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionCreate**](docs/FeaturesApi.md#featuresFeatureoptionCreate) | **POST** /features/{feature_pk}/featureoption/ | 
-*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionDelete**](docs/FeaturesApi.md#featuresFeatureoptionDelete) | **DELETE** /features/{feature_pk}/featureoption/{id}/ | 
-*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionList**](docs/FeaturesApi.md#featuresFeatureoptionList) | **GET** /features/{feature_pk}/featureoption/ | 
-*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionPartialUpdate**](docs/FeaturesApi.md#featuresFeatureoptionPartialUpdate) | **PATCH** /features/{feature_pk}/featureoption/{id}/ | 
-*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionRead**](docs/FeaturesApi.md#featuresFeatureoptionRead) | **GET** /features/{feature_pk}/featureoption/{id}/ | 
-*SmallEodClient.FeaturesApi* | [**featuresFeatureoptionUpdate**](docs/FeaturesApi.md#featuresFeatureoptionUpdate) | **PUT** /features/{feature_pk}/featureoption/{id}/ | 
 *SmallEodClient.FeaturesApi* | [**featuresList**](docs/FeaturesApi.md#featuresList) | **GET** /features/ | 
 *SmallEodClient.FeaturesApi* | [**featuresPartialUpdate**](docs/FeaturesApi.md#featuresPartialUpdate) | **PATCH** /features/{id}/ | 
 *SmallEodClient.FeaturesApi* | [**featuresRead**](docs/FeaturesApi.md#featuresRead) | **GET** /features/{id}/ | 
@@ -235,14 +256,21 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [SmallEodClient.AdministrativeUnit](docs/AdministrativeUnit.md)
+ - [SmallEodClient.AdministrativeUnitAutocomplete](docs/AdministrativeUnitAutocomplete.md)
  - [SmallEodClient.Case](docs/Case.md)
+ - [SmallEodClient.CaseAutocomplete](docs/CaseAutocomplete.md)
  - [SmallEodClient.CaseCount](docs/CaseCount.md)
  - [SmallEodClient.Channel](docs/Channel.md)
+ - [SmallEodClient.ChannelAutocomplete](docs/ChannelAutocomplete.md)
  - [SmallEodClient.Collection](docs/Collection.md)
  - [SmallEodClient.DocumentType](docs/DocumentType.md)
+ - [SmallEodClient.DocumentTypeAutocomplete](docs/DocumentTypeAutocomplete.md)
  - [SmallEodClient.Event](docs/Event.md)
+ - [SmallEodClient.EventAutocomplete](docs/EventAutocomplete.md)
  - [SmallEodClient.Feature](docs/Feature.md)
+ - [SmallEodClient.FeatureAutocomplete](docs/FeatureAutocomplete.md)
  - [SmallEodClient.FeatureOption](docs/FeatureOption.md)
+ - [SmallEodClient.FeatureOptionAutocomplete](docs/FeatureOptionAutocomplete.md)
  - [SmallEodClient.File](docs/File.md)
  - [SmallEodClient.InlineResponse200](docs/InlineResponse200.md)
  - [SmallEodClient.InlineResponse2001](docs/InlineResponse2001.md)
@@ -251,7 +279,17 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.InlineResponse20012](docs/InlineResponse20012.md)
  - [SmallEodClient.InlineResponse20013](docs/InlineResponse20013.md)
  - [SmallEodClient.InlineResponse20014](docs/InlineResponse20014.md)
+ - [SmallEodClient.InlineResponse20015](docs/InlineResponse20015.md)
+ - [SmallEodClient.InlineResponse20016](docs/InlineResponse20016.md)
+ - [SmallEodClient.InlineResponse20017](docs/InlineResponse20017.md)
+ - [SmallEodClient.InlineResponse20018](docs/InlineResponse20018.md)
+ - [SmallEodClient.InlineResponse20019](docs/InlineResponse20019.md)
  - [SmallEodClient.InlineResponse2002](docs/InlineResponse2002.md)
+ - [SmallEodClient.InlineResponse20020](docs/InlineResponse20020.md)
+ - [SmallEodClient.InlineResponse20021](docs/InlineResponse20021.md)
+ - [SmallEodClient.InlineResponse20022](docs/InlineResponse20022.md)
+ - [SmallEodClient.InlineResponse20023](docs/InlineResponse20023.md)
+ - [SmallEodClient.InlineResponse20024](docs/InlineResponse20024.md)
  - [SmallEodClient.InlineResponse2003](docs/InlineResponse2003.md)
  - [SmallEodClient.InlineResponse2004](docs/InlineResponse2004.md)
  - [SmallEodClient.InlineResponse2005](docs/InlineResponse2005.md)
@@ -260,16 +298,18 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.InlineResponse2008](docs/InlineResponse2008.md)
  - [SmallEodClient.InlineResponse2009](docs/InlineResponse2009.md)
  - [SmallEodClient.Institution](docs/Institution.md)
+ - [SmallEodClient.InstitutionAutocomplete](docs/InstitutionAutocomplete.md)
  - [SmallEodClient.Letter](docs/Letter.md)
- - [SmallEodClient.NestedFeatureOption](docs/NestedFeatureOption.md)
  - [SmallEodClient.Note](docs/Note.md)
  - [SmallEodClient.RefreshTokenRequest](docs/RefreshTokenRequest.md)
  - [SmallEodClient.Request](docs/Request.md)
  - [SmallEodClient.SignRequest](docs/SignRequest.md)
  - [SmallEodClient.Tag](docs/Tag.md)
+ - [SmallEodClient.TagAutocomplete](docs/TagAutocomplete.md)
  - [SmallEodClient.TokenResponse](docs/TokenResponse.md)
  - [SmallEodClient.TokenSet](docs/TokenSet.md)
  - [SmallEodClient.User](docs/User.md)
+ - [SmallEodClient.UserAutocomplete](docs/UserAutocomplete.md)
 
 
 ## Documentation for Authorization

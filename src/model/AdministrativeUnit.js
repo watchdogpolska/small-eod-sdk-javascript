@@ -25,12 +25,11 @@ class AdministrativeUnit {
      * @alias module:model/AdministrativeUnit
      * @param id {String} 
      * @param name {String} 
-     * @param category {Number} 
      * @param updatedOn {Date} 
      */
-    constructor(id, name, category, updatedOn) { 
+    constructor(id, name, updatedOn) { 
         
-        AdministrativeUnit.initialize(this, id, name, category, updatedOn);
+        AdministrativeUnit.initialize(this, id, name, updatedOn);
     }
 
     /**
@@ -38,10 +37,9 @@ class AdministrativeUnit {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, id, name, category, updatedOn) { 
+    static initialize(obj, id, name, updatedOn) { 
         obj['id'] = id;
         obj['name'] = name;
-        obj['category'] = category;
         obj['updatedOn'] = updatedOn;
     }
 
@@ -62,14 +60,14 @@ class AdministrativeUnit {
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
-            if (data.hasOwnProperty('category')) {
-                obj['category'] = ApiClient.convertToType(data['category'], 'Number');
-            }
             if (data.hasOwnProperty('updatedOn')) {
                 obj['updatedOn'] = ApiClient.convertToType(data['updatedOn'], 'Date');
             }
             if (data.hasOwnProperty('parent')) {
                 obj['parent'] = ApiClient.convertToType(data['parent'], 'String');
+            }
+            if (data.hasOwnProperty('category')) {
+                obj['category'] = ApiClient.convertToType(data['category'], 'String');
             }
             if (data.hasOwnProperty('slug')) {
                 obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
@@ -95,11 +93,6 @@ AdministrativeUnit.prototype['id'] = undefined;
 AdministrativeUnit.prototype['name'] = undefined;
 
 /**
- * @member {Number} category
- */
-AdministrativeUnit.prototype['category'] = undefined;
-
-/**
  * @member {Date} updatedOn
  */
 AdministrativeUnit.prototype['updatedOn'] = undefined;
@@ -108,6 +101,11 @@ AdministrativeUnit.prototype['updatedOn'] = undefined;
  * @member {String} parent
  */
 AdministrativeUnit.prototype['parent'] = undefined;
+
+/**
+ * @member {String} category
+ */
+AdministrativeUnit.prototype['category'] = undefined;
 
 /**
  * @member {String} slug

@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import NestedFeatureOption from './NestedFeatureOption';
 
 /**
  * The Feature model module.
@@ -64,7 +63,7 @@ class Feature {
                 obj['maxOptions'] = ApiClient.convertToType(data['maxOptions'], 'Number');
             }
             if (data.hasOwnProperty('featureoptions')) {
-                obj['featureoptions'] = ApiClient.convertToType(data['featureoptions'], [NestedFeatureOption]);
+                obj['featureoptions'] = ApiClient.convertToType(data['featureoptions'], ['Number']);
             }
         }
         return obj;
@@ -97,8 +96,7 @@ Feature.prototype['minOptions'] = undefined;
 Feature.prototype['maxOptions'] = undefined;
 
 /**
- * 
- * @member {Array.<module:model/NestedFeatureOption>} featureoptions
+ * @member {Array.<Number>} featureoptions
  */
 Feature.prototype['featureoptions'] = undefined;
 

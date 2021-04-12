@@ -14,7 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import Event from '../model/Event';
-import InlineResponse2006 from '../model/InlineResponse2006';
+import InlineResponse20016 from '../model/InlineResponse20016';
 
 /**
 * Events service.
@@ -181,7 +181,7 @@ export default class EventsApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2006} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20016} and HTTP response
      */
     eventsListWithHttpInfo(opts) {
       opts = opts || {};
@@ -203,7 +203,7 @@ export default class EventsApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2006;
+      let returnType = InlineResponse20016;
       return this.apiClient.callApi(
         '/events/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -217,7 +217,7 @@ export default class EventsApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2006}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20016}
      */
     eventsList(opts) {
       return this.eventsListWithHttpInfo(opts)

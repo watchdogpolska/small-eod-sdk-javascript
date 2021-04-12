@@ -14,9 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import Feature from '../model/Feature';
-import FeatureOption from '../model/FeatureOption';
-import InlineResponse20010 from '../model/InlineResponse20010';
-import InlineResponse20011 from '../model/InlineResponse20011';
+import InlineResponse20021 from '../model/InlineResponse20021';
 
 /**
 * Features service.
@@ -126,330 +124,12 @@ export default class FeaturesApi {
 
 
     /**
-     * @param {String} featurePk 
-     * @param {module:model/FeatureOption} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/FeatureOption} and HTTP response
-     */
-    featuresFeatureoptionCreateWithHttpInfo(featurePk, data) {
-      let postBody = data;
-      // verify the required parameter 'featurePk' is set
-      if (featurePk === undefined || featurePk === null) {
-        throw new Error("Missing the required parameter 'featurePk' when calling featuresFeatureoptionCreate");
-      }
-      // verify the required parameter 'data' is set
-      if (data === undefined || data === null) {
-        throw new Error("Missing the required parameter 'data' when calling featuresFeatureoptionCreate");
-      }
-
-      let pathParams = {
-        'feature_pk': featurePk
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Basic', 'Bearer'];
-      let contentTypes = ['application/json'];
-      let accepts = ['application/json'];
-      let returnType = FeatureOption;
-      return this.apiClient.callApi(
-        '/features/{feature_pk}/featureoption/', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * @param {String} featurePk 
-     * @param {module:model/FeatureOption} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/FeatureOption}
-     */
-    featuresFeatureoptionCreate(featurePk, data) {
-      return this.featuresFeatureoptionCreateWithHttpInfo(featurePk, data)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * @param {String} featurePk 
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    featuresFeatureoptionDeleteWithHttpInfo(featurePk, id) {
-      let postBody = null;
-      // verify the required parameter 'featurePk' is set
-      if (featurePk === undefined || featurePk === null) {
-        throw new Error("Missing the required parameter 'featurePk' when calling featuresFeatureoptionDelete");
-      }
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling featuresFeatureoptionDelete");
-      }
-
-      let pathParams = {
-        'feature_pk': featurePk,
-        'id': id
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Basic', 'Bearer'];
-      let contentTypes = [];
-      let accepts = [];
-      let returnType = null;
-      return this.apiClient.callApi(
-        '/features/{feature_pk}/featureoption/{id}/', 'DELETE',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * @param {String} featurePk 
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    featuresFeatureoptionDelete(featurePk, id) {
-      return this.featuresFeatureoptionDeleteWithHttpInfo(featurePk, id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * @param {String} featurePk 
      * @param {Object} opts Optional parameters
-     * @param {Number} opts.limit Number of results to return per page.
-     * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20011} and HTTP response
-     */
-    featuresFeatureoptionListWithHttpInfo(featurePk, opts) {
-      opts = opts || {};
-      let postBody = null;
-      // verify the required parameter 'featurePk' is set
-      if (featurePk === undefined || featurePk === null) {
-        throw new Error("Missing the required parameter 'featurePk' when calling featuresFeatureoptionList");
-      }
-
-      let pathParams = {
-        'feature_pk': featurePk
-      };
-      let queryParams = {
-        'limit': opts['limit'],
-        'offset': opts['offset']
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Basic', 'Bearer'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = InlineResponse20011;
-      return this.apiClient.callApi(
-        '/features/{feature_pk}/featureoption/', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * @param {String} featurePk 
-     * @param {Object} opts Optional parameters
-     * @param {Number} opts.limit Number of results to return per page.
-     * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
-     */
-    featuresFeatureoptionList(featurePk, opts) {
-      return this.featuresFeatureoptionListWithHttpInfo(featurePk, opts)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * @param {String} featurePk 
-     * @param {String} id 
-     * @param {module:model/FeatureOption} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/FeatureOption} and HTTP response
-     */
-    featuresFeatureoptionPartialUpdateWithHttpInfo(featurePk, id, data) {
-      let postBody = data;
-      // verify the required parameter 'featurePk' is set
-      if (featurePk === undefined || featurePk === null) {
-        throw new Error("Missing the required parameter 'featurePk' when calling featuresFeatureoptionPartialUpdate");
-      }
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling featuresFeatureoptionPartialUpdate");
-      }
-      // verify the required parameter 'data' is set
-      if (data === undefined || data === null) {
-        throw new Error("Missing the required parameter 'data' when calling featuresFeatureoptionPartialUpdate");
-      }
-
-      let pathParams = {
-        'feature_pk': featurePk,
-        'id': id
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Basic', 'Bearer'];
-      let contentTypes = ['application/json'];
-      let accepts = ['application/json'];
-      let returnType = FeatureOption;
-      return this.apiClient.callApi(
-        '/features/{feature_pk}/featureoption/{id}/', 'PATCH',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * @param {String} featurePk 
-     * @param {String} id 
-     * @param {module:model/FeatureOption} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/FeatureOption}
-     */
-    featuresFeatureoptionPartialUpdate(featurePk, id, data) {
-      return this.featuresFeatureoptionPartialUpdateWithHttpInfo(featurePk, id, data)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * @param {String} featurePk 
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/FeatureOption} and HTTP response
-     */
-    featuresFeatureoptionReadWithHttpInfo(featurePk, id) {
-      let postBody = null;
-      // verify the required parameter 'featurePk' is set
-      if (featurePk === undefined || featurePk === null) {
-        throw new Error("Missing the required parameter 'featurePk' when calling featuresFeatureoptionRead");
-      }
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling featuresFeatureoptionRead");
-      }
-
-      let pathParams = {
-        'feature_pk': featurePk,
-        'id': id
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Basic', 'Bearer'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = FeatureOption;
-      return this.apiClient.callApi(
-        '/features/{feature_pk}/featureoption/{id}/', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * @param {String} featurePk 
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/FeatureOption}
-     */
-    featuresFeatureoptionRead(featurePk, id) {
-      return this.featuresFeatureoptionReadWithHttpInfo(featurePk, id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * @param {String} featurePk 
-     * @param {String} id 
-     * @param {module:model/FeatureOption} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/FeatureOption} and HTTP response
-     */
-    featuresFeatureoptionUpdateWithHttpInfo(featurePk, id, data) {
-      let postBody = data;
-      // verify the required parameter 'featurePk' is set
-      if (featurePk === undefined || featurePk === null) {
-        throw new Error("Missing the required parameter 'featurePk' when calling featuresFeatureoptionUpdate");
-      }
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling featuresFeatureoptionUpdate");
-      }
-      // verify the required parameter 'data' is set
-      if (data === undefined || data === null) {
-        throw new Error("Missing the required parameter 'data' when calling featuresFeatureoptionUpdate");
-      }
-
-      let pathParams = {
-        'feature_pk': featurePk,
-        'id': id
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Basic', 'Bearer'];
-      let contentTypes = ['application/json'];
-      let accepts = ['application/json'];
-      let returnType = FeatureOption;
-      return this.apiClient.callApi(
-        '/features/{feature_pk}/featureoption/{id}/', 'PUT',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * @param {String} featurePk 
-     * @param {String} id 
-     * @param {module:model/FeatureOption} data 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/FeatureOption}
-     */
-    featuresFeatureoptionUpdate(featurePk, id, data) {
-      return this.featuresFeatureoptionUpdateWithHttpInfo(featurePk, id, data)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20021} and HTTP response
      */
     featuresListWithHttpInfo(opts) {
       opts = opts || {};
@@ -458,6 +138,7 @@ export default class FeaturesApi {
       let pathParams = {
       };
       let queryParams = {
+        'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset']
@@ -470,7 +151,7 @@ export default class FeaturesApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20010;
+      let returnType = InlineResponse20021;
       return this.apiClient.callApi(
         '/features/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -480,10 +161,11 @@ export default class FeaturesApi {
 
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20021}
      */
     featuresList(opts) {
       return this.featuresListWithHttpInfo(opts)

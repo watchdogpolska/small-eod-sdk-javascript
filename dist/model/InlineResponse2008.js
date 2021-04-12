@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _Note = _interopRequireDefault(require("./Note"));
+var _InstitutionAutocomplete = _interopRequireDefault(require("./InstitutionAutocomplete"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -27,7 +27,7 @@ var InlineResponse2008 = /*#__PURE__*/function () {
    * Constructs a new <code>InlineResponse2008</code>.
    * @alias module:model/InlineResponse2008
    * @param count {Number} 
-   * @param results {Array.<module:model/Note>} 
+   * @param results {Array.<module:model/InstitutionAutocomplete>} 
    */
   function InlineResponse2008(count, results) {
     _classCallCheck(this, InlineResponse2008);
@@ -66,7 +66,7 @@ var InlineResponse2008 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('results')) {
-          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Note["default"]]);
+          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_InstitutionAutocomplete["default"]]);
         }
 
         if (data.hasOwnProperty('next')) {
@@ -91,7 +91,7 @@ var InlineResponse2008 = /*#__PURE__*/function () {
 
 InlineResponse2008.prototype['count'] = undefined;
 /**
- * @member {Array.<module:model/Note>} results
+ * @member {Array.<module:model/InstitutionAutocomplete>} results
  */
 
 InlineResponse2008.prototype['results'] = undefined;

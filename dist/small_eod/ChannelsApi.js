@@ -9,7 +9,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _Channel = _interopRequireDefault(require("../model/Channel"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse2003"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse20013"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -114,10 +114,11 @@ var ChannelsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20013} and HTTP response
      */
 
   }, {
@@ -127,6 +128,7 @@ var ChannelsApi = /*#__PURE__*/function () {
       var postBody = null;
       var pathParams = {};
       var queryParams = {
+        'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
         'offset': opts['offset']
@@ -141,10 +143,11 @@ var ChannelsApi = /*#__PURE__*/function () {
     }
     /**
      * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20013}
      */
 
   }, {

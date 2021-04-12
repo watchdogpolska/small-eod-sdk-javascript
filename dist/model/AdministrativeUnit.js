@@ -27,13 +27,12 @@ var AdministrativeUnit = /*#__PURE__*/function () {
    * @alias module:model/AdministrativeUnit
    * @param id {String} 
    * @param name {String} 
-   * @param category {Number} 
    * @param updatedOn {Date} 
    */
-  function AdministrativeUnit(id, name, category, updatedOn) {
+  function AdministrativeUnit(id, name, updatedOn) {
     _classCallCheck(this, AdministrativeUnit);
 
-    AdministrativeUnit.initialize(this, id, name, category, updatedOn);
+    AdministrativeUnit.initialize(this, id, name, updatedOn);
   }
   /**
    * Initializes the fields of this object.
@@ -44,10 +43,9 @@ var AdministrativeUnit = /*#__PURE__*/function () {
 
   _createClass(AdministrativeUnit, null, [{
     key: "initialize",
-    value: function initialize(obj, id, name, category, updatedOn) {
+    value: function initialize(obj, id, name, updatedOn) {
       obj['id'] = id;
       obj['name'] = name;
-      obj['category'] = category;
       obj['updatedOn'] = updatedOn;
     }
     /**
@@ -72,16 +70,16 @@ var AdministrativeUnit = /*#__PURE__*/function () {
           obj['name'] = _ApiClient["default"].convertToType(data['name'], 'String');
         }
 
-        if (data.hasOwnProperty('category')) {
-          obj['category'] = _ApiClient["default"].convertToType(data['category'], 'Number');
-        }
-
         if (data.hasOwnProperty('updatedOn')) {
           obj['updatedOn'] = _ApiClient["default"].convertToType(data['updatedOn'], 'Date');
         }
 
         if (data.hasOwnProperty('parent')) {
           obj['parent'] = _ApiClient["default"].convertToType(data['parent'], 'String');
+        }
+
+        if (data.hasOwnProperty('category')) {
+          obj['category'] = _ApiClient["default"].convertToType(data['category'], 'String');
         }
 
         if (data.hasOwnProperty('slug')) {
@@ -111,11 +109,6 @@ AdministrativeUnit.prototype['id'] = undefined;
 
 AdministrativeUnit.prototype['name'] = undefined;
 /**
- * @member {Number} category
- */
-
-AdministrativeUnit.prototype['category'] = undefined;
-/**
  * @member {Date} updatedOn
  */
 
@@ -125,6 +118,11 @@ AdministrativeUnit.prototype['updatedOn'] = undefined;
  */
 
 AdministrativeUnit.prototype['parent'] = undefined;
+/**
+ * @member {String} category
+ */
+
+AdministrativeUnit.prototype['category'] = undefined;
 /**
  * @member {String} slug
  */

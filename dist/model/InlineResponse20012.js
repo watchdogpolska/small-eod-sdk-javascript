@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _Institution = _interopRequireDefault(require("./Institution"));
+var _User = _interopRequireDefault(require("./User"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -27,7 +27,7 @@ var InlineResponse20012 = /*#__PURE__*/function () {
    * Constructs a new <code>InlineResponse20012</code>.
    * @alias module:model/InlineResponse20012
    * @param count {Number} 
-   * @param results {Array.<module:model/Institution>} 
+   * @param results {Array.<module:model/User>} 
    */
   function InlineResponse20012(count, results) {
     _classCallCheck(this, InlineResponse20012);
@@ -66,7 +66,7 @@ var InlineResponse20012 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('results')) {
-          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Institution["default"]]);
+          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_User["default"]]);
         }
 
         if (data.hasOwnProperty('next')) {
@@ -91,7 +91,7 @@ var InlineResponse20012 = /*#__PURE__*/function () {
 
 InlineResponse20012.prototype['count'] = undefined;
 /**
- * @member {Array.<module:model/Institution>} results
+ * @member {Array.<module:model/User>} results
  */
 
 InlineResponse20012.prototype['results'] = undefined;

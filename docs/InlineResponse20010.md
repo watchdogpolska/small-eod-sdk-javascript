@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | 
-**results** | [**[Feature]**](Feature.md) |  | 
+**results** | [**[UserAutocomplete]**](UserAutocomplete.md) |  | 
 **next** | **String** |  | [optional] 
 **previous** | **String** |  | [optional] 
 

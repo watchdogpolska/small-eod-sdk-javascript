@@ -78,9 +78,6 @@ class Letter {
             if (data.hasOwnProperty('comment')) {
                 obj['comment'] = ApiClient.convertToType(data['comment'], 'String');
             }
-            if (data.hasOwnProperty('excerpt')) {
-                obj['excerpt'] = ApiClient.convertToType(data['excerpt'], 'String');
-            }
             if (data.hasOwnProperty('documentType')) {
                 obj['documentType'] = ApiClient.convertToType(data['documentType'], 'Number');
             }
@@ -158,12 +155,6 @@ Letter.prototype['attachments'] = undefined;
  * @member {String} comment
  */
 Letter.prototype['comment'] = undefined;
-
-/**
- * Excerpt of letter.
- * @member {String} excerpt
- */
-Letter.prototype['excerpt'] = undefined;
 
 /**
  * @member {Number} documentType

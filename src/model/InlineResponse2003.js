@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Channel from './Channel';
+import ChannelAutocomplete from './ChannelAutocomplete';
 
 /**
  * The InlineResponse2003 model module.
@@ -24,7 +24,7 @@ class InlineResponse2003 {
      * Constructs a new <code>InlineResponse2003</code>.
      * @alias module:model/InlineResponse2003
      * @param count {Number} 
-     * @param results {Array.<module:model/Channel>} 
+     * @param results {Array.<module:model/ChannelAutocomplete>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse2003 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Channel]);
+                obj['results'] = ApiClient.convertToType(data['results'], [ChannelAutocomplete]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse2003 {
 InlineResponse2003.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/Channel>} results
+ * @member {Array.<module:model/ChannelAutocomplete>} results
  */
 InlineResponse2003.prototype['results'] = undefined;
 

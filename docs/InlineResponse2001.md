@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | 
-**results** | [**[CaseCount]**](CaseCount.md) |  | 
+**results** | [**[AdministrativeUnitAutocomplete]**](AdministrativeUnitAutocomplete.md) |  | 
 **next** | **String** |  | [optional] 
 **previous** | **String** |  | [optional] 
 

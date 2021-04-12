@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Note from './Note';
+import InstitutionAutocomplete from './InstitutionAutocomplete';
 
 /**
  * The InlineResponse2008 model module.
@@ -24,7 +24,7 @@ class InlineResponse2008 {
      * Constructs a new <code>InlineResponse2008</code>.
      * @alias module:model/InlineResponse2008
      * @param count {Number} 
-     * @param results {Array.<module:model/Note>} 
+     * @param results {Array.<module:model/InstitutionAutocomplete>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse2008 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Note]);
+                obj['results'] = ApiClient.convertToType(data['results'], [InstitutionAutocomplete]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse2008 {
 InlineResponse2008.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/Note>} results
+ * @member {Array.<module:model/InstitutionAutocomplete>} results
  */
 InlineResponse2008.prototype['results'] = undefined;
 

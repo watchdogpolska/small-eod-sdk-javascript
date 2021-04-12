@@ -41,6 +41,7 @@ Bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new SmallEodClient.UsersApi();
 let opts = {
+  'query': "query_example", // String | 
   'ordering': "ordering_example", // String | Which field to use when ordering the results.
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
@@ -58,6 +59,7 @@ apiInstance.usersAuth(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **query** | **String**|  | [optional] 
  **ordering** | **String**| Which field to use when ordering the results. | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 
@@ -209,6 +211,7 @@ Bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new SmallEodClient.UsersApi();
 let opts = {
+  'query': "query_example", // String | 
   'ordering': "ordering_example", // String | Which field to use when ordering the results.
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
@@ -226,6 +229,7 @@ apiInstance.usersExchange(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **query** | **String**|  | [optional] 
  **ordering** | **String**| Which field to use when ordering the results. | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 
@@ -246,7 +250,7 @@ Name | Type | Description  | Notes
 
 ## usersList
 
-> InlineResponse2002 usersList(opts)
+> InlineResponse20012 usersList(opts)
 
 
 
@@ -269,6 +273,7 @@ Bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new SmallEodClient.UsersApi();
 let opts = {
+  'query': "query_example", // String | 
   'ordering': "ordering_example", // String | Which field to use when ordering the results.
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
@@ -286,13 +291,14 @@ apiInstance.usersList(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **query** | **String**|  | [optional] 
  **ordering** | **String**| Which field to use when ordering the results. | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse20012**](InlineResponse20012.md)
 
 ### Authorization
 

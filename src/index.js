@@ -14,14 +14,21 @@
 
 import ApiClient from './ApiClient';
 import AdministrativeUnit from './model/AdministrativeUnit';
+import AdministrativeUnitAutocomplete from './model/AdministrativeUnitAutocomplete';
 import Case from './model/Case';
+import CaseAutocomplete from './model/CaseAutocomplete';
 import CaseCount from './model/CaseCount';
 import Channel from './model/Channel';
+import ChannelAutocomplete from './model/ChannelAutocomplete';
 import Collection from './model/Collection';
 import DocumentType from './model/DocumentType';
+import DocumentTypeAutocomplete from './model/DocumentTypeAutocomplete';
 import Event from './model/Event';
+import EventAutocomplete from './model/EventAutocomplete';
 import Feature from './model/Feature';
+import FeatureAutocomplete from './model/FeatureAutocomplete';
 import FeatureOption from './model/FeatureOption';
+import FeatureOptionAutocomplete from './model/FeatureOptionAutocomplete';
 import File from './model/File';
 import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
@@ -30,7 +37,17 @@ import InlineResponse20011 from './model/InlineResponse20011';
 import InlineResponse20012 from './model/InlineResponse20012';
 import InlineResponse20013 from './model/InlineResponse20013';
 import InlineResponse20014 from './model/InlineResponse20014';
+import InlineResponse20015 from './model/InlineResponse20015';
+import InlineResponse20016 from './model/InlineResponse20016';
+import InlineResponse20017 from './model/InlineResponse20017';
+import InlineResponse20018 from './model/InlineResponse20018';
+import InlineResponse20019 from './model/InlineResponse20019';
 import InlineResponse2002 from './model/InlineResponse2002';
+import InlineResponse20020 from './model/InlineResponse20020';
+import InlineResponse20021 from './model/InlineResponse20021';
+import InlineResponse20022 from './model/InlineResponse20022';
+import InlineResponse20023 from './model/InlineResponse20023';
+import InlineResponse20024 from './model/InlineResponse20024';
 import InlineResponse2003 from './model/InlineResponse2003';
 import InlineResponse2004 from './model/InlineResponse2004';
 import InlineResponse2005 from './model/InlineResponse2005';
@@ -39,22 +56,26 @@ import InlineResponse2007 from './model/InlineResponse2007';
 import InlineResponse2008 from './model/InlineResponse2008';
 import InlineResponse2009 from './model/InlineResponse2009';
 import Institution from './model/Institution';
+import InstitutionAutocomplete from './model/InstitutionAutocomplete';
 import Letter from './model/Letter';
-import NestedFeatureOption from './model/NestedFeatureOption';
 import Note from './model/Note';
 import RefreshTokenRequest from './model/RefreshTokenRequest';
 import Request from './model/Request';
 import SignRequest from './model/SignRequest';
 import Tag from './model/Tag';
+import TagAutocomplete from './model/TagAutocomplete';
 import TokenResponse from './model/TokenResponse';
 import TokenSet from './model/TokenSet';
 import User from './model/User';
+import UserAutocomplete from './model/UserAutocomplete';
 import AdministrativeUnitsApi from './small_eod/AdministrativeUnitsApi';
+import AutocompleteApi from './small_eod/AutocompleteApi';
 import CasesApi from './small_eod/CasesApi';
 import ChannelsApi from './small_eod/ChannelsApi';
 import CollectionsApi from './small_eod/CollectionsApi';
 import DocumentTypesApi from './small_eod/DocumentTypesApi';
 import EventsApi from './small_eod/EventsApi';
+import FeatureOptionsApi from './small_eod/FeatureOptionsApi';
 import FeaturesApi from './small_eod/FeaturesApi';
 import InstitutionsApi from './small_eod/InstitutionsApi';
 import LettersApi from './small_eod/LettersApi';
@@ -108,10 +129,22 @@ export {
     AdministrativeUnit,
 
     /**
+     * The AdministrativeUnitAutocomplete model constructor.
+     * @property {module:model/AdministrativeUnitAutocomplete}
+     */
+    AdministrativeUnitAutocomplete,
+
+    /**
      * The Case model constructor.
      * @property {module:model/Case}
      */
     Case,
+
+    /**
+     * The CaseAutocomplete model constructor.
+     * @property {module:model/CaseAutocomplete}
+     */
+    CaseAutocomplete,
 
     /**
      * The CaseCount model constructor.
@@ -126,6 +159,12 @@ export {
     Channel,
 
     /**
+     * The ChannelAutocomplete model constructor.
+     * @property {module:model/ChannelAutocomplete}
+     */
+    ChannelAutocomplete,
+
+    /**
      * The Collection model constructor.
      * @property {module:model/Collection}
      */
@@ -138,10 +177,22 @@ export {
     DocumentType,
 
     /**
+     * The DocumentTypeAutocomplete model constructor.
+     * @property {module:model/DocumentTypeAutocomplete}
+     */
+    DocumentTypeAutocomplete,
+
+    /**
      * The Event model constructor.
      * @property {module:model/Event}
      */
     Event,
+
+    /**
+     * The EventAutocomplete model constructor.
+     * @property {module:model/EventAutocomplete}
+     */
+    EventAutocomplete,
 
     /**
      * The Feature model constructor.
@@ -150,10 +201,22 @@ export {
     Feature,
 
     /**
+     * The FeatureAutocomplete model constructor.
+     * @property {module:model/FeatureAutocomplete}
+     */
+    FeatureAutocomplete,
+
+    /**
      * The FeatureOption model constructor.
      * @property {module:model/FeatureOption}
      */
     FeatureOption,
+
+    /**
+     * The FeatureOptionAutocomplete model constructor.
+     * @property {module:model/FeatureOptionAutocomplete}
+     */
+    FeatureOptionAutocomplete,
 
     /**
      * The File model constructor.
@@ -204,10 +267,70 @@ export {
     InlineResponse20014,
 
     /**
+     * The InlineResponse20015 model constructor.
+     * @property {module:model/InlineResponse20015}
+     */
+    InlineResponse20015,
+
+    /**
+     * The InlineResponse20016 model constructor.
+     * @property {module:model/InlineResponse20016}
+     */
+    InlineResponse20016,
+
+    /**
+     * The InlineResponse20017 model constructor.
+     * @property {module:model/InlineResponse20017}
+     */
+    InlineResponse20017,
+
+    /**
+     * The InlineResponse20018 model constructor.
+     * @property {module:model/InlineResponse20018}
+     */
+    InlineResponse20018,
+
+    /**
+     * The InlineResponse20019 model constructor.
+     * @property {module:model/InlineResponse20019}
+     */
+    InlineResponse20019,
+
+    /**
      * The InlineResponse2002 model constructor.
      * @property {module:model/InlineResponse2002}
      */
     InlineResponse2002,
+
+    /**
+     * The InlineResponse20020 model constructor.
+     * @property {module:model/InlineResponse20020}
+     */
+    InlineResponse20020,
+
+    /**
+     * The InlineResponse20021 model constructor.
+     * @property {module:model/InlineResponse20021}
+     */
+    InlineResponse20021,
+
+    /**
+     * The InlineResponse20022 model constructor.
+     * @property {module:model/InlineResponse20022}
+     */
+    InlineResponse20022,
+
+    /**
+     * The InlineResponse20023 model constructor.
+     * @property {module:model/InlineResponse20023}
+     */
+    InlineResponse20023,
+
+    /**
+     * The InlineResponse20024 model constructor.
+     * @property {module:model/InlineResponse20024}
+     */
+    InlineResponse20024,
 
     /**
      * The InlineResponse2003 model constructor.
@@ -258,16 +381,16 @@ export {
     Institution,
 
     /**
+     * The InstitutionAutocomplete model constructor.
+     * @property {module:model/InstitutionAutocomplete}
+     */
+    InstitutionAutocomplete,
+
+    /**
      * The Letter model constructor.
      * @property {module:model/Letter}
      */
     Letter,
-
-    /**
-     * The NestedFeatureOption model constructor.
-     * @property {module:model/NestedFeatureOption}
-     */
-    NestedFeatureOption,
 
     /**
      * The Note model constructor.
@@ -300,6 +423,12 @@ export {
     Tag,
 
     /**
+     * The TagAutocomplete model constructor.
+     * @property {module:model/TagAutocomplete}
+     */
+    TagAutocomplete,
+
+    /**
      * The TokenResponse model constructor.
      * @property {module:model/TokenResponse}
      */
@@ -318,10 +447,22 @@ export {
     User,
 
     /**
+     * The UserAutocomplete model constructor.
+     * @property {module:model/UserAutocomplete}
+     */
+    UserAutocomplete,
+
+    /**
     * The AdministrativeUnitsApi service constructor.
     * @property {module:small_eod/AdministrativeUnitsApi}
     */
     AdministrativeUnitsApi,
+
+    /**
+    * The AutocompleteApi service constructor.
+    * @property {module:small_eod/AutocompleteApi}
+    */
+    AutocompleteApi,
 
     /**
     * The CasesApi service constructor.
@@ -352,6 +493,12 @@ export {
     * @property {module:small_eod/EventsApi}
     */
     EventsApi,
+
+    /**
+    * The FeatureOptionsApi service constructor.
+    * @property {module:small_eod/FeatureOptionsApi}
+    */
+    FeatureOptionsApi,
 
     /**
     * The FeaturesApi service constructor.

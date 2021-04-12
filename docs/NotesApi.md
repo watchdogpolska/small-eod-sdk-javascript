@@ -119,7 +119,7 @@ null (empty response body)
 
 ## notesList
 
-> InlineResponse2008 notesList(opts)
+> InlineResponse20018 notesList(opts)
 
 
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse20018**](InlineResponse20018.md)
 
 ### Authorization
 

@@ -119,7 +119,7 @@ null (empty response body)
 
 ## channelsList
 
-> InlineResponse2003 channelsList(opts)
+> InlineResponse20013 channelsList(opts)
 
 
 
@@ -140,6 +140,7 @@ Bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new SmallEodClient.ChannelsApi();
 let opts = {
+  'query': "query_example", // String | 
   'ordering': "ordering_example", // String | Which field to use when ordering the results.
   'limit': 56, // Number | Number of results to return per page.
   'offset': 56 // Number | The initial index from which to return the results.
@@ -157,13 +158,14 @@ apiInstance.channelsList(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **query** | **String**|  | [optional] 
  **ordering** | **String**| Which field to use when ordering the results. | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 

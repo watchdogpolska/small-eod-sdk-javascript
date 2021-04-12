@@ -14,7 +14,6 @@ Name | Type | Description | Notes
 **_case** | **Number** |  | [optional] 
 **attachments** | **[File]** |  | [optional] [readonly] 
 **comment** | **String** | Comment for letter. | [optional] 
-**excerpt** | **String** | Excerpt of letter. | [optional] 
 **documentType** | **Number** |  | [optional] 
 **createdOn** | **Date** |  | [optional] [readonly] 
 **createdBy** | **Number** |  | [optional] [readonly] 

@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _Feature = _interopRequireDefault(require("./Feature"));
+var _UserAutocomplete = _interopRequireDefault(require("./UserAutocomplete"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -27,7 +27,7 @@ var InlineResponse20010 = /*#__PURE__*/function () {
    * Constructs a new <code>InlineResponse20010</code>.
    * @alias module:model/InlineResponse20010
    * @param count {Number} 
-   * @param results {Array.<module:model/Feature>} 
+   * @param results {Array.<module:model/UserAutocomplete>} 
    */
   function InlineResponse20010(count, results) {
     _classCallCheck(this, InlineResponse20010);
@@ -66,7 +66,7 @@ var InlineResponse20010 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('results')) {
-          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Feature["default"]]);
+          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_UserAutocomplete["default"]]);
         }
 
         if (data.hasOwnProperty('next')) {
@@ -91,7 +91,7 @@ var InlineResponse20010 = /*#__PURE__*/function () {
 
 InlineResponse20010.prototype['count'] = undefined;
 /**
- * @member {Array.<module:model/Feature>} results
+ * @member {Array.<module:model/UserAutocomplete>} results
  */
 
 InlineResponse20010.prototype['results'] = undefined;

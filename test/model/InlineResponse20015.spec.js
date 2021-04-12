@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SmallEodClient.NestedFeatureOption();
+    instance = new SmallEodClient.InlineResponse20015();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,34 @@
       object[property] = value;
   }
 
-  describe('NestedFeatureOption', function() {
-    it('should create an instance of NestedFeatureOption', function() {
-      // uncomment below and update the code to test NestedFeatureOption
-      //var instane = new SmallEodClient.NestedFeatureOption();
-      //expect(instance).to.be.a(SmallEodClient.NestedFeatureOption);
+  describe('InlineResponse20015', function() {
+    it('should create an instance of InlineResponse20015', function() {
+      // uncomment below and update the code to test InlineResponse20015
+      //var instane = new SmallEodClient.InlineResponse20015();
+      //expect(instance).to.be.a(SmallEodClient.InlineResponse20015);
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instance = new SmallEodClient.NestedFeatureOption();
+    it('should have the property count (base name: "count")', function() {
+      // uncomment below and update the code to test the property count
+      //var instance = new SmallEodClient.InlineResponse20015();
       //expect(instance).to.be();
     });
 
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instance = new SmallEodClient.NestedFeatureOption();
+    it('should have the property results (base name: "results")', function() {
+      // uncomment below and update the code to test the property results
+      //var instance = new SmallEodClient.InlineResponse20015();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property next (base name: "next")', function() {
+      // uncomment below and update the code to test the property next
+      //var instance = new SmallEodClient.InlineResponse20015();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property previous (base name: "previous")', function() {
+      // uncomment below and update the code to test the property previous
+      //var instance = new SmallEodClient.InlineResponse20015();
       //expect(instance).to.be();
     });
 

@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Event from './Event';
+import FeatureOptionAutocomplete from './FeatureOptionAutocomplete';
 
 /**
  * The InlineResponse2006 model module.
@@ -24,7 +24,7 @@ class InlineResponse2006 {
      * Constructs a new <code>InlineResponse2006</code>.
      * @alias module:model/InlineResponse2006
      * @param count {Number} 
-     * @param results {Array.<module:model/Event>} 
+     * @param results {Array.<module:model/FeatureOptionAutocomplete>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse2006 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Event]);
+                obj['results'] = ApiClient.convertToType(data['results'], [FeatureOptionAutocomplete]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse2006 {
 InlineResponse2006.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/Event>} results
+ * @member {Array.<module:model/FeatureOptionAutocomplete>} results
  */
 InlineResponse2006.prototype['results'] = undefined;
 

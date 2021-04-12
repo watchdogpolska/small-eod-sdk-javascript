@@ -68,66 +68,6 @@
         done();
       });
     });
-    describe('featuresFeatureoptionCreate', function() {
-      it('should call featuresFeatureoptionCreate successfully', function(done) {
-        //uncomment below and update the code to test featuresFeatureoptionCreate
-        //instance.featuresFeatureoptionCreate(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('featuresFeatureoptionDelete', function() {
-      it('should call featuresFeatureoptionDelete successfully', function(done) {
-        //uncomment below and update the code to test featuresFeatureoptionDelete
-        //instance.featuresFeatureoptionDelete(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('featuresFeatureoptionList', function() {
-      it('should call featuresFeatureoptionList successfully', function(done) {
-        //uncomment below and update the code to test featuresFeatureoptionList
-        //instance.featuresFeatureoptionList(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('featuresFeatureoptionPartialUpdate', function() {
-      it('should call featuresFeatureoptionPartialUpdate successfully', function(done) {
-        //uncomment below and update the code to test featuresFeatureoptionPartialUpdate
-        //instance.featuresFeatureoptionPartialUpdate(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('featuresFeatureoptionRead', function() {
-      it('should call featuresFeatureoptionRead successfully', function(done) {
-        //uncomment below and update the code to test featuresFeatureoptionRead
-        //instance.featuresFeatureoptionRead(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('featuresFeatureoptionUpdate', function() {
-      it('should call featuresFeatureoptionUpdate successfully', function(done) {
-        //uncomment below and update the code to test featuresFeatureoptionUpdate
-        //instance.featuresFeatureoptionUpdate(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('featuresList', function() {
       it('should call featuresList successfully', function(done) {
         //uncomment below and update the code to test featuresList

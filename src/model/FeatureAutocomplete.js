@@ -14,20 +14,20 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The NestedFeatureOption model module.
- * @module model/NestedFeatureOption
+ * The FeatureAutocomplete model module.
+ * @module model/FeatureAutocomplete
  * @version 1.0.4
  */
-class NestedFeatureOption {
+class FeatureAutocomplete {
     /**
-     * Constructs a new <code>NestedFeatureOption</code>.
-     * FeatureOption(id, name, feature)
-     * @alias module:model/NestedFeatureOption
-     * @param name {String} Name of option.
+     * Constructs a new <code>FeatureAutocomplete</code>.
+     * Feature(id, modified_on, created_on, created_by, modified_by, name, min_options, max_options)
+     * @alias module:model/FeatureAutocomplete
+     * @param name {String} Name of feature.
      */
     constructor(name) { 
         
-        NestedFeatureOption.initialize(this, name);
+        FeatureAutocomplete.initialize(this, name);
     }
 
     /**
@@ -40,15 +40,15 @@ class NestedFeatureOption {
     }
 
     /**
-     * Constructs a <code>NestedFeatureOption</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>FeatureAutocomplete</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/NestedFeatureOption} obj Optional instance to populate.
-     * @return {module:model/NestedFeatureOption} The populated <code>NestedFeatureOption</code> instance.
+     * @param {module:model/FeatureAutocomplete} obj Optional instance to populate.
+     * @return {module:model/FeatureAutocomplete} The populated <code>FeatureAutocomplete</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new NestedFeatureOption();
+            obj = obj || new FeatureAutocomplete();
 
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
@@ -64,20 +64,20 @@ class NestedFeatureOption {
 }
 
 /**
- * Name of option.
+ * Name of feature.
  * @member {String} name
  */
-NestedFeatureOption.prototype['name'] = undefined;
+FeatureAutocomplete.prototype['name'] = undefined;
 
 /**
  * @member {Number} id
  */
-NestedFeatureOption.prototype['id'] = undefined;
+FeatureAutocomplete.prototype['id'] = undefined;
 
 
 
 
 
 
-export default NestedFeatureOption;
+export default FeatureAutocomplete;
 

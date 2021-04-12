@@ -95,10 +95,6 @@ var Letter = /*#__PURE__*/function () {
           obj['comment'] = _ApiClient["default"].convertToType(data['comment'], 'String');
         }
 
-        if (data.hasOwnProperty('excerpt')) {
-          obj['excerpt'] = _ApiClient["default"].convertToType(data['excerpt'], 'String');
-        }
-
         if (data.hasOwnProperty('documentType')) {
           obj['documentType'] = _ApiClient["default"].convertToType(data['documentType'], 'Number');
         }
@@ -183,12 +179,6 @@ Letter.prototype['attachments'] = undefined;
  */
 
 Letter.prototype['comment'] = undefined;
-/**
- * Excerpt of letter.
- * @member {String} excerpt
- */
-
-Letter.prototype['excerpt'] = undefined;
 /**
  * @member {Number} documentType
  */

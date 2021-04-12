@@ -14,8 +14,8 @@
 
 import ApiClient from "../ApiClient";
 import CaseCount from '../model/CaseCount';
-import InlineResponse2001 from '../model/InlineResponse2001';
-import InlineResponse2002 from '../model/InlineResponse2002';
+import InlineResponse20011 from '../model/InlineResponse20011';
+import InlineResponse20012 from '../model/InlineResponse20012';
 import User from '../model/User';
 
 /**
@@ -131,7 +131,7 @@ export default class CasesApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2001} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20011} and HTTP response
      */
     casesListWithHttpInfo(opts) {
       opts = opts || {};
@@ -153,7 +153,7 @@ export default class CasesApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2001;
+      let returnType = InlineResponse20011;
       return this.apiClient.callApi(
         '/cases/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -167,7 +167,7 @@ export default class CasesApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
      */
     casesList(opts) {
       return this.casesListWithHttpInfo(opts)
@@ -183,7 +183,7 @@ export default class CasesApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20012} and HTTP response
      */
     casesNotifiedUsersListWithHttpInfo(casePk, opts) {
       opts = opts || {};
@@ -209,7 +209,7 @@ export default class CasesApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2002;
+      let returnType = InlineResponse20012;
       return this.apiClient.callApi(
         '/cases/{case_pk}/notifiedUsers/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -223,7 +223,7 @@ export default class CasesApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
      */
     casesNotifiedUsersList(casePk, opts) {
       return this.casesNotifiedUsersListWithHttpInfo(casePk, opts)
@@ -384,7 +384,7 @@ export default class CasesApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20012} and HTTP response
      */
     casesResponsibleUsersListWithHttpInfo(casePk, opts) {
       opts = opts || {};
@@ -410,7 +410,7 @@ export default class CasesApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2002;
+      let returnType = InlineResponse20012;
       return this.apiClient.callApi(
         '/cases/{case_pk}/responsibleUsers/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -424,7 +424,7 @@ export default class CasesApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
      */
     casesResponsibleUsersList(casePk, opts) {
       return this.casesResponsibleUsersListWithHttpInfo(casePk, opts)

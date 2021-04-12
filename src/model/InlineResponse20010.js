@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Feature from './Feature';
+import UserAutocomplete from './UserAutocomplete';
 
 /**
  * The InlineResponse20010 model module.
@@ -24,7 +24,7 @@ class InlineResponse20010 {
      * Constructs a new <code>InlineResponse20010</code>.
      * @alias module:model/InlineResponse20010
      * @param count {Number} 
-     * @param results {Array.<module:model/Feature>} 
+     * @param results {Array.<module:model/UserAutocomplete>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse20010 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Feature]);
+                obj['results'] = ApiClient.convertToType(data['results'], [UserAutocomplete]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse20010 {
 InlineResponse20010.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/Feature>} results
+ * @member {Array.<module:model/UserAutocomplete>} results
  */
 InlineResponse20010.prototype['results'] = undefined;
 
