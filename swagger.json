@@ -4335,6 +4335,32 @@
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+          },
+          {
+            "name": "authuser",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "code",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "prompt",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "scope",
+            "in": "query",
+            "description": "scope of OAuth consents",
+            "type": "string"
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "type": "string"
           }
         ],
         "responses": {

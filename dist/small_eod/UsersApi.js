@@ -176,6 +176,11 @@ var UsersApi = /*#__PURE__*/function () {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
+     * @param {String} opts.authuser 
+     * @param {String} opts.code 
+     * @param {String} opts.prompt 
+     * @param {String} opts.scope scope of OAuth consents
+     * @param {String} opts.state 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TokenResponse} and HTTP response
      */
 
@@ -189,7 +194,12 @@ var UsersApi = /*#__PURE__*/function () {
         'query': opts['query'],
         'ordering': opts['ordering'],
         'limit': opts['limit'],
-        'offset': opts['offset']
+        'offset': opts['offset'],
+        'authuser': opts['authuser'],
+        'code': opts['code'],
+        'prompt': opts['prompt'],
+        'scope': opts['scope'],
+        'state': opts['state']
       };
       var headerParams = {};
       var formParams = {};
@@ -206,6 +216,11 @@ var UsersApi = /*#__PURE__*/function () {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
+     * @param {String} opts.authuser 
+     * @param {String} opts.code 
+     * @param {String} opts.prompt 
+     * @param {String} opts.scope scope of OAuth consents
+     * @param {String} opts.state 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TokenResponse}
      */
 

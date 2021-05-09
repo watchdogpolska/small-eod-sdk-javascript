@@ -214,7 +214,12 @@ let opts = {
   'query': "query_example", // String | 
   'ordering': "ordering_example", // String | Which field to use when ordering the results.
   'limit': 56, // Number | Number of results to return per page.
-  'offset': 56 // Number | The initial index from which to return the results.
+  'offset': 56, // Number | The initial index from which to return the results.
+  'authuser': "authuser_example", // String | 
+  'code': "code_example", // String | 
+  'prompt': "prompt_example", // String | 
+  'scope': "scope_example", // String | scope of OAuth consents
+  'state': "state_example" // String | 
 };
 apiInstance.usersExchange(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -233,6 +238,11 @@ Name | Type | Description  | Notes
  **ordering** | **String**| Which field to use when ordering the results. | [optional] 
  **limit** | **Number**| Number of results to return per page. | [optional] 
  **offset** | **Number**| The initial index from which to return the results. | [optional] 
+ **authuser** | **String**|  | [optional] 
+ **code** | **String**|  | [optional] 
+ **prompt** | **String**|  | [optional] 
+ **scope** | **String**| scope of OAuth consents | [optional] 
+ **state** | **String**|  | [optional] 
 
 ### Return type
 
