@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import TagAutocomplete from './TagAutocomplete';
+import ReferenceNumberAutocomplete from './ReferenceNumberAutocomplete';
 
 /**
  * The InlineResponse2009 model module.
@@ -24,7 +24,7 @@ class InlineResponse2009 {
      * Constructs a new <code>InlineResponse2009</code>.
      * @alias module:model/InlineResponse2009
      * @param count {Number} 
-     * @param results {Array.<module:model/TagAutocomplete>} 
+     * @param results {Array.<module:model/ReferenceNumberAutocomplete>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse2009 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [TagAutocomplete]);
+                obj['results'] = ApiClient.convertToType(data['results'], [ReferenceNumberAutocomplete]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse2009 {
 InlineResponse2009.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/TagAutocomplete>} results
+ * @member {Array.<module:model/ReferenceNumberAutocomplete>} results
  */
 InlineResponse2009.prototype['results'] = undefined;
 

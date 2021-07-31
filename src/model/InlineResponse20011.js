@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import CaseCount from './CaseCount';
+import UserAutocomplete from './UserAutocomplete';
 
 /**
  * The InlineResponse20011 model module.
@@ -24,7 +24,7 @@ class InlineResponse20011 {
      * Constructs a new <code>InlineResponse20011</code>.
      * @alias module:model/InlineResponse20011
      * @param count {Number} 
-     * @param results {Array.<module:model/CaseCount>} 
+     * @param results {Array.<module:model/UserAutocomplete>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse20011 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [CaseCount]);
+                obj['results'] = ApiClient.convertToType(data['results'], [UserAutocomplete]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse20011 {
 InlineResponse20011.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/CaseCount>} results
+ * @member {Array.<module:model/UserAutocomplete>} results
  */
 InlineResponse20011.prototype['results'] = undefined;
 

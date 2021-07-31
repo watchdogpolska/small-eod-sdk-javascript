@@ -219,46 +219,52 @@ Object.defineProperty(exports, "InlineResponse20024", {
     return _InlineResponse18["default"];
   }
 });
-Object.defineProperty(exports, "InlineResponse2003", {
+Object.defineProperty(exports, "InlineResponse20025", {
   enumerable: true,
   get: function get() {
     return _InlineResponse19["default"];
   }
 });
-Object.defineProperty(exports, "InlineResponse2004", {
+Object.defineProperty(exports, "InlineResponse2003", {
   enumerable: true,
   get: function get() {
     return _InlineResponse20["default"];
   }
 });
-Object.defineProperty(exports, "InlineResponse2005", {
+Object.defineProperty(exports, "InlineResponse2004", {
   enumerable: true,
   get: function get() {
     return _InlineResponse21["default"];
   }
 });
-Object.defineProperty(exports, "InlineResponse2006", {
+Object.defineProperty(exports, "InlineResponse2005", {
   enumerable: true,
   get: function get() {
     return _InlineResponse22["default"];
   }
 });
-Object.defineProperty(exports, "InlineResponse2007", {
+Object.defineProperty(exports, "InlineResponse2006", {
   enumerable: true,
   get: function get() {
     return _InlineResponse23["default"];
   }
 });
-Object.defineProperty(exports, "InlineResponse2008", {
+Object.defineProperty(exports, "InlineResponse2007", {
   enumerable: true,
   get: function get() {
     return _InlineResponse24["default"];
   }
 });
-Object.defineProperty(exports, "InlineResponse2009", {
+Object.defineProperty(exports, "InlineResponse2008", {
   enumerable: true,
   get: function get() {
     return _InlineResponse25["default"];
+  }
+});
+Object.defineProperty(exports, "InlineResponse2009", {
+  enumerable: true,
+  get: function get() {
+    return _InlineResponse26["default"];
   }
 });
 Object.defineProperty(exports, "Institution", {
@@ -283,6 +289,12 @@ Object.defineProperty(exports, "Note", {
   enumerable: true,
   get: function get() {
     return _Note["default"];
+  }
+});
+Object.defineProperty(exports, "ReferenceNumberAutocomplete", {
+  enumerable: true,
+  get: function get() {
+    return _ReferenceNumberAutocomplete["default"];
   }
 });
 Object.defineProperty(exports, "RefreshTokenRequest", {
@@ -496,19 +508,21 @@ var _InlineResponse17 = _interopRequireDefault(require("./model/InlineResponse20
 
 var _InlineResponse18 = _interopRequireDefault(require("./model/InlineResponse20024"));
 
-var _InlineResponse19 = _interopRequireDefault(require("./model/InlineResponse2003"));
+var _InlineResponse19 = _interopRequireDefault(require("./model/InlineResponse20025"));
 
-var _InlineResponse20 = _interopRequireDefault(require("./model/InlineResponse2004"));
+var _InlineResponse20 = _interopRequireDefault(require("./model/InlineResponse2003"));
 
-var _InlineResponse21 = _interopRequireDefault(require("./model/InlineResponse2005"));
+var _InlineResponse21 = _interopRequireDefault(require("./model/InlineResponse2004"));
 
-var _InlineResponse22 = _interopRequireDefault(require("./model/InlineResponse2006"));
+var _InlineResponse22 = _interopRequireDefault(require("./model/InlineResponse2005"));
 
-var _InlineResponse23 = _interopRequireDefault(require("./model/InlineResponse2007"));
+var _InlineResponse23 = _interopRequireDefault(require("./model/InlineResponse2006"));
 
-var _InlineResponse24 = _interopRequireDefault(require("./model/InlineResponse2008"));
+var _InlineResponse24 = _interopRequireDefault(require("./model/InlineResponse2007"));
 
-var _InlineResponse25 = _interopRequireDefault(require("./model/InlineResponse2009"));
+var _InlineResponse25 = _interopRequireDefault(require("./model/InlineResponse2008"));
+
+var _InlineResponse26 = _interopRequireDefault(require("./model/InlineResponse2009"));
 
 var _Institution = _interopRequireDefault(require("./model/Institution"));
 
@@ -517,6 +531,8 @@ var _InstitutionAutocomplete = _interopRequireDefault(require("./model/Instituti
 var _Letter = _interopRequireDefault(require("./model/Letter"));
 
 var _Note = _interopRequireDefault(require("./model/Note"));
+
+var _ReferenceNumberAutocomplete = _interopRequireDefault(require("./model/ReferenceNumberAutocomplete"));
 
 var _RefreshTokenRequest = _interopRequireDefault(require("./model/RefreshTokenRequest"));
 

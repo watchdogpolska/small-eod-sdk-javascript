@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 ## collectionsCasesEventsList
 
-> InlineResponse20016 collectionsCasesEventsList(casePk, collectionPk, opts)
+> InlineResponse20017 collectionsCasesEventsList(casePk, collectionPk, opts)
 
 
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](InlineResponse20016.md)
+[**InlineResponse20017**](InlineResponse20017.md)
 
 ### Authorization
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesLettersList
 
-> InlineResponse20017 collectionsCasesLettersList(casePk, collectionPk, opts)
+> InlineResponse20018 collectionsCasesLettersList(casePk, collectionPk, opts)
 
 
 
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](InlineResponse20017.md)
+[**InlineResponse20018**](InlineResponse20018.md)
 
 ### Authorization
 
@@ -276,7 +276,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesList
 
-> InlineResponse20015 collectionsCasesList(collectionPk, opts)
+> InlineResponse20016 collectionsCasesList(collectionPk, opts)
 
 
 
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](InlineResponse20015.md)
+[**InlineResponse20016**](InlineResponse20016.md)
 
 ### Authorization
 
@@ -339,7 +339,7 @@ Name | Type | Description  | Notes
 
 ## collectionsCasesNotesList
 
-> InlineResponse20018 collectionsCasesNotesList(casePk, collectionPk, opts)
+> InlineResponse20019 collectionsCasesNotesList(casePk, collectionPk, opts)
 
 
 
@@ -390,7 +390,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20019**](InlineResponse20019.md)
 
 ### Authorization
 
@@ -628,7 +628,7 @@ null (empty response body)
 
 ## collectionsList
 
-> InlineResponse20014 collectionsList(opts)
+> InlineResponse20015 collectionsList(opts)
 
 
 
@@ -672,7 +672,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](InlineResponse20014.md)
+[**InlineResponse20015**](InlineResponse20015.md)
 
 ### Authorization
 

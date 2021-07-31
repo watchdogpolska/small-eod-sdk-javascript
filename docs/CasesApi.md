@@ -123,7 +123,7 @@ null (empty response body)
 
 ## casesList
 
-> InlineResponse20011 casesList(opts)
+> InlineResponse20012 casesList(opts)
 
 
 
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](InlineResponse20011.md)
+[**InlineResponse20012**](InlineResponse20012.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 
 ## casesNotifiedUsersList
 
-> InlineResponse20012 casesNotifiedUsersList(casePk, opts)
+> InlineResponse20013 casesNotifiedUsersList(casePk, opts)
 
 
 
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 
@@ -403,7 +403,7 @@ Name | Type | Description  | Notes
 
 ## casesResponsibleUsersList
 
-> InlineResponse20012 casesResponsibleUsersList(casePk, opts)
+> InlineResponse20013 casesResponsibleUsersList(casePk, opts)
 
 
 
@@ -449,7 +449,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 

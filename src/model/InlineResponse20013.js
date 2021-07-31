@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Channel from './Channel';
+import User from './User';
 
 /**
  * The InlineResponse20013 model module.
@@ -24,7 +24,7 @@ class InlineResponse20013 {
      * Constructs a new <code>InlineResponse20013</code>.
      * @alias module:model/InlineResponse20013
      * @param count {Number} 
-     * @param results {Array.<module:model/Channel>} 
+     * @param results {Array.<module:model/User>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse20013 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Channel]);
+                obj['results'] = ApiClient.convertToType(data['results'], [User]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse20013 {
 InlineResponse20013.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/Channel>} results
+ * @member {Array.<module:model/User>} results
  */
 InlineResponse20013.prototype['results'] = undefined;
 

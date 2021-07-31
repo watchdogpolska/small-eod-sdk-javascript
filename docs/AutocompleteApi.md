@@ -20,6 +20,8 @@ Method | HTTP request | Description
 [**autocompleteFeaturesRead**](AutocompleteApi.md#autocompleteFeaturesRead) | **GET** /autocomplete/features/{id}/ | 
 [**autocompleteInstitutionsList**](AutocompleteApi.md#autocompleteInstitutionsList) | **GET** /autocomplete/institutions/ | 
 [**autocompleteInstitutionsRead**](AutocompleteApi.md#autocompleteInstitutionsRead) | **GET** /autocomplete/institutions/{id}/ | 
+[**autocompleteReferenceNumbersList**](AutocompleteApi.md#autocompleteReferenceNumbersList) | **GET** /autocomplete/reference_numbers/ | 
+[**autocompleteReferenceNumbersRead**](AutocompleteApi.md#autocompleteReferenceNumbersRead) | **GET** /autocomplete/reference_numbers/{id}/ | 
 [**autocompleteTagsList**](AutocompleteApi.md#autocompleteTagsList) | **GET** /autocomplete/tags/ | 
 [**autocompleteTagsRead**](AutocompleteApi.md#autocompleteTagsRead) | **GET** /autocomplete/tags/{id}/ | 
 [**autocompleteUsersList**](AutocompleteApi.md#autocompleteUsersList) | **GET** /autocomplete/users/ | 
@@ -907,9 +909,119 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## autocompleteReferenceNumbersList
+
+> InlineResponse2009 autocompleteReferenceNumbersList(opts)
+
+
+
+### Example
+
+```javascript
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure API key authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer.apiKeyPrefix = 'Token';
+
+let apiInstance = new SmallEodClient.AutocompleteApi();
+let opts = {
+  'query': "query_example", // String | 
+  'limit': 56, // Number | Number of results to return per page.
+  'offset': 56 // Number | The initial index from which to return the results.
+};
+apiInstance.autocompleteReferenceNumbersList(opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **query** | **String**|  | [optional] 
+ **limit** | **Number**| Number of results to return per page. | [optional] 
+ **offset** | **Number**| The initial index from which to return the results. | [optional] 
+
+### Return type
+
+[**InlineResponse2009**](InlineResponse2009.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## autocompleteReferenceNumbersRead
+
+> ReferenceNumberAutocomplete autocompleteReferenceNumbersRead(id)
+
+
+
+### Example
+
+```javascript
+import SmallEodClient from 'small_eod_client';
+let defaultClient = SmallEodClient.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure API key authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer.apiKeyPrefix = 'Token';
+
+let apiInstance = new SmallEodClient.AutocompleteApi();
+let id = 56; // Number | A unique integer value identifying this reference number.
+apiInstance.autocompleteReferenceNumbersRead(id).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| A unique integer value identifying this reference number. | 
+
+### Return type
+
+[**ReferenceNumberAutocomplete**](ReferenceNumberAutocomplete.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
 ## autocompleteTagsList
 
-> InlineResponse2009 autocompleteTagsList(opts)
+> InlineResponse20010 autocompleteTagsList(opts)
 
 
 
@@ -953,7 +1065,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 
@@ -1019,7 +1131,7 @@ Name | Type | Description  | Notes
 
 ## autocompleteUsersList
 
-> InlineResponse20010 autocompleteUsersList(opts)
+> InlineResponse20011 autocompleteUsersList(opts)
 
 
 
@@ -1063,7 +1175,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 

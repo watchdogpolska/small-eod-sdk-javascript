@@ -14,7 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import FeatureOption from '../model/FeatureOption';
-import InlineResponse20020 from '../model/InlineResponse20020';
+import InlineResponse20021 from '../model/InlineResponse20021';
 
 /**
 * FeatureOptions service.
@@ -129,7 +129,7 @@ export default class FeatureOptionsApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20020} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20021} and HTTP response
      */
     featureOptionsListWithHttpInfo(opts) {
       opts = opts || {};
@@ -151,7 +151,7 @@ export default class FeatureOptionsApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20020;
+      let returnType = InlineResponse20021;
       return this.apiClient.callApi(
         '/feature_options/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -165,7 +165,7 @@ export default class FeatureOptionsApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20020}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20021}
      */
     featureOptionsList(opts) {
       return this.featureOptionsListWithHttpInfo(opts)

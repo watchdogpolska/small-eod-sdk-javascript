@@ -886,6 +886,99 @@
         }
       ]
     },
+    "/autocomplete/reference_numbers/": {
+      "get": {
+        "operationId": "autocomplete_reference_numbers_list",
+        "description": "",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "required": [
+                "count",
+                "results"
+              ],
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "next": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "previous": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-nullable": true
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/ReferenceNumberAutocomplete"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": []
+    },
+    "/autocomplete/reference_numbers/{id}/": {
+      "get": {
+        "operationId": "autocomplete_reference_numbers_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ReferenceNumberAutocomplete"
+            }
+          }
+        },
+        "tags": [
+          "autocomplete"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "A unique integer value identifying this reference number.",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    },
     "/autocomplete/tags/": {
       "get": {
         "operationId": "autocomplete_tags_list",
@@ -4718,6 +4811,27 @@
         }
       }
     },
+    "ReferenceNumberAutocomplete": {
+      "description": "ReferenceNumber(id, name)",
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "type": "integer",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Reference number",
+          "description": "Reference number of letter.",
+          "type": "string",
+          "maxLength": 256,
+          "minLength": 1
+        }
+      }
+    },
     "TagAutocomplete": {
       "description": "Tag(id, name)",
       "required": [
@@ -5222,9 +5336,8 @@
         },
         "referenceNumber": {
           "title": "Reference number",
-          "description": "Reference number of letter.",
           "type": "string",
-          "maxLength": 256
+          "minLength": 1
         },
         "institution": {
           "title": "Institution",

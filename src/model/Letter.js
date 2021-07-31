@@ -129,7 +129,6 @@ Letter.prototype['final'] = undefined;
 Letter.prototype['date'] = undefined;
 
 /**
- * Reference number of letter.
  * @member {String} referenceNumber
  */
 Letter.prototype['referenceNumber'] = undefined;

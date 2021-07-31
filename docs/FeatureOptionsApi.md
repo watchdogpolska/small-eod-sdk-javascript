@@ -119,7 +119,7 @@ null (empty response body)
 
 ## featureOptionsList
 
-> InlineResponse20020 featureOptionsList(opts)
+> InlineResponse20021 featureOptionsList(opts)
 
 
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20020**](InlineResponse20020.md)
+[**InlineResponse20021**](InlineResponse20021.md)
 
 ### Authorization
 

@@ -25,23 +25,27 @@ var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse200
 
 var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse20010"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse2002"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse20011"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse2003"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse2002"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse2004"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse2003"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse2005"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse2004"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse2006"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse2005"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse2007"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse2006"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse2008"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse2007"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse2009"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse2008"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse2009"));
 
 var _InstitutionAutocomplete = _interopRequireDefault(require("../model/InstitutionAutocomplete"));
+
+var _ReferenceNumberAutocomplete = _interopRequireDefault(require("../model/ReferenceNumberAutocomplete"));
 
 var _TagAutocomplete = _interopRequireDefault(require("../model/TagAutocomplete"));
 
@@ -178,7 +182,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse3["default"];
+      var returnType = _InlineResponse4["default"];
       return this.apiClient.callApi('/autocomplete/cases/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -258,7 +262,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse4["default"];
+      var returnType = _InlineResponse5["default"];
       return this.apiClient.callApi('/autocomplete/channels/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -338,7 +342,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse5["default"];
+      var returnType = _InlineResponse6["default"];
       return this.apiClient.callApi('/autocomplete/document_types/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -418,7 +422,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse6["default"];
+      var returnType = _InlineResponse7["default"];
       return this.apiClient.callApi('/autocomplete/events/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -498,7 +502,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse7["default"];
+      var returnType = _InlineResponse8["default"];
       return this.apiClient.callApi('/autocomplete/feature_options/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -578,7 +582,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse8["default"];
+      var returnType = _InlineResponse9["default"];
       return this.apiClient.callApi('/autocomplete/features/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -658,7 +662,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse9["default"];
+      var returnType = _InlineResponse10["default"];
       return this.apiClient.callApi('/autocomplete/institutions/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -723,6 +727,86 @@ var AutocompleteApi = /*#__PURE__*/function () {
      */
 
   }, {
+    key: "autocompleteReferenceNumbersListWithHttpInfo",
+    value: function autocompleteReferenceNumbersListWithHttpInfo(opts) {
+      opts = opts || {};
+      var postBody = null;
+      var pathParams = {};
+      var queryParams = {
+        'query': opts['query'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['Basic', 'Bearer'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _InlineResponse11["default"];
+      return this.apiClient.callApi('/autocomplete/reference_numbers/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
+     */
+
+  }, {
+    key: "autocompleteReferenceNumbersList",
+    value: function autocompleteReferenceNumbersList(opts) {
+      return this.autocompleteReferenceNumbersListWithHttpInfo(opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * @param {Number} id A unique integer value identifying this reference number.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ReferenceNumberAutocomplete} and HTTP response
+     */
+
+  }, {
+    key: "autocompleteReferenceNumbersReadWithHttpInfo",
+    value: function autocompleteReferenceNumbersReadWithHttpInfo(id) {
+      var postBody = null; // verify the required parameter 'id' is set
+
+      if (id === undefined || id === null) {
+        throw new Error("Missing the required parameter 'id' when calling autocompleteReferenceNumbersRead");
+      }
+
+      var pathParams = {
+        'id': id
+      };
+      var queryParams = {};
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['Basic', 'Bearer'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ReferenceNumberAutocomplete["default"];
+      return this.apiClient.callApi('/autocomplete/reference_numbers/{id}/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * @param {Number} id A unique integer value identifying this reference number.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ReferenceNumberAutocomplete}
+     */
+
+  }, {
+    key: "autocompleteReferenceNumbersRead",
+    value: function autocompleteReferenceNumbersRead(id) {
+      return this.autocompleteReferenceNumbersReadWithHttpInfo(id).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
+     */
+
+  }, {
     key: "autocompleteTagsListWithHttpInfo",
     value: function autocompleteTagsListWithHttpInfo(opts) {
       opts = opts || {};
@@ -738,7 +822,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse10["default"];
+      var returnType = _InlineResponse2["default"];
       return this.apiClient.callApi('/autocomplete/tags/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -746,7 +830,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
      * @param {String} opts.query 
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
      */
 
   }, {
@@ -799,7 +883,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
      * @param {String} opts.query 
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20011} and HTTP response
      */
 
   }, {
@@ -818,7 +902,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
       var authNames = ['Basic', 'Bearer'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _InlineResponse2["default"];
+      var returnType = _InlineResponse3["default"];
       return this.apiClient.callApi('/autocomplete/users/', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -826,7 +910,7 @@ var AutocompleteApi = /*#__PURE__*/function () {
      * @param {String} opts.query 
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
      */
 
   }, {

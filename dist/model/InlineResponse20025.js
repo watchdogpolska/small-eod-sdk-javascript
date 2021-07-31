@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _Collection = _interopRequireDefault(require("./Collection"));
+var _Tag = _interopRequireDefault(require("./Tag"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -18,21 +18,21 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 /**
- * The InlineResponse20015 model module.
- * @module model/InlineResponse20015
+ * The InlineResponse20025 model module.
+ * @module model/InlineResponse20025
  * @version 1.0.4
  */
-var InlineResponse20015 = /*#__PURE__*/function () {
+var InlineResponse20025 = /*#__PURE__*/function () {
   /**
-   * Constructs a new <code>InlineResponse20015</code>.
-   * @alias module:model/InlineResponse20015
+   * Constructs a new <code>InlineResponse20025</code>.
+   * @alias module:model/InlineResponse20025
    * @param count {Number} 
-   * @param results {Array.<module:model/Collection>} 
+   * @param results {Array.<module:model/Tag>} 
    */
-  function InlineResponse20015(count, results) {
-    _classCallCheck(this, InlineResponse20015);
+  function InlineResponse20025(count, results) {
+    _classCallCheck(this, InlineResponse20025);
 
-    InlineResponse20015.initialize(this, count, results);
+    InlineResponse20025.initialize(this, count, results);
   }
   /**
    * Initializes the fields of this object.
@@ -41,32 +41,32 @@ var InlineResponse20015 = /*#__PURE__*/function () {
    */
 
 
-  _createClass(InlineResponse20015, null, [{
+  _createClass(InlineResponse20025, null, [{
     key: "initialize",
     value: function initialize(obj, count, results) {
       obj['count'] = count;
       obj['results'] = results;
     }
     /**
-     * Constructs a <code>InlineResponse20015</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>InlineResponse20025</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/InlineResponse20015} obj Optional instance to populate.
-     * @return {module:model/InlineResponse20015} The populated <code>InlineResponse20015</code> instance.
+     * @param {module:model/InlineResponse20025} obj Optional instance to populate.
+     * @return {module:model/InlineResponse20025} The populated <code>InlineResponse20025</code> instance.
      */
 
   }, {
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
       if (data) {
-        obj = obj || new InlineResponse20015();
+        obj = obj || new InlineResponse20025();
 
         if (data.hasOwnProperty('count')) {
           obj['count'] = _ApiClient["default"].convertToType(data['count'], 'Number');
         }
 
         if (data.hasOwnProperty('results')) {
-          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Collection["default"]]);
+          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Tag["default"]]);
         }
 
         if (data.hasOwnProperty('next')) {
@@ -82,28 +82,28 @@ var InlineResponse20015 = /*#__PURE__*/function () {
     }
   }]);
 
-  return InlineResponse20015;
+  return InlineResponse20025;
 }();
 /**
  * @member {Number} count
  */
 
 
-InlineResponse20015.prototype['count'] = undefined;
+InlineResponse20025.prototype['count'] = undefined;
 /**
- * @member {Array.<module:model/Collection>} results
+ * @member {Array.<module:model/Tag>} results
  */
 
-InlineResponse20015.prototype['results'] = undefined;
+InlineResponse20025.prototype['results'] = undefined;
 /**
  * @member {String} next
  */
 
-InlineResponse20015.prototype['next'] = undefined;
+InlineResponse20025.prototype['next'] = undefined;
 /**
  * @member {String} previous
  */
 
-InlineResponse20015.prototype['previous'] = undefined;
-var _default = InlineResponse20015;
+InlineResponse20025.prototype['previous'] = undefined;
+var _default = InlineResponse20025;
 exports["default"] = _default;

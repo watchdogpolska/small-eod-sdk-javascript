@@ -45,6 +45,7 @@ docs/InlineResponse20021.md
 docs/InlineResponse20022.md
 docs/InlineResponse20023.md
 docs/InlineResponse20024.md
+docs/InlineResponse20025.md
 docs/InlineResponse2003.md
 docs/InlineResponse2004.md
 docs/InlineResponse2005.md
@@ -59,6 +60,7 @@ docs/Letter.md
 docs/LettersApi.md
 docs/Note.md
 docs/NotesApi.md
+docs/ReferenceNumberAutocomplete.md
 docs/RefreshTokenRequest.md
 docs/Request.md
 docs/SignRequest.md
@@ -110,6 +112,7 @@ src/model/InlineResponse20021.js
 src/model/InlineResponse20022.js
 src/model/InlineResponse20023.js
 src/model/InlineResponse20024.js
+src/model/InlineResponse20025.js
 src/model/InlineResponse2003.js
 src/model/InlineResponse2004.js
 src/model/InlineResponse2005.js
@@ -121,6 +124,7 @@ src/model/Institution.js
 src/model/InstitutionAutocomplete.js
 src/model/Letter.js
 src/model/Note.js
+src/model/ReferenceNumberAutocomplete.js
 src/model/RefreshTokenRequest.js
 src/model/Request.js
 src/model/SignRequest.js
@@ -193,6 +197,7 @@ test/model/InlineResponse20021.spec.js
 test/model/InlineResponse20022.spec.js
 test/model/InlineResponse20023.spec.js
 test/model/InlineResponse20024.spec.js
+test/model/InlineResponse20025.spec.js
 test/model/InlineResponse2003.spec.js
 test/model/InlineResponse2004.spec.js
 test/model/InlineResponse2005.spec.js
@@ -204,6 +209,7 @@ test/model/Institution.spec.js
 test/model/InstitutionAutocomplete.spec.js
 test/model/Letter.spec.js
 test/model/Note.spec.js
+test/model/ReferenceNumberAutocomplete.spec.js
 test/model/RefreshTokenRequest.spec.js
 test/model/Request.spec.js
 test/model/SignRequest.spec.js

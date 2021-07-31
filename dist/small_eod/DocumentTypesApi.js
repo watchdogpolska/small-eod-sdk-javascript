@@ -9,7 +9,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _DocumentType = _interopRequireDefault(require("../model/DocumentType"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse20019"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse20020"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -117,7 +117,7 @@ var DocumentTypesApi = /*#__PURE__*/function () {
      * @param {String} opts.query 
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20019} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20020} and HTTP response
      */
 
   }, {
@@ -144,7 +144,7 @@ var DocumentTypesApi = /*#__PURE__*/function () {
      * @param {String} opts.query 
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20019}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20020}
      */
 
   }, {

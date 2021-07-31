@@ -180,7 +180,7 @@ null (empty response body)
 
 ## eventsList
 
-> InlineResponse20016 eventsList(opts)
+> InlineResponse20017 eventsList(opts)
 
 
 
@@ -226,7 +226,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](InlineResponse20016.md)
+[**InlineResponse20017**](InlineResponse20017.md)
 
 ### Authorization
 

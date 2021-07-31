@@ -12,23 +12,23 @@
  */
 
 import ApiClient from '../ApiClient';
-import Case from './Case';
+import Tag from './Tag';
 
 /**
- * The InlineResponse20016 model module.
- * @module model/InlineResponse20016
+ * The InlineResponse20025 model module.
+ * @module model/InlineResponse20025
  * @version 1.0.4
  */
-class InlineResponse20016 {
+class InlineResponse20025 {
     /**
-     * Constructs a new <code>InlineResponse20016</code>.
-     * @alias module:model/InlineResponse20016
+     * Constructs a new <code>InlineResponse20025</code>.
+     * @alias module:model/InlineResponse20025
      * @param count {Number} 
-     * @param results {Array.<module:model/Case>} 
+     * @param results {Array.<module:model/Tag>} 
      */
     constructor(count, results) { 
         
-        InlineResponse20016.initialize(this, count, results);
+        InlineResponse20025.initialize(this, count, results);
     }
 
     /**
@@ -42,21 +42,21 @@ class InlineResponse20016 {
     }
 
     /**
-     * Constructs a <code>InlineResponse20016</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>InlineResponse20025</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/InlineResponse20016} obj Optional instance to populate.
-     * @return {module:model/InlineResponse20016} The populated <code>InlineResponse20016</code> instance.
+     * @param {module:model/InlineResponse20025} obj Optional instance to populate.
+     * @return {module:model/InlineResponse20025} The populated <code>InlineResponse20025</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new InlineResponse20016();
+            obj = obj || new InlineResponse20025();
 
             if (data.hasOwnProperty('count')) {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Case]);
+                obj['results'] = ApiClient.convertToType(data['results'], [Tag]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -74,27 +74,27 @@ class InlineResponse20016 {
 /**
  * @member {Number} count
  */
-InlineResponse20016.prototype['count'] = undefined;
+InlineResponse20025.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/Case>} results
+ * @member {Array.<module:model/Tag>} results
  */
-InlineResponse20016.prototype['results'] = undefined;
+InlineResponse20025.prototype['results'] = undefined;
 
 /**
  * @member {String} next
  */
-InlineResponse20016.prototype['next'] = undefined;
+InlineResponse20025.prototype['next'] = undefined;
 
 /**
  * @member {String} previous
  */
-InlineResponse20016.prototype['previous'] = undefined;
+InlineResponse20025.prototype['previous'] = undefined;
 
 
 
 
 
 
-export default InlineResponse20016;
+export default InlineResponse20025;
 

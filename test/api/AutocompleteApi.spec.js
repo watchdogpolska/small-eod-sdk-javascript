@@ -208,6 +208,26 @@
         done();
       });
     });
+    describe('autocompleteReferenceNumbersList', function() {
+      it('should call autocompleteReferenceNumbersList successfully', function(done) {
+        //uncomment below and update the code to test autocompleteReferenceNumbersList
+        //instance.autocompleteReferenceNumbersList(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('autocompleteReferenceNumbersRead', function() {
+      it('should call autocompleteReferenceNumbersRead successfully', function(done) {
+        //uncomment below and update the code to test autocompleteReferenceNumbersRead
+        //instance.autocompleteReferenceNumbersRead(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('autocompleteTagsList', function() {
       it('should call autocompleteTagsList successfully', function(done) {
         //uncomment below and update the code to test autocompleteTagsList

@@ -13,15 +13,15 @@ var _Collection = _interopRequireDefault(require("../model/Collection"));
 
 var _Event = _interopRequireDefault(require("../model/Event"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse20014"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse20015"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse20015"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse20016"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse20016"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse20017"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse20017"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse20018"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse20018"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse20019"));
 
 var _Letter = _interopRequireDefault(require("../model/Letter"));
 
@@ -61,7 +61,7 @@ var CollectionsApi = /*#__PURE__*/function () {
    * @param {Object} opts Optional parameters
    * @param {Number} opts.limit Number of results to return per page.
    * @param {Number} opts.offset The initial index from which to return the results.
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20016} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20017} and HTTP response
    */
 
 
@@ -102,7 +102,7 @@ var CollectionsApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20016}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20017}
      */
 
   }, {
@@ -172,7 +172,7 @@ var CollectionsApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20017} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20018} and HTTP response
      */
 
   }, {
@@ -212,7 +212,7 @@ var CollectionsApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20017}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20018}
      */
 
   }, {
@@ -281,7 +281,7 @@ var CollectionsApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20015} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20016} and HTTP response
      */
 
   }, {
@@ -314,7 +314,7 @@ var CollectionsApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20015}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20016}
      */
 
   }, {
@@ -330,7 +330,7 @@ var CollectionsApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20018} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20019} and HTTP response
      */
 
   }, {
@@ -370,7 +370,7 @@ var CollectionsApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20018}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20019}
      */
 
   }, {
@@ -559,7 +559,7 @@ var CollectionsApi = /*#__PURE__*/function () {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20014} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20015} and HTTP response
      */
 
   }, {
@@ -586,7 +586,7 @@ var CollectionsApi = /*#__PURE__*/function () {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20014}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20015}
      */
 
   }, {

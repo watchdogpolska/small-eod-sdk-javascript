@@ -22,6 +22,7 @@ import FeatureAutocomplete from '../model/FeatureAutocomplete';
 import FeatureOptionAutocomplete from '../model/FeatureOptionAutocomplete';
 import InlineResponse2001 from '../model/InlineResponse2001';
 import InlineResponse20010 from '../model/InlineResponse20010';
+import InlineResponse20011 from '../model/InlineResponse20011';
 import InlineResponse2002 from '../model/InlineResponse2002';
 import InlineResponse2003 from '../model/InlineResponse2003';
 import InlineResponse2004 from '../model/InlineResponse2004';
@@ -31,6 +32,7 @@ import InlineResponse2007 from '../model/InlineResponse2007';
 import InlineResponse2008 from '../model/InlineResponse2008';
 import InlineResponse2009 from '../model/InlineResponse2009';
 import InstitutionAutocomplete from '../model/InstitutionAutocomplete';
+import ReferenceNumberAutocomplete from '../model/ReferenceNumberAutocomplete';
 import TagAutocomplete from '../model/TagAutocomplete';
 import UserAutocomplete from '../model/UserAutocomplete';
 
@@ -805,7 +807,7 @@ export default class AutocompleteApi {
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
      */
-    autocompleteTagsListWithHttpInfo(opts) {
+    autocompleteReferenceNumbersListWithHttpInfo(opts) {
       opts = opts || {};
       let postBody = null;
 
@@ -826,7 +828,7 @@ export default class AutocompleteApi {
       let accepts = ['application/json'];
       let returnType = InlineResponse2009;
       return this.apiClient.callApi(
-        '/autocomplete/tags/', 'GET',
+        '/autocomplete/reference_numbers/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -838,6 +840,99 @@ export default class AutocompleteApi {
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
+     */
+    autocompleteReferenceNumbersList(opts) {
+      return this.autocompleteReferenceNumbersListWithHttpInfo(opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * @param {Number} id A unique integer value identifying this reference number.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ReferenceNumberAutocomplete} and HTTP response
+     */
+    autocompleteReferenceNumbersReadWithHttpInfo(id) {
+      let postBody = null;
+      // verify the required parameter 'id' is set
+      if (id === undefined || id === null) {
+        throw new Error("Missing the required parameter 'id' when calling autocompleteReferenceNumbersRead");
+      }
+
+      let pathParams = {
+        'id': id
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['Basic', 'Bearer'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ReferenceNumberAutocomplete;
+      return this.apiClient.callApi(
+        '/autocomplete/reference_numbers/{id}/', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * @param {Number} id A unique integer value identifying this reference number.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ReferenceNumberAutocomplete}
+     */
+    autocompleteReferenceNumbersRead(id) {
+      return this.autocompleteReferenceNumbersReadWithHttpInfo(id)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
+     */
+    autocompleteTagsListWithHttpInfo(opts) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'query': opts['query'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['Basic', 'Bearer'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = InlineResponse20010;
+      return this.apiClient.callApi(
+        '/autocomplete/tags/', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.query 
+     * @param {Number} opts.limit Number of results to return per page.
+     * @param {Number} opts.offset The initial index from which to return the results.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
      */
     autocompleteTagsList(opts) {
       return this.autocompleteTagsListWithHttpInfo(opts)
@@ -896,7 +991,7 @@ export default class AutocompleteApi {
      * @param {String} opts.query 
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20011} and HTTP response
      */
     autocompleteUsersListWithHttpInfo(opts) {
       opts = opts || {};
@@ -917,7 +1012,7 @@ export default class AutocompleteApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20010;
+      let returnType = InlineResponse20011;
       return this.apiClient.callApi(
         '/autocomplete/users/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -930,7 +1025,7 @@ export default class AutocompleteApi {
      * @param {String} opts.query 
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
      */
     autocompleteUsersList(opts) {
       return this.autocompleteUsersListWithHttpInfo(opts)

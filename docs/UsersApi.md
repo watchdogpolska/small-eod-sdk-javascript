@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 
 ## usersList
 
-> InlineResponse20012 usersList(opts)
+> InlineResponse20013 usersList(opts)
 
 
 
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 

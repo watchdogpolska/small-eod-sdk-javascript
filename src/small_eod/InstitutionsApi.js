@@ -13,7 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
-import InlineResponse20022 from '../model/InlineResponse20022';
+import InlineResponse20023 from '../model/InlineResponse20023';
 import Institution from '../model/Institution';
 
 /**
@@ -129,7 +129,7 @@ export default class InstitutionsApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20022} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20023} and HTTP response
      */
     institutionsListWithHttpInfo(opts) {
       opts = opts || {};
@@ -151,7 +151,7 @@ export default class InstitutionsApi {
       let authNames = ['Basic', 'Bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20022;
+      let returnType = InlineResponse20023;
       return this.apiClient.callApi(
         '/institutions/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -165,7 +165,7 @@ export default class InstitutionsApi {
      * @param {String} opts.ordering Which field to use when ordering the results.
      * @param {Number} opts.limit Number of results to return per page.
      * @param {Number} opts.offset The initial index from which to return the results.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20022}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20023}
      */
     institutionsList(opts) {
       return this.institutionsListWithHttpInfo(opts)

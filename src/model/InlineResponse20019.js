@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import DocumentType from './DocumentType';
+import Note from './Note';
 
 /**
  * The InlineResponse20019 model module.
@@ -24,7 +24,7 @@ class InlineResponse20019 {
      * Constructs a new <code>InlineResponse20019</code>.
      * @alias module:model/InlineResponse20019
      * @param count {Number} 
-     * @param results {Array.<module:model/DocumentType>} 
+     * @param results {Array.<module:model/Note>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse20019 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [DocumentType]);
+                obj['results'] = ApiClient.convertToType(data['results'], [Note]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse20019 {
 InlineResponse20019.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/DocumentType>} results
+ * @member {Array.<module:model/Note>} results
  */
 InlineResponse20019.prototype['results'] = undefined;
 

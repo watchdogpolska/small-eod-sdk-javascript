@@ -7,8 +7,6 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _Tag = _interopRequireDefault(require("./Tag"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27,7 +25,7 @@ var InlineResponse20024 = /*#__PURE__*/function () {
    * Constructs a new <code>InlineResponse20024</code>.
    * @alias module:model/InlineResponse20024
    * @param count {Number} 
-   * @param results {Array.<module:model/Tag>} 
+   * @param results {Array.<File>} 
    */
   function InlineResponse20024(count, results) {
     _classCallCheck(this, InlineResponse20024);
@@ -66,7 +64,7 @@ var InlineResponse20024 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('results')) {
-          obj['results'] = _ApiClient["default"].convertToType(data['results'], [_Tag["default"]]);
+          obj['results'] = _ApiClient["default"].convertToType(data['results'], [File]);
         }
 
         if (data.hasOwnProperty('next')) {
@@ -91,7 +89,7 @@ var InlineResponse20024 = /*#__PURE__*/function () {
 
 InlineResponse20024.prototype['count'] = undefined;
 /**
- * @member {Array.<module:model/Tag>} results
+ * @member {Array.<File>} results
  */
 
 InlineResponse20024.prototype['results'] = undefined;

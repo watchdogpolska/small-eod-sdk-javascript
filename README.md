@@ -151,6 +151,8 @@ Class | Method | HTTP request | Description
 *SmallEodClient.AutocompleteApi* | [**autocompleteFeaturesRead**](docs/AutocompleteApi.md#autocompleteFeaturesRead) | **GET** /autocomplete/features/{id}/ | 
 *SmallEodClient.AutocompleteApi* | [**autocompleteInstitutionsList**](docs/AutocompleteApi.md#autocompleteInstitutionsList) | **GET** /autocomplete/institutions/ | 
 *SmallEodClient.AutocompleteApi* | [**autocompleteInstitutionsRead**](docs/AutocompleteApi.md#autocompleteInstitutionsRead) | **GET** /autocomplete/institutions/{id}/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteReferenceNumbersList**](docs/AutocompleteApi.md#autocompleteReferenceNumbersList) | **GET** /autocomplete/reference_numbers/ | 
+*SmallEodClient.AutocompleteApi* | [**autocompleteReferenceNumbersRead**](docs/AutocompleteApi.md#autocompleteReferenceNumbersRead) | **GET** /autocomplete/reference_numbers/{id}/ | 
 *SmallEodClient.AutocompleteApi* | [**autocompleteTagsList**](docs/AutocompleteApi.md#autocompleteTagsList) | **GET** /autocomplete/tags/ | 
 *SmallEodClient.AutocompleteApi* | [**autocompleteTagsRead**](docs/AutocompleteApi.md#autocompleteTagsRead) | **GET** /autocomplete/tags/{id}/ | 
 *SmallEodClient.AutocompleteApi* | [**autocompleteUsersList**](docs/AutocompleteApi.md#autocompleteUsersList) | **GET** /autocomplete/users/ | 
@@ -290,6 +292,7 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.InlineResponse20022](docs/InlineResponse20022.md)
  - [SmallEodClient.InlineResponse20023](docs/InlineResponse20023.md)
  - [SmallEodClient.InlineResponse20024](docs/InlineResponse20024.md)
+ - [SmallEodClient.InlineResponse20025](docs/InlineResponse20025.md)
  - [SmallEodClient.InlineResponse2003](docs/InlineResponse2003.md)
  - [SmallEodClient.InlineResponse2004](docs/InlineResponse2004.md)
  - [SmallEodClient.InlineResponse2005](docs/InlineResponse2005.md)
@@ -301,6 +304,7 @@ Class | Method | HTTP request | Description
  - [SmallEodClient.InstitutionAutocomplete](docs/InstitutionAutocomplete.md)
  - [SmallEodClient.Letter](docs/Letter.md)
  - [SmallEodClient.Note](docs/Note.md)
+ - [SmallEodClient.ReferenceNumberAutocomplete](docs/ReferenceNumberAutocomplete.md)
  - [SmallEodClient.RefreshTokenRequest](docs/RefreshTokenRequest.md)
  - [SmallEodClient.Request](docs/Request.md)
  - [SmallEodClient.SignRequest](docs/SignRequest.md)

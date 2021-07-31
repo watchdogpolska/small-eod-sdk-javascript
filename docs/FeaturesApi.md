@@ -119,7 +119,7 @@ null (empty response body)
 
 ## featuresList
 
-> InlineResponse20021 featuresList(opts)
+> InlineResponse20022 featuresList(opts)
 
 
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](InlineResponse20021.md)
+[**InlineResponse20022**](InlineResponse20022.md)
 
 ### Authorization
 

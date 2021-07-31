@@ -48,6 +48,7 @@ import InlineResponse20021 from './model/InlineResponse20021';
 import InlineResponse20022 from './model/InlineResponse20022';
 import InlineResponse20023 from './model/InlineResponse20023';
 import InlineResponse20024 from './model/InlineResponse20024';
+import InlineResponse20025 from './model/InlineResponse20025';
 import InlineResponse2003 from './model/InlineResponse2003';
 import InlineResponse2004 from './model/InlineResponse2004';
 import InlineResponse2005 from './model/InlineResponse2005';
@@ -59,6 +60,7 @@ import Institution from './model/Institution';
 import InstitutionAutocomplete from './model/InstitutionAutocomplete';
 import Letter from './model/Letter';
 import Note from './model/Note';
+import ReferenceNumberAutocomplete from './model/ReferenceNumberAutocomplete';
 import RefreshTokenRequest from './model/RefreshTokenRequest';
 import Request from './model/Request';
 import SignRequest from './model/SignRequest';
@@ -333,6 +335,12 @@ export {
     InlineResponse20024,
 
     /**
+     * The InlineResponse20025 model constructor.
+     * @property {module:model/InlineResponse20025}
+     */
+    InlineResponse20025,
+
+    /**
      * The InlineResponse2003 model constructor.
      * @property {module:model/InlineResponse2003}
      */
@@ -397,6 +405,12 @@ export {
      * @property {module:model/Note}
      */
     Note,
+
+    /**
+     * The ReferenceNumberAutocomplete model constructor.
+     * @property {module:model/ReferenceNumberAutocomplete}
+     */
+    ReferenceNumberAutocomplete,
 
     /**
      * The RefreshTokenRequest model constructor.

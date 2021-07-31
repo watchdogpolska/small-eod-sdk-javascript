@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Institution from './Institution';
+import Feature from './Feature';
 
 /**
  * The InlineResponse20022 model module.
@@ -24,7 +24,7 @@ class InlineResponse20022 {
      * Constructs a new <code>InlineResponse20022</code>.
      * @alias module:model/InlineResponse20022
      * @param count {Number} 
-     * @param results {Array.<module:model/Institution>} 
+     * @param results {Array.<module:model/Feature>} 
      */
     constructor(count, results) { 
         
@@ -56,7 +56,7 @@ class InlineResponse20022 {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
             if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Institution]);
+                obj['results'] = ApiClient.convertToType(data['results'], [Feature]);
             }
             if (data.hasOwnProperty('next')) {
                 obj['next'] = ApiClient.convertToType(data['next'], 'String');
@@ -77,7 +77,7 @@ class InlineResponse20022 {
 InlineResponse20022.prototype['count'] = undefined;
 
 /**
- * @member {Array.<module:model/Institution>} results
+ * @member {Array.<module:model/Feature>} results
  */
 InlineResponse20022.prototype['results'] = undefined;
 

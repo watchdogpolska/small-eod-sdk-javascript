@@ -119,7 +119,7 @@ null (empty response body)
 
 ## channelsList
 
-> InlineResponse20013 channelsList(opts)
+> InlineResponse20014 channelsList(opts)
 
 
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**InlineResponse20014**](InlineResponse20014.md)
 
 ### Authorization
 
