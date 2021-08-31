@@ -50,7 +50,7 @@
   describe('TagAutocomplete', function() {
     it('should create an instance of TagAutocomplete', function() {
       // uncomment below and update the code to test TagAutocomplete
-      //var instane = new SmallEodClient.TagAutocomplete();
+      //var instance = new SmallEodClient.TagAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.TagAutocomplete);
     });
 

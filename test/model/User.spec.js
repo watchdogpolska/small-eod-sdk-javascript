@@ -50,7 +50,7 @@
   describe('User', function() {
     it('should create an instance of User', function() {
       // uncomment below and update the code to test User
-      //var instane = new SmallEodClient.User();
+      //var instance = new SmallEodClient.User();
       //expect(instance).to.be.a(SmallEodClient.User);
     });
 

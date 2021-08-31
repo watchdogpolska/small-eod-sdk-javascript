@@ -50,7 +50,7 @@
   describe('DocumentType', function() {
     it('should create an instance of DocumentType', function() {
       // uncomment below and update the code to test DocumentType
-      //var instane = new SmallEodClient.DocumentType();
+      //var instance = new SmallEodClient.DocumentType();
       //expect(instance).to.be.a(SmallEodClient.DocumentType);
     });
 

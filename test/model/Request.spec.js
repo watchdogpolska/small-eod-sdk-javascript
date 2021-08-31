@@ -50,7 +50,7 @@
   describe('Request', function() {
     it('should create an instance of Request', function() {
       // uncomment below and update the code to test Request
-      //var instane = new SmallEodClient.Request();
+      //var instance = new SmallEodClient.Request();
       //expect(instance).to.be.a(SmallEodClient.Request);
     });
 

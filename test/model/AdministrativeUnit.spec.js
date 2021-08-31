@@ -50,7 +50,7 @@
   describe('AdministrativeUnit', function() {
     it('should create an instance of AdministrativeUnit', function() {
       // uncomment below and update the code to test AdministrativeUnit
-      //var instane = new SmallEodClient.AdministrativeUnit();
+      //var instance = new SmallEodClient.AdministrativeUnit();
       //expect(instance).to.be.a(SmallEodClient.AdministrativeUnit);
     });
 

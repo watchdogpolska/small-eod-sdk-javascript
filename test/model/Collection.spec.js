@@ -50,7 +50,7 @@
   describe('Collection', function() {
     it('should create an instance of Collection', function() {
       // uncomment below and update the code to test Collection
-      //var instane = new SmallEodClient.Collection();
+      //var instance = new SmallEodClient.Collection();
       //expect(instance).to.be.a(SmallEodClient.Collection);
     });
 

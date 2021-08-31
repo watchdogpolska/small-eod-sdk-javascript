@@ -50,7 +50,7 @@
   describe('FeatureOption', function() {
     it('should create an instance of FeatureOption', function() {
       // uncomment below and update the code to test FeatureOption
-      //var instane = new SmallEodClient.FeatureOption();
+      //var instance = new SmallEodClient.FeatureOption();
       //expect(instance).to.be.a(SmallEodClient.FeatureOption);
     });
 

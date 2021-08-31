@@ -50,7 +50,7 @@
   describe('CaseAutocomplete', function() {
     it('should create an instance of CaseAutocomplete', function() {
       // uncomment below and update the code to test CaseAutocomplete
-      //var instane = new SmallEodClient.CaseAutocomplete();
+      //var instance = new SmallEodClient.CaseAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.CaseAutocomplete);
     });
 

@@ -50,7 +50,7 @@
   describe('DocumentTypeAutocomplete', function() {
     it('should create an instance of DocumentTypeAutocomplete', function() {
       // uncomment below and update the code to test DocumentTypeAutocomplete
-      //var instane = new SmallEodClient.DocumentTypeAutocomplete();
+      //var instance = new SmallEodClient.DocumentTypeAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.DocumentTypeAutocomplete);
     });
 

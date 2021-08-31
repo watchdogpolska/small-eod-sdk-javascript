@@ -50,7 +50,7 @@
   describe('Event', function() {
     it('should create an instance of Event', function() {
       // uncomment below and update the code to test Event
-      //var instane = new SmallEodClient.Event();
+      //var instance = new SmallEodClient.Event();
       //expect(instance).to.be.a(SmallEodClient.Event);
     });
 

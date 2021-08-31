@@ -50,7 +50,7 @@
   describe('FeatureAutocomplete', function() {
     it('should create an instance of FeatureAutocomplete', function() {
       // uncomment below and update the code to test FeatureAutocomplete
-      //var instane = new SmallEodClient.FeatureAutocomplete();
+      //var instance = new SmallEodClient.FeatureAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.FeatureAutocomplete);
     });
 

@@ -50,7 +50,7 @@
   describe('TokenSet', function() {
     it('should create an instance of TokenSet', function() {
       // uncomment below and update the code to test TokenSet
-      //var instane = new SmallEodClient.TokenSet();
+      //var instance = new SmallEodClient.TokenSet();
       //expect(instance).to.be.a(SmallEodClient.TokenSet);
     });
 

@@ -50,7 +50,7 @@
   describe('RefreshTokenRequest', function() {
     it('should create an instance of RefreshTokenRequest', function() {
       // uncomment below and update the code to test RefreshTokenRequest
-      //var instane = new SmallEodClient.RefreshTokenRequest();
+      //var instance = new SmallEodClient.RefreshTokenRequest();
       //expect(instance).to.be.a(SmallEodClient.RefreshTokenRequest);
     });
 

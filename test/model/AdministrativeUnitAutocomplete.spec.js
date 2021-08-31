@@ -50,7 +50,7 @@
   describe('AdministrativeUnitAutocomplete', function() {
     it('should create an instance of AdministrativeUnitAutocomplete', function() {
       // uncomment below and update the code to test AdministrativeUnitAutocomplete
-      //var instane = new SmallEodClient.AdministrativeUnitAutocomplete();
+      //var instance = new SmallEodClient.AdministrativeUnitAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.AdministrativeUnitAutocomplete);
     });
 

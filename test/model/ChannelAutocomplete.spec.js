@@ -50,7 +50,7 @@
   describe('ChannelAutocomplete', function() {
     it('should create an instance of ChannelAutocomplete', function() {
       // uncomment below and update the code to test ChannelAutocomplete
-      //var instane = new SmallEodClient.ChannelAutocomplete();
+      //var instance = new SmallEodClient.ChannelAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.ChannelAutocomplete);
     });
 

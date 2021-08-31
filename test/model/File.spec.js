@@ -50,7 +50,7 @@
   describe('File', function() {
     it('should create an instance of File', function() {
       // uncomment below and update the code to test File
-      //var instane = new SmallEodClient.File();
+      //var instance = new SmallEodClient.File();
       //expect(instance).to.be.a(SmallEodClient.File);
     });
 

@@ -50,7 +50,7 @@
   describe('Channel', function() {
     it('should create an instance of Channel', function() {
       // uncomment below and update the code to test Channel
-      //var instane = new SmallEodClient.Channel();
+      //var instance = new SmallEodClient.Channel();
       //expect(instance).to.be.a(SmallEodClient.Channel);
     });
 

@@ -50,7 +50,7 @@
   describe('ReferenceNumberAutocomplete', function() {
     it('should create an instance of ReferenceNumberAutocomplete', function() {
       // uncomment below and update the code to test ReferenceNumberAutocomplete
-      //var instane = new SmallEodClient.ReferenceNumberAutocomplete();
+      //var instance = new SmallEodClient.ReferenceNumberAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.ReferenceNumberAutocomplete);
     });
 

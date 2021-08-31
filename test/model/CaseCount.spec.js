@@ -50,7 +50,7 @@
   describe('CaseCount', function() {
     it('should create an instance of CaseCount', function() {
       // uncomment below and update the code to test CaseCount
-      //var instane = new SmallEodClient.CaseCount();
+      //var instance = new SmallEodClient.CaseCount();
       //expect(instance).to.be.a(SmallEodClient.CaseCount);
     });
 

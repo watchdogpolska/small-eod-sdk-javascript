@@ -50,7 +50,7 @@
   describe('InstitutionAutocomplete', function() {
     it('should create an instance of InstitutionAutocomplete', function() {
       // uncomment below and update the code to test InstitutionAutocomplete
-      //var instane = new SmallEodClient.InstitutionAutocomplete();
+      //var instance = new SmallEodClient.InstitutionAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.InstitutionAutocomplete);
     });
 

@@ -50,7 +50,7 @@
   describe('Institution', function() {
     it('should create an instance of Institution', function() {
       // uncomment below and update the code to test Institution
-      //var instane = new SmallEodClient.Institution();
+      //var instance = new SmallEodClient.Institution();
       //expect(instance).to.be.a(SmallEodClient.Institution);
     });
 

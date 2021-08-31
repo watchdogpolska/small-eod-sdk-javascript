@@ -50,7 +50,7 @@
   describe('EventAutocomplete', function() {
     it('should create an instance of EventAutocomplete', function() {
       // uncomment below and update the code to test EventAutocomplete
-      //var instane = new SmallEodClient.EventAutocomplete();
+      //var instance = new SmallEodClient.EventAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.EventAutocomplete);
     });
 

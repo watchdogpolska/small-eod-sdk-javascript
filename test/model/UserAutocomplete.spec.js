@@ -50,7 +50,7 @@
   describe('UserAutocomplete', function() {
     it('should create an instance of UserAutocomplete', function() {
       // uncomment below and update the code to test UserAutocomplete
-      //var instane = new SmallEodClient.UserAutocomplete();
+      //var instance = new SmallEodClient.UserAutocomplete();
       //expect(instance).to.be.a(SmallEodClient.UserAutocomplete);
     });
 

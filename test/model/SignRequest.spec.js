@@ -50,7 +50,7 @@
   describe('SignRequest', function() {
     it('should create an instance of SignRequest', function() {
       // uncomment below and update the code to test SignRequest
-      //var instane = new SmallEodClient.SignRequest();
+      //var instance = new SmallEodClient.SignRequest();
       //expect(instance).to.be.a(SmallEodClient.SignRequest);
     });
 

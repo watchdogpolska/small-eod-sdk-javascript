@@ -50,7 +50,7 @@
   describe('Tag', function() {
     it('should create an instance of Tag', function() {
       // uncomment below and update the code to test Tag
-      //var instane = new SmallEodClient.Tag();
+      //var instance = new SmallEodClient.Tag();
       //expect(instance).to.be.a(SmallEodClient.Tag);
     });
 

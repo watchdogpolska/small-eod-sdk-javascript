@@ -50,7 +50,7 @@
   describe('InlineResponse2008', function() {
     it('should create an instance of InlineResponse2008', function() {
       // uncomment below and update the code to test InlineResponse2008
-      //var instane = new SmallEodClient.InlineResponse2008();
+      //var instance = new SmallEodClient.InlineResponse2008();
       //expect(instance).to.be.a(SmallEodClient.InlineResponse2008);
     });
 

@@ -50,7 +50,7 @@
   describe('Feature', function() {
     it('should create an instance of Feature', function() {
       // uncomment below and update the code to test Feature
-      //var instane = new SmallEodClient.Feature();
+      //var instance = new SmallEodClient.Feature();
       //expect(instance).to.be.a(SmallEodClient.Feature);
     });
 
