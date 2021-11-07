@@ -38,14 +38,14 @@ var ApiClient = /*#__PURE__*/function () {
    * @param {String} basePath
    */
   function ApiClient() {
-    var basePath = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'http://localhost/api';
+    var basePath = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '/api';
 
     _classCallCheck(this, ApiClient);
 
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default http://localhost/api
+     * @default /api
      */
     this.basePath = basePath.replace(/\/+$/, '');
     /**

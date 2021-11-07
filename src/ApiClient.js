@@ -33,11 +33,11 @@ class ApiClient {
      * Overrides the default value set in spec file if present
      * @param {String} basePath
      */
-    constructor(basePath = 'http://localhost/api') {
+    constructor(basePath = '/api') {
         /**
          * The base URL against which to resolve every API call's (relative) path.
          * @type {String}
-         * @default http://localhost/api
+         * @default /api
          */
         this.basePath = basePath.replace(/\/+$/, '');
 
